@@ -1,8 +1,13 @@
 import React from 'react'
-
+import Logo from './Landing/Logo/Logo'
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Logo />
+
+
+
+    </>
   )
 }
 
