@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-
   // const btn = document.querySelector('menu span i')
   const [click, setclick] = useState(true);
   var navLinks = document.querySelector('.nav-links');
@@ -14,29 +13,37 @@ const Navbar = () => {
     console.log(click);
     // navLinks.classList.add('show')
     if (click === true) {
-      navLinks.style.display = "flex";
-      menuText.style.display = "none";
+      navLinks.style.display = 'flex';
+      menuText.style.display = 'none';
     } else {
-      navLinks.style.display = "none"
-      menuText.style.display = "flex";
+      navLinks.style.display = 'none';
+      menuText.style.display = 'flex';
     }
-
   }
-
-
-
 
   return (
     <div>
       <div className="container">
         <nav>
-          <ul className='nav-links'>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>Registration</a></li>
-            <li><a href='#'>Events</a></li>
-            <li><a href='#'>Sponsors</a></li>
-            <li><a href='#'>Gallery</a></li>
-            <li><a href='#'>Team</a></li>
+          <ul className="nav-links">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Registration</a>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Sponsors</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <a href="#">Team</a>
+            </li>
           </ul>
           <div className="menu-text">
             <span>Menu</span>
@@ -47,7 +54,7 @@ const Navbar = () => {
         </nav>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
