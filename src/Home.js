@@ -4,7 +4,7 @@ import Logo from './Landing/Logo/Logo';
 const Home = () => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Logo />
     </>
   );
