@@ -1,0 +1,97 @@
+.main-logo-container {
+  /* background-color: black; */
+  position: absolute;
+  top: 30vh;
+  right: 10vw;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotating_ {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+
+.ring-box-1 {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin: auto 20px;
+}
+
+.rings {
+  position: absolute;
+  z-index: 0;
+  /* top: 0; */
+}
+
+.ring-10 {
+  animation: rotating 10s linear infinite;
+}
+.ring-8 {
+  animation: rotating_ 10s linear infinite;
+}
+
+.ring-7 {
+  animation: rotating 10s linear infinite;
+}
+
+.ring-4 {
+  filter: invert(2) brightness(2);
+  transform: scale(1.2);
+  height: 120%;
+  animation: rotating_ 20s linear infinite;
+}
+
+.glowing-ring {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 1px 1px 40px 20px rgba(255, 255, 255, 0.5);
+}
+
+.glass-lens {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  transform: scale(0.9);
+  filter: opacity(0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  user-select: none;
+  z-index: -2;
+}
+
+.main-event-logo {
+  position: relative;
+  z-index: 1;
+  filter: brightness(800%);
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+}
+
+.main-event-logo:hover {
+  scale: 1.1;
+  transform: scale(0.85);
+  transition: all 0.2s ease;
+}
