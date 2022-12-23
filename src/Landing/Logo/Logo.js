@@ -21,25 +21,24 @@ const Logo = () => {
       [
         // keyframes
         { transform: 'scale(1)' },
-        { transform: 'scale(0)' },
-        { transform: 'scale(1)' }
+        { transform: 'scale(0)' }
       ],
       {
         // timing options
-        duration: 1000,
+        duration: 500,
         iterations: 1
       }
     );
     document.getElementsByClassName('ring-6')[0].animate(
       [
         // keyframes
-        { transform: 'rotate(0deg)' },
-        { transform: 'rotate(360deg)' }
+        { transform: 'rotate(0deg) scale(1.3)' },
+        { transform: 'rotate(120deg) scale(1.3)' }
         // { transform: 'scale(1)' }
       ],
       {
         // timing options
-        duration: 1000,
+        duration: 500,
         iterations: 1
       }
     );
