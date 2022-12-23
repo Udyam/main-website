@@ -23,7 +23,10 @@ body {
     min-height: 100vh;
     font-size: 1.2em;
   } */
-  .article{height: 100vh;background-color:  rgb(2, 2, 49);}
+.article {
+  height: 100vh;
+  background-color: rgb(2, 2, 49);
+}
 .updates-main-container {
   color: white;
 }
