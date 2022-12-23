@@ -1,0 +1,14 @@
+.button-container {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+
+.dial-button {
+  position: relative;
+}
