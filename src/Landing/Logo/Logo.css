@@ -1,4 +1,4 @@
-.main-container-for-logo{
+.main-container-for-logo {
   height: 600px;
   width: 600px;
   position: fixed;
@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
 }
-
 
 .main-logo-container {
   position: relative;
@@ -78,9 +77,9 @@
   animation: rotating 15s linear infinite;
 }
 
-.ring-3{
+.ring-3 {
   /* transform: scale(1.2); */
-  filter: invert(1) ;
+  filter: invert(1);
   animation: rotating_ 15s linear infinite;
 }
 
@@ -90,7 +89,7 @@
   bottom: -55px;
 }
 
-.dotted-ring{
+.dotted-ring {
   animation: rotating 50s linear infinite;
 }
 
@@ -120,5 +119,3 @@
   z-index: 1;
   transition: all 0.5s ease;
 }
-
-
