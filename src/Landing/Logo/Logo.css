@@ -55,7 +55,7 @@
   animation: rotating_ 15s linear infinite;
 }
 
-.ring-6{
+.ring-6 {
   filter: hue-rotate(150deg) saturate(2) brightness(2);
 }
 
@@ -86,7 +86,6 @@
   transition: all 0.5s ease;
 }
 
-
 @keyframes move-out {
   0% {
     transform: scale(1);
@@ -99,17 +98,13 @@
   }
 }
 
-
 .main-event-logo-leaving {
   animation: move-out 1s ease;
   /* transition: all 1s ease; */
 }
-
-
 
 /* .main-event-logo:hover {
   scale: 1.1;
   transform: scale(0.62);
   transition: all 0.2s ease;
 } */
-
