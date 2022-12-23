@@ -30,17 +30,16 @@ body {
 .updates-main-container {
   color: white;
 }
-.flex-cont{
+.flex-cont {
   display: flex;
-  flex-wrap:wrap-reverse
+  flex-wrap: wrap-reverse;
 }
 .flex-cont > div {
   width: 600px;
-  margin: 10px 0px ;
+  margin: 10px 0px;
   /* text-align: center; */
-
 }
-.flex-cont > .images{
+.flex-cont > .images {
   text-align: right;
 }
 .updates-udyam-head-container {

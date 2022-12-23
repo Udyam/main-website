@@ -21,7 +21,8 @@ function Updates() {
             <div className="images">
               <img
                 src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="
-                alt="Italian Trulli"></img>
+                alt="Italian Trulli"
+              ></img>
             </div>
           </div>
         </div>
@@ -44,7 +45,8 @@ function Updates() {
               {' '}
               <img
                 src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="
-                alt="Italian Trulli"></img>{' '}
+                alt="Italian Trulli"
+              ></img>{' '}
             </div>
           </div>
         </div>
@@ -68,7 +70,8 @@ function Updates() {
             <div className="images">
               <img
                 src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="
-                alt="Italian Trulli"></img>
+                alt="Italian Trulli"
+              ></img>
             </div>
           </div>
         </div>
