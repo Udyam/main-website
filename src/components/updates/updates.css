@@ -23,68 +23,60 @@ body {
     min-height: 100vh;
     font-size: 1.2em;
   } */
-.updates-udyam-head-container {
-  background-color: #2b8bcf;
+  .article{height: 100vh;background-color:  rgb(2, 2, 49);}
+.updates-main-container {
   color: white;
-  height: 10vh;
+}
+.updates-udyam-head-container {
+  background-color: rgba(43, 139, 207, 255);
   padding: 0.4em 2em;
   position: sticky;
   z-index: 1;
-  bottom: 20vh;
-  top: 0vh;
-  font-size: 3rem;
+  bottom: calc(2 * 2em);
+  top: calc(0 * 2em);
 }
 
 .updates-udyam-content {
-  background-color: #2b8bcf;
-  color: white;
+  background-color: rgba(43, 139, 207, 255);
   padding: 2rem;
   position: sticky;
   height: 100vh;
-  top: 10vh;
+  top: calc(1 * 1.6em);
   padding-bottom: 8em;
 }
 
 .updates-udgam-head-container {
-  background-color: #4e4195;
-  color: white;
-  height: 10vh;
+  background-color: rgba(78, 65, 149, 255);
   padding: 0.4em 2em;
   position: sticky;
   z-index: 1;
-  bottom: 10vh;
-  top: 10vh;
-  font-size: 3rem;
+  bottom: calc(1 * 2em);
+  top: calc(1 * 2em);
 }
 
 .updates-udgam-content {
-  background-color: #4e4195;
-  color: white;
+  background-color: rgba(78, 65, 149, 255);
   padding: 2rem;
   position: sticky;
   height: 100vh;
-  top: 20vh;
+  top: calc(2 * 1.6em);
   padding-bottom: 8em;
 }
 
 .updates-mashal-head-container {
-  background-color: #161619;
-  color: white;
-  height: 10vh;
+  background-color: rgba(22, 22, 25, 255);
   padding: 0.4em 2em;
   position: sticky;
   z-index: 1;
-  bottom: 0vh;
-  top: 20vh;
-  font-size: 3rem;
+  bottom: calc(0 * 2em);
+  top: calc(2 * 2em);
 }
 
 .updates-mashal-content {
-  background-color: #161619;
-  color: white;
+  background-color: rgba(22, 22, 25, 255);
   padding: 2rem;
   position: sticky;
   height: 100vh;
-  top: 30vh;
+  top: calc(0 * 1.6em);
   padding-bottom: 8em;
 }
