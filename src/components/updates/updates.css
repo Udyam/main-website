@@ -30,6 +30,19 @@ body {
 .updates-main-container {
   color: white;
 }
+.flex-cont{
+  display: flex;
+  flex-wrap:wrap-reverse
+}
+.flex-cont > div {
+  width: 600px;
+  margin: 10px 0px ;
+  /* text-align: center; */
+
+}
+.flex-cont > .images{
+  text-align: right;
+}
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
   padding: 0.4em 2em;
