@@ -1,11 +1,10 @@
-.button-box{
+.button-container{
   position: absolute;
-  height: 120%;
-  width: 120%;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: auto;
-  background-color: aqua;
-  z-index: 0;
+  transform: rotate(90deg);
 }
+

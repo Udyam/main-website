@@ -1,8 +1,19 @@
+.main-container-for-logo{
+  height: 600px;
+  width: 600px;
+  position: fixed;
+  top: 20vh;
+  right: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+
 .main-logo-container {
-  /* background-color: black; */
-  position: absolute;
-  top: 30vh;
-  right: 10vw;
+  position: relative;
+  /* top: 30vh;
+  right: 10vw; */
+  margin: auto 20px;
   height: 400px;
   width: 400px;
   display: flex;
