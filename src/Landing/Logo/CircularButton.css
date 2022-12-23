@@ -1,0 +1,11 @@
+.button-box{
+  position: absolute;
+  height: 120%;
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: aqua;
+  z-index: 0;
+}

@@ -18,6 +18,14 @@
     -webkit-transform: rotate(-360deg);
   }
 }
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 
 .ring-box-1 {
   position: absolute;
@@ -34,6 +42,7 @@
 .rings {
   position: absolute;
   z-index: 0;
+  user-select: none;
   /* top: 0; */
 }
 
@@ -48,16 +57,32 @@
   animation: rotating 10s linear infinite;
 }
 
-.ring-4 {
-  filter: invert(2) brightness(2);
+.ring-middle {
   transform: scale(1.2);
   height: 120%;
+  animation: rotating 15s linear infinite;
+}
+.ring-4 {
+  transform: scale(1.2);
+  filter: invert(1) brightness(2);
+  height: 120%;
+  animation: rotating 15s linear infinite;
+}
+
+.ring-3{
+  /* transform: scale(1.2); */
+  filter: invert(1) ;
   animation: rotating_ 15s linear infinite;
 }
 
 .ring-6 {
-  filter: hue-rotate(150deg) saturate(2) brightness(2);
-  transform: scale(1.3);
+  transform: rotate(90deg);
+  z-index: -2;
+  bottom: -55px;
+}
+
+.dotted-ring{
+  animation: rotating 50s linear infinite;
 }
 
 .glowing-ring {
@@ -87,25 +112,4 @@
   transition: all 0.5s ease;
 }
 
-@keyframes move-out {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
 
-.main-event-logo-leaving {
-  animation: move-out 1s ease;
-  /* transition: all 1s ease; */
-}
-
-/* .main-event-logo:hover {
-  scale: 1.1;
-  transform: scale(0.62);
-  transition: all 0.2s ease;
-} */
