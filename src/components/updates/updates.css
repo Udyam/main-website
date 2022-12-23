@@ -1,0 +1,79 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: clamp(11px, 2.5vmin, 18px)/1.4 sans-serif;
+  color: #252525;
+}
+/* .article {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.2em;
+  } */
+.updates-udyam-head-container {
+    background-color:yellow;
+    padding: 0.4em 2em;
+    position: sticky;
+    z-index: 1;
+    bottom: calc(3 * 2em);
+    top: calc(0 * 2em);
+}
+
+.updates-udyam-content {
+    background-color: yellow;
+    padding: 2rem;
+    position: sticky;
+    height: 100vh;
+    top: calc(1 * 1.6em);
+    padding-bottom: 8em;
+}
+
+.updates-udgam-head-container {
+    background-color: blue;
+    padding: 0.4em 2em;
+    position: sticky;
+    z-index: 1;
+    bottom: calc(2 * 2em);
+    top: calc(1 * 2em);
+}
+
+.updates-udgam-content {
+    background-color: blue;
+    padding: 2rem;
+    position: sticky;
+    height: 100vh;
+    top: calc(2 * 1.6em);
+    padding-bottom: 8em;
+}
+
+.updates-mashal-head-container {
+    background-color: green;
+    padding: 0.4em 2em;
+    position: sticky;
+    z-index: 1;
+    bottom: calc(1 * 2em);
+    top: calc(2 * 2em);
+}
+
+.updates-mashal-content {
+    background-color: green;
+    padding: 2rem;
+    position: sticky;
+    height: 100vh;
+    top: calc(3 * 1.6em);
+    padding-bottom: 8em;
+}
