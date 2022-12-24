@@ -12,7 +12,7 @@ function Updates() {
         <div className="updates-udyam-content">
           <h1>UDYAM</h1>
           <div className="row">
-            <div className="col-6 col-md-6 col-sm-12">
+            <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
                 Udyam is the Annual Technological Festival of the department of Electronics
                 Engineering, IIT (BHU) Varanasi. It brings a broad spectrum of events spanning Data
@@ -22,7 +22,7 @@ function Updates() {
                 that the grand event is again returning this spring as UDYAM 23!
               </p>
             </div>
-            <div className="col-6 col-md-6 col-sm-12 text-center">
+            <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div>
           </div>
@@ -34,7 +34,7 @@ function Updates() {
         <div className="updates-udgam-content">
           <h1>UDGAM</h1>
           <div className="row">
-            <div className="col-6 col-md-6 col-sm-12">
+            <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
                 Udgam is the Annual Cultural Festival of the department of Electronics Engineering,
                 IIT (BHU) Varanasi. It brings you multifarious events that kindle your creative side
@@ -45,7 +45,7 @@ function Updates() {
                 stage. Get ready to manifest your artistry and let your creative self sparkle!
               </p>
             </div>
-            <div className="col-6 col-md-6 col-sm-12 text-center">
+            <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div>
           </div>
@@ -58,7 +58,7 @@ function Updates() {
         <div className="updates-mashal-content">
           <h1>MASHAL</h1>
           <div className="row">
-            <div className="col-6 col-md-6 col-sm-12">
+            <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
                 Mashal is the sports festival of the department of Electronics Engineering, IIT
                 (BHU) Varanasi.It offers a venue for all significant competitions and sports to
@@ -70,7 +70,7 @@ function Updates() {
                 said by Serena Williams,the lets overpower, overtake and overcome!
               </p>
             </div>
-            <div className="col-6 col-md-6 col-sm-12 text-center">
+            <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div>
           </div>
