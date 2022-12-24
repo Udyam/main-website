@@ -47,6 +47,7 @@ h1 {
   top: calc(0 * 2em);
   font-size: 38px;
   font-weight: bold;
+  width: 100vw;
 }
 
 .updates-udyam-content {
@@ -68,6 +69,7 @@ h1 {
   top: calc(1 * 2em);
   font-size: 38px;
   font-weight: bold;
+  width: 100vw;
 }
 
 .updates-udgam-content {
@@ -88,6 +90,7 @@ h1 {
   top: calc(2 * 2em);
   font-size: 38px;
   font-weight: bold;
+  width: 100vw;
 }
 
 .updates-mashal-content {

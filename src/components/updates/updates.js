@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import './updates.css';
 function Updates() {
   return (
