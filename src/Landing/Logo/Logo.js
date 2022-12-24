@@ -5,20 +5,6 @@ import './CircularButton.css';
 const Logo = () => {
   const [angle, setAngle] = React.useState(0);
   const logoClick = () => {
-    document.getElementsByClassName('main-event-logo')[0].animate(
-      [
-        // keyframes
-        { transform: 'scale(1)' },
-        { transform: 'scale(0)' },
-        { transform: 'scale(1)' }
-      ],
-      {
-        duration: 1000,
-        iterations: 1,
-        fill: 'forwards'
-      }
-    );
-
     document.getElementsByClassName('button-container')[0].animate(
       [
         // keyframes
@@ -74,7 +60,7 @@ const Logo = () => {
           />
         </div>
         <div className="button-container">
-          <img className="dial-button" src="/assets/rings/final_dial.svg" alt="" />
+          <img className="dial-button" src="/assets/New Rings/Group 1949dialWithring.svg" alt="" />
         </div>
       </div>
     </>
