@@ -8,12 +8,25 @@
 html,
 body {
   scroll-behavior: smooth;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 body {
   font: clamp(11px, 2.5vmin, 18px) / 1.4 sans-serif;
   color: #252525;
 }
+
 /* .article {
     background-color: red;
     display: flex;
@@ -23,70 +36,225 @@ body {
     min-height: 100vh;
     font-size: 1.2em;
   } */
-.article {
-  height: 100vh;
-  background-color: rgb(2, 2, 49);
-}
-.updates-main-container {
-  color: white;
-}
-p {
-  font-size: 25px;
-}
-h1 {
-  font-weight: 900;
-  line-height: 120px;
-}
+
+
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
-  padding: 0.4em 2em;
+  color: white;
+  height: 10vh;
+  padding: 0.4rem 2rem;
+  font-size: 2rem;
   position: sticky;
   z-index: 1;
-  bottom: calc(2 * 2em);
-  top: calc(0 * 2em);
+  bottom: 20vh;
+  top: 0vh;
 }
 
 .updates-udyam-content {
   background-color: rgba(43, 139, 207, 255);
-  padding: 4rem;
+  color: white;
+  padding: 2rem 6rem;
   position: sticky;
   height: 100vh;
-  top: calc(1 * 1.6em);
-  padding-bottom: 8em;
+  top: 10vh;
+  padding-bottom: 0;
+
 }
 
 .updates-udgam-head-container {
   background-color: rgba(78, 65, 149, 255);
-  padding: 0.4em 2em;
+  color: white;
+  height: 10vh;
+  padding: 0.4rem 2rem;
+  font-size: 2rem;
   position: sticky;
   z-index: 1;
-  bottom: calc(1 * 2em);
-  top: calc(1 * 2em);
+  bottom: 10vh;
+  top: 10vh;
 }
 
 .updates-udgam-content {
   background-color: rgba(78, 65, 149, 255);
-  padding: 2rem;
+  color: white;
+  padding: 2rem 6rem;
   position: sticky;
   height: 100vh;
-  top: calc(2 * 1.6em);
+  top: 20vh;
   padding-bottom: 8em;
 }
 
 .updates-mashal-head-container {
   background-color: rgba(22, 22, 25, 255);
-  padding: 0.4em 2em;
+  color: white;
+  height: 10vh;
+  padding: 0.4rem 2rem;
+  font-size: 2rem;
   position: sticky;
   z-index: 1;
-  bottom: calc(0 * 2em);
-  top: calc(2 * 2em);
+  bottom: 0vh;
+  top: 20vh;
 }
 
 .updates-mashal-content {
   background-color: rgba(22, 22, 25, 255);
-  padding: 2rem;
+  color: white;
+  padding: 2rem 6rem;
   position: sticky;
   height: 100vh;
-  top: calc(0 * 1.6em);
+  top: 30vh;
   padding-bottom: 8em;
+}
+
+.update-content {
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+
+@media(max-width:480px) {
+  .updates-udyam-head-container {
+    background-color: rgba(43, 139, 207, 255);
+    color: white;
+    height: 6vh;
+    padding: 1vh;
+    font-size: 2vh;
+    position: sticky;
+    z-index: 1;
+    bottom: 12vh;
+    top: 0vh;
+  }
+
+  .updates-udyam-content {
+    background-color: rgba(43, 139, 207, 255);
+    color: white;
+    padding: 3vh 1vh;
+    position: sticky;
+    height: 100vh;
+    top: 6vh;
+    padding-bottom: 0;
+
+  }
+
+  .updates-udgam-head-container {
+    background-color: rgba(78, 65, 149, 255);
+    color: white;
+    height: 6vh;
+    padding: 1vh;
+    font-size: 2vh;
+    position: sticky;
+    z-index: 1;
+    bottom: 6vh;
+    top: 6vh;
+  }
+
+  .updates-udgam-content {
+    background-color: rgba(78, 65, 149, 255);
+    color: white;
+    padding: 3vh 1vh;
+    position: sticky;
+    height: 100vh;
+    top: 12vh;
+    padding-bottom: 8em;
+  }
+
+  .updates-mashal-head-container {
+    background-color: rgba(22, 22, 25, 255);
+    color: white;
+    height: 6vh;
+    padding: 1vh;
+    font-size: 2vh;
+    position: sticky;
+    z-index: 1;
+    bottom: 0vh;
+    top: 12vh;
+  }
+
+  .updates-mashal-content {
+    background-color: rgba(22, 22, 25, 255);
+    color: white;
+    padding: 3vh 1vh;
+    position: sticky;
+    height: 100vh;
+    top: 18vh;
+    padding-bottom: 8em;
+  }
+
+  .update-content {
+    line-height: 1.5;
+    font-size: 2.5vh;
+  }
+}
+
+@media (max-width:768px) and (min-width:481px) {
+  .updates-udyam-head-container {
+    background-color: rgba(43, 139, 207, 255);
+    color: white;
+    height: 8vh;
+    padding: 2vh 2vh;
+    font-size: 2.5vh;
+    position: sticky;
+    z-index: 1;
+    bottom: 16vh;
+    top: 0vh;
+  }
+
+  .updates-udyam-content {
+    background-color: rgba(43, 139, 207, 255);
+    color: white;
+    padding: 3vh 2vh;
+    position: sticky;
+    height: 100vh;
+    top: 8vh;
+    padding-bottom: 0;
+
+  }
+
+  .updates-udgam-head-container {
+    background-color: rgba(78, 65, 149, 255);
+    color: white;
+    height: 8vh;
+    padding: 2vh 2vh;
+    font-size: 2.5vh;
+    position: sticky;
+    z-index: 1;
+    bottom: 8vh;
+    top: 8vh;
+  }
+
+  .updates-udgam-content {
+    background-color: rgba(78, 65, 149, 255);
+    color: white;
+    padding: 3vh 2vh;
+    position: sticky;
+    height: 100vh;
+    top: 16vh;
+    padding-bottom: 8em;
+  }
+
+  .updates-mashal-head-container {
+    background-color: rgba(22, 22, 25, 255);
+    color: white;
+    height: 8vh;
+    padding: 2vh 2vh;
+    font-size: 2.5vh;
+    position: sticky;
+    z-index: 1;
+    bottom: 0vh;
+    top: 16vh;
+  }
+
+  .updates-mashal-content {
+    background-color: rgba(22, 22, 25, 255);
+    color: white;
+    padding: 3vh 2vh;
+    position: sticky;
+    height: 100vh;
+    top: 24vh;
+    padding-bottom: 8em;
+  }
+
+  .update-content {
+    line-height: 1.5;
+    font-size: 2.5vh;
+  }
 }

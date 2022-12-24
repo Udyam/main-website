@@ -24,6 +24,7 @@ const Logo = () => {
 
   return (
     <>
+      <div className='empty-div'></div>
       <div className="main-container-for-logo">
         <div className="main-logo-container">
           <div className="ring-box-1">
