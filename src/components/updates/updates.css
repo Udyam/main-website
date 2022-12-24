@@ -29,9 +29,10 @@ body {
 }
 .updates-main-container {
   color: white;
+  width: 100vw;
 }
 p {
-  font-size: 25px;
+  font-size: 27px;
 }
 h1 {
   font-weight: 900;
@@ -44,6 +45,8 @@ h1 {
   z-index: 1;
   bottom: calc(2 * 2em);
   top: calc(0 * 2em);
+  font-size: 38px;
+  font-weight: bold;
 }
 
 .updates-udyam-content {
@@ -51,6 +54,7 @@ h1 {
   padding: 4rem;
   position: sticky;
   height: 100vh;
+  overflow: scroll;
   top: calc(1 * 1.6em);
   padding-bottom: 8em;
 }
@@ -62,11 +66,13 @@ h1 {
   z-index: 1;
   bottom: calc(1 * 2em);
   top: calc(1 * 2em);
+  font-size: 38px;
+  font-weight: bold;
 }
 
 .updates-udgam-content {
   background-color: rgba(78, 65, 149, 255);
-  padding: 2rem;
+  padding: 4rem;
   position: sticky;
   height: 100vh;
   top: calc(2 * 1.6em);
@@ -80,11 +86,13 @@ h1 {
   z-index: 1;
   bottom: calc(0 * 2em);
   top: calc(2 * 2em);
+  font-size: 38px;
+  font-weight: bold;
 }
 
 .updates-mashal-content {
   background-color: rgba(22, 22, 25, 255);
-  padding: 2rem;
+  padding: 4rem;
   position: sticky;
   height: 100vh;
   top: calc(0 * 1.6em);

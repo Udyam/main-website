@@ -5,12 +5,12 @@ function Updates() {
       <div className="article"></div>
       <section className="updates-main-container">
         <div className="row updates-udyam-head-container ">
-          <div className="text-left col-6">UDYAM</div>
-          <div className="text-center col-6 ">Annual Technological Fest</div>
+          <div className="text-left col-12 col-sm-6">UDYAM</div>
+          <div className="text-center col-12 col-sm-6 ">Annual Technological Fest</div>
         </div>
 
         <div className="updates-udyam-content">
-          <h1>UDYAM</h1>
+          {/* <h1>UDYAM</h1> */}
           <div className="row">
             <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
@@ -26,13 +26,16 @@ function Updates() {
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div>
           </div>
+          <div className=""></div>
         </div>
         <div className="row updates-udgam-head-container ">
-          <div className="text-left col-6">UDGAM</div>
-          <div className="text-center col-6 ">Annual Cultural Fest&#160; &#160; &#160;</div>
+          <div className="text-left col-12 col-sm-6">UDGAM</div>
+          <div className="text-center col-12 col-sm-6 ">
+            Annual Cultural Fest&#160; &#160; &#160;
+          </div>
         </div>
         <div className="updates-udgam-content">
-          <h1>UDGAM</h1>
+          {/* <h1>UDGAM</h1> */}
           <div className="row">
             <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
@@ -49,14 +52,17 @@ function Updates() {
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div>
           </div>
+          <div className=""></div>
         </div>
 
         <div className="row updates-mashal-head-container ">
-          <div className="text-left col-6">MASHAL</div>
-          <div className="text-center col-6 ">Annual Sport Fest&#160; &#160; &#160; &#160;</div>
+          <div className="text-left col-12 col-sm-6">MASHAL</div>
+          <div className="text-center col-12 col-sm-6 ">
+            Annual Sport Fest&#160; &#160; &#160; &#160;
+          </div>
         </div>
         <div className="updates-mashal-content">
-          <h1>MASHAL</h1>
+          {/* <h1>MASHAL</h1> */}
           <div className="row">
             <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
@@ -74,6 +80,7 @@ function Updates() {
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div>
           </div>
+          <div className=""></div>
         </div>
       </section>
       {/* <div className="article"></div> */}
