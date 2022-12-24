@@ -30,17 +30,12 @@ body {
 .updates-main-container {
   color: white;
 }
-.flex-cont {
-  display: flex;
-  flex-wrap: wrap-reverse;
+p {
+  font-size: 25px;
 }
-.flex-cont > div {
-  width: 600px;
-  margin: 10px 0px;
-  /* text-align: center; */
-}
-.flex-cont > .images {
-  text-align: right;
+h1 {
+  font-weight: 900;
+  line-height: 120px;
 }
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
@@ -53,7 +48,7 @@ body {
 
 .updates-udyam-content {
   background-color: rgba(43, 139, 207, 255);
-  padding: 2rem;
+  padding: 4rem;
   position: sticky;
   height: 100vh;
   top: calc(1 * 1.6em);
