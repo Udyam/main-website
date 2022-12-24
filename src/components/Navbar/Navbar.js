@@ -14,6 +14,7 @@ const Navbar = () => {
     // navLinks.classList.add('show')
     if (click === true) {
       navLinks.style.display = 'flex';
+      // navLinks.classList.add('.show');
       menuText.style.display = 'none';
     } else {
       navLinks.style.display = 'none';
