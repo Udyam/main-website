@@ -60,7 +60,7 @@ const Logo = () => {
           />
         </div>
         <div className="button-container">
-          <img className="dial-button" src="/assets/rings/final_dial.svg" alt="" />
+          <img className="dial-button" src="/assets/New Rings/Group 1949dialWithring.svg" alt="" />
         </div>
       </div>
     </>
