@@ -5,7 +5,6 @@ function Updates() {
     <>
       <div className="article"></div>
 
-
       <section className="updates-main-container">
         <div className="updates-udyam-head-container ">
           <h1>Udyam Updates</h1>
@@ -22,20 +21,30 @@ function Updates() {
                 that the grand event is again returning this spring as UDYAM 23!
               </p>
             </div> */}
-          <div  className="update-content">
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
+          <div className="update-content">
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div> */}
         </div>
-
-
 
         <div className="updates-udgam-head-container ">
           <h1>Udgam Updates</h1>
@@ -53,26 +62,34 @@ function Updates() {
               </p>
             </div> */}
           <div className="update-content">
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div> */}
         </div>
 
-
-
-
         <div className="row updates-mashal-head-container ">
           <h1>Mashal updates</h1>
         </div>
         <div className="updates-mashal-content">
-
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
                 Mashal is the sports festival of the department of Electronics Engineering, IIT
@@ -86,20 +103,30 @@ function Updates() {
               </p>
             </div> */}
           <div className="update-content">
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
+            <p>
+              Event <strong>xyz</strong> is live. Register <a href="#">here</a>
+            </p>
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div> */}
-
         </div>
       </section>
-
     </>
   );
 }
