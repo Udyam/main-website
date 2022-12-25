@@ -7,6 +7,7 @@ import Speakers from './components/Speakers/Speakers';
 import Sponsers from './components/Sponsors/sponsors';
 import Footer from './components/footer/footer';
 import About from './components/AboutUS/AboutUs';
+import Faq from './components/faq/Faq';
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,11 @@ function App() {
                 <About />
                 <Updates />
                 <Sponsers />
+<<<<<<< HEAD
+                <Faq />
+=======
                 <Speakers />
+>>>>>>> 936f88fa4d250c1de96269f86ba39c45b1c92334
                 <Footer />
               </>
             }
