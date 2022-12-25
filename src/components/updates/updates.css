@@ -1,15 +1,3 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  scroll-behavior: smooth;
-}
-
 .update-content a {
   position: relative;
 
@@ -30,15 +18,6 @@ body {
   color: #252525;
 }
 
-/* .article {
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-size: 1.2em;
-  } */
 
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
