@@ -38,13 +38,18 @@ nav {
 .menu {
   position: absolute;
   right: 8%;
+  background-color: #120b2c;
   height: 36px;
-  width: 40px;
+  width: 44px;
   font-size: 22px;
   align-self: center;
-  border-radius: 1px;
+  cursor: pointer;
+  /* border-radius: 1px; */
   /* padding: 5px 10px; */
   float: right;
+}
+.menu i{
+  color: #fff;
 }
 .menu-text {
   font-size: 1.2rem;
@@ -54,7 +59,7 @@ nav {
   text-align: center;
   position: absolute;
   top: 3%;
-  right: 17.5%;
+  right: 15.5%;
 }
 @keyframes expand {
   from {
@@ -95,7 +100,7 @@ nav {
 @media screen and (max-width: 600px) {
   .nav-links {
     position: absolute;
-    width: 100vw;
+    width: 110vw;
     height: 100vh;
     background: #4318de;
     display: flex;
