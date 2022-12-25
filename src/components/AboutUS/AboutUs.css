@@ -5,7 +5,6 @@ body {
   padding: 0;
 }
 .contain {
-  width: 100vmax;
   height: auto;
   background-color: rgba(0, 20, 50, 1);
 }
@@ -31,7 +30,6 @@ body {
   position: relative;
   top: 1rem;
   width: 25rem;
-  /* left: 6rem; */
   height: 0.45rem;
 }
 .base2 {
@@ -40,7 +38,6 @@ body {
   position: relative;
   top: 0.95rem;
   width: 10rem;
-  /* left: 6rem; */
   height: 1.3rem;
 }
 .base3 {
@@ -59,7 +56,6 @@ body {
   position: relative;
   top: -1.4rem;
   width: 25rem;
-  /* left: 6rem; */
   height: 0.5rem;
 }
 .main-box {
@@ -95,6 +91,7 @@ body {
   font-family: sparten;
   position: relative;
   display: inline-block;
+  font-size: 2.5rem;
   left: 30%;
   margin-top: 1rem;
   padding-top: 1rem;
@@ -106,14 +103,13 @@ body {
   height: 23vw;
   width: 38vw;
   position: relative;
-  bottom: 1vw;
+  bottom: 2vw;
   margin-left: 4vw;
   overflow-y: auto;
 }
 
 .content p {
   margin-top: 0;
-  font-size: 70%;
 }
 
 .square1 {
@@ -135,7 +131,6 @@ body {
   z-index: 2;
   width: 22vw;
   height: 22vw;
-  /* box-shadow:  0 0 200px red; */
   transform: perspective(200px) rotateY(10deg) skew(5deg);
 }
 .squares {
@@ -177,7 +172,7 @@ body {
 }
 
 .dot-pair {
-  margin: -14px;
+  margin: 0;
   padding: 0;
   position: relative;
 }
@@ -199,6 +194,18 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .base1 {
+    width: 17rem;
+  }
+  .base2 {
+    width: 7rem;
+  }
+  .base3 {
+    width: 7rem;
+  }
+  .base4 {
+    width: 17rem;
+  }
   .head {
     margin-top: 0;
     left: 5%;
@@ -227,10 +234,13 @@ body {
     top: 12vw;
     left: 1%;
   }
+  .dot-pair {
+    margin: -8px;
+  }
   .content-box {
     left: auto;
-    width: 90vmax;
-    height: fit-content;
+    width: 90%;
+    height: 130vw;
     margin-top: -40vw;
   }
   .content-box h3 {
@@ -240,7 +250,7 @@ body {
   }
   .content {
     width: 90%;
-    height: 90vh;
+    height: 87vw;
   }
   .content p {
     font-size: 100%;
