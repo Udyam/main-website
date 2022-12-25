@@ -1,0 +1,9 @@
+.contentCard {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 75.4%;
+  height: 90%;
+  background-image: linear-gradient(to right, rgb(3, 48, 48), rgb(36, 161, 161));
+  clip-path: polygon(0 0, 26% 0, 85.5% 33%, 85.5% 71%, 40% 100%, 0 100%, 0% 80%, 0 38%);
+}
