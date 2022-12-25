@@ -8,7 +8,6 @@
 html,
 body {
   scroll-behavior: smooth;
-
 }
 
 a {
@@ -37,7 +36,6 @@ body {
     font-size: 1.2em;
   } */
 
-
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
   color: white;
@@ -58,7 +56,6 @@ body {
   height: 100vh;
   top: 10vh;
   padding-bottom: 0;
-
 }
 
 .updates-udgam-head-container {
@@ -110,8 +107,7 @@ body {
   font-size: 2rem;
 }
 
-
-@media(max-width:480px) {
+@media (max-width: 480px) {
   .updates-udyam-head-container {
     background-color: rgba(43, 139, 207, 255);
     color: white;
@@ -132,7 +128,6 @@ body {
     height: 100vh;
     top: 6vh;
     padding-bottom: 0;
-
   }
 
   .updates-udgam-head-container {
@@ -185,7 +180,7 @@ body {
   }
 }
 
-@media (max-width:768px) and (min-width:481px) {
+@media (max-width: 768px) and (min-width: 481px) {
   .updates-udyam-head-container {
     background-color: rgba(43, 139, 207, 255);
     color: white;
@@ -206,7 +201,6 @@ body {
     height: 100vh;
     top: 8vh;
     padding-bottom: 0;
-
   }
 
   .updates-udgam-head-container {

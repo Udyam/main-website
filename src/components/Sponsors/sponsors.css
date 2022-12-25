@@ -1,148 +1,154 @@
-.sponsors-main{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* height: 100vh; */
-    background-color: #001432;
-    z-index: 100;
+.sponsors-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 100vh; */
+  background-color: #001432;
+  z-index: 100;
 }
 
 @font-face {
-    font-family: headingFont;
-    src: url("./Spartan-Regular.ttf");
- }
-
-.sponsor-heading{
-    font-family: headingFont;
-    font-size: 50px;
-    color: white;
-    margin: 40px;
+  font-family: headingFont;
+  src: url('./Spartan-Regular.ttf');
 }
 
-.sponsors-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.sponsor-heading {
+  font-family: headingFont;
+  font-size: 50px;
+  color: white;
+  margin: 40px;
 }
 
-.sponsor-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    height: 150px;
-    width: 500px;
-    margin: 8px;
-    background-image: linear-gradient(135deg, #130428 0%, #251043 55%, #38126D 80%, #261045 95%, #190634 100%);
+.sponsors-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.sponsor-image{
-    display: flex;
-    justify-content: center;
-    /* background-image: url("./images/cisco.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
-    height: 80px;
-    width: 120px;
-    margin: 0 10px;
+.sponsor-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 150px;
+  width: 500px;
+  margin: 8px;
+  background-image: linear-gradient(
+    135deg,
+    #130428 0%,
+    #251043 55%,
+    #38126d 80%,
+    #261045 95%,
+    #190634 100%
+  );
 }
 
-.sponsor-image img{
-    width:120px;
+.sponsor-image {
+  display: flex;
+  justify-content: center;
+  /* background-image: url("./images/cisco.svg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 80px;
+  width: 120px;
+  margin: 0 10px;
 }
 
-.sponsor-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items:flex-start;
-    padding: 10px;
-    width: 70%;
+.sponsor-image img {
+  width: 120px;
+}
+
+.sponsor-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  width: 70%;
 }
 
 @font-face {
-    font-family: titleFont;
-    src: url("./Poppins-Regular.otf");
- }
-.sponsor-title{
-    font-family: titleFont;
-    font-size: 26px;
-    margin: 3px 0;
-    color: white;
+  font-family: titleFont;
+  src: url('./Poppins-Regular.otf');
+}
+.sponsor-title {
+  font-family: titleFont;
+  font-size: 26px;
+  margin: 3px 0;
+  color: white;
 }
 
-.sponsor-description{
-    font-family: titleFont;
-    font-size: 10px;
-    color: white;
-    margin: 3px 0;
+.sponsor-description {
+  font-family: titleFont;
+  font-size: 10px;
+  color: white;
+  margin: 3px 0;
 }
 
-.learn-more-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    border-radius: 5px;
-    width: 100px;
-    height: 30px;
-    color: white;
-    background-color: #2C1250;
-    border: 2px solid #693B93;
-    margin: 3px 0;
+.learn-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: #2c1250;
+  border: 2px solid #693b93;
+  margin: 3px 0;
 }
 
 @media screen and (max-width: 900px) {
-    .sponsor-card{
-        width: 400px;
-        height: 100px;
-        margin: 10px;
-    }
-    .sponsor-description{
-        font-size: 8px;
-    }
-    .learn-more-btn{
-        width: 80px;
-        height: 20px;
-        /* border-radius: 2px; */
-        font-size: 8px;
-    }
+  .sponsor-card {
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+  }
+  .sponsor-description {
+    font-size: 8px;
+  }
+  .learn-more-btn {
+    width: 80px;
+    height: 20px;
+    /* border-radius: 2px; */
+    font-size: 8px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .sponsor-heading{
-        font-size: 30px;
-    }
-    .sponsor-card{
-        width: 270px;
-        height: 100px;
-        margin: 5px;
-    }
-    .sponsor-image{
-        width: 80px;
-    }
-    .sponsor-image img{
-        width: 80px;
-    }
-    .sponsor-title{
-        font-size: 15px;
-    }
-    .sponsor-description{
-        font-size: 8px;
-    }
-    .learn-more-btn{
-        width: 80px;
-        height: 20px;
-        /* border-radius: 2px; */
-        font-size: 8px;
-    }
+  .sponsor-heading {
+    font-size: 30px;
+  }
+  .sponsor-card {
+    width: 270px;
+    height: 100px;
+    margin: 5px;
+  }
+  .sponsor-image {
+    width: 80px;
+  }
+  .sponsor-image img {
+    width: 80px;
+  }
+  .sponsor-title {
+    font-size: 15px;
+  }
+  .sponsor-description {
+    font-size: 8px;
+  }
+  .learn-more-btn {
+    width: 80px;
+    height: 20px;
+    /* border-radius: 2px; */
+    font-size: 8px;
+  }
 }
-
