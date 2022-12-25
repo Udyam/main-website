@@ -22,20 +22,35 @@ function Updates() {
               </p>
             </div> */}
           <div className="update-content">
-            <p className='update-paragraph udyam-background-light'>
-              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udyam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udyam-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph udyam-background-light'>
-              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udyam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udyam-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph udyam-background-light'>
-              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udyam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udyam-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph udyam-background-light'>
-              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udyam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udyam-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph udyam-background-light'>
-              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udyam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udyam-background-dark" href="#">
+                Register
+              </a>
             </p>
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
@@ -59,20 +74,35 @@ function Updates() {
               </p>
             </div> */}
           <div className="update-content">
-          <p className='update-paragraph udgam-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udgam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udgam-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph udgam-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udgam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udgam-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph udgam-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udgam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udgam-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph udgam-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udgam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udgam-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph udgam-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            <p className="update-paragraph udgam-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="udgam-background-dark" href="#">
+                Register
+              </a>
             </p>
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
@@ -97,20 +127,35 @@ function Updates() {
               </p>
             </div> */}
           <div className="update-content">
-          <p className='update-paragraph mashal-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            <p className="update-paragraph mashal-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="mashal-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph mashal-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            <p className="update-paragraph mashal-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="mashal-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph mashal-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            <p className="update-paragraph mashal-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="mashal-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph mashal-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            <p className="update-paragraph mashal-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="mashal-background-dark" href="#">
+                Register
+              </a>
             </p>
-            <p className='update-paragraph mashal-background-light'>
-              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            <p className="update-paragraph mashal-background-light">
+              Event <strong>xyz</strong> is live. Register{' '}
+              <a className="mashal-background-dark" href="#">
+                Register
+              </a>
             </p>
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
