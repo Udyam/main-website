@@ -4,8 +4,8 @@ import './Navbar.css';
 
 const Navbar = () => {
   // const btn = document.querySelector('menu span i')
-  const [click, setclick] = useState(true);
-  var navLinks = document.querySelector('.nav-links');
+  const [click, setclick] = useState(false);
+  const navLinks = document.querySelector('.nav-links');
   const menuText = document.querySelector('.menu-text');
 
   function expand() {
