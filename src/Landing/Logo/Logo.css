@@ -46,14 +46,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 6;
   margin: auto 20px;
   user-select: none;
 }
 
 .rings {
   position: absolute;
-  z-index: 0;
+  z-index: 5;
   user-select: none;
   /* top: 0; */
 }
@@ -88,7 +88,7 @@
 }
 
 .ring-6 {
-  z-index: -2;
+  z-index: 3;
   bottom: -55px;
 }
 
@@ -113,19 +113,23 @@
   filter: opacity(0.3);
   background-color: rgba(255, 255, 255, 0.2);
   user-select: none;
-  z-index: -2;
+  z-index: 3;
 }
 
 .main-event-logo {
   position: relative;
   margin: auto;
-  z-index: 1;
+  z-index: 6;
   transition: all 0.5s ease;
 }
 
 .main-event-logo:hover {
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
+}
+
+.button-container {
+  z-index: 1;
 }
 
 @media screen and (max-height: 800px) {
