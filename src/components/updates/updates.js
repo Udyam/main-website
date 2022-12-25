@@ -5,13 +5,12 @@ function Updates() {
     <>
       <div className="article"></div>
 
-
       <section className="updates-main-container">
-        <div className="updates-udyam-head-container ">
+        <div className="updates-udyam-head-container udyam-background-dark">
           <h1>Udyam Updates</h1>
         </div>
 
-        <div className="updates-udyam-content">
+        <div className="updates-udyam-content udyam-background-dark">
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
                 Udyam is the Annual Technological Festival of the department of Electronics
@@ -22,25 +21,33 @@ function Updates() {
                 that the grand event is again returning this spring as UDYAM 23!
               </p>
             </div> */}
-          <div  className="update-content">
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
+          <div className="update-content">
+            <p className='update-paragraph udyam-background-light'>
+              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph udyam-background-light'>
+              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph udyam-background-light'>
+              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph udyam-background-light'>
+              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph udyam-background-light'>
+              Event <strong>xyz</strong> is live. Register   <a className='udyam-background-dark' href="#">Register</a>
+            </p>
+            
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div> */}
         </div>
 
-
-
-        <div className="updates-udgam-head-container ">
+        <div className="updates-udgam-head-container udgam-background-dark">
           <h1>Udgam Updates</h1>
         </div>
-        <div className="updates-udgam-content">
+        <div className="updates-udgam-content udgam-background-dark">
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
                 Udgam is the Annual Cultural Festival of the department of Electronics Engineering,
@@ -53,26 +60,31 @@ function Updates() {
               </p>
             </div> */}
           <div className="update-content">
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
+          <p className='update-paragraph udgam-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph udgam-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph udgam-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph udgam-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph udgam-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='udgam-background-dark' href="#">Register</a>
+            </p>
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div> */}
         </div>
 
-
-
-
-        <div className="row updates-mashal-head-container ">
+        <div className="updates-mashal-head-container mashal-background-dark">
           <h1>Mashal updates</h1>
         </div>
-        <div className="updates-mashal-content">
-
+        <div className="updates-mashal-content mashal-background-dark">
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12">
               <p>
                 Mashal is the sports festival of the department of Electronics Engineering, IIT
@@ -86,20 +98,27 @@ function Updates() {
               </p>
             </div> */}
           <div className="update-content">
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
-            <p>Event <strong>xyz</strong> is live. Register <a href="#">here</a></p>
+          <p className='update-paragraph mashal-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph mashal-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph mashal-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph mashal-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            </p>
+            <p className='update-paragraph mashal-background-light'>
+              Event <strong>xyz</strong> is live. Register <a className='mashal-background-dark' href="#">Register</a>
+            </p>
           </div>
           {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
               <img src="https://media.istockphoto.com/id/1404221665/photo/abstract-defocused-lens-color-gradient-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=i-Eqbc0oD8b-Kt7-sARR5n6JXECi0ihjQaRyQK0h6PU="></img>
             </div> */}
-
         </div>
       </section>
-
     </>
   );
 }
