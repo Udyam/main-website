@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Updates from './components/updates/updates';
+import Sponsers from './components/Sponsors/sponsors';
 import Footer from './components/footer/footer';
 import About from './components/AboutUS/AboutUs';
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Home />
                 <About />
                 <Updates />
+                <Sponsers />
                 <Footer />
               </>
             }
