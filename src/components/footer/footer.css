@@ -4,9 +4,12 @@
   background-repeat: no-repeat;
   height: 500px;
   width: 100vw;
+  overflow-x: hidden;
 }
 .main {
   max-width: 100vw;
+  overflow: hidden;
+  /* position: fixed; */
 }
 .items {
   display: flex;
@@ -14,6 +17,7 @@
   position: relative;
   top: 23%;
   margin-left: 3.5%;
+  overflow-x: hidden;
 }
 .px {
   padding: 0 5px;
