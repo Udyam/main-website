@@ -22,7 +22,7 @@ const Faq = () => {
         <div className="faq">
           <div className="left">
             <div>
-              <div>
+              <div className="wanttoknow">
                 <h1>want to</h1>
                 <h1>know</h1>
                 <h1>more ?</h1>
@@ -60,42 +60,57 @@ const Faq = () => {
 
 const data = [
   {
-    question: '1. What is blah blah...?',
+    question: 'Who developed JavaScript, and what was the first name of JavaScript?',
     answer:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
-    question: '2. What is blah blah...?',
+    question: 'What is one drive?',
     answer:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
-    question: '3. What is blah blah...?',
+    question: 'How much OneDrive storage do I get with MS?',
     answer:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
-    question: '4. What is blah blah...?',
+    question: 'What happens to the files ?',
     answer:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
-    question: '5. What is blah blah...?',
+    question: 'which udyam event is best?',
     answer:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
-    question: '6. What is blah blah...?',
+    question: 'Should I use my existing account ?',
     answer:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
-    question: '7. What is blah blah...?',
+    question: 'Do I need to keep my password safe?',
     answer:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
-    question: '8. What is blah blah...?',
+    question: 'what is the procedure to change password?',
+    answer:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+  },
+  {
+    question: 'What happens when my trial ends?',
+    answer:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+  },
+  {
+    question: 'How do i cancel my trial before it ends?',
+    answer:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+  },
+  {
+    question: 'Can I participate in more than 3 events?',
     answer:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   }
