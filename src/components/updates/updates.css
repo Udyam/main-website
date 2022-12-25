@@ -11,14 +11,12 @@
 
 .update-content a:hover {
   cursor: pointer;
-  
 }
 
 body {
   font: clamp(11px, 2.5vmin, 18px) / 1.4 sans-serif;
   color: #252525;
 }
-
 
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
@@ -90,28 +88,28 @@ body {
   line-height: 1.5;
   font-size: 2rem;
 }
-.update-paragraph{
+.update-paragraph {
   border: 1vh;
   border-radius: 1vh;
   margin: 1vh;
   padding: 1vh 3vh;
 }
-.udyam-background-light{
+.udyam-background-light {
   background-color: rgb(75 166 231);
 }
-.udgam-background-light{
+.udgam-background-light {
   background-color: rgb(125 106 230);
 }
-.mashal-background-light{
+.mashal-background-light {
   background-color: rgb(46 46 53);
 }
-.udyam-background-dark{
-  background-color:rgba(43, 139, 207, 255);
+.udyam-background-dark {
+  background-color: rgba(43, 139, 207, 255);
 }
-.udgam-background-dark{
+.udgam-background-dark {
   background-color: rgba(78, 65, 149, 255);
 }
-.mashal-background-dark{
+.mashal-background-dark {
   background-color: rgba(22, 22, 25, 255);
 }
 
@@ -125,10 +123,9 @@ body {
     color: white;
     font-style: italic;
   }
-  
+
   .update-content a:hover {
     cursor: pointer;
-    
   }
   .updates-udyam-head-container {
     background-color: rgba(43, 139, 207, 255);
@@ -200,9 +197,9 @@ body {
     line-height: 1.5;
     font-size: 2.5vh;
   }
-  .update-paragraph{
+  .update-paragraph {
     border: 0.5vh;
-    
+
     border-radius: 0.8vh;
     margin: 0.8vh;
     padding: 0.5vh 1vh;
@@ -219,10 +216,9 @@ body {
     color: white;
     font-style: italic;
   }
-  
+
   .update-content a:hover {
     cursor: pointer;
-    
   }
   .updates-udyam-head-container {
     background-color: rgba(43, 139, 207, 255);
@@ -297,9 +293,9 @@ body {
     line-height: 1.5;
     font-size: 2.5vh;
   }
-  .update-paragraph{
+  .update-paragraph {
     border: 1vh;
-    
+
     border-radius: 1vh;
     margin: 1vh;
     padding: 1vh 1vh;
