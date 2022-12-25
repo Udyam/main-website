@@ -233,9 +233,8 @@ body {
 @media (max-width: 768px) and (min-width: 481px) {
   .update-content a {
     position: relative;
-    left: 10vh;
-    border: 0.5vh;
-    border-radius: 1vh;
+    border: 0.1vh;
+    border-radius: 0.6vh;
     padding: 1vh 1vh;
     text-decoration: none;
     color: white;
@@ -262,7 +261,7 @@ body {
   .updates-udyam-content {
     background-color: rgba(43, 139, 207, 255);
     color: white;
-    padding: 3vh 2vh;
+    padding: 3vh 1vh;
     position: sticky;
     height: 100vh;
     top: 8vh;
@@ -324,6 +323,6 @@ body {
     
     border-radius: 1vh;
     margin: 1vh;
-    padding: 1vh 3vh;
+    padding: 1vh 1vh;
   }
 }
