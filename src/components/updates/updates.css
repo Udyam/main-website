@@ -94,7 +94,6 @@ body {
   margin: 1vh;
   padding: 1vh 3vh;
 }
-
 .update-information {
   width: 80%;
   float: left;
@@ -104,7 +103,6 @@ body {
   float: right;
   text-align: right;
 }
-
 .udyam-background-light {
   background-color: rgb(75 166 231);
 }
