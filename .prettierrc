@@ -5,5 +5,9 @@
   "singleQuote": true,
   "trailingComma": "none",
   "jsxBracketSameLine": true,
+<<<<<<< HEAD
   "endOfLine":"auto"
+=======
+  "endOfLine": "auto"
+>>>>>>> 7f5cd938f29a1aefcce5e6fafe496ea5312d63b6
 }

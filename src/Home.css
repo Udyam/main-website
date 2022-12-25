@@ -1,8 +1,17 @@
 .Home {
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> 7f5cd938f29a1aefcce5e6fafe496ea5312d63b6
   width: 100%;
   height: 100%;
   background-color: rgb(2, 2, 49);
   left: 0;
   top: 0;
+<<<<<<< HEAD
   position: absolute;
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> 7f5cd938f29a1aefcce5e6fafe496ea5312d63b6
 }

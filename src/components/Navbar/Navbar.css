@@ -1,27 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .container {
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   display: flex;
   background: #120b2c;
+  font-family: 'Poppins', sans-serif;
 }
 nav {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 .nav-links {
   display: flex;
-  margin-left: 1rem;
+  margin-left: -3rem;
   text-decoration: none;
+  /* gap: 2rem; */
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
   align-self: center;
   width: 80%;
 }
@@ -35,14 +37,19 @@ nav {
 }
 .menu {
   position: absolute;
-  right: 10%;
+  right: 8%;
+  background-color: #120b2c;
   height: 36px;
-  width: 40px;
+  width: 44px;
   font-size: 22px;
   align-self: center;
-  border-radius: 1px;
+  cursor: pointer;
+  /* border-radius: 1px; */
   /* padding: 5px 10px; */
   float: right;
+}
+.menu i {
+  color: #fff;
 }
 .menu-text {
   font-size: 1.2rem;
@@ -51,32 +58,49 @@ nav {
   height: 4vh;
   text-align: center;
   position: absolute;
-  top: 3.5%;
-  right: 17.5%;
-}
-.show {
-  transition: expand 4s ease-in-out;
+  top: 3%;
+  right: 15.5%;
 }
 @keyframes expand {
   from {
     width: 0%;
   }
   to {
-    width: 80%;
+    width: 100%;
   }
 }
+.show {
+  top: 0%;
+  display: flex;
+  transition: expand 4s ease-in-out;
+}
+
 .hide {
   display: none;
 }
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: -50%;
+  }
+  80% {
+    left: -30%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 @media screen and (max-width: 800px) and (min-width: 600px) {
   .nav-links li a {
-    font-size: 0.94rem;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 600px) {
   .nav-links {
     position: absolute;
-    width: 100vw;
+    width: 110vw;
     height: 100vh;
     background: #4318de;
     display: flex;
@@ -87,28 +111,19 @@ nav {
     z-index: 2;
   }
   .nav-links:focus {
-    transition: slide 12s ease-in-out;
+    transition: slide 12s ease;
   }
-  @keyframes slide {
-    0% {
-      transform: translateY(-100%);
-    }
-    20% {
-      transform: translateY(-50%);
-    }
-    80% {
-      transform: translateY(-10%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
+
   .nav-links li {
     padding: 2rem;
   }
   .nav-links li:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.2);
+  }
+  .menu-text {
+    right: 25%;
+    top: 3%;
   }
 
   .menu {
