@@ -140,7 +140,7 @@
     transform: scale(0.5);
   }
 }
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 600px) {
   .main-container-for-logo {
     position: absolute;
     right: unset;
