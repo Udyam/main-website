@@ -12,7 +12,7 @@
     left: 0;
     width: 75.4%;
     height: 90%;
-    z-index:-100;
+    z-index:99;
     background-image: linear-gradient(to right, rgb(21, 21, 246), cyan);
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 50%);
 }
