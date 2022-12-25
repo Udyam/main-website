@@ -90,7 +90,7 @@
 }
 @media screen and (max-width: 600px) {
   .px {
-    height: 14.5px;
+    height: 16.5px;
     padding: 0 0.5%;
   }
   .items {
@@ -103,7 +103,7 @@
 }
 @media screen and (max-width: 500px) {
   .px {
-    height: 12.5px;
+    height: 14.5px;
     padding: 0 0.5%;
   }
   .items {
@@ -116,7 +116,7 @@
 }
 @media screen and (max-width: 450px) {
   .px {
-    height: 10.5px;
+    height: 12.5px;
     padding: 0 0.5%;
   }
   .items {
@@ -129,7 +129,7 @@
 }
 @media screen and (max-width: 400px) {
   .px {
-    height: 8.5px;
+    height: 10.5px;
     padding: 0 0.5%;
   }
   .items {
@@ -142,7 +142,7 @@
 }
 @media screen and (max-width: 350px) {
   .px {
-    height: 6.5px;
+    height: 8.5px;
     padding: 0 0.5%;
   }
   .items {
@@ -155,7 +155,7 @@
 }
 @media screen and (max-width: 300px) {
   .px {
-    height: 6.5px;
+    height: 8.5px;
     padding: 0 0.6%;
   }
   .items {

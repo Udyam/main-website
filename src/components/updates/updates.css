@@ -94,6 +94,17 @@ body {
   margin: 1vh;
   padding: 1vh 3vh;
 }
+
+.update-information {
+  width: 80%;
+  float: left;
+}
+.event-update-link {
+  width: 20%;
+  float: right;
+  text-align: right;
+}
+
 .udyam-background-light {
   background-color: rgb(75 166 231);
 }
@@ -204,9 +215,18 @@ body {
     margin: 0.8vh;
     padding: 0.5vh 1vh;
   }
+  .update-information {
+    width: 75%;
+    float: left;
+  }
+  .event-update-link {
+    width: 25%;
+    float: right;
+    text-align: right;
+  }
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
+@media (max-width: 820px) and (min-width: 481px) {
   .update-content a {
     position: relative;
     border: 0.1vh;
@@ -300,5 +320,14 @@ body {
     border-radius: 1vh;
     margin: 1vh;
     padding: 1vh 1vh;
+  }
+  .update-information {
+    width: 75%;
+    float: left;
+  }
+  .event-update-link {
+    width: 25%;
+    float: right;
+    text-align: right;
   }
 }
