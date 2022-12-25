@@ -4,8 +4,8 @@ import './Navbar.css';
 
 const Navbar = () => {
   // const btn = document.querySelector('menu span i')
-  const [click, setclick] = useState(true);
-  var navLinks = document.querySelector('.nav-links');
+  const [click, setclick] = useState(false);
+  const navLinks = document.querySelector('.nav-links');
   const menuText = document.querySelector('.menu-text');
 
   function expand() {
@@ -15,7 +15,6 @@ const Navbar = () => {
     // navLinks.classList.add('show')
     if (click === true) {
       navLinks.style.display = 'flex';
-      // navLinks.classList.add('.show');
       menuText.style.display = 'none';
     } else {
       navLinks.style.display = 'none';
