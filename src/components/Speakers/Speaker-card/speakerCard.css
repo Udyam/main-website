@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 34rem;
+  height: 17rem;
+}
+.speaker-card {
+  display: flex;
+  width: 34rem;
+  height: 14rem;
+}
+
+.speaker-card .card-front {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.37);
+  backface-visibility: hidden;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: 1s;
+  z-index: 2;
+  border-radius: 10px 10px 0 0;
+}
+.speaker-card:hover .card-front {
+  transform: perspective(1000px) rotateY(180deg);
+}
+.links-container-speakers {
+  display: flex;
+  background-color: #693b93;
+  border-radius: 0 0 15px 15px;
+  width: 34rem;
+  height: 3rem;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.speaker-card .card-back {
+  position: absolute;
+  display: flex;
+  width: 34rem;
+  height: 14rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.37);
+  backface-visibility: hidden;
+  transform: perspective(1000px) rotateY(-180deg);
+  transition: 1s;
+  z-index: 2;
+}
+.speaker-card:hover .card-back {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.card-front {
+  justify-content: space-around;
+}
+.card-front h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-bottom: 0px;
+  height: 44%;
+}
+.card-front .card-image {
+  display: flex;
+  height: 13rem;
+  align-self: center;
+}
+.card-front .card-front-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.card-front .card-front-content p {
+  text-align: center;
+  font-family: 'Iceland', cursive;
+  font-size: 1.7rem;
+}

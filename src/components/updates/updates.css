@@ -9,6 +9,9 @@
   font-style: italic;
 }
 
+body{
+  scroll-behavior: smooth;
+}
 .update-content a:hover {
   cursor: pointer;
 }
@@ -142,7 +145,7 @@ body {
     height: 6vh;
     padding: 1vh;
     font-size: 2vh;
-    position: sticky;
+    position: sticky !important;
     z-index: 1;
     bottom: 12vh;
     top: 0vh;
@@ -152,8 +155,8 @@ body {
     background-color: rgba(43, 139, 207, 255);
     color: white;
     padding: 3vh 1vh;
-    position: sticky;
-    height: 100vh;
+    position: sticky !important;
+    height: 94vh;
     top: 6vh;
     padding-bottom: 0;
   }
@@ -164,7 +167,7 @@ body {
     height: 6vh;
     padding: 1vh;
     font-size: 2vh;
-    position: sticky;
+    position: sticky !important;
     z-index: 1;
     bottom: 6vh;
     top: 6vh;
@@ -174,10 +177,10 @@ body {
     background-color: rgba(78, 65, 149, 255);
     color: white;
     padding: 3vh 1vh;
-    position: sticky;
-    height: 100vh;
+    position: sticky !important;
+    height: 88vh;
     top: 12vh;
-    padding-bottom: 8em;
+    /* padding-bottom: 8em; */
   }
 
   .updates-mashal-head-container {
@@ -186,7 +189,7 @@ body {
     height: 6vh;
     padding: 1vh;
     font-size: 2vh;
-    position: sticky;
+    position: sticky !important;
     z-index: 1;
     bottom: 0vh;
     top: 12vh;
@@ -196,10 +199,10 @@ body {
     background-color: rgba(22, 22, 25, 255);
     color: white;
     padding: 3vh 1vh;
-    position: sticky;
-    height: 100vh;
+    position: sticky !important;
+    height: 82vh;
     top: 18vh;
-    padding-bottom: 8em;
+    /* padding-bottom: 8em; */
   }
 
   .update-content {
@@ -226,7 +229,6 @@ body {
 
 @media (max-width: 820px) and (min-width: 481px) {
   .update-content a {
-    position: relative;
     border: 0.1vh;
     border-radius: 0.6vh;
     padding: 1vh 1vh;
@@ -244,7 +246,7 @@ body {
     height: 8vh;
     padding: 2vh 2vh;
     font-size: 2.5vh;
-    position: sticky;
+    position: sticky !important;
     z-index: 1;
     bottom: 16vh;
     top: 0vh;
@@ -255,8 +257,8 @@ body {
     background-color: rgba(43, 139, 207, 255);
     color: white;
     padding: 3vh 1vh;
-    position: sticky;
-    height: 100vh;
+    position: sticky !important;
+    height: 92vh;
     top: 8vh;
     padding-bottom: 0;
   }
@@ -267,7 +269,7 @@ body {
     height: 8vh;
     padding: 2vh 2vh;
     font-size: 2.5vh;
-    position: sticky;
+    position: sticky !important;
     z-index: 1;
     bottom: 8vh;
     top: 8vh;
@@ -278,8 +280,8 @@ body {
     background-color: rgba(78, 65, 149, 255);
     color: white;
     padding: 3vh 2vh;
-    position: sticky;
-    height: 100vh;
+    position: sticky !important;
+    height: 84vh;
     top: 16vh;
     padding-bottom: 8em;
   }
@@ -290,7 +292,7 @@ body {
     height: 8vh;
     padding: 2vh 2vh;
     font-size: 2.5vh;
-    position: sticky;
+    position: sticky !important;
     z-index: 1;
     bottom: 0vh;
     top: 16vh;
@@ -301,8 +303,8 @@ body {
     background-color: rgba(22, 22, 25, 255);
     color: white;
     padding: 3vh 2vh;
-    position: sticky;
-    height: 100vh;
+    position: sticky !important;
+    height: 76vh;
     top: 24vh;
     padding-bottom: 8em;
   }
@@ -311,7 +313,6 @@ body {
     line-height: 1.5;
     font-size: 2.5vh;
   }
-
   .update-paragraph {
     border: 1vh;
 

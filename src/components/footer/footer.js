@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import './footer.css';
 import Main from './images/Main.svg';
