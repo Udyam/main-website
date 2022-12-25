@@ -10,15 +10,20 @@ body {
   scroll-behavior: smooth;
 }
 
-a {
+.update-content a {
+  position: relative;
+
+  border: 0.5vh;
+  border-radius: 1vh;
+  padding: 1vh 1vh;
   text-decoration: none;
   color: white;
   font-style: italic;
 }
 
-a:hover {
+.update-content a:hover {
   cursor: pointer;
-  text-decoration: underline;
+  
 }
 
 body {
@@ -106,8 +111,46 @@ body {
   line-height: 1.5;
   font-size: 2rem;
 }
+.update-paragraph{
+  border: 1vh;
+  border-radius: 1vh;
+  margin: 1vh;
+  padding: 1vh 3vh;
+}
+.udyam-background-light{
+  background-color: rgb(75 166 231);
+}
+.udgam-background-light{
+  background-color: rgb(125 106 230);
+}
+.mashal-background-light{
+  background-color: rgb(46 46 53);
+}
+.udyam-background-dark{
+  background-color:rgba(43, 139, 207, 255);
+}
+.udgam-background-dark{
+  background-color: rgba(78, 65, 149, 255);
+}
+.mashal-background-dark{
+  background-color: rgba(22, 22, 25, 255);
+}
 
 @media (max-width: 480px) {
+  .update-content a {
+    /* position: relative; */
+    border: 0.1vh;
+    border-radius: 0.6vh;
+    padding: 0.4vh 0.6vh;
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+  }
+  
+  .update-content a:hover {
+    cursor: pointer;
+    
+  }
   .updates-udyam-head-container {
     background-color: rgba(43, 139, 207, 255);
     color: white;
@@ -178,9 +221,31 @@ body {
     line-height: 1.5;
     font-size: 2.5vh;
   }
+  .update-paragraph{
+    border: 0.5vh;
+    
+    border-radius: 0.8vh;
+    margin: 0.8vh;
+    padding: 0.5vh 1vh;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 481px) {
+  .update-content a {
+    position: relative;
+    left: 10vh;
+    border: 0.5vh;
+    border-radius: 1vh;
+    padding: 1vh 1vh;
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+  }
+  
+  .update-content a:hover {
+    cursor: pointer;
+    
+  }
   .updates-udyam-head-container {
     background-color: rgba(43, 139, 207, 255);
     color: white;
@@ -253,5 +318,12 @@ body {
   .update-content {
     line-height: 1.5;
     font-size: 2.5vh;
+  }
+  .update-paragraph{
+    border: 1vh;
+    
+    border-radius: 1vh;
+    margin: 1vh;
+    padding: 1vh 3vh;
   }
 }
