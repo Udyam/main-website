@@ -1,0 +1,18 @@
+/* .contentCard {
+  height: 80vh;
+  background-image: linear-gradient(to right, rgb(21, 21, 246), cyan);
+  z-index: 10;
+  position: absolute;
+  right: 20%;
+} */
+
+.contentCard {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 75.4%;
+    height: 90%;
+    z-index:-100;
+    background-image: linear-gradient(to right, rgb(21, 21, 246), cyan);
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 50%);
+}
