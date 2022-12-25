@@ -1,20 +1,22 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import './Logo.css';
 import './CircularButton.css';
 
 const Logo = () => {
-  const [angle, setAngle] = React.useState(90);
+  const [angle, setAngle] = React.useState(0);
   const logoClick = () => {
     document.getElementsByClassName('button-container')[0].animate(
       [
         // keyframes
         { transform: 'rotate(' + angle + 'deg)' },
+
         { transform: 'rotate(' + (angle + 120) + 'deg)' }
         // { transform: 'scale(1)' }
       ],
       {
         // timing options
-        duration: 2000,
+        duration: 800,
         iterations: 1,
         fill: 'forwards'
       }
@@ -24,6 +26,7 @@ const Logo = () => {
 
   return (
     <>
+      <div className="empty-div"></div>
       <div className="main-container-for-logo">
         <div className="main-logo-container">
           <div className="ring-box-1">
@@ -59,7 +62,7 @@ const Logo = () => {
           />
         </div>
         <div className="button-container">
-          <img className="dial-button" src="/assets/rings/final_dial.svg" alt="" />
+          <img className="dial-button" src="/assets/New Rings/Group 1949dialWithring.svg" alt="" />
         </div>
       </div>
     </>
