@@ -21,11 +21,8 @@ function App() {
                 <About />
                 <Updates />
                 <Sponsers />
-<<<<<<< HEAD
-                <Faq />
-=======
                 <Speakers />
->>>>>>> 936f88fa4d250c1de96269f86ba39c45b1c92334
+                <Faq />
                 <Footer />
               </>
             }
