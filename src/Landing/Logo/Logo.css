@@ -4,7 +4,7 @@
 .main-container-for-logo {
   height: 600px;
   width: 600px;
-  position: fixed;
+  position: absolute;
   top: 20vh;
   right: 5vw;
   display: flex;
@@ -140,9 +140,9 @@
     transform: scale(0.5);
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .main-container-for-logo {
-    position: relative;
+    position: absolute;
     right: unset;
     top: unset;
     transform: scale(0.5);
