@@ -101,8 +101,7 @@ nav {
   ::-webkit-scrollbar {
     display: none;
   }
-  
-  
+
   .nav-links {
     overflow: hidden;
     position: fixed;
@@ -131,7 +130,6 @@ nav {
     right: -23%;
     top: 20%;
     display: flex;
-    
   }
 
   .menu {
@@ -140,13 +138,13 @@ nav {
     right: 14%;
   }
 }
-@media screen and (max-width: 450px){
-  .menu{
+@media screen and (max-width: 450px) {
+  .menu {
     right: 22%;
   }
 }
-@media screen and (max-width: 350px){
-  .menu{
+@media screen and (max-width: 350px) {
+  .menu {
     right: 27%;
   }
 }
