@@ -57,9 +57,9 @@ nav {
   color: #fff;
   height: 4vh;
   text-align: center;
-  position: absolute;
-  top: 3%;
-  right: 15.5%;
+  position: relative;
+  top: 24%;
+  right: -32%;
 }
 @keyframes expand {
   from {
@@ -98,17 +98,22 @@ nav {
   }
 }
 @media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .nav-links {
-    position: absolute;
+    overflow: hidden;
+    position: fixed;
     width: 110vw;
-    height: 100vh;
+    height: 107vh;
     background: #4318de;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     top: 0%;
-    z-index: 2;
+    z-index: 60;
   }
   .nav-links:focus {
     transition: slide 12s ease;
@@ -122,11 +127,24 @@ nav {
     transform: scale(1.2);
   }
   .menu-text {
-    right: 25%;
-    top: 3%;
+    right: -23%;
+    top: 20%;
+    display: flex;
   }
 
   .menu {
-    z-index: 3;
+    z-index: 63;
+    position: fixed;
+    right: 14%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu {
+    right: 22%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .menu {
+    right: 27%;
   }
 }
