@@ -9,16 +9,8 @@
   font-style: italic;
 }
 
-body {
-  scroll-behavior: smooth;
-}
 .update-content a:hover {
   cursor: pointer;
-}
-
-body {
-  font: clamp(11px, 2.5vmin, 18px) / 1.4 sans-serif;
-  color: #252525;
 }
 
 .updates-udyam-head-container {
