@@ -127,10 +127,10 @@ body {
 .square2 {
   position: relative;
   left: 1vw;
-  top: 3vw;
+  top: 2vw;
   z-index: 2;
   width: 22vw;
-  height: 22vw;
+  height: 21vw;
   transform: perspective(200px) rotateY(10deg) skew(5deg);
 }
 .squares {
@@ -138,7 +138,7 @@ body {
   position: relative;
   left: 1vw;
   margin-bottom: 0;
-  bottom: 17vw;
+  bottom: 15vw;
 }
 
 @media (max-width: 850px) {
@@ -162,19 +162,17 @@ body {
   top: 13vw;
 }
 .dot {
-  height: 8px;
-  width: 8px;
+  height: 10px;
+  width: 10px;
   background-color: rgba(62, 84, 211, 1);
   display: inline-block;
   border-radius: 50%;
-  margin: 0;
   margin-right: 1vw;
 }
 
 .dot-pair {
-  margin: 0;
+  margin-bottom: -0.5vw;
   padding: 0;
-  position: relative;
 }
 
 .square2 img {
@@ -184,12 +182,12 @@ body {
   width: 25vw;
   height: 24vw;
   left: 0;
-  top: 26vw;
+  top: 25vw;
   transform: none;
 }
 .squares:hover .square2 {
   width: 23vw;
-  height: 24vw;
+  height: 22vw;
   transform: none;
 }
 
@@ -273,12 +271,12 @@ body {
     width: 42vw;
     height: 40vw;
     left: 0;
-    top: 42vw;
+    top: 41vw;
     transform: none;
   }
   .squares:hover .square2 {
     width: 40vw;
-    height: 40vw;
+    height: 38vw;
     transform: none;
   }
 }
@@ -291,6 +289,16 @@ body {
     bottom: 20vw;
   }
 }
+@media (min-width: 950px) and (max-width: 1100px) {
+  .dot-pair {
+    margin-bottom: -1vw;
+  }
+}
+@media (min-width: 850px) and (max-width: 950px) {
+  .dot-pair {
+    margin-bottom: -1.5vw;
+  }
+}
 
 @media (max-width: 850px) and (min-width: 600px) {
   .squares {
@@ -301,5 +309,8 @@ body {
   }
   .dots {
     left: 10%;
+  }
+  .dot-pair {
+    margin-bottom: -2.5vw;
   }
 }
