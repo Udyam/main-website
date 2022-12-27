@@ -5,20 +5,15 @@ import './Navbar.css';
 const Navbar = () => {
   // const btn = document.querySelector('menu span i')
   const [click, setclick] = useState(false);
-  const navLinks = document.querySelector('.nav-links');
-  const menuText = document.querySelector('.menu-text');
 
   function expand() {
-    console.log('hi');
     setclick(!click);
-    console.log(click);
-    // navLinks.classList.add('show')
     if (click === true) {
-      navLinks.style.display = 'flex';
-      menuText.style.display = 'none';
+      document.querySelector('.nav-links').style.display = 'flex';
+      document.querySelector('.menu-text').style.display = 'none';
     } else {
-      navLinks.style.display = 'none';
-      menuText.style.display = 'flex';
+      document.querySelector('.nav-links').style.display = 'none';
+      document.querySelector('.menu-text').style.display = 'flex';
     }
   }
 

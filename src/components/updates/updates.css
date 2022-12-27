@@ -94,15 +94,6 @@ body {
   margin: 1vh;
   padding: 1vh 3vh;
 }
-.update-information {
-  width: 80%;
-  float: left;
-}
-.event-update-link {
-  width: 20%;
-  float: right;
-  text-align: right;
-}
 .udyam-background-light {
   background-color: rgb(75 166 231);
 }
@@ -311,7 +302,6 @@ body {
     line-height: 1.5;
     font-size: 2.5vh;
   }
-
   .update-paragraph {
     border: 1vh;
 
