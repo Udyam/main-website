@@ -303,3 +303,7 @@ body {
     left: 10%;
   }
 }
+
+body{
+  overflow-x: hidden;
+}
