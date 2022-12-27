@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 34rem;
   height: 17rem;
+  margin: 1rem 1rem;
 }
 .speaker-card {
   display: flex;
@@ -67,7 +68,7 @@
   letter-spacing: 0.2rem;
   text-align: center;
   margin-bottom: 0px;
-  height: 44%;
+  height: 40%;
 }
 .card-front .card-image {
   display: flex;
@@ -83,4 +84,52 @@
   text-align: center;
   font-family: 'Iceland', cursive;
   font-size: 1.7rem;
+}
+@media screen and (max-width: 700px) {
+  .card-container {
+    width: 25rem;
+    height: 9rem;
+  }
+  .speaker-card {
+    width: 25rem;
+    height: 8rem;
+  }
+  .speaker-card .card-back {
+    width: 25rem;
+    height: 7rem;
+  }
+  .card-front h1 {
+    font-size: 1.8rem;
+  }
+  .card-front .card-front-content p {
+    font-size: 1rem;
+  }
+  .card-front .card-image {
+    height: 7rem;
+  }
+  .links-container-speakers {
+    width: 25rem;
+    height: 2rem;
+  }
+  .links-container-speakers img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-container {
+    width: 21rem;
+  }
+  .speaker-card {
+    width: 21rem;
+  }
+  .speaker-card .card-back {
+    width: 21rem;
+  }
+  .card-front h1 {
+    font-size: 1.4rem;
+  }
+  .links-container-speakers {
+    width: 21rem;
+  }
 }

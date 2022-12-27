@@ -6,7 +6,6 @@
   position: relative;
   justify-content: center;
   z-index: 1;
-  height: 100vh;
   width: 100vw;
 }
 .speakers-gradient {
@@ -15,7 +14,7 @@
   align-self: center;
   width: 580px;
   height: 610px;
-  top: 10rem;
+  top: 8rem;
 
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -38,11 +37,31 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 75rem;
-  height: 40rem;
+  width: 80vw;
+  height: auto;
 }
 .speakers-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1359px) {
+  .speakers-gradient {
+    top: 28rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .speakers-heading {
+    font-size: 3.5rem;
+  }
+  .speakers-gradient {
+    top: 9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .speakers-heading {
+    font-size: 2rem;
+  }
 }

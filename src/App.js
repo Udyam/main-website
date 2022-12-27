@@ -7,6 +7,7 @@ import Speakers from './components/Speakers/Speakers';
 import Sponsers from './components/Sponsors/sponsors';
 import Footer from './components/footer/footer';
 import About from './components/AboutUS/AboutUs';
+import Faq from './components/faq/Faq';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
                 <Updates />
                 <Sponsers />
                 <Speakers />
+                <Faq />
                 <Footer />
               </>
             }

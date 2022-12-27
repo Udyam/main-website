@@ -314,3 +314,7 @@ body {
     margin-bottom: -2.5vw;
   }
 }
+
+body{
+  overflow-x: hidden;
+}
