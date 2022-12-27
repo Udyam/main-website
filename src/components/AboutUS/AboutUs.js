@@ -25,8 +25,7 @@ function AboutUs() {
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
-              }}
-            >
+              }}>
               <h3>UDYAM</h3>
               <div className="content">
                 <p>
@@ -53,8 +52,7 @@ function AboutUs() {
                   backgroundPosition: 'center',
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat'
-                }}
-              ></div>
+                }}></div>
             </div>
           </div>
           <div className="dots">
