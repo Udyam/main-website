@@ -4,6 +4,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.about-head {
+  display: -moz-inline-grid;
+}
 .contain {
   height: auto;
   background-color: rgba(0, 20, 50, 1);
@@ -18,11 +21,6 @@ body {
   font-size: 5vw;
   color: white;
   font-family: 'sparten';
-}
-.base {
-  position: relative;
-  top: -1rem;
-  left: 6rem;
 }
 .base1 {
   display: block;
@@ -95,7 +93,7 @@ body {
   left: 30%;
   margin-top: 1rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   color: rgba(152, 87, 211, 1);
 }
 .content {
@@ -146,7 +144,11 @@ body {
     bottom: 13vw;
   }
 }
-
+@media (min-width: 850px) and (max-width: 950px) {
+  .content {
+    height: 23vw;
+  }
+}
 @media (max-width: 1100px) and (min-width: 850px) {
   .squares {
     bottom: 15vw;
@@ -213,9 +215,6 @@ body {
     left: 5%;
     font-size: 50px;
   }
-  .base {
-    left: 5%;
-  }
   .main-box {
     flex-direction: column;
     align-items: center;
@@ -240,15 +239,18 @@ body {
     width: 90%;
     height: 130vw;
     margin-top: -40vw;
+    text-align: center;
   }
   .content-box h3 {
+    position: static;
+    display: inline-block;
     font-size: 200%;
-    left: 30%;
     margin-top: 15%;
+    padding-bottom: 2rem;
   }
   .content {
     width: 90%;
-    height: 87vw;
+    height: 82vw;
   }
   .content p {
     font-size: 100%;
@@ -266,6 +268,9 @@ body {
     position: relative;
     right: 15vw;
     bottom: 1vw;
+  }
+  .squares {
+    bottom: 17vw;
   }
   .squares:hover .square1 {
     width: 42vw;
@@ -289,18 +294,16 @@ body {
     bottom: 20vw;
   }
 }
-@media (min-width: 950px) and (max-width: 1100px) {
+@media (min-width: 600px) and (max-width: 1100px) {
   .dot-pair {
     margin-bottom: -1vw;
   }
-}
-@media (min-width: 850px) and (max-width: 950px) {
-  .dot-pair {
-    margin-bottom: -1.5vw;
+  .content-box h3 {
+    padding-bottom: 2rem;
   }
 }
 
-@media (max-width: 850px) and (min-width: 600px) {
+@media (max-width: 850px) and (min-width: 700px) {
   .squares {
     left: 5vw;
   }
@@ -310,11 +313,20 @@ body {
   .dots {
     left: 10%;
   }
-  .dot-pair {
-    margin-bottom: -2.5vw;
+}
+@media (max-width: 700px) and (min-width: 600px) {
+  .squares {
+    left: 5vw;
+    bottom: 10vw;
+  }
+  .content {
+    height: 15vw;
+  }
+  .dots {
+    left: 10%;
   }
 }
 
-body{
+body {
   overflow-x: hidden;
 }

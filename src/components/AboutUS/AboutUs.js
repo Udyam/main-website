@@ -8,13 +8,15 @@ function AboutUs() {
     <>
       <div className="contain">
         <div className="head">
-          <h1>ABOUT US</h1>
-        </div>
-        <div className="base">
-          <div className="base1"></div>
-          <div className="base2"></div>
-          <div className="base3"></div>
-          <div className="base4"></div>
+          <div className="about-head">
+            <h1>ABOUT US</h1>
+          </div>
+          <div className="base">
+            <div className="base1"></div>
+            <div className="base2"></div>
+            <div className="base3"></div>
+            <div className="base4"></div>
+          </div>
         </div>
         <div className="main-box">
           <div className="box">
@@ -25,8 +27,7 @@ function AboutUs() {
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
-              }}
-            >
+              }}>
               <h3>UDYAM</h3>
               <div className="content">
                 <p>
@@ -53,8 +54,7 @@ function AboutUs() {
                   backgroundPosition: 'center',
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat'
-                }}
-              ></div>
+                }}></div>
             </div>
           </div>
           <div className="dots">
