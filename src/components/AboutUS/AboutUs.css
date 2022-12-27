@@ -78,6 +78,10 @@ body {
   height: 35vw;
   padding-bottom: 5rem;
   border-radius: 10px;
+  background-image: url('./images/bgContent.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .content-box::-webkit-scrollbar {
   display: none;
@@ -130,6 +134,10 @@ body {
   width: 22vw;
   height: 21vw;
   transform: perspective(200px) rotateY(10deg) skew(5deg);
+  background-image: url('./images/AboutUs.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .squares {
   display: inline-block;

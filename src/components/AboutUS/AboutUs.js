@@ -1,7 +1,5 @@
 import React from 'react';
 import './AboutUs.css';
-import bg from './images/AboutUs.png';
-import bgContent from './images/bgContent.png';
 
 function AboutUs() {
   return (
@@ -20,14 +18,7 @@ function AboutUs() {
         </div>
         <div className="main-box">
           <div className="box">
-            <div
-              className="content-box"
-              style={{
-                backgroundImage: 'url(' + bgContent + ')',
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'
-              }}>
+            <div className="content-box">
               <h3>UDYAM</h3>
               <div className="content">
                 <p>
@@ -47,14 +38,7 @@ function AboutUs() {
             </div>
             <div className="squares">
               <div className="square1"></div>
-              <div
-                className="square2"
-                style={{
-                  backgroundImage: 'url(' + bg + ')',
-                  backgroundPosition: 'center',
-                  backgroundSize: 'cover',
-                  backgroundRepeat: 'no-repeat'
-                }}></div>
+              <div className="square2"></div>
             </div>
           </div>
           <div className="dots">
