@@ -5,17 +5,18 @@
   position: absolute;
   width: 120%;
   height: 120%;
-  right: 10%;
+  left: 10%;
+  top: -10%;
   user-select: none;
-  transform: rotate(-25deg) scale(1) scaleX(1.4) matrix(1, 0, 0.1, 1.2, 0, 0);
+  transform: rotate(125deg) scale(1) scaleY(1.4) scaleX(1.5) matrix(1, 0, 0.1, 1.2, 0, 0);
 }
 
 .main-container-for-logo {
   height: 600px;
   width: 600px;
   position: absolute;
-  top: 25vh;
-  right: 5.5vw;
+  top: 15vh;
+  left: 55vw;
   display: flex;
   justify-content: center;
   transform: scale(0.8);
@@ -110,7 +111,7 @@
   height: 80%;
   width: 80%;
   border-radius: 50%;
-  box-shadow: 1px 1px 100px 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 200px 100px rgba(255, 255, 255, 0.5);
 }
 
 .glass-lens {
@@ -141,16 +142,18 @@
   z-index: 1;
 }
 
+
+
 @media screen and (max-height: 800px) {
   .main-container-for-logo {
     transform: scale(0.7);
+    top: 7vh;
   }
 }
 @media screen and (max-height: 700px) {
   .main-container-for-logo {
-    top: 10vh;
-    right: 5vh;
-    transform: scale(0.5);
+    top: 3vh;
+    transform: scale(0.6);
   }
 }
 @media screen and (max-width: 600px) {
