@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-  // const btn = document.querySelector('menu span i')
   const [click, setclick] = useState(true);
 
   function expand() {
