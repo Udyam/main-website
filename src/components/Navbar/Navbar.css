@@ -134,17 +134,17 @@ nav {
 
   .menu {
     z-index: 63;
-    position: fixed;
-    right: 14%;
+    position: relative;
+    right: -28%;
   }
 }
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
   .menu {
     right: 22%;
   }
 }
 @media screen and (max-width: 350px) {
   .menu {
-    right: 27%;
+    right: 25%;
   }
-}
+} */
