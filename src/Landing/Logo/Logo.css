@@ -1,7 +1,7 @@
 .empty-div {
   height: 100vh;
 }
-.circuit-img{
+.circuit-img {
   position: absolute;
   width: 120%;
   height: 120%;
@@ -10,7 +10,6 @@
   user-select: none;
   transform: rotate(-25deg) scale(1) scaleX(1.4) matrix(1, 0, 0.1, 1.2, 0, 0);
 }
-
 
 .main-container-for-logo {
   height: 600px;
