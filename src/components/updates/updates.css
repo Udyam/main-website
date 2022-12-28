@@ -17,7 +17,8 @@
   cursor: pointer;
 }
 .updates-main-container h1{
-  font-size: 3rem;
+  font-size: 6vh;
+  padding: 0.3rem 0rem;
 }
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
