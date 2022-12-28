@@ -16,7 +16,9 @@
 .update-content a:hover {
   cursor: pointer;
 }
-
+.updates-main-container h1{
+  font-size: 3rem;
+}
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
   color: white;
