@@ -52,11 +52,11 @@ const sponsorData = [
   }
 ];
 
-function Sponsers() {
+function Sponsors() {
   return (
     <>
       <div className="sponsors-main">
-        <div className="sponsor-heading">SPONSERS</div>
+        <div className="sponsor-heading">SPONSORS</div>
         <ul className="sponsors-list">
           {sponsorData.map((key) => {
             return (
@@ -71,4 +71,4 @@ function Sponsers() {
   );
 }
 
-export default Sponsers;
+export default Sponsors;
