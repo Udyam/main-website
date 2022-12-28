@@ -142,8 +142,6 @@
   z-index: 1;
 }
 
-
-
 @media screen and (max-height: 800px) {
   .main-container-for-logo {
     transform: scale(0.7);
