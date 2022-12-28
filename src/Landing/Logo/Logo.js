@@ -28,6 +28,7 @@ const Logo = () => {
     <>
       <div className="empty-div"></div>
       <div className="main-container-for-logo">
+        <div className="circular-mai-container"></div>
         <img className="circuit-img" src="/Groupouter-circuit.png" alt="" />
         <div className="main-logo-container">
           <div className="ring-box-1">

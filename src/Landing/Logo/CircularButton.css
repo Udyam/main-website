@@ -10,3 +10,11 @@
 .dial-button {
   position: relative;
 }
+
+.circular-mai-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(2, 2, 49);
+}
