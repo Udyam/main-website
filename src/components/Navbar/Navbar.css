@@ -31,6 +31,7 @@ nav {
   text-decoration: none;
   font-size: 1.2rem;
   color: #fff;
+  /* transition: 3s; */
 }
 .nav-links li a:hover {
   color: aqua;

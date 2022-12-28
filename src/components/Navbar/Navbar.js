@@ -4,7 +4,8 @@ import './Navbar.css';
 
 const Navbar = () => {
   // const btn = document.querySelector('menu span i')
-  const [click, setclick] = useState(false);
+  const [click, setclick] = useState(true);
+  // const [active, setActive] = useState();
  
   function expand() {
     if (click) {
@@ -22,7 +23,7 @@ const Navbar = () => {
     <div>
       <div className="container">
         <nav>
-          <ul className="nav-links">
+          <ul className="nav-links" style={{display:'none'}}>
             <li>
               <a href="#">Home</a>
             </li>
@@ -42,7 +43,7 @@ const Navbar = () => {
               <a href="#">Team</a>
             </li>
           </ul>
-          <div className="menu-text">
+          <div className="menu-text" style={{display:'flex'}}>
             <span>Menu</span>
           </div>
           <button className="menu" onClick={expand}>
