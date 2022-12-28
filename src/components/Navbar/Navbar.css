@@ -106,7 +106,7 @@ nav {
     overflow: hidden;
     position: fixed;
     width: 110vw;
-    height: 107vh;
+    height: 110vh;
     background: #4318de;
     display: flex;
     flex-direction: column;
@@ -127,24 +127,27 @@ nav {
     transform: scale(1.2);
   }
   .menu-text {
-    right: -23%;
     top: 20%;
     display: flex;
+    left: 25%;
   }
 
   .menu {
     z-index: 63;
     position: relative;
-    right: -28%;
+    right: -30%;
   }
 }
 /* @media screen and (max-width: 450px) {
   .menu {
     right: 22%;
   }
-}
+}*/
 @media screen and (max-width: 350px) {
+  /* .menu-text{
+    right: -27%;
+  } */
   .menu {
-    right: 25%;
+    right: -25%;
   }
-} */
+} 
