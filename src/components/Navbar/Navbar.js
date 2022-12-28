@@ -4,24 +4,24 @@ import './Navbar.css';
 
 const Navbar = () => {
   // const btn = document.querySelector('menu span i')
-  const [click, setclick] = useState(false);
+  const [click, setclick] = useState(true);
 
   function expand() {
-    setclick(!click);
-    if (click === true) {
+    if (click) {
       document.querySelector('.nav-links').style.display = 'flex';
       document.querySelector('.menu-text').style.display = 'none';
     } else {
       document.querySelector('.nav-links').style.display = 'none';
       document.querySelector('.menu-text').style.display = 'flex';
     }
+    setclick(!click);
   }
 
   return (
     <div>
       <div className="container">
         <nav>
-          <ul className="nav-links">
+          <ul className="nav-links" style={{ display: 'none' }}>
             <li>
               <a href="#">Home</a>
             </li>
@@ -41,7 +41,7 @@ const Navbar = () => {
               <a href="#">Team</a>
             </li>
           </ul>
-          <div className="menu-text">
+          <div className="menu-text" style={{ display: 'flex' }}>
             <span>Menu</span>
           </div>
           <button className="menu" onClick={expand}>
