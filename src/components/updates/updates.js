@@ -3,8 +3,6 @@ import './updates.css';
 function Updates() {
   return (
     <>
-      <div className="article"></div>
-
       <section className="updates-main-container">
         <div className="updates-udyam-head-container udyam-background-dark">
           <h1>Udyam Updates</h1>

@@ -60,6 +60,11 @@
     top: 9rem;
   }
 }
+@media screen and (max-width: 580px) {
+  .speakers-gradient {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 500px) {
   .speakers-heading {
     font-size: 2rem;
