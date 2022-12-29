@@ -30,26 +30,21 @@ const eventData = [
   }
 ];
 
-
-
-
-
 const Home = () => {
-  const [eventindex,setEventIndex] = React.useState(0);
+  const [eventindex, setEventIndex] = React.useState(0);
   const changeEvent = () => {
-    if(eventindex < eventData.length-1){
-      setEventIndex(eventindex+1);
-    }
-    else{
+    if (eventindex < eventData.length - 1) {
+      setEventIndex(eventindex + 1);
+    } else {
       setEventIndex(0);
     }
-  }
+  };
   return (
     <>
       <div className="Home">
         <Navbar />
         <ContentCard event={eventData[eventindex]} />
-        <Logo eventchange = {changeEvent} />
+        <Logo eventchange={changeEvent} />
         <About />
         <Updates />
         <Sponsors />

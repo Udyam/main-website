@@ -3,11 +3,9 @@ import React from 'react';
 import './Logo.css';
 import './CircularButton.css';
 
-
-
 const Logo = (props) => {
   const [angle, setAngle] = React.useState(window.innerWidth > 600 ? 0 : 30);
-  
+
   const logoClick = () => {
     document.getElementsByClassName('button-container')[0].animate(
       [
