@@ -53,6 +53,7 @@
   transform: perspective(1000px) rotateY(-180deg);
   transition: 1s;
   z-index: 2;
+  border-radius: 10px 10px 0 0;
 }
 .speaker-card:hover .card-back {
   transform: perspective(1000px) rotateY(0deg);
