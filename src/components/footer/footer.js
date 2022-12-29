@@ -11,12 +11,28 @@ export default function Footer() {
   return (
     <div className="bg">
       <div className="items">
-        <img src={ig} alt="" className="px" />
-        <img src={ball} alt="" className="px" />
-        <img src={google} alt="" className="px" />
-        <img src={linkedin} alt="" className="px" />
-        <img src={fb} alt="" className="px" />
-        <img src={twitter} alt="" className="px" />
+        <a href="https://www.instagram.com/ees_fest/?theme=dark" target="_blank" rel="noreferrer">
+          {' '}
+          <img src={ig} alt="" className="px" />{' '}
+        </a>
+        <a href="">
+          {' '}
+          <img src={ball} alt="" className="px" />
+        </a>
+        <a href="mailto:ees.ece@itbhu.ac.in?subject=Udyam Query!" target="_blank" rel="noreferrer">
+          <img src={google} alt="" className="px" />
+        </a>
+        <a href="https://www.linkedin.com/company/ees-iit-bhu/" target="_blank" rel="noreferrer">
+          {' '}
+          <img src={linkedin} alt="" className="px" />
+        </a>
+        <a href="https://www.facebook.com/ees.fiesta/" target="_blank" rel="noreferrer">
+          <img src={fb} alt="" className="px" />
+        </a>
+        <a href="">
+          {' '}
+          <img src={twitter} alt="" className="px" />
+        </a>
       </div>
       <img src={Main} alt="" className="main" />
     </div>
