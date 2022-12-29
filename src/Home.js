@@ -11,13 +11,45 @@ import About from './components/AboutUS/AboutUs';
 import Faq from './components/faq/Faq';
 import Updates from './components/updates/updates';
 
+const eventData = [
+  {
+    title: 'Udyam',
+    description: 'lorem ipsum',
+    imgUrl: '/assets/udayam.png'
+  },
+
+  {
+    title: 'Mashal',
+    description: 'lorem ipsum',
+    imgUrl: '/assets/udayam.png'
+  },
+  {
+    title: 'Udgam',
+    description: 'lorem ipsum',
+    imgUrl: '/assets/udayam.png'
+  }
+];
+
+
+
+
+
 const Home = () => {
+  const [eventindex,setEventIndex] = React.useState(0);
+  const changeEvent = () => {
+    if(eventindex < eventData.length-1){
+      setEventIndex(eventindex+1);
+    }
+    else{
+      setEventIndex(0);
+    }
+  }
   return (
     <>
       <div className="Home">
         <Navbar />
-        <ContentCard />
-        <Logo />
+        <ContentCard event={eventData[eventindex]} />
+        <Logo eventchange = {changeEvent} />
         <About />
         <Updates />
         <Sponsors />

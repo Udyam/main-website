@@ -1,7 +1,8 @@
 import React from 'react';
 import './ContentCard.css';
 
-function ContentCard() {
+function ContentCard(props) {
+  const eventData = props.event;
   return (
     <div className="contentCard">
       <div className="contentContainer">
@@ -9,6 +10,7 @@ function ContentCard() {
           <img className="logo" height={'100px'} src="/assets/udgamlogo.png" alt="" />
         </div>
         <div className="descriptionContainer">
+          <h1 className="title">{eventData.title}</h1>
           <p className="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores exercitationem
             aliquam alias praesentium? Architecto, culpa ipsa aliquam impedit magni a aperiam enim!

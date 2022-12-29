@@ -20,7 +20,7 @@
   background-color: rgb(2, 2, 49);
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-width: 600px) {
   .dial-button{
     transform: rotate(30deg);
   }
