@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.updates-main-container {
+  font-family: 'Montserrat', sans-serif;
+}
 .update-content a {
   position: relative;
-
+  font-family: 'Montserrat', sans-serif;
   border: 0.5vh;
   border-radius: 1vh;
   padding: 1vh 1vh;
@@ -12,16 +16,19 @@
 .update-content a:hover {
   cursor: pointer;
 }
-
+.updates-main-container h1 {
+  font-size: 6vh;
+  /* padding: 0.3rem 0rem; */
+}
 .updates-udyam-head-container {
   background-color: rgba(43, 139, 207, 255);
   color: white;
-  height: 10vh;
-  padding: 0.4rem 2rem;
+  height: 12vh;
+  padding: 1.2rem 2rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
-  bottom: 20vh;
+  bottom: 24vh;
   top: 0vh;
 }
 
@@ -31,20 +38,20 @@
   padding: 2rem 6rem;
   position: sticky;
   height: 100vh;
-  top: 10vh;
+  top: 12vh;
   padding-bottom: 0;
 }
 
 .updates-udgam-head-container {
   background-color: rgba(78, 65, 149, 255);
   color: white;
-  height: 10vh;
-  padding: 0.4rem 2rem;
+  height: 12vh;
+  padding: 1.2rem 2rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
-  bottom: 10vh;
-  top: 10vh;
+  bottom: 12vh;
+  top: 12vh;
 }
 
 .updates-udgam-content {
@@ -53,20 +60,20 @@
   padding: 2rem 6rem;
   position: sticky;
   height: 100vh;
-  top: 20vh;
+  top: 24vh;
   padding-bottom: 8em;
 }
 
 .updates-mashal-head-container {
   background-color: rgba(22, 22, 25, 255);
   color: white;
-  height: 10vh;
-  padding: 0.4rem 2rem;
+  height: 12vh;
+  padding: 1.2rem 2rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
   bottom: 0vh;
-  top: 20vh;
+  top: 24vh;
 }
 
 .updates-mashal-content {
@@ -75,7 +82,7 @@
   padding: 2rem 6rem;
   position: sticky;
   height: 100vh;
-  top: 30vh;
+  top: 36vh;
   padding-bottom: 8em;
 }
 
@@ -130,6 +137,10 @@
 
   .update-content a:hover {
     cursor: pointer;
+  }
+  .updates-main-container h1 {
+    font-size: 3vh;
+    padding-top: 0;
   }
   .updates-udyam-head-container {
     background-color: rgba(43, 139, 207, 255);
@@ -209,11 +220,11 @@
     padding: 0.5vh 1vh;
   }
   .update-information {
-    width: 75%;
+    width: 70%;
     float: left;
   }
   .event-update-link {
-    width: 25%;
+    width: 30%;
     float: right;
     text-align: right;
   }
@@ -232,11 +243,14 @@
   .update-content a:hover {
     cursor: pointer;
   }
+  .updates-main-container h1 {
+    font-size: 4vh;
+  }
   .updates-udyam-head-container {
     background-color: rgba(43, 139, 207, 255);
     color: white;
     height: 8vh;
-    padding: 2vh 2vh;
+    padding: 1.2vh 2vh;
     font-size: 2.5vh;
     position: sticky !important;
     z-index: 1;
@@ -259,7 +273,7 @@
     background-color: rgba(78, 65, 149, 255);
     color: white;
     height: 8vh;
-    padding: 2vh 2vh;
+    padding: 1.2vh 2vh;
     font-size: 2.5vh;
     position: sticky !important;
     z-index: 1;
@@ -282,7 +296,7 @@
     background-color: rgba(22, 22, 25, 255);
     color: white;
     height: 8vh;
-    padding: 2vh 2vh;
+    padding: 1.2vh 2vh;
     font-size: 2.5vh;
     position: sticky !important;
     z-index: 1;

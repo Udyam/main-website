@@ -53,6 +53,7 @@
   transform: perspective(1000px) rotateY(-180deg);
   transition: 1s;
   z-index: 2;
+  border-radius: 10px 10px 0 0;
 }
 .speaker-card:hover .card-back {
   transform: perspective(1000px) rotateY(0deg);
@@ -67,7 +68,7 @@
   font-weight: 300;
   letter-spacing: 0.2rem;
   text-align: center;
-  margin-bottom: 0px;
+  margin: 1rem 0 0 0;
   height: 40%;
 }
 .card-front .card-image {
@@ -128,6 +129,7 @@
   }
   .card-front h1 {
     font-size: 1.4rem;
+    height: 33%;
   }
   .links-container-speakers {
     width: 21rem;

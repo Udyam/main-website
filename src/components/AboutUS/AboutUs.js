@@ -1,19 +1,20 @@
 import React from 'react';
 import './AboutUs.css';
-import bg from './images/AboutUs.png';
 
 function AboutUs() {
   return (
     <>
       <div className="contain">
         <div className="head">
-          <h1>ABOUT US</h1>
-        </div>
-        <div className="base">
-          <div className="base1"></div>
-          <div className="base2"></div>
-          <div className="base3"></div>
-          <div className="base4"></div>
+          <div className="about-head">
+            <h1>ABOUT US</h1>
+          </div>
+          <div className="base">
+            <div className="base1"></div>
+            <div className="base2"></div>
+            <div className="base3"></div>
+            <div className="base4"></div>
+          </div>
         </div>
         <div className="main-box">
           <div className="box">
@@ -37,9 +38,7 @@ function AboutUs() {
             </div>
             <div className="squares">
               <div className="square1"></div>
-              <div className="square2">
-                <img src={bg} alt="" />
-              </div>
+              <div className="square2"></div>
             </div>
           </div>
           <div className="dots">
