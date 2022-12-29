@@ -3,8 +3,9 @@ import React from 'react';
 import './Logo.css';
 import './CircularButton.css';
 
-const Logo = () => {
-  const [angle, setAngle] = React.useState(0);
+const Logo = (props) => {
+  const [angle, setAngle] = React.useState(window.innerWidth > 600 ? 0 : 30);
+
   const logoClick = () => {
     document.getElementsByClassName('button-container')[0].animate(
       [
@@ -22,10 +23,11 @@ const Logo = () => {
       }
     );
     setAngle(angle + 120);
+    props.eventchange();
   };
 
   return (
-    <>
+    <div className="container-logo">
       <div className="empty-div"></div>
       <div className="main-container-for-logo">
         <div className="circular-mai-container"></div>
@@ -67,7 +69,7 @@ const Logo = () => {
           <img className="dial-button" src="/assets/New Rings/Group 1950withbg.svg" alt="" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
