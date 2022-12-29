@@ -27,7 +27,7 @@ nav {
   align-self: center;
   width: 80%;
 }
-.nav-links li{
+.nav-links li {
   z-index: 5;
 }
 .nav-links li a {
