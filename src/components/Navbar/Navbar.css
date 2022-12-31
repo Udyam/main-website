@@ -63,7 +63,7 @@ nav {
   height: 4vh;
   text-align: center;
   position: relative;
-  top: 24%;
+  top: 30%;
   right: -32%;
   z-index: 5;
 }
@@ -118,7 +118,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 0%;
+    top: -8%;
     z-index: 60;
   }
   .nav-links:focus {
@@ -126,14 +126,14 @@ nav {
   }
 
   .nav-links li {
-    padding: 2rem;
+    padding: 2.2rem;
   }
   .nav-links li:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.2);
   }
   .menu-text {
-    top: 20%;
+    /* top: 28%; */
     display: flex;
     left: 25%;
   }
