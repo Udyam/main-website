@@ -1,5 +1,16 @@
 .empty-div {
   height: 100vh;
+  background-color: aqua;
+}
+
+.container-logo {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
 }
 .circuit-img {
   position: absolute;
@@ -15,7 +26,7 @@
   height: 600px;
   width: 600px;
   position: absolute;
-  top: 15vh;
+  top: 10vh;
   left: 55vw;
   display: flex;
   justify-content: center;
@@ -142,24 +153,36 @@
   z-index: 1;
 }
 
+@media screen and (max-height: 900px) {
+  .main-container-for-logo {
+    transform: scale(0.7);
+    top: 5vh;
+  }
+}
 @media screen and (max-height: 800px) {
   .main-container-for-logo {
     transform: scale(0.7);
-    top: 7vh;
+    top: 0vh;
   }
 }
 @media screen and (max-height: 700px) {
   .main-container-for-logo {
-    top: 3vh;
+    top: -10vh;
     transform: scale(0.6);
   }
 }
+@media screen and (max-height: 600px) {
+  .main-container-for-logo {
+    top: -15vh;
+    transform: scale(0.6);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .main-container-for-logo {
     position: absolute;
-    right: unset;
-    top: unset;
-    transform: scale(0.5);
-    display: none;
+    left: unset;
+    top: -30vh;
+    transform: scale(0.35);
   }
 }
