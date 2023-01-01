@@ -63,7 +63,7 @@ nav {
   height: 4vh;
   text-align: center;
   position: relative;
-  top: 30%;
+  top: 28%;
   right: -32%;
   z-index: 5;
 }
@@ -107,18 +107,22 @@ nav {
   ::-webkit-scrollbar {
     display: none;
   }
-
+  .container {
+    height: 100vh;
+    bottom: 0;
+  }
   .nav-links {
-    overflow: hidden;
+    margin-left: 0rem;
+    /* overflow: hidden; */
     position: fixed;
-    width: 110vw;
-    height: 110vh;
+    width: 100vw;
+    height: 100%;
     background: #4318de;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: -8%;
+    top: 0;
     z-index: 60;
   }
   .nav-links:focus {
@@ -126,7 +130,9 @@ nav {
   }
 
   .nav-links li {
-    padding: 2.2rem;
+    position: relative;
+    top: -10%;
+    padding: 2rem;
   }
   .nav-links li:hover {
     transition: all 0.2s ease-in-out;
@@ -134,11 +140,14 @@ nav {
   }
   .menu-text {
     /* top: 28%; */
+    top: 4%;
     display: flex;
     left: 25%;
   }
 
   .menu {
+    position: fixed;
+    top: -44%;
     z-index: 63;
     position: relative;
     right: -30%;
