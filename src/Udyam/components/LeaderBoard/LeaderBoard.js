@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import './Leaderboard.css';
 import { useState } from 'react';
 import React from 'react';
