@@ -68,13 +68,13 @@
       rgb(71 94 194 / 68%) 100%
     );
   }
-  .third-position img{
+  .third-position img {
     transform: scale(0.7);
   }
-  .second-position img{
+  .second-position img {
     transform: scale(0.7);
   }
-  .img-and-score{
+  .img-and-score {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +82,7 @@
     height: 100%;
   }
   .team-score {
-    position:relative;
+    position: relative;
     bottom: 0px !important;
     left: 0 !important;
     padding: 0 !important;
@@ -90,10 +90,9 @@
   .team-name {
     padding: 20px !important;
   }
-  .leaderboards-main-container{
-    
+  .leaderboards-main-container {
   }
-  .remaining-leaderboard{
+  .remaining-leaderboard {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -104,22 +103,22 @@
     padding: 0 !important;
     margin: 0 !important;
   }
-  .team-score-non-podium{
+  .team-score-non-podium {
     position: relative;
     bottom: 0px !important;
     left: 0 !important;
     padding: 0 !important;
     font-size: medium;
   }
-  .team-name-non-podium{
+  .team-name-non-podium {
     padding: auto !important;
     padding-inline-start: 10px;
     font-size: medium;
   }
-  .leaderboard-position{
+  .leaderboard-position {
     font-size: medium;
   }
-  .leaderboard-box{
+  .leaderboard-box {
     width: 70% !important;
   }
 }

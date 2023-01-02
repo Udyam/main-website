@@ -213,8 +213,6 @@
   left: 8vw;
 }
 
-
-
 .remaining-leaderboard {
   height: 40vh;
   width: 67vw;
@@ -235,7 +233,7 @@
   font-size: 4vh;
 }
 
-.middle-glow{
+.middle-glow {
   position: relative;
   margin: auto;
   height: 50%;
