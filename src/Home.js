@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
-import Logo from './Landing/Logo/Logo';
+import Logo from './components/Logo/Logo';
 import './Home.css';
 import ContentCard from './components/ContentCard/ContentCard';
 import Speakers from './components/Speakers/Speakers';

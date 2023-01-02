@@ -2,7 +2,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-
+import Udyam from './Udyam/Udyam.js';
 function App() {
   return (
     <div className="App">
@@ -13,6 +13,14 @@ function App() {
             element={
               <>
                 <Home />
+              </>
+            }
+          />
+          <Route
+            path="/udyam"
+            element={
+              <>
+                <Udyam />
               </>
             }
           />
