@@ -147,7 +147,7 @@
   left: 28vw;
 }
 
-.leaderboards-heading-container {
+.leaderboards-main-container h1 {
   font-size: 10vh;
   padding-left: 5vh;
 }
@@ -212,6 +212,9 @@
 .first-position .team-score {
   left: 8vw;
 }
+
+
+
 .remaining-leaderboard {
   height: 40vh;
   width: 67vw;
@@ -230,4 +233,13 @@
   border-radius: 1vh;
   padding: 1.2vh;
   font-size: 4vh;
+}
+
+.middle-glow{
+  position: relative;
+  margin: auto;
+  height: 50%;
+  width: 00%;
+  z-index: 3;
+  box-shadow: 20px 0px 50px 20px #2c3b02;
 }
