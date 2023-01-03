@@ -31,7 +31,9 @@ const Navbar = () => {
               <a href="#events">Events</a>
             </li>
             <li>
-              <a href="#sponsors" onClick={expand}>Sponsors</a>
+              <a href="#sponsors" onClick={expand}>
+                Sponsors
+              </a>
             </li>
             <li>
               <a href="#">Gallery</a>

@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Russo+One&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Russo One', sans-serif; */
+.udyam-nav {
+  height: 100vh;
+  width: 7vw;
+  position: fixed;
+  background-color: #232323;
+  /* display: flex;
+        flex-direction: row; */
+  z-index: 10;
+}
+
+.udyam-icon {
+  height: 50vh;
+  /* width: 100%; */
+  position: relative;
+  top: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.udyam-icon p {
+  font-family: 'Poppins', sans-serif;
+  /* padding-top: 1rem 0; */
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+.hovered {
+  padding: 12px 0;
+  width: 7vw;
+}
+.hovered:hover {
+  background: #4e4b4b;
+}
+/* .hovered{
+        background: #4e4b4b;
+    } */
+
+.info {
+  color: #fff;
+  padding: 0%;
+  margin: 0 auto;
+  height: 5.5vh;
+  width: 7vw;
+}
+
+.udyam-img {
+  position: relative;
+  top: 1.2%;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.udyam-ees {
+  /* z-index: 2; */
+  position: absolute;
+  width: 100%;
+  /* top: 55%; */
+  bottom: 0%;
+  height: 17vh;
+}
+#active {
+  background-color: #2c9031;
+}
+
+/* @media screen and (min-width: 800px){
+        .udyam-ees-mobile{
+            display: none;
+        }
+    }
+      */
+.back {
+  color: #fff;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 3%;
+  left: 80%;
+}
+/* ---------- Token - events-------- */
+
+.token {
+  left: 7vw;
+  height: 100vh;
+  position: absolute;
+  background: #4e4b4b;
+  /* width: 16%; */
+  width: 15vw;
+  z-index: 16;
+}
+.token-event {
+  position: relative;
+  top: 15%;
+}
+.event-name {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  justify-content: center;
+  height: 2vh;
+}
+.event-name a {
+  color: #fff;
+  text-decoration: none;
+}
+.event-name a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 55%;
+  margin: 28px auto;
+  margin-left: 24%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale 0.25s;
+}
+.event-name a:hover::after {
+  scale: 1;
+}
+
+/* .event-name a:hover {
+    text-decoration: underline #1eaaac;
+  } */
+
+/* ----------Leader -events--------- */
+.leader {
+  left: 7vw;
+  height: 100vh;
+  position: absolute;
+  background: #902c2c;
+  width: 15vw;
+  z-index: 15;
+}
+.udyam-ees-mobile {
+  position: absolute;
+  top: 90vh;
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  margin-bottom: 1.4%;
+  right: 1%;
+  z-index: 22;
+}
+/* @media screen and (max-width: 600px) {
+    .udyam-nav {
+      width: 20vw;
+    }
+    .token {
+      left: 20vw;
+      width: 24%;
+    }
+    .leader {
+      left: 20vw;
+      width: 24%;
+    }
+    .hovered {
+      width: 20vw;
+    }
+    .info {
+      width: 20vw;
+    }
+    .udyam-ees-mobile{
+      width:15vw;
+    }
+  } */
+/* @media screen and (max-width: 800px) {
+    
+    .udyam-nav {
+      width: 15vw;
+    }
+    .token {
+      left: 15vw;
+    }
+    .leader {
+      left: 15vw;
+    }
+    .hovered {
+      width: 15vw;
+    }
+    .info {
+      width: 15vw;
+    }
+    .udyam-ees-mobile{
+      width:15vw;
+    }
+  } */
+.menu-icon {
+  margin-top: 3%;
+  display: none;
+  z-index: 6;
+}
+
+@media screen and (max-width: 800px) {
+  .udyam-nav {
+    width: 60vw;
+  }
+  .udyam-nav p {
+    font-size: 1.2rem;
+  }
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+  }
+  .close {
+    color: #fff;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    z-index: 22;
+    font-size: 1.7rem;
+  }
+  .hovered {
+    display: flex;
+    padding-top: 0px;
+    gap: 3rem;
+    width: 100%;
+  }
+  .token {
+    left: 0;
+    width: 60vw;
+  }
+  .info {
+    margin-left: 5vw;
+    width: 6vh;
+    height: 10vh;
+  }
+  .leader {
+    left: 0;
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .udyam-nav p {
+    font-size: 1rem;
+    margin: auto;
+  }
+  .hovered {
+    gap: 1rem;
+  }
+}
+/* @media screen and (min-width:1000px){
+    .event-name{
+      font-size: 18px;
+    }
+  } */
