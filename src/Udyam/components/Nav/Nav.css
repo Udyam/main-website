@@ -85,6 +85,7 @@
 /* ---------- Token - events-------- */
 
 .token {
+  /* font-family: 'Poppins', sans-serif; */
   left: 7vw;
   height: 100vh;
   position: absolute;
@@ -95,12 +96,13 @@
 }
 .token-event {
   position: relative;
-  top: 15%;
+  top: 18%;
 }
 .event-name {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   justify-content: center;
   height: 2vh;
 }
@@ -149,49 +151,7 @@
   right: 1%;
   z-index: 22;
 }
-/* @media screen and (max-width: 600px) {
-    .udyam-nav {
-      width: 20vw;
-    }
-    .token {
-      left: 20vw;
-      width: 24%;
-    }
-    .leader {
-      left: 20vw;
-      width: 24%;
-    }
-    .hovered {
-      width: 20vw;
-    }
-    .info {
-      width: 20vw;
-    }
-    .udyam-ees-mobile{
-      width:15vw;
-    }
-  } */
-/* @media screen and (max-width: 800px) {
-    
-    .udyam-nav {
-      width: 15vw;
-    }
-    .token {
-      left: 15vw;
-    }
-    .leader {
-      left: 15vw;
-    }
-    .hovered {
-      width: 15vw;
-    }
-    .info {
-      width: 15vw;
-    }
-    .udyam-ees-mobile{
-      width:15vw;
-    }
-  } */
+
 .menu-icon {
   margin-top: 3%;
   display: none;
@@ -224,13 +184,17 @@
   .hovered {
     display: flex;
     padding-top: 0px;
-    gap: 3rem;
+    gap: 4rem;
     width: 100%;
+  }
+  .hovered p {
+    padding-top: 1.5rem;
   }
   .token {
     left: 0;
     width: 60vw;
   }
+
   .info {
     margin-left: 5vw;
     width: 6vh;
