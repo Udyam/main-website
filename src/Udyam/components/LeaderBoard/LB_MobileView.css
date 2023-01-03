@@ -30,12 +30,7 @@
     padding: 2vh;
     display: flex;
 
-    background: radial-gradient(
-      circle,
-      rgb(63 56 84 / 73%) 0%,
-      rgba(39, 83, 210, 0.6674019949776786) 63%,
-      rgb(71 94 194 / 68%) 100%
-    );
+    background: radial-gradient(circle, rgb(63 56 84 / 73%) 0%, rgba(39, 83, 210, 0.6674019949776786) 63%, rgb(71 94 194 / 68%) 100%);
   }
   .first-position {
     position: relative;
@@ -46,12 +41,7 @@
     padding: 2vh;
     display: flex;
 
-    background: radial-gradient(
-      circle,
-      rgb(63 56 84 / 73%) 0%,
-      rgba(39, 83, 210, 0.6674019949776786) 63%,
-      rgb(71 94 194 / 68%) 100%
-    );
+    background: radial-gradient(circle, rgb(63 56 84 / 73%) 0%, rgba(39, 83, 210, 0.6674019949776786) 63%, rgb(71 94 194 / 68%) 100%);
   }
   .third-position {
     position: relative;
@@ -61,12 +51,7 @@
     border-radius: 3vh;
     padding: 2vh;
     display: flex;
-    background: radial-gradient(
-      circle,
-      rgb(63 56 84 / 73%) 0%,
-      rgba(39, 83, 210, 0.6674019949776786) 63%,
-      rgb(71 94 194 / 68%) 100%
-    );
+    background: radial-gradient(circle, rgb(63 56 84 / 73%) 0%, rgba(39, 83, 210, 0.6674019949776786) 63%, rgb(71 94 194 / 68%) 100%);
   }
   .third-position img {
     transform: scale(0.7);

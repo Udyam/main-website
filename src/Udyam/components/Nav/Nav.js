@@ -17,13 +17,12 @@ import { AiOutlineClose } from 'react-icons/ai';
 // // ..
 // AOS.init();
 
-const Nav = () => {
+const Navbar = () => {
   const [slideEvent, setEvent] = useState('false');
   const [slideLeader, setLeader] = useState('false');
   const [slideNav, setNav] = useState('false');
   const [width, setWidth] = useState(window.innerWidth);
   const [activeNav, setActiveNav] = useState('#');
-  // let ind=0;
 
   // const Token = document.getElementsByClassName('.token')
   // const UdyamNav = document.getElementsByClassName('.udyam-nav');
@@ -37,6 +36,9 @@ const Nav = () => {
       } else {
         document.querySelector('.token').style.display = 'none';
       }
+
+      // document.querySelector('.leader').style.display = 'none';
+      // document.querySelector('.token').style.display = 'none';
       document.querySelector('.udyam-nav').style.display = 'none';
     }
   }
@@ -78,6 +80,11 @@ const Nav = () => {
     setEvent(true);
     setActiveNav('#leaderboard');
   }
+  // function showNav() {
+  //   setNav(!slideNav);
+  //   setEvent(true);
+  //   setLeader(true);
+  // }
   function names() {
     setActiveNav('#name');
     slideIn();
@@ -86,15 +93,11 @@ const Nav = () => {
     setActiveNav('#about');
     slideIn();
   }
-  function sponsors() {
+  function sponsor() {
     setActiveNav('#sponsors');
     slideIn();
   }
-  // function showNav() {
-  //   setNav(!slideNav);
-  //   setEvent(true);
-  //   setLeader(true);
-  // }
+
   function slidemobile() {
     setEvent(true);
     setLeader(true);
@@ -113,50 +116,36 @@ const Nav = () => {
           <div className="udyam-img">
             <img className="udyam-logo" src={udyam} alt="hero" />
           </div>
-          <div className="udyam-icon" id="aa">
-            <div onClick={names} className="name hovered">
-              {' '}
-              <div id={activeNav === '#name' ? 'active' : ''}></div>
+          <div className="udyam-icon">
+            <div className="name hovered" onClick={names} id={activeNav === '#name' ? 'active' : ''}>
               <a href="#">
                 <BiQrScan className="info" />
               </a>
               <p>Name</p>
             </div>
-            <div className="about hovered" onClick={abouts}>
-              {' '}
-              <div id={activeNav === '#about' ? 'active' : ''}>
-                <a href="#">
-                  <AiOutlineInfoCircle className="info" />
-                </a>
-                <p>About Us</p>
-              </div>
+            <div className="about hovered" onClick={abouts} id={activeNav === '#about' ? 'active' : ''}>
+              <a href="#">
+                <AiOutlineInfoCircle className="info" />
+              </a>
+              <p>About Us</p>
             </div>
-            <div onClick={slideEvents} className="events hovered">
-              {' '}
-              <div id={activeNav === '#event' ? 'active' : ''}>
-                <a href="#">
-                  <BiNews className="info" />
-                </a>
-                <p>Events</p>
-              </div>
+            <div className="events hovered" onClick={slideEvents} id={activeNav === '#event' ? 'active' : ''}>
+              <a href="#">
+                <BiNews className="info" />
+              </a>
+              <p>Events</p>
             </div>
-            <div onClick={sponsors} className="sponsors hovered">
-              {' '}
-              <div id={activeNav === '#sponsors' ? 'active' : ''}>
-                <a href="#">
-                  <BiDollarCircle className="info" />
-                </a>
-                <p>Sponsors</p>
-              </div>
+            <div className="sponsors hovered" onClick={sponsor} id={activeNav === '#sponsors' ? 'active' : ''}>
+              <a href="#">
+                <BiDollarCircle className="info" />
+              </a>
+              <p>Sponsors</p>
             </div>
-            <div className="leaderboard hovered" onClick={slideLeaderboard}>
-              {' '}
-              <div id={activeNav === '#leaderboard' ? 'active' : ''}>
-                <a href="#">
-                  <FaAward className="info" />
-                </a>
-                <p>Leaderboard</p>
-              </div>
+            <div className="leaderboard hovered" onClick={slideLeaderboard} id={activeNav === '#leaderboard' ? 'active' : ''}>
+              <a href="#">
+                <FaAward className="info" />
+              </a>
+              <p>Leaderboard</p>
             </div>
           </div>
           {/* <div className="udyam-ees">
@@ -240,4 +229,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;
