@@ -18,12 +18,13 @@ import { AiOutlineClose } from 'react-icons/ai';
 // // ..
 // AOS.init();
 
-const Navbar = () => {
+const Nav = () => {
   const [slideEvent, setEvent] = useState('false');
   const [slideLeader, setLeader] = useState('false');
   const [slideNav, setNav] = useState('false');
   const [width, setWidth] = useState(window.innerWidth);
   const [activeNav, setActiveNav] = useState('#');
+  // let ind=0;
 
   // const Token = document.getElementsByClassName('.token')
   // const UdyamNav = document.getElementsByClassName('.udyam-nav');
@@ -37,9 +38,6 @@ const Navbar = () => {
       } else {
         document.querySelector('.token').style.display = 'none';
       }
-
-      // document.querySelector('.leader').style.display = 'none';
-      // document.querySelector('.token').style.display = 'none';
       document.querySelector('.udyam-nav').style.display = 'none';
     }
   }
@@ -81,11 +79,6 @@ const Navbar = () => {
     setEvent(true);
     setActiveNav('#leaderboard');
   }
-  // function showNav() {
-  //   setNav(!slideNav);
-  //   setEvent(true);
-  //   setLeader(true);
-  // }
   function names() {
     setActiveNav('#name');
     slideIn();
@@ -94,11 +87,15 @@ const Navbar = () => {
     setActiveNav('#about');
     slideIn();
   }
-  function sponsor() {
+  function sponsors() {
     setActiveNav('#sponsors');
     slideIn();
   }
-
+  // function showNav() {
+  //   setNav(!slideNav);
+  //   setEvent(true);
+  //   setLeader(true);
+  // }
   function slidemobile() {
     setEvent(true);
     setLeader(true);
@@ -118,7 +115,11 @@ const Navbar = () => {
             <img className="udyam-logo" src={udyam} alt="hero" />
           </div>
           <div className="udyam-icon">
-            <div className="name hovered" onClick={names} id={activeNav === '#name' ? 'active' : ''}
+            <div
+              className="name hovered"
+              // ind="#name"
+              onClick={names}
+              id={activeNav === '#name' ? 'active' : ''}
             >
               <a href="#">
                 <BiQrScan className="info" />
@@ -249,4 +250,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nav;
