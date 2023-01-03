@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import SponsorCard from './sponsorCard';
 import './sponsors.css';
 
