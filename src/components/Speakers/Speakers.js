@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import SpeakerCard from './Speaker-card/SpeakerCard';
 import './speakers.css';

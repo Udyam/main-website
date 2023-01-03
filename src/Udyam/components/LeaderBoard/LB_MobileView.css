@@ -23,41 +23,50 @@
   }
   .second-position {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 5vh;
     height: 18vh;
     border-radius: 3vh;
     padding: 2vh;
     display: flex;
 
-    background: radial-gradient(circle, rgb(63 56 84 / 73%) 0%, rgba(39, 83, 210, 0.6674019949776786) 63%, rgb(71 94 194 / 68%) 100%);
+    background: rgb(231, 226, 223);
+    background: linear-gradient(90deg, rgba(231, 226, 223, 0.6001751042213761) 12%, rgba(182, 159, 130, 0.15479695296087181) 100%, rgba(60, 57, 4, 0.3368697820925245) 100%, rgba(170, 151, 151, 0.7010154403558299) 100%);
   }
-  .first-position {
+
+  .mobile-first-position {
     position: relative;
-    width: 80%;
-    margin: 2vh;
-    height: 25vh;
+    width: 90%;
+    margin: 5vh;
+    height: 18vh;
     border-radius: 3vh;
     padding: 2vh;
     display: flex;
-
-    background: radial-gradient(circle, rgb(63 56 84 / 73%) 0%, rgba(39, 83, 210, 0.6674019949776786) 63%, rgb(71 94 194 / 68%) 100%);
+    background: rgb(236, 197, 0);
+    background: linear-gradient(90deg, rgba(236, 197, 0, 0.6393907904958859) 12%, rgba(182, 159, 130, 0.15479695296087181) 100%, rgba(60, 57, 4, 0.3368697820925245) 100%, rgba(255, 255, 255, 0.7346288857339811) 100%);
+  }
+  .first-position {
+    display: none;
   }
   .third-position {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 5vh;
     height: 18vh;
     border-radius: 3vh;
     padding: 2vh;
     display: flex;
-    background: radial-gradient(circle, rgb(63 56 84 / 73%) 0%, rgba(39, 83, 210, 0.6674019949776786) 63%, rgb(71 94 194 / 68%) 100%);
+    background: rgb(236, 106, 0);
+    background: linear-gradient(90deg, rgba(236, 106, 0, 0.6001751042213761) 12%, rgba(182, 159, 130, 0.15479695296087181) 100%, rgba(60, 57, 4, 0.3368697820925245) 100%, rgba(255, 255, 255, 0.7346288857339811) 100%);
+  }
+  .mobile-first-position img {
+    transform: scale(0.5);
   }
   .third-position img {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
   .second-position img {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
   .img-and-score {
     display: flex;
@@ -73,7 +82,7 @@
     padding: 0 !important;
   }
   .team-name {
-    padding: 20px !important;
+    padding: 2% !important;
   }
   .leaderboards-main-container {
   }
@@ -104,6 +113,7 @@
     font-size: medium;
   }
   .leaderboard-box {
-    width: 70% !important;
+    width: 80% !important;
+    height: 6vh;
   }
 }
