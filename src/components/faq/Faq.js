@@ -61,58 +61,47 @@ const Faq = () => {
 const data = [
   {
     question: 'Who developed JavaScript, and what was the first name of JavaScript?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'What is one drive?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'How much OneDrive storage do I get with MS?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'What happens to the files ?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'which udyam event is best?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'Should I use my existing account ?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'Do I need to keep my password safe?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'what is the procedure to change password?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'What happens when my trial ends?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'How do i cancel my trial before it ends?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'Can I participate in more than 3 events?',
-    answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   }
 ];
 

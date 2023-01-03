@@ -35,18 +35,8 @@ const Logo = (props) => {
         <div className="main-logo-container">
           <div className="ring-box-1">
             <img height={'400px'} className="rings" src="/assets/New Rings/inner_ring.svg" alt="" />
-            <img
-              className="rings ring-middle"
-              height={'400px'}
-              src="/assets/New Rings/middle_ring.svg"
-              alt=""
-            />
-            <img
-              className="rings dotted-ring"
-              height={'400px'}
-              src="/assets/New Rings/dotted_circle.svg"
-              alt=""
-            />
+            <img className="rings ring-middle" height={'400px'} src="/assets/New Rings/middle_ring.svg" alt="" />
+            <img className="rings dotted-ring" height={'400px'} src="/assets/New Rings/dotted_circle.svg" alt="" />
             <img className="rings ring-7" height={'400px'} src="/assets/rings/7.png" alt="" />
             <img className="rings ring-8" height={'400px'} src="/assets/rings/8.png" alt="" />
             <img className="rings ring-4" height={'400px'} src="/assets/rings/4.png" alt="" />
@@ -56,14 +46,7 @@ const Logo = (props) => {
             {/* on Hover */}
             <div className="glowing-ring"></div>
           </div>
-          <img
-            className="main-event-logo"
-            src="/assets/eeslogo.svg"
-            height={'200px'}
-            width={'200px'}
-            alt=""
-            onClick={logoClick}
-          />
+          <img className="main-event-logo" src="/assets/eeslogo.svg" height={'200px'} width={'200px'} alt="" onClick={logoClick} />
         </div>
         <div className="button-container">
           <img className="dial-button" src="/assets/New Rings/Group 1950withbg.svg" alt="" />
