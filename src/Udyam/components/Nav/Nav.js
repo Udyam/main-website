@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import './Nav.css';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
@@ -118,7 +119,8 @@ const Nav = () => {
               className="name hovered"
               // ind="#name"
               onClick={names}
-              id={activeNav === '#name' ? 'active' : ''}>
+              id={activeNav === '#name' ? 'active' : ''}
+            >
               <a href="#">
                 <BiQrScan className="info" />
               </a>
@@ -128,7 +130,8 @@ const Nav = () => {
               className="about hovered"
               // ind="#about"
               onClick={abouts}
-              id={activeNav === '#about' ? 'active' : ''}>
+              id={activeNav === '#about' ? 'active' : ''}
+            >
               <a href="#">
                 <AiOutlineInfoCircle className="info" />
               </a>
@@ -137,7 +140,8 @@ const Nav = () => {
             <div
               className="events hovered"
               onClick={slideEvents}
-              id={activeNav === '#event' ? 'active' : ''}>
+              id={activeNav === '#event' ? 'active' : ''}
+            >
               <a href="#">
                 <BiNews className="info" />
               </a>
@@ -147,7 +151,8 @@ const Nav = () => {
               className="sponsors hovered"
               // ind="#sponsors"
               onClick={sponsors}
-              id={activeNav === '#sponsors' ? 'active' : ''}>
+              id={activeNav === '#sponsors' ? 'active' : ''}
+            >
               <a href="#">
                 <BiDollarCircle className="info" />
               </a>
@@ -156,7 +161,8 @@ const Nav = () => {
             <div
               className="leaderboard hovered"
               onClick={slideLeaderboard}
-              id={activeNav === '#leaderboard' ? 'active' : ''}>
+              id={activeNav === '#leaderboard' ? 'active' : ''}
+            >
               <a href="#">
                 <FaAward className="info" />
               </a>

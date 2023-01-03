@@ -20,46 +20,44 @@ const LeaderBoard = (props) => {
         <h1>LEADERBOARDS</h1>
         <div className="lb-container">
           <div className="podium-main-container">
-            <div className="second-position">
+            <div className="mobile-first-position">
               <div className="img-and-score">
-                <img
-                  src="/assets/medals/silver.png"
-                  alt=""
-                  style={{ height: '10vh', width: '10vh', float: 'left' }}
-                />
-                <div className="team-score" style={{ height: '11vh' }}>
-                  {teamScore[contentIndex].second}
-                </div>
-              </div>
-              <div className="middle-glow"></div>
-              <div className="team-name">{teamName[contentIndex].second}</div>
-            </div>
-            <div className="first-position">
-              <div className="img-and-score">
-                <img
-                  src="/assets/medals/gold.png"
-                  alt=""
-                  style={{ height: '10vh', width: '10vh', float: 'left' }}
-                />
+                <img src="/assets/medals/gold.png" alt="" />
                 <div className="team-score" style={{ height: '11vh' }}>
                   {teamScore[contentIndex].first}
                 </div>
               </div>
-              <div className="middle-glow"></div>
+              {/* <div className="middle-glow"></div> */}
+              <div className="team-name">{teamName[contentIndex].first}</div>
+            </div>
+            <div className="second-position">
+              <div className="img-and-score">
+                <img src="/assets/medals/silver.png" alt="" />
+                <div className="team-score" style={{ height: '11vh' }}>
+                  {teamScore[contentIndex].second}
+                </div>
+              </div>
+              {/* <div className="middle-glow"></div> */}
+              <div className="team-name">{teamName[contentIndex].second}</div>
+            </div>
+            <div className="first-position">
+              <div className="img-and-score">
+                <img src="/assets/medals/gold.png" alt="" />
+                <div className="team-score" style={{ height: '11vh' }}>
+                  {teamScore[contentIndex].first}
+                </div>
+              </div>
+              {/* <div className="middle-glow"></div> */}
               <div className="team-name">{teamName[contentIndex].first}</div>
             </div>
             <div className="third-position">
               <div className="img-and-score">
-                <img
-                  src="/assets/medals/bronze.png"
-                  alt=""
-                  style={{ height: '10vh', width: '10vh', float: 'left' }}
-                />
+                <img src="/assets/medals/bronze.png" alt="" />
                 <div className="team-score" style={{ height: '11vh' }}>
                   {teamScore[contentIndex].third}
                 </div>
               </div>
-              <div className="middle-glow"></div>
+              {/* <div className="middle-glow"></div> */}
               <div className="team-name">{teamName[contentIndex].third}</div>
             </div>
           </div>
