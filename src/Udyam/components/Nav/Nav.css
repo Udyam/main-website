@@ -88,7 +88,7 @@
   /* font-family: 'Poppins', sans-serif; */
   left: 7vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   background: #4e4b4b;
   /* width: 16%; */
   width: 15vw;
@@ -136,7 +136,7 @@
 .leader {
   left: 7vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   background: #902c2c;
   width: 15vw;
   z-index: 15;
