@@ -137,11 +137,7 @@ const Nav = () => {
               </a>
               <p>About Us</p>
             </div>
-            <div
-              className="events hovered"
-              onClick={slideEvents}
-              id={activeNav === '#event' ? 'active' : ''}
-            >
+            <div className="events hovered" onClick={slideEvents} id={activeNav === '#event' ? 'active' : ''}>
               <a href="#">
                 <BiNews className="info" />
               </a>
@@ -158,11 +154,7 @@ const Nav = () => {
               </a>
               <p>Sponsors</p>
             </div>
-            <div
-              className="leaderboard hovered"
-              onClick={slideLeaderboard}
-              id={activeNav === '#leaderboard' ? 'active' : ''}
-            >
+            <div className="leaderboard hovered" onClick={slideLeaderboard} id={activeNav === '#leaderboard' ? 'active' : ''}>
               <a href="#">
                 <FaAward className="info" />
               </a>
