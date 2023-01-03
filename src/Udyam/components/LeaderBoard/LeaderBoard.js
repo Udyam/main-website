@@ -22,11 +22,7 @@ const LeaderBoard = (props) => {
           <div className="podium-main-container">
             <div className="second-position">
               <div className="img-and-score">
-                <img
-                  src="/assets/medals/silver.png"
-                  alt=""
-                  style={{ height: '10vh', width: '10vh', float: 'left' }}
-                />
+                <img src="/assets/medals/silver.png" alt="" style={{ height: '10vh', width: '10vh', float: 'left' }} />
                 <div className="team-score" style={{ height: '11vh' }}>
                   {teamScore[contentIndex].second}
                 </div>
@@ -36,11 +32,7 @@ const LeaderBoard = (props) => {
             </div>
             <div className="first-position">
               <div className="img-and-score">
-                <img
-                  src="/assets/medals/gold.png"
-                  alt=""
-                  style={{ height: '10vh', width: '10vh', float: 'left' }}
-                />
+                <img src="/assets/medals/gold.png" alt="" style={{ height: '10vh', width: '10vh', float: 'left' }} />
                 <div className="team-score" style={{ height: '11vh' }}>
                   {teamScore[contentIndex].first}
                 </div>
@@ -50,11 +42,7 @@ const LeaderBoard = (props) => {
             </div>
             <div className="third-position">
               <div className="img-and-score">
-                <img
-                  src="/assets/medals/bronze.png"
-                  alt=""
-                  style={{ height: '10vh', width: '10vh', float: 'left' }}
-                />
+                <img src="/assets/medals/bronze.png" alt="" style={{ height: '10vh', width: '10vh', float: 'left' }} />
                 <div className="team-score" style={{ height: '11vh' }}>
                   {teamScore[contentIndex].third}
                 </div>

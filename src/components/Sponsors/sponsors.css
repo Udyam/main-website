@@ -40,14 +40,7 @@
   height: 150px;
   width: 500px;
   margin: 8px;
-  background-image: linear-gradient(
-    135deg,
-    #130428 0%,
-    #251043 55%,
-    #38126d 80%,
-    #261045 95%,
-    #190634 100%
-  );
+  background-image: linear-gradient(135deg, #130428 0%, #251043 55%, #38126d 80%, #261045 95%, #190634 100%);
 }
 
 .sponsor-image {
