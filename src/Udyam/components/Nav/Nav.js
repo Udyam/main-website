@@ -32,7 +32,7 @@ const Nav = () => {
   // const UdyamNav = document.getElementsByClassName('.udyam-nav');
 
   function checkNav() {
-    setUdyamName(true)
+    setUdyamName(true);
     if (width > 800) {
       return;
     } else {
@@ -54,7 +54,7 @@ const Nav = () => {
     }
     // document.querySelector('.token').style.display = 'block';
     // document.querySelector('.leader').style.display = 'block';
-    
+
     document.querySelector('.udyam-nav').style.display = 'block';
     // setNav(!slideNav);
   }
@@ -112,7 +112,7 @@ const Nav = () => {
 
   return (
     <>
-      {(udyamName && (width<600))&& <Profile />}
+      {udyamName && width < 600 && <Profile />}
       {(!slideNav || width > 800) && (
         <div className="udyam-nav">
           <div className="close" onClick={helloNav}>
@@ -126,7 +126,8 @@ const Nav = () => {
               className="name hovered"
               // ind="#name"
               onClick={names}
-              id={activeNav === '#name' ? 'active' : ''}>
+              id={activeNav === '#name' ? 'active' : ''}
+            >
               <a href="#">
                 <BiQrScan className="info" />
               </a>
@@ -136,7 +137,8 @@ const Nav = () => {
               className="about hovered"
               // ind="#about"
               onClick={abouts}
-              id={activeNav === '#about' ? 'active' : ''}>
+              id={activeNav === '#about' ? 'active' : ''}
+            >
               <a href="#">
                 <AiOutlineInfoCircle className="info" />
               </a>
@@ -152,7 +154,8 @@ const Nav = () => {
               className="sponsors hovered"
               // ind="#sponsors"
               onClick={sponsors}
-              id={activeNav === '#sponsors' ? 'active' : ''}>
+              id={activeNav === '#sponsors' ? 'active' : ''}
+            >
               <a href="#">
                 <BiDollarCircle className="info" />
               </a>
