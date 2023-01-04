@@ -45,7 +45,7 @@
     height: 95vh;
     width: 100%;
     background-image: linear-gradient(rgb(36, 161, 161), rgb(3, 48, 48));
-    clip-path: polygon(34% 23%, 66% 23%, 100% 55%, 100% 92%, 68% 92%, 30% 92%, 0 92%, 0 55%);
+    clip-path: polygon(34% 18%, 66% 18%, 100% 55%, 100% 92%, 68% 92%, 30% 92%, 0 92%, 0 55%);
   }
 
   .contentContainer {
