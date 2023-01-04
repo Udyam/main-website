@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Russo+One&display=swap');
+.top-bar {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  justify-content: space-between;
+  background-color: rgba(42, 41, 41, 0.844);
+  z-index: 6;
+}
+.profile {
+  padding: 1rem;
+}
+.profile img {
+  height: 60px;
+  width: 62px;
+  border-radius: 50%;
+}
+.emma {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  top: 18%;
+  left: 28%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.false {
+  position: relative;
+  top: 10%;
+  height: 10vh;
+}
