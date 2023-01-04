@@ -112,7 +112,7 @@ const Nav = () => {
 
   return (
     <>
-      {udyamName && width < 600 && <Profile />}
+      {udyamName && width < 800 && <Profile />}
       {(!slideNav || width > 800) && (
         <div className="udyam-nav">
           <div className="close" onClick={helloNav}>
