@@ -3,7 +3,7 @@
   top: 0vh;
   left: 0;
   width: 80%;
-  height: 100vh;
+  height: 12.2%;
   background-image: linear-gradient(to right, rgb(3, 48, 48), rgb(36, 161, 161));
   z-index: 0;
   clip-path: polygon(0 0, 26% 0, 86.4% 29.7%, 86.4% 63.4%, 40% 100%, 0 100%, 0% 80%, 0% 38%);
@@ -26,8 +26,8 @@
 }
 
 .descriptionContainer {
-  max-height: 250px;
-  overflow-y: auto;
+  height: 250px;
+  overflow-y: scroll;
   margin: 20px;
 }
 
@@ -35,4 +35,38 @@
   font-size: 1.5rem;
   color: white;
   text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .contentCard {
+    position: absolute;
+    left: 0;
+    top: 13vh;
+    height: 95vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(36, 161, 161), rgb(3, 48, 48));
+    clip-path: polygon(34% 23%, 66% 23%, 100% 55%, 100% 92%, 68% 92%, 30% 92%, 0 92%, 0 55%);
+  }
+
+  .contentContainer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 8%;
+    padding: 2.5%;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .descriptionContainer {
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
 }

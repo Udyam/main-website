@@ -14,10 +14,10 @@
 }
 .circuit-img {
   position: absolute;
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
   left: 10%;
-  top: -10%;
+  top: 0%;
   user-select: none;
   transform: rotate(125deg) scale(1) scaleY(1.4) scaleX(1.5) matrix(1, 0, 0.1, 1.2, 0, 0);
 }
@@ -184,5 +184,20 @@
     left: unset;
     top: -30vh;
     transform: scale(0.35);
+  }
+
+  .container-logo {
+    position: absolute;
+    top: 1%;
+  }
+
+  .circuit-img {
+    height: 80%;
+    width: 80%;
+    top: 5%;
+  }
+
+  .dial-button {
+    transform: rotate(120deg);
   }
 }
