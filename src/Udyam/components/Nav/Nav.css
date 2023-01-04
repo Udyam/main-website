@@ -142,13 +142,13 @@
   z-index: 15;
 }
 .udyam-ees-mobile {
-  position: absolute;
-  top: 90vh;
   display: flex;
   justify-content: center;
-  width: 70px;
   margin-bottom: 1.4%;
+  position: fixed;
   right: 1%;
+  top: 90vh;
+  width: 70px;
   z-index: 22;
 }
 
