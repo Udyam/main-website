@@ -1,6 +1,8 @@
 import './events.css';
 import bg from './background.svg';
+import Nav from '../Nav/Nav';
 import { useState } from 'react';
+// import LeaderBoard from '../LeaderBoard/LeaderBoard';
 
 function Events() {
   const [eventTitle, setEventTitle] = useState('DIGISIM');
@@ -13,31 +15,9 @@ function Events() {
   };
 
   return (
-    <>
+    <div>
+      <Nav eventTitleFunc={eventName} />
       <div className="events-main">
-        <div className="events-list">
-          <div className="events-item" onClick={eventName}>
-            DIGISIM
-          </div>
-          <div className="events-item" onClick={eventName}>
-            FUNCKIT
-          </div>
-          <div className="events-item" onClick={eventName}>
-            I-CHIP
-          </div>
-          <div className="events-item" onClick={eventName}>
-            MOSAIC
-          </div>
-          <div className="events-item" onClick={eventName}>
-            CASSANDRA
-          </div>
-          <div className="events-item" onClick={eventName}>
-            DEVBITS
-          </div>
-          <div className="events-item" onClick={eventName}>
-            COMMNET
-          </div>
-        </div>
         <div className="event-body">
           <div className="event-heading">
             <div className="events-heading-box">EVENTS</div>
@@ -46,14 +26,18 @@ function Events() {
             <img src={bg} />
           </div>
           <div className="event-title">{eventTitle}</div>
-          <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+          <div className="event-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industrys standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book.
+          </div>
           <div className="event-buttons">
             <div className="ps-link">PS LINK</div>
             <div className="event-submit">SUBMIT</div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
