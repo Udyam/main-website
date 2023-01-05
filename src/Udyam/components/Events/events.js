@@ -16,7 +16,7 @@ function Events() {
     <>
       <div className="events-main">
         <div className="events-list">
-          <div className="events-item active" onClick={eventName}>
+          <div className="events-item" onClick={eventName}>
             DIGISIM
           </div>
           <div className="events-item" onClick={eventName}>
@@ -46,11 +46,7 @@ function Events() {
             <img src={bg} />
           </div>
           <div className="event-title">{eventTitle}</div>
-          <div className="event-desc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industrys standard dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-          </div>
+          <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
           <div className="event-buttons">
             <div className="ps-link">PS LINK</div>
             <div className="event-submit">SUBMIT</div>

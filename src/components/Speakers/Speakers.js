@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import SpeakerCard from './Speaker-card/SpeakerCard';
 import './speakers.css';
@@ -40,32 +41,12 @@ const Speakers = () => {
         <div className="speakers-heading">SPEAKERS</div>
         <div className="speakers-card-container">
           <div className="speakers-row">
-            <SpeakerCard
-              name={cardContent[0].name}
-              title={cardContent[0].title}
-              image={cardContent[0].image}
-              back={cardContent[0].backContent}
-            />
-            <SpeakerCard
-              name={cardContent[1].name}
-              title={cardContent[1].title}
-              image={cardContent[1].image}
-              back={cardContent[1].backContent}
-            />
+            <SpeakerCard name={cardContent[0].name} title={cardContent[0].title} image={cardContent[0].image} back={cardContent[0].backContent} />
+            <SpeakerCard name={cardContent[1].name} title={cardContent[1].title} image={cardContent[1].image} back={cardContent[1].backContent} />
           </div>
           <div className="speakers-row">
-            <SpeakerCard
-              name={cardContent[2].name}
-              title={cardContent[2].title}
-              image={cardContent[2].image}
-              back={cardContent[2].backContent}
-            />
-            <SpeakerCard
-              name={cardContent[3].name}
-              title={cardContent[3].title}
-              image={cardContent[3].image}
-              back={cardContent[3].backContent}
-            />
+            <SpeakerCard name={cardContent[2].name} title={cardContent[2].title} image={cardContent[2].image} back={cardContent[2].backContent} />
+            <SpeakerCard name={cardContent[3].name} title={cardContent[3].title} image={cardContent[3].image} back={cardContent[3].backContent} />
           </div>
         </div>
       </div>
