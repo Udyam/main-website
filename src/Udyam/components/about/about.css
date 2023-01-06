@@ -1,0 +1,31 @@
+.bg{
+    background: url(./images/ABOUT.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    }
+.row{
+    display: grid;
+    grid-template-columns: 40% 60%;	
+    padding-top: 12%;
+    padding-left: 10%;
+}
+
+      .udy{
+        color: white;
+        padding-right: 3%;
+        padding-left: 5%;
+      }
+
+      .udx{
+        word-wrap: break-word;
+        font-size: 24px;
+      }
+
+      .imgx{
+        transform: scaleY(0.9);
+      }
