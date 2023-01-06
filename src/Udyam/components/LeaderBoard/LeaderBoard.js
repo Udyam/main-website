@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import './LeaderBoard.css';
 import './LB_MobileView.css';
 import React from 'react';
@@ -27,7 +26,9 @@ const LeaderBoard = (props) => {
     } else {
       document.querySelector('.leader').style.display = 'none';
 
-      document.querySelector('.udyam-nav').style.display = 'none';
+      if (document.querySelector('.udyam-nav') != null) {
+        document.querySelector('.udyam-nav').style.display = 'none';
+      }
     }
     // props.eventTitleFunc();
   }

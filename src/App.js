@@ -25,7 +25,7 @@ function App() {
             path="/udyam"
             element={
               <>
-                <Nav />
+                <Nav active="none" />
                 <Udyam />
               </>
             }
@@ -34,7 +34,7 @@ function App() {
             path="/udyam/about"
             element={
               <>
-                <Nav />
+                <Nav active="#about" />
                 <About />
               </>
             }
@@ -43,7 +43,7 @@ function App() {
             path="/udyam/events"
             element={
               <>
-                <Events />
+                <Events active="#event" />
               </>
             }
           />
@@ -51,7 +51,7 @@ function App() {
             path="/udyam/sponsors"
             element={
               <>
-                <Nav />
+                <Nav active="#sponsors" />
               </>
             }
           />
@@ -59,7 +59,7 @@ function App() {
             path="/udyam/leaderboard"
             element={
               <>
-                <Nav />
+                <Nav active="#leaderboard" />
                 <LeaderBoard contentIndex={0} />
               </>
             }

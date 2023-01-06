@@ -21,47 +21,75 @@ import Profile from '../Profile/Profile';
 // // ..
 // AOS.init();
 
-const Nav = ({ eventTitleFunc }) => {
-  const [slideEvent, setEvent] = useState('false');
-  const [slideLeader, setLeader] = useState('false');
-  const [slideNav, setNav] = useState('false');
+const Nav = (props) => {
+  // const [slideEvent, setEvent] = useState('false');
+  // const [slideLeader, setLeader] = useState('false');
+  const [slideNav, setNav] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
-  const [activeNav, setActiveNav] = useState('#');
+  // const [activeNav, setActiveNav] = useState('#');
   const [udyamName, setUdyamName] = useState(true);
   // const [udyevents,setudyevents]=useState('Digism');
   // let ind=0;
 
+  // function life(){
+  //   const location = useLocation();
+
+  //   // The current location.
+  //   console.log(location);
+  //   if(location.pathname=='/udyam/about'){setActiveNav('#about');}
+
+  // }
+  // useEffect(() => {
+  //   life();
+  // }, []);
+  //   useEffect(() => {
+  //     life();
+  //   }, []);
+
+  // }
+  // // life();
+
+  // window.addEventListener("beforeunload", () => {
+  //   life();
+  //   console.log("API call before page reload");
+  // });
+
+  // window.addEventListener("unload", () => {
+  //   life();
+  //   console.log("API call after page reload");
+  // });
+
   // const Token = document.getElementsByClassName('.token')
   // const UdyamNav = document.getElementsByClassName('.udyam-nav');
 
-  function checkNav() {
-    // props.eventTitleFunc=e;
-    // eventTitleFunc(e);
-    setUdyamName(true);
-    if (width > 800) {
-      return;
-    } else {
-      if (slideLeader === false) {
-        document.querySelector('.leader').style.display = 'none';
-      } else {
-        document.querySelector('.token').style.display = 'none';
-      }
-      document.querySelector('.udyam-nav').style.display = 'none';
-    }
-    // props.eventTitleFunc();
-  }
+  // function checkNav() {
+  //   // props.eventTitleFunc=e;
+  //   // eventTitleFunc(e);
+  //   setUdyamName(true);
+  //   if (width > 800) {
+  //     return;
+  //   } else {
+  //     if (slideLeader === false) {
+  //       document.querySelector('.leader').style.display = 'none';
+  //     } else {
+  //       document.querySelector('.token').style.display = 'none';
+  //     }
+  //     document.querySelector('.udyam-nav').style.display = 'none';
+  //   }
+  //   // props.eventTitleFunc();
+  // }
   function menuNav() {
-    setNav(false);
     setUdyamName(false);
-    if (slideLeader === false) {
-      document.querySelector('.leader').style.display = 'block';
-    } else {
-      document.querySelector('.token').style.display = 'block';
-    }
+    // if (slideLeader === false) {
+    //   document.querySelector('.leader').style.display = 'block';
+    // } else {
+    //   document.querySelector('.token').style.display = 'block';
+    // }
     // document.querySelector('.token').style.display = 'block';
     // document.querySelector('.leader').style.display = 'block';
 
-    document.querySelector('.udyam-nav').style.display = 'block';
+    setNav(true);
+    // document.querySelector('.udyam-nav').style.display = 'block';
     // setNav(!slideNav);
   }
 
@@ -72,47 +100,39 @@ const Nav = ({ eventTitleFunc }) => {
     window.addEventListener('resize', updateWidth);
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
-  function slideIn(e) {
-    setEvent(true);
-    setLeader(true);
-    const aevent = e.currentTarget.getAttribute('ind');
-    setActiveNav(aevent);
-  }
 
-  function slideEvents() {
-    setEvent(!slideEvent);
-    setLeader(true);
-    setActiveNav('#event');
-    // Events.style.backgroundColor = 'yellow'
-  }
-  function slideLeaderboard() {
-    setLeader(!slideLeader);
-    setEvent(true);
-    setActiveNav('#leaderboard');
-  }
+  // function slideEvents() {
+  //   setEvent(!slideEvent);
+  //   setLeader(true);
+
+  //   // Events.style.backgroundColor = 'yellow'
+  // }
+  // function slideLeaderboard() {
+  //   setLeader(!slideLeader);
+  //   setEvent(true);
+
+  // }
   function names() {
-    setActiveNav('#name');
-    slideIn();
+    // slideIn();
   }
   function abouts() {
-    setActiveNav('#about');
-    slideIn();
+    // setActiveNav('#abou');
   }
   function sponsors() {
-    setActiveNav('#sponsors');
-    slideIn();
+    // slideIn();
   }
   // function showNav() {
   //   setNav(!slideNav);
   //   setEvent(true);
   //   setLeader(true);
   // }
-  function slidemobile() {
-    setEvent(true);
-    setLeader(true);
-  }
+  // function slidemobile() {
+  //   // setEvent(true);
+  //   // setLeader(true);
+  // }
   function helloNav() {
-    setNav(true);
+    // if(width<=800){document.querySelector('.udyam-nav').style.display = 'none';}
+    setNav(false);
     setUdyamName(true);
   }
 
@@ -128,7 +148,7 @@ const Nav = ({ eventTitleFunc }) => {
         </div>
       </div>
       {udyamName && width < 800 && <Profile />}
-      {(!slideNav || width > 800) && (
+      {(slideNav || width > 800) && (
         <div className="udyam-nav">
           <div className="close" onClick={helloNav}>
             <AiOutlineClose />
@@ -141,7 +161,7 @@ const Nav = ({ eventTitleFunc }) => {
               className="name hovered"
               // ind="#name"
               onClick={names}
-              id={activeNav === '#name' ? 'active' : ''}
+              id={props.active === '#name' ? 'active' : ''}
             >
               <a href="#" className="game-changer">
                 <BiQrScan className="info" />
@@ -152,7 +172,7 @@ const Nav = ({ eventTitleFunc }) => {
               className="about hovered"
               // ind="#about"
               onClick={abouts}
-              id={activeNav === '#about' ? 'active' : ''}
+              id={props.active === '#about' ? 'active' : ''}
             >
               <Link to="/udyam/about" className="game-changer">
                 {' '}
@@ -164,7 +184,7 @@ const Nav = ({ eventTitleFunc }) => {
                 <p>About Us</p>
               </a> */}
             </div>
-            <div className="events hovered" onClick={slideEvents} id={activeNav === '#event' ? 'active' : ''}>
+            <div className="events hovered" id={props.active === '#event' ? 'active' : ''}>
               <Link to="/udyam/events" className="game-changer">
                 <BiNews className="info" />
                 <p>Events</p>
@@ -174,14 +194,14 @@ const Nav = ({ eventTitleFunc }) => {
               className="sponsors hovered"
               // ind="#sponsors"
               onClick={sponsors}
-              id={activeNav === '#sponsors' ? 'active' : ''}
+              id={props.active == '#sponsors' ? 'active' : ''}
             >
               <Link to="/udyam/sponsors" className="game-changer">
                 <BiDollarCircle className="info" />
                 <p>Sponsors</p>
               </Link>
             </div>
-            <div className="leaderboard hovered" onClick={slideLeaderboard} id={activeNav === '#leaderboard' ? 'active' : ''}>
+            <div className="leaderboard hovered" id={props.active === '#leaderboard' ? 'active' : ''}>
               <Link to="/udyam/leaderboard" className="game-changer">
                 <FaAward className="info" />
                 <p>Leaderboard</p>
@@ -248,32 +268,32 @@ const Nav = ({ eventTitleFunc }) => {
                */}
       {0 && (
         <div className="token">
-          <div className="back" onClick={slidemobile}>
+          <div className="back">
             <IoIosArrowBack />
           </div>
-          <div className="token-event" onClick={eventTitleFunc}>
-            <div className="digism event-name active" onClick={checkNav}>
+          <div className="token-event">
+            <div className="digism event-name active">
               <a href="#"> Digism</a>
             </div>
-            <div className="ichip event-name" onClick={checkNav}>
+            <div className="ichip event-name">
               <a href="#">I-chip</a>
             </div>
-            <div className="devbits event-name" onClick={checkNav}>
+            <div className="devbits event-name">
               <a href="#">Devbits</a>
             </div>
-            <div className="commnet event-name" onClick={checkNav}>
+            <div className="commnet event-name">
               <a href="#">Commnet</a>
             </div>
-            <div className="xiota event-name" onClick={checkNav}>
+            <div className="xiota event-name">
               <a href="#">X-iota</a>
             </div>
-            <div className="cassandra event-name" onClick={checkNav}>
+            <div className="cassandra event-name">
               <a href="#">Cassandra</a>
             </div>
-            <div className="mosaic event-name" onClick={checkNav}>
+            <div className="mosaic event-name">
               <a href="#">Mosaic</a>
             </div>
-            <div className="funckit event-name" onClick={checkNav}>
+            <div className="funckit event-name">
               <a href="#">Funckit</a>
             </div>
           </div>
