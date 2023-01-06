@@ -2,10 +2,16 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import Udyam from './Udyam/Udyam.js';
+// import Udyam from './Udyam/Udyam.js';
+import About from './Udyam/components/about/about';
+import Events from './Udyam/components/Events/events';
+import Nav from './Udyam/components/Nav/Nav';
+import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
+import Udyam from './Udyam/Udyam';
 function App() {
   return (
     <div className="App">
+
       <Router>
         <Routes>
           <Route
@@ -20,7 +26,42 @@ function App() {
             path="/udyam"
             element={
               <>
-                <Udyam />
+                <Nav />
+                <Udyam/>
+              </>
+            }
+          />
+          <Route
+            path="/udyam/about"
+            element={
+              <>
+                <Nav />
+                <About />
+              </>
+            }
+          />
+          <Route
+            path="/udyam/events"
+            element={
+              <>
+                <Events />
+              </>
+            }
+          />
+          <Route
+            path="/udyam/sponsors"
+            element={
+              <>
+                <Nav />
+              </>
+            }
+          />
+          <Route
+            path="/udyam/leaderboard"
+            element={
+              <>
+                <Nav />
+                <LeaderBoard contentIndex={0}/>
               </>
             }
           />
