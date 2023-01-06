@@ -11,8 +11,8 @@ function Events() {
   const eventName = (event) => {
     var element = event.target;
     setEventTitle(element.innerText);
-    document.querySelector('.active').classList.remove('active');
-    element.classList.add('active');
+    // document.querySelector('.active').classList.remove('active');
+    // element.classList.add('active');
     console.log(element);
   };
 
@@ -34,8 +34,9 @@ function Events() {
       return;
     } else {
       document.querySelector('.leader').style.display = 'none';
-
-      document.querySelector('.udyam-nav').style.display = 'none';
+      if (document.querySelector('.udyam-nav') != null) {
+        document.querySelector('.udyam-nav').style.display = 'none';
+      }
     }
     // props.eventTitleFunc();
   }
