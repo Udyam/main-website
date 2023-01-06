@@ -10,7 +10,7 @@
   z-index: -3;
 }
 
-.bg:before {
+.bg:before { 
   content: '';
   width: 100%;
   height: 100%;
@@ -99,6 +99,17 @@
 /* Leaderboards-navbar */
 
 /* Leaderboard-main */
+.getback {
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  top: 12vh;
+  left: 2vh;
+  z-index: 9;
+  width: 4vh;
+  height: 4vh;
+  background-color: rgba(42, 41, 41, 0.9);
+}
 
 .leaderboards-main-container {
   height: 100vh;

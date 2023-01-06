@@ -115,14 +115,16 @@ const Nav = ({ eventTitleFunc }) => {
   }
 
   return (
-    <> <div className="background">
-      <div className="bg"></div>
-      <div className="star-field">
-        <div className="layer"></div>
-        <div className="layer"></div>
-        <div className="layer"></div>
+    <>
+      {' '}
+      <div className="background">
+        <div className="bg"></div>
+        <div className="star-field">
+          <div className="layer"></div>
+          <div className="layer"></div>
+          <div className="layer"></div>
+        </div>
       </div>
-    </div>
       {udyamName && width < 800 && <Profile />}
       {(!slideNav || width > 800) && (
         <div className="udyam-nav">
@@ -139,7 +141,7 @@ const Nav = ({ eventTitleFunc }) => {
               onClick={names}
               id={activeNav === '#name' ? 'active' : ''}
             >
-              <a href="#" className='game-changer'>
+              <a href="#" className="game-changer">
                 <BiQrScan className="info" />
                 <p>Name</p>
               </a>
@@ -150,14 +152,13 @@ const Nav = ({ eventTitleFunc }) => {
               onClick={abouts}
               id={activeNav === '#about' ? 'active' : ''}
             >
-              <a href="/udyam/about" className='game-changer'>
+              <a href="/udyam/about" className="game-changer">
                 <AiOutlineInfoCircle className="info" />
                 <p>About Us</p>
               </a>
-
             </div>
             <div className="events hovered" onClick={slideEvents} id={activeNav === '#event' ? 'active' : ''}>
-              <a href="/udyam/events" className='game-changer'>
+              <a href="/udyam/events" className="game-changer">
                 <BiNews className="info" />
                 <p>Events</p>
               </a>
@@ -168,13 +169,13 @@ const Nav = ({ eventTitleFunc }) => {
               onClick={sponsors}
               id={activeNav === '#sponsors' ? 'active' : ''}
             >
-              <a href="/udyam/sponsors" className='game-changer'>
+              <a href="/udyam/sponsors" className="game-changer">
                 <BiDollarCircle className="info" />
                 <p>Sponsors</p>
               </a>
             </div>
             <div className="leaderboard hovered" onClick={slideLeaderboard} id={activeNav === '#leaderboard' ? 'active' : ''}>
-              <a href="/udyam/leaderboard" className='game-changer'>
+              <a href="/udyam/leaderboard" className="game-changer">
                 <FaAward className="info" />
                 <p>Leaderboard</p>
               </a>
@@ -193,46 +194,58 @@ const Nav = ({ eventTitleFunc }) => {
       <div className="menu-icon" onClick={menuNav}>
         <TfiMenu />
       </div>
-      {!slideEvent && (
+      {/* 
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              this div is not used
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+               */}
+      {0 && (
         <div className="token">
           <div className="back" onClick={slidemobile}>
             <IoIosArrowBack />
           </div>
           <div className="token-event" onClick={eventTitleFunc}>
             <div className="digism event-name active" onClick={checkNav}>
-              <a href="#"> Digism</a>
-            </div>
-            <div className="ichip event-name" onClick={checkNav}>
-              <a href="#">I-chip</a>
-            </div>
-            <div className="devbits event-name" onClick={checkNav}>
-              <a href="#">Devbits</a>
-            </div>
-            <div className="commnet event-name" onClick={checkNav}>
-              <a href="#">Commnet</a>
-            </div>
-            <div className="xiota event-name" onClick={checkNav}>
-              <a href="#">X-iota</a>
-            </div>
-            <div className="cassandra event-name" onClick={checkNav}>
-              <a href="#">Cassandra</a>
-            </div>
-            <div className="mosaic event-name" onClick={checkNav}>
-              <a href="#">Mosaic</a>
-            </div>
-            <div className="funckit event-name" onClick={checkNav}>
-              <a href="#">Funckit</a>
-            </div>
-          </div>
-        </div>
-      )}
-      {!slideLeader && (
-        <div className="leader">
-          <div className="back" onClick={slidemobile}>
-            <IoIosArrowBack />
-          </div>
-          <div className="token-event">
-            <div className="digism event-name" onClick={checkNav}>
               <a href="#"> Digism</a>
             </div>
             <div className="ichip event-name" onClick={checkNav}>
