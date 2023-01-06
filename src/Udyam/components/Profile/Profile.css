@@ -8,8 +8,12 @@
   background-color: rgba(42, 41, 41, 0.844);
   z-index: 6;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 .profile {
-  padding: 1rem;
+  padding: 3vh;
 }
 .profile img {
   height: 5vh;
