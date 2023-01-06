@@ -13,6 +13,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+
 import Profile from '../Profile/Profile';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -152,16 +154,21 @@ const Nav = ({ eventTitleFunc }) => {
               onClick={abouts}
               id={activeNav === '#about' ? 'active' : ''}
             >
-              <a href="/udyam/about" className="game-changer">
+              <Link to="/udyam/about" className="game-changer">
+                {' '}
                 <AiOutlineInfoCircle className="info" />
                 <p>About Us</p>
-              </a>
+              </Link>
+              {/* <a href="/udyam/about" className="game-changer">
+                <AiOutlineInfoCircle className="info" />
+                <p>About Us</p>
+              </a> */}
             </div>
             <div className="events hovered" onClick={slideEvents} id={activeNav === '#event' ? 'active' : ''}>
-              <a href="/udyam/events" className="game-changer">
+              <Link to="/udyam/events" className="game-changer">
                 <BiNews className="info" />
                 <p>Events</p>
-              </a>
+              </Link>
             </div>
             <div
               className="sponsors hovered"
@@ -169,16 +176,16 @@ const Nav = ({ eventTitleFunc }) => {
               onClick={sponsors}
               id={activeNav === '#sponsors' ? 'active' : ''}
             >
-              <a href="/udyam/sponsors" className="game-changer">
+              <Link to="/udyam/sponsors" className="game-changer">
                 <BiDollarCircle className="info" />
                 <p>Sponsors</p>
-              </a>
+              </Link>
             </div>
             <div className="leaderboard hovered" onClick={slideLeaderboard} id={activeNav === '#leaderboard' ? 'active' : ''}>
-              <a href="/udyam/leaderboard" className="game-changer">
+              <Link to="/udyam/leaderboard" className="game-changer">
                 <FaAward className="info" />
                 <p>Leaderboard</p>
-              </a>
+              </Link>
             </div>
           </div>
           {/* <div className="udyam-ees">
