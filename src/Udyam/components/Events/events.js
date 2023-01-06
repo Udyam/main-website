@@ -8,7 +8,7 @@ function Events() {
   const [eventTitle, setEventTitle] = useState('DIGISIM');
   const eventName = (event) => {
     var element = event.target;
-    setEventTitle(element.innerHTML);
+    setEventTitle(element.innerText);
     document.querySelector('.active').classList.remove('active');
     element.classList.add('active');
     console.log(element);
