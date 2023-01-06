@@ -7,7 +7,7 @@ const Logo = (props) => {
   const [angle, setAngle] = React.useState(window.innerWidth > 600 ? 0 : 30);
 
   const logoClick = () => {
-    document.getElementsByClassName('button-container')[0].animate(
+    document.getElementsByClassName('dial-button')[0].animate(
       [
         // keyframes
         { transform: 'rotate(' + angle + 'deg)' },
@@ -34,22 +34,21 @@ const Logo = (props) => {
         <img className="circuit-img" src="/Groupouter-circuit.png" alt="" />
         <div className="main-logo-container">
           <div className="ring-box-1">
-            <img height={'400px'} className="rings" src="/assets/New Rings/inner_ring.svg" alt="" />
-            <img className="rings ring-middle" height={'400px'} src="/assets/New Rings/middle_ring.svg" alt="" />
-            <img className="rings dotted-ring" height={'400px'} src="/assets/New Rings/dotted_circle.svg" alt="" />
-            <img className="rings ring-7" height={'400px'} src="/assets/rings/7.png" alt="" />
-            <img className="rings ring-8" height={'400px'} src="/assets/rings/8.png" alt="" />
-            <img className="rings ring-4" height={'400px'} src="/assets/rings/4.png" alt="" />
-            <img className="rings ring-3" height={'400px'} src="/assets/rings/3.png" alt="" />
+            <img height={'180%'} className="rings" src="/assets/New Rings/inner_ring.svg" alt="" />
+            <img height={'200%'} className="rings ring-middle" src="/assets/New Rings/middle_ring.svg" alt="" />
+            <img height={'180%'} className="rings dotted-ring" src="/assets/New Rings/dotted_circle.svg" alt="" />
+            <img height={'200%'} className="rings ring-7" src="/assets/rings/7.png" alt="" />
+            <img height={'200%'} className="rings ring-8" src="/assets/rings/8.png" alt="" />
+            <img height={'200%'} className="rings ring-4" src="/assets/rings/4.png" alt="" />
+            <img height={'200%'} className="rings ring-3" src="/assets/rings/3.png" alt="" />
 
+            <img height={'250%'} className="dial-button" src="/assets/New Rings/Group 1950withbg.svg" alt="" />
             <div className="glass-lens"></div>
             {/* on Hover */}
             <div className="glowing-ring"></div>
           </div>
-          <img className="main-event-logo" src="/assets/eeslogo.svg" height={'200px'} width={'200px'} alt="" onClick={logoClick} />
-        </div>
-        <div className="button-container">
-          <img className="dial-button" src="/assets/New Rings/Group 1950withbg.svg" alt="" />
+
+          <img className="main-event-logo" height={'100vh'} src="/assets/eeslogo.svg" alt="" onClick={logoClick} />
         </div>
       </div>
     </div>
