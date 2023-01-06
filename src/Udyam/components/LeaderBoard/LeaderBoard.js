@@ -8,14 +8,14 @@ const LeaderBoard = (props) => {
   const contentIndex = props.contentIndex;
   return (
     <>
-      <div className="background">
+      {/* <div className="background">
         <div className="bg"></div>
         <div className="star-field">
           <div className="layer"></div>
           <div className="layer"></div>
           <div className="layer"></div>
         </div>
-      </div>
+      </div> */}
       <div className="leaderboards-main-container">
         <h1>LEADERBOARDS</h1>
         <div className="lb-container">
@@ -87,6 +87,7 @@ const LeaderBoard = (props) => {
           </div>
         </div>
       </div>
+
     </>
   );
 };

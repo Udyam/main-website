@@ -115,7 +115,14 @@ const Nav = ({ eventTitleFunc }) => {
   }
 
   return (
-    <>
+    <> <div className="background">
+      <div className="bg"></div>
+      <div className="star-field">
+        <div className="layer"></div>
+        <div className="layer"></div>
+        <div className="layer"></div>
+      </div>
+    </div>
       {udyamName && width < 800 && <Profile />}
       {(!slideNav || width > 800) && (
         <div className="udyam-nav">
@@ -132,10 +139,10 @@ const Nav = ({ eventTitleFunc }) => {
               onClick={names}
               id={activeNav === '#name' ? 'active' : ''}
             >
-              <a href="#">
+              <a href="#" className='game-changer'>
                 <BiQrScan className="info" />
+                <p>Name</p>
               </a>
-              <p>Name</p>
             </div>
             <div
               className="about hovered"
@@ -143,16 +150,17 @@ const Nav = ({ eventTitleFunc }) => {
               onClick={abouts}
               id={activeNav === '#about' ? 'active' : ''}
             >
-              <a href="#">
+              <a href="/udyam/about" className='game-changer'>
                 <AiOutlineInfoCircle className="info" />
+                <p>About Us</p>
               </a>
-              <p>About Us</p>
+
             </div>
             <div className="events hovered" onClick={slideEvents} id={activeNav === '#event' ? 'active' : ''}>
-              <a href="#">
+              <a href="/udyam/events" className='game-changer'>
                 <BiNews className="info" />
+                <p>Events</p>
               </a>
-              <p>Events</p>
             </div>
             <div
               className="sponsors hovered"
@@ -160,16 +168,16 @@ const Nav = ({ eventTitleFunc }) => {
               onClick={sponsors}
               id={activeNav === '#sponsors' ? 'active' : ''}
             >
-              <a href="#">
+              <a href="/udyam/sponsors" className='game-changer'>
                 <BiDollarCircle className="info" />
+                <p>Sponsors</p>
               </a>
-              <p>Sponsors</p>
             </div>
             <div className="leaderboard hovered" onClick={slideLeaderboard} id={activeNav === '#leaderboard' ? 'active' : ''}>
-              <a href="#">
+              <a href="/udyam/leaderboard" className='game-changer'>
                 <FaAward className="info" />
+                <p>Leaderboard</p>
               </a>
-              <p>Leaderboard</p>
             </div>
           </div>
           {/* <div className="udyam-ees">
