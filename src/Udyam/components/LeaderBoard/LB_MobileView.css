@@ -16,7 +16,7 @@
     width: 100vw;
     height: 40vh;
     display: flex;
-    margin-top: 20vh;
+    margin-top: 10vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -24,8 +24,8 @@
   .second-position {
     position: relative;
     width: 90%;
-    margin: 5vh;
-    height: 18vh;
+    margin: 1vh;
+    height: 20vh;
     border-radius: 3vh;
     padding: 2vh;
     display: flex;
@@ -37,8 +37,8 @@
   .mobile-first-position {
     position: relative;
     width: 90%;
-    margin: 5vh;
-    height: 18vh;
+    margin: 1vh;
+    height: 20vh;
     border-radius: 3vh;
     padding: 2vh;
     display: flex;
@@ -51,8 +51,8 @@
   .third-position {
     position: relative;
     width: 90%;
-    margin: 5vh;
-    height: 18vh;
+    margin: 1vh;
+    height: 20vh;
     border-radius: 3vh;
     padding: 2vh;
     display: flex;
