@@ -13,23 +13,26 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
 import { AiOutlineClose } from 'react-icons/ai';
+import Profile from '../Profile/Profile';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
 // // ..
 // AOS.init();
 
-const Nav = () => {
+const Nav = (props) => {
   const [slideEvent, setEvent] = useState('false');
   const [slideLeader, setLeader] = useState('false');
   const [slideNav, setNav] = useState('false');
   const [width, setWidth] = useState(window.innerWidth);
   const [activeNav, setActiveNav] = useState('#');
+  const [udyamName, setUdyamName] = useState(true);
   // let ind=0;
 
   // const Token = document.getElementsByClassName('.token')
   // const UdyamNav = document.getElementsByClassName('.udyam-nav');
 
   function checkNav() {
+    setUdyamName(true);
     if (width > 800) {
       return;
     } else {
@@ -40,9 +43,11 @@ const Nav = () => {
       }
       document.querySelector('.udyam-nav').style.display = 'none';
     }
+    props.eventTitleFunc();
   }
   function menuNav() {
     setNav(false);
+    setUdyamName(false);
     if (slideLeader === false) {
       document.querySelector('.leader').style.display = 'block';
     } else {
@@ -50,6 +55,7 @@ const Nav = () => {
     }
     // document.querySelector('.token').style.display = 'block';
     // document.querySelector('.leader').style.display = 'block';
+
     document.querySelector('.udyam-nav').style.display = 'block';
     // setNav(!slideNav);
   }
@@ -102,10 +108,12 @@ const Nav = () => {
   }
   function helloNav() {
     setNav(true);
+    setUdyamName(true);
   }
 
   return (
     <>
+      {udyamName && width < 800 && <Profile />}
       {(!slideNav || width > 800) && (
         <div className="udyam-nav">
           <div className="close" onClick={helloNav}>
@@ -167,7 +175,9 @@ const Nav = () => {
         </div>
       )}
       <div className="udyam-ees-mobile">
-        <img className="ees-img-mobile" src={ees} alt="hreo" />
+        <a href="https://eesdevelopment.netlify.app/">
+          <img className="ees-img-mobile" src={ees} alt="hreo" />
+        </a>
       </div>
       <div className="menu-icon" onClick={menuNav}>
         <TfiMenu />
