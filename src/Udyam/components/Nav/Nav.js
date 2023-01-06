@@ -19,19 +19,22 @@ import Profile from '../Profile/Profile';
 // // ..
 // AOS.init();
 
-const Nav = () => {
+const Nav = ({ eventTitleFunc }) => {
   const [slideEvent, setEvent] = useState('false');
   const [slideLeader, setLeader] = useState('false');
   const [slideNav, setNav] = useState('false');
   const [width, setWidth] = useState(window.innerWidth);
   const [activeNav, setActiveNav] = useState('#');
   const [udyamName, setUdyamName] = useState(true);
+  // const [udyevents,setudyevents]=useState('Digism');
   // let ind=0;
 
   // const Token = document.getElementsByClassName('.token')
   // const UdyamNav = document.getElementsByClassName('.udyam-nav');
 
   function checkNav() {
+    // props.eventTitleFunc=e;
+    // eventTitleFunc(e);
     setUdyamName(true);
     if (width > 800) {
       return;
@@ -43,6 +46,7 @@ const Nav = () => {
       }
       document.querySelector('.udyam-nav').style.display = 'none';
     }
+    // props.eventTitleFunc();
   }
   function menuNav() {
     setNav(false);
@@ -186,8 +190,8 @@ const Nav = () => {
           <div className="back" onClick={slidemobile}>
             <IoIosArrowBack />
           </div>
-          <div className="token-event">
-            <div className="digism event-name" onClick={checkNav}>
+          <div className="token-event" onClick={eventTitleFunc}>
+            <div className="digism event-name active" onClick={checkNav}>
               <a href="#"> Digism</a>
             </div>
             <div className="ichip event-name" onClick={checkNav}>

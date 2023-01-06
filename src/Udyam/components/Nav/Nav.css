@@ -9,6 +9,9 @@
   /* display: flex;
         flex-direction: row; */
   z-index: 10;
+  left: 0%;
+  top: 0%;
+  /* float: left; */
 }
 
 .udyam-icon {
@@ -153,7 +156,7 @@
 }
 
 .menu-icon {
-  margin-top: 3%;
+  margin-top: 3vh;
   display: none;
   z-index: 6;
 }
@@ -170,8 +173,8 @@
     color: #fff;
     font-size: 1.5rem;
     position: fixed;
-    top: 1%;
-    left: 4%;
+    top: 1.6vh;
+    left: 3vh;
   }
   .close {
     color: #fff;

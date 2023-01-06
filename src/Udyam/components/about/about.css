@@ -1,0 +1,76 @@
+/* @font-face {
+  font-family: eventDescFont;
+  src: url('../Events/Poppins-Regular.otf');
+} */
+
+@font-face {
+  font-family: aboutHeadingFont;
+  src: url('../Events/RussoOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: aboutparaFont;
+  src: url('../Events/Comfortaa-Regular.ttf');
+}
+.bg {
+  background: url(./images/ABOUT.svg);
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding-top: 14%;
+}
+.udy {
+  padding-top: 16%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.udx,
+.udy {
+  word-wrap: break-word;
+  color: white;
+}
+.aboutx {
+  margin-left: 6%;
+}
+.hdx {
+  font-family: aboutHeadingFont;
+  font-size: 48px;
+  padding-bottom: 5px;
+}
+.udx {
+  font-family: aboutparaFont;
+  font-size: 18px;
+}
+@media screen and (min-width: 1300px) {
+  .imgx {
+    padding-left: 6%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100vw;
+  }
+  .udy {
+    padding-top: 6%;
+  }
+
+  .aboutx {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .imgx {
+    transform: scaleY(0.8);
+    width: 100%;
+  }
+  .bg {
+    height: 950px;
+  }
+  .udx {
+    font-size: 14px;
+  }
+}

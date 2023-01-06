@@ -3,24 +3,30 @@
   display: flex;
   position: fixed;
   width: 100vw;
-  height: 10vh;
+  height: 11vh;
   justify-content: space-between;
   background-color: rgba(42, 41, 41, 0.844);
   z-index: 6;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 .profile {
-  padding: 1rem;
+  padding: 3vh;
 }
 .profile img {
-  height: 60px;
-  width: 62px;
+  height: 5vh;
+  width: 5vh;
   border-radius: 50%;
 }
 .emma {
   font-family: 'Poppins', sans-serif;
   position: relative;
-  top: 18%;
-  left: 28%;
+  /* line-height: 5vh; */
+  font-size: 5vh;
+  top: 2vh;
+  left: 40%;
   justify-content: center;
   align-items: center;
   color: #fff;
