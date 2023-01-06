@@ -19,7 +19,7 @@ import Profile from '../Profile/Profile';
 // // ..
 // AOS.init();
 
-const Nav = () => {
+const Nav = (props) => {
   const [slideEvent, setEvent] = useState('false');
   const [slideLeader, setLeader] = useState('false');
   const [slideNav, setNav] = useState('false');
@@ -43,6 +43,7 @@ const Nav = () => {
       }
       document.querySelector('.udyam-nav').style.display = 'none';
     }
+    props.eventTitleFunc();
   }
   function menuNav() {
     setNav(false);
