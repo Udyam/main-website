@@ -11,7 +11,6 @@ import Udyam from './Udyam/Udyam';
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Routes>
           <Route
@@ -27,7 +26,7 @@ function App() {
             element={
               <>
                 <Nav />
-                <Udyam/>
+                <Udyam />
               </>
             }
           />
@@ -61,7 +60,7 @@ function App() {
             element={
               <>
                 <Nav />
-                <LeaderBoard contentIndex={0}/>
+                <LeaderBoard contentIndex={0} />
               </>
             }
           />

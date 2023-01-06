@@ -2,7 +2,6 @@
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Russo One', sans-serif; */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .bg {
   background: url(./background.png) no-repeat;
@@ -102,11 +101,6 @@
 .star-field .layer:nth-child(3) {
   animation: sf-fly-by-3 5s linear infinite;
 }
-
-
-
-
-
 
 .udyam-nav {
   height: 100vh;
@@ -298,12 +292,12 @@
     gap: 4rem;
     width: 100%;
   }
-  .game-changer{
+  .game-changer {
     display: flex;
     gap: 4rem;
   }
-  .hovered p {
-    padding-top: 1.5rem;
+  p {
+    /* padding-top: 1.5rem; */
   }
   .token {
     left: 0;
@@ -318,6 +312,13 @@
   .leader {
     left: 0;
     width: 60vw;
+  }
+  .udyam-nav p {
+    font-size: 1rem;
+    margin: auto;
+  }
+  .hovered {
+    gap: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
