@@ -91,7 +91,9 @@ const LeaderBoard = (props) => {
   // }
   function slidemobile() {
     // setEvent(true);
-    document.querySelector('.leader').style.display = 'none';
+    if (width < 800) {
+      document.querySelector('.leader').style.display = 'none';
+    }
   }
   function sliding() {
     // setEvent(true);
