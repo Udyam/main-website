@@ -162,7 +162,7 @@ const LeaderBoard = (props) => {
             <div className="mobile-first-position">
               <div className="img-and-score">
                 <img src="/assets/medals/gold.png" alt="" />
-                <div className="team-score" style={{ height: '11vh' }}>
+                <div className="team-score" style={{ height: '10vh' }}>
                   {teamScore[contentIndex].first}
                 </div>
               </div>
