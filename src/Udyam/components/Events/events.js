@@ -1,36 +1,24 @@
 import './events.css';
 import bg from './bg2.png';
 import Nav from '../Nav/Nav';
-// import { useState } from 'react';
+
 import { useState, useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { IoIosArrowBack } from 'react-icons/io';
-// import LeaderBoard from '../LeaderBoard/LeaderBoard';
+import './../Nav/Nav.css';
 
 function Events() {
   const [eventTitle, setEventTitle] = useState('DIGISIM');
   const eventName = (event) => {
     var element = event.target;
     setEventTitle(element.innerText);
-    // document.querySelector('.active').classList.remove('active');
-    // element.classList.add('active');
+
     console.log(element);
   };
 
-  // const [slideNav, setNav] = useState('false');
   const [width, setWidth] = useState(window.innerWidth);
-  // const [activeNav, setActiveNav] = useState('#');
-  // const [udyamName, setUdyamName] = useState(true);
-  // const [udyevents,setudyevents]=useState('Digism');
-  // let ind=0;
-
-  // const Token = document.getElementsByClassName('.token')
-  // const UdyamNav = document.getElementsByClassName('.udyam-nav');
 
   function checkNav() {
-    // props.eventTitleFunc=e;
-    // eventTitleFunc(e);
-    // setUdyamName(true);
     if (width > 800) {
       return;
     } else {
@@ -39,22 +27,7 @@ function Events() {
         document.querySelector('.udyam-nav').style.display = 'none';
       }
     }
-    // props.eventTitleFunc();
   }
-  // function menuNav() {
-  //   setNav(false);
-  //   setUdyamName(false);
-  //   if (slideLeader === false) {
-  //     document.querySelector('.leader').style.display = 'block';
-  //   } else {
-  //     document.querySelector('.token').style.display = 'block';
-  //   }
-  //   // document.querySelector('.token').style.display = 'block';
-  //   // document.querySelector('.leader').style.display = 'block';
-
-  //   document.querySelector('.udyam-nav').style.display = 'block';
-  //   // setNav(!slideNav);
-  // }
 
   const updateWidth = () => {
     setWidth(window.innerWidth);
@@ -63,44 +36,12 @@ function Events() {
     window.addEventListener('resize', updateWidth);
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
-  // function slideIn(e) {
-  //   setEvent(true);
-  //   setLeader(true);
-  //   const aevent = e.currentTarget.getAttribute('ind');
-  //   setActiveNav(aevent);
-  // }
 
-  // function slideEvents() {
-  //   setEvent(!slideEvent);
-  //   setLeader(true);
-  //   setActiveNav('#event');
-  //   // Events.style.backgroundColor = 'yellow'
-  // }
-  // function slideLeaderboard() {
-  //   setLeader(!slideLeader);
-  //   setEvent(true);
-  //   setActiveNav('#leaderboard');
-  // }
-  // function names() {
-  //   setActiveNav('#name');
-  //   slideIn();
-  // }
-  // function abouts() {
-  //   setActiveNav('#about');
-  //   slideIn();
-  // }
-  // function sponsors() {
-  //   setActiveNav('#sponsors');
-  //   slideIn();
-  // }
-  // function showNav() {
-  //   setNav(!slideNav);
-  //   setEvent(true);
-  //   setLeader(true);
-  // }
   function slidemobile() {
     // setEvent(true);
-    document.querySelector('.leader').style.display = 'none';
+    if (width < 800) {
+      document.querySelector('.leader').style.display = 'none';
+    }
   }
   function sliding() {
     // setEvent(true);
@@ -109,13 +50,12 @@ function Events() {
 
   return (
     <div>
-      {1 && (
+      {true && (
         <div className="leader">
-          {width < 800 && (
-            <div className="back" onClick={slidemobile}>
-              <IoIosArrowBack />
-            </div>
-          )}
+          <div className="back" onClick={slidemobile}>
+            <IoIosArrowBack />
+          </div>
+
           <div className="token-event" onClick={eventName}>
             <div className="digism event-name" onClick={checkNav}>
               <a href="#"> Digism</a>
