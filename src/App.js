@@ -39,6 +39,16 @@ function App() {
               </>
             }
           />
+
+          <Route
+            path="/udyam/name"
+            element={
+              <>
+                <Nav active="#name" />
+              </>
+            }
+          />
+
           <Route
             path="/udyam/events"
             element={
