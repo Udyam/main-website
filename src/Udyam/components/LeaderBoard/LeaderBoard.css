@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 /* .bg {
   background: url(./background.png) no-repeat;
   background-size: cover;
@@ -99,8 +99,8 @@
 /* Leaderboards-navbar */
 
 /* Leaderboard-main */
-.leader{
-  top:0;
+.leader {
+  top: 0;
 }
 .getback {
   position: fixed;
@@ -119,11 +119,12 @@
   width: 70%;
   color: white;
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: 'Russo One', sans-serif;
   left: 28vw;
 }
 
 .leaderboards-main-container h1 {
+  font-weight: bold;
   font-size: 10vh;
   padding: 3% 5%;
 }
@@ -164,8 +165,8 @@
   background: radial-gradient(circle, rgba(236, 106, 0, 0.6001751042213761) 12%, rgba(182, 159, 130, 0.15479695296087181) 100%, rgba(60, 57, 4, 0.3368697820925245) 100%, rgba(255, 255, 255, 0.7346288857339811) 100%);
 }
 .img-and-score img {
-  height: 10vh;
-  width: 10vh;
+  /* height: 10vh; */
+  /* width: 10vh; */
   float: left;
 }
 .team-score {
