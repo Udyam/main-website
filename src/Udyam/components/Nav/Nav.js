@@ -147,7 +147,7 @@ const Nav = (props) => {
           <div className="layer"></div>
         </div>
       </div>
-      {udyamName && width < 800 && <Profile />}
+      {(udyamName||1) && width < 800 && <Profile />}
       {(slideNav || width > 800) && (
         <div className="udyam-nav">
           <div className="close" onClick={helloNav}>
