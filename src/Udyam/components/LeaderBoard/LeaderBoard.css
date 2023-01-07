@@ -99,6 +99,9 @@
 /* Leaderboards-navbar */
 
 /* Leaderboard-main */
+.leader{
+  top:0;
+}
 .getback {
   position: fixed;
   color: white;
