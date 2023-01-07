@@ -1,5 +1,5 @@
 import './events.css';
-import bg from './background.svg';
+import bg from './bg2.png';
 import Nav from '../Nav/Nav';
 // import { useState } from 'react';
 import { useState, useEffect } from 'react';
@@ -109,11 +109,11 @@ function Events() {
   return (
     <div>
       {1 && (
-        <div className="leader" onClick={eventName}>
+        <div className="leader">
           <div className="back" onClick={slidemobile}>
             <IoIosArrowBack />
           </div>
-          <div className="token-event">
+          <div className="token-event" onClick={eventName}>
             <div className="digism event-name" onClick={checkNav}>
               <a href="#"> Digism</a>
             </div>
