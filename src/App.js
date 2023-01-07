@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 // import Udyam from './Udyam/Udyam.js';
-import About from './Udyam/components/about/about';
+import About from './Udyam/components/About/About';
 import Events from './Udyam/components/Events/events';
 import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';

@@ -31,6 +31,15 @@
   bottom: 24vh;
   top: 0vh;
 }
+.updates-udyam-head-container h1 {
+  font-weight: bold;
+}
+.updates-udgam-head-container h1 {
+  font-weight: bold;
+}
+.updates-mashal-head-container h1 {
+  font-weight: bold;
+}
 
 .updates-udyam-content {
   background-color: rgba(43, 139, 207, 255);

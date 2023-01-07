@@ -19,7 +19,7 @@ const Faq = () => {
   return (
     <div className="faqs">
       <section className="sec">
-        <h2 className="title">FAQs</h2>
+        <h2 className="title" >FAQs</h2>
         <div className="faq">
           <div className="left">
             <div>
