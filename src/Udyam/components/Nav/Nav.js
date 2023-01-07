@@ -147,7 +147,7 @@ const Nav = (props) => {
           <div className="layer"></div>
         </div>
       </div>
-      {(udyamName||1) && width < 800 && <Profile />}
+      {(udyamName || 1) && width < 800 && <Profile />}
       {(slideNav || width > 800) && (
         <div className="udyam-nav">
           <div className="close" onClick={helloNav}>
@@ -163,7 +163,8 @@ const Nav = (props) => {
               className="name hovered"
               // ind="#name"
               onClick={names}
-              id={props.active === '#name' ? 'active' : ''}>
+              id={props.active === '#name' ? 'active' : ''}
+            >
               <Link to="/udyam/name" className="game-changer">
                 <BiQrScan className="info" />
                 <p>Name</p>
@@ -173,7 +174,8 @@ const Nav = (props) => {
               className="about hovered"
               // ind="#about"
               onClick={abouts}
-              id={props.active === '#about' ? 'active' : ''}>
+              id={props.active === '#about' ? 'active' : ''}
+            >
               <Link to="/udyam/about" className="game-changer">
                 {' '}
                 <AiOutlineInfoCircle className="info" />
@@ -194,7 +196,8 @@ const Nav = (props) => {
               className="sponsors hovered"
               // ind="#sponsors"
               onClick={sponsors}
-              id={props.active == '#sponsors' ? 'active' : ''}>
+              id={props.active == '#sponsors' ? 'active' : ''}
+            >
               <Link to="/udyam/sponsors" className="game-changer">
                 <BiDollarCircle className="info" />
                 <p>Sponsors</p>
