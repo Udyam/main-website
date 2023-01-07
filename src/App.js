@@ -9,7 +9,18 @@ import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
 // import Udyam from './Udyam/Udyam';
 import HomePage from './Udyam/components/HomePage/HomePage';
+// import {useState,useEffect} from 'react';
 function App() {
+  // let wid;
+  // const [width, setWidth] = useState(window.innerWidth);
+  // const updateWidth = () => {
+  //   setWidth(window.innerWidth);
+  //   wid=width;
+  // };
+  // useEffect(() => {
+  //   window.addEventListener('resize', updateWidth);
+  //   return () => window.removeEventListener('resize', updateWidth);
+  // }, []);
   return (
     <div className="App">
       <Router>
@@ -26,7 +37,7 @@ function App() {
             path="/udyam"
             element={
               <>
-                <Nav active="none" />
+                <Nav active="#name" />
                 <HomePage />
               </>
             }
@@ -43,7 +54,7 @@ function App() {
           />
 
           <Route
-            path="/udyam/name"
+            path="/udyam"
             element={
               <>
                 <Nav active="#name" />

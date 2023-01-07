@@ -89,7 +89,7 @@ const Nav = (props) => {
     // document.querySelector('.leader').style.display = 'block';
 
     setNav(true);
-    // document.querySelector('.udyam-nav').style.display = 'block';
+    document.querySelector('.udyam-nav').style.display = 'block';
     // setNav(!slideNav);
   }
 
@@ -113,20 +113,20 @@ const Nav = (props) => {
 
   // }
   function names() {
-    // slideIn();
+    helloNav();
   }
   function abouts() {
-    // setActiveNav('#abou');
+    helloNav();
   }
   function sponsors() {
-    // slideIn();
+    helloNav();
   }
   // function showNav() {
   //   setNav(!slideNav);
   //   setEvent(true);
   //   setLeader(true);
   // }
-  // function slidemobile() {
+  // // function slidemobile() {
   //   // setEvent(true);
   //   // setLeader(true);
   // }
@@ -147,7 +147,7 @@ const Nav = (props) => {
           <div className="layer"></div>
         </div>
       </div>
-      {(udyamName || 1) && width < 800 && <Profile />}
+      {(udyamName || true) && width < 800 && <Profile />}
       {(slideNav || width > 800) && (
         <div className="udyam-nav">
           <div className="close" onClick={helloNav}>
@@ -165,7 +165,7 @@ const Nav = (props) => {
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}
             >
-              <Link to="/udyam/name" className="game-changer">
+              <Link to="/udyam" className="game-changer">
                 <BiQrScan className="info" />
                 <p>Name</p>
               </Link>
@@ -268,7 +268,7 @@ const Nav = (props) => {
               
               
                */}
-      {0 && (
+      {false && (
         <div className="token">
           <div className="back">
             <IoIosArrowBack />
