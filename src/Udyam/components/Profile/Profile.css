@@ -3,7 +3,7 @@
   display: flex;
   position: fixed;
   width: 100vw;
-  height: 11vh;
+  height: 10vh;
   justify-content: space-between;
   background-color: rgba(42, 41, 41, 0.844);
   z-index: 6;
@@ -24,9 +24,10 @@ body {
   font-family: 'Poppins', sans-serif;
   position: relative;
   /* line-height: 5vh; */
-  font-size: 5vh;
-  top: 2vh;
-  left: 40%;
+  font-size: 4vh;
+  /* top: 1vh; */
+  left: 36%;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
