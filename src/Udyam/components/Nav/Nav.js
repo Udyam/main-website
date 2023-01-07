@@ -154,15 +154,16 @@ const Nav = (props) => {
             <AiOutlineClose />
           </div>
           <div className="udyam-img">
-            <img className="udyam-logo" src={udyam} alt="hero" />
+            <Link to="/udyam">
+              <img className="udyam-logo" src={udyam} alt="hero" />
+            </Link>
           </div>
           <div className="udyam-icon">
             <div
               className="name hovered"
               // ind="#name"
               onClick={names}
-              id={props.active === '#name' ? 'active' : ''}
-            >
+              id={props.active === '#name' ? 'active' : ''}>
               <Link to="/udyam/name" className="game-changer">
                 <BiQrScan className="info" />
                 <p>Name</p>
@@ -172,8 +173,7 @@ const Nav = (props) => {
               className="about hovered"
               // ind="#about"
               onClick={abouts}
-              id={props.active === '#about' ? 'active' : ''}
-            >
+              id={props.active === '#about' ? 'active' : ''}>
               <Link to="/udyam/about" className="game-changer">
                 {' '}
                 <AiOutlineInfoCircle className="info" />
@@ -194,8 +194,7 @@ const Nav = (props) => {
               className="sponsors hovered"
               // ind="#sponsors"
               onClick={sponsors}
-              id={props.active == '#sponsors' ? 'active' : ''}
-            >
+              id={props.active == '#sponsors' ? 'active' : ''}>
               <Link to="/udyam/sponsors" className="game-changer">
                 <BiDollarCircle className="info" />
                 <p>Sponsors</p>
