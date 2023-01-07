@@ -1,0 +1,64 @@
+@font-face {
+  font-family: homePageHeadingFont;
+  src: url('../Events/Poppins-Regular.otf');
+}
+
+.main-container {
+  height: 100vh;
+  width: 93vw;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  word-wrap: break-word;
+  color: white;
+  font-size: 35px;
+}
+
+.heading {
+  font-family: homePageHeadingFont;
+  position: absolute;
+  left: 15vw;
+  font-size: 3em;
+  background: -webkit-linear-gradient(white, black);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1500px) {
+  .main-container {
+    font-size: 31px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .main-container {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main-container {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    width: 100vw;
+    font-size: 22px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    position: inherit;
+    margin: 15vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    font-size: 20px;
+  }
+}

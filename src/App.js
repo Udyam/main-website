@@ -7,7 +7,8 @@ import About from './Udyam/components/about/about';
 import Events from './Udyam/components/Events/events';
 import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
-import Udyam from './Udyam/Udyam';
+// import Udyam from './Udyam/Udyam';
+import HomePage from './Udyam/components/HomePage/HomePage';
 function App() {
   return (
     <div className="App">
@@ -26,10 +27,11 @@ function App() {
             element={
               <>
                 <Nav active="none" />
-                <Udyam />
+                <HomePage />
               </>
             }
           />
+
           <Route
             path="/udyam/about"
             element={
