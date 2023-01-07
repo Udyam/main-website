@@ -3,6 +3,7 @@ import bg from './bg2.png';
 import Nav from '../Nav/Nav';
 // import { useState } from 'react';
 import { useState, useEffect } from 'react';
+import { MdArrowForwardIos } from 'react-icons/md';
 import { IoIosArrowBack } from 'react-icons/io';
 // import LeaderBoard from '../LeaderBoard/LeaderBoard';
 
@@ -143,11 +144,11 @@ function Events() {
       )}
 
       <div className="getback" onClick={sliding}>
-        <IoIosArrowBack />
+        <MdArrowForwardIos />
       </div>
 
       <Nav active="#event" />
-      <div className="events-main">
+      <div className="events-main" onClick={slidemobile}>
         <div className="event-body">
           <div className="event-heading">
             <div className="events-heading-box">EVENTS</div>
