@@ -89,7 +89,7 @@ const Nav = (props) => {
     // document.querySelector('.leader').style.display = 'block';
 
     setNav(true);
-    // document.querySelector('.udyam-nav').style.display = 'block';
+    document.querySelector('.udyam-nav').style.display = 'block';
     // setNav(!slideNav);
   }
 
@@ -113,20 +113,20 @@ const Nav = (props) => {
 
   // }
   function names() {
-    // slideIn();
+    helloNav();
   }
   function abouts() {
-    // setActiveNav('#abou');
+    helloNav();
   }
   function sponsors() {
-    // slideIn();
+    helloNav();
   }
   // function showNav() {
   //   setNav(!slideNav);
   //   setEvent(true);
   //   setLeader(true);
   // }
-  // function slidemobile() {
+  // // function slidemobile() {
   //   // setEvent(true);
   //   // setLeader(true);
   // }
