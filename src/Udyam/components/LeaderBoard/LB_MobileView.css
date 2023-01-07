@@ -61,7 +61,6 @@
     background: linear-gradient(90deg, rgba(236, 106, 0, 0.6001751042213761) 12%, rgba(182, 159, 130, 0.15479695296087181) 100%, rgba(60, 57, 4, 0.3368697820925245) 100%, rgba(255, 255, 255, 0.7346288857339811) 100%);
   }
   .mobile-first-position img {
-
     transform: scale(0.5);
   }
   .third-position img {
@@ -72,7 +71,7 @@
   }
   .img-and-score {
     position: relative;
- 
+
     display: flex;
     flex-direction: column;
     justify-content: center;
