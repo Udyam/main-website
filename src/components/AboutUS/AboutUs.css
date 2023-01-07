@@ -20,7 +20,7 @@ body {
 .head h1 {
   font-size: 5vw;
   color: white;
-  font-family: 'League Sparten',sans-serif;
+  font-family: 'League Sparten', sans-serif;
 }
 .base1 {
   display: block;
@@ -90,7 +90,7 @@ body {
   display: none;
 }
 .content-box h3 {
-  font-family: 'League Sparten',sans-serif;
+  font-family: 'League Sparten', sans-serif;
   font-weight: bold;
   position: relative;
   display: inline-block;
