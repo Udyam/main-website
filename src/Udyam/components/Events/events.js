@@ -5,6 +5,7 @@ import Nav from '../Nav/Nav';
 import { useState, useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { IoIosArrowBack } from 'react-icons/io';
+import './../Nav/Nav.css';
 // import LeaderBoard from '../LeaderBoard/LeaderBoard';
 
 function Events() {
@@ -100,7 +101,9 @@ function Events() {
   // }
   function slidemobile() {
     // setEvent(true);
-    document.querySelector('.leader').style.display = 'none';
+    if (width < 800) {
+      document.querySelector('.leader').style.display = 'none';
+    }
   }
   function sliding() {
     // setEvent(true);
@@ -109,13 +112,12 @@ function Events() {
 
   return (
     <div>
-      {1 && (
+      {true && (
         <div className="leader">
-          {width < 800 && (
-            <div className="back" onClick={slidemobile}>
-              <IoIosArrowBack />
-            </div>
-          )}
+          <div className="back" onClick={slidemobile}>
+            <IoIosArrowBack />
+          </div>
+
           <div className="token-event" onClick={eventName}>
             <div className="digism event-name" onClick={checkNav}>
               <a href="#"> Digism</a>

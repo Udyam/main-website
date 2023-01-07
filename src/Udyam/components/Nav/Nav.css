@@ -171,7 +171,7 @@
   height: 17vh;
 }
 #active {
-  background-color: #2c9031;
+  background: #4e4b4b;
 }
 
 /* @media screen and (min-width: 800px){
@@ -242,7 +242,7 @@
   left: 7vw;
   height: 100vh;
   position: fixed;
-  background: #902c2c;
+  background: #4e4b4b;
   width: 15vw;
   z-index: 15;
 }

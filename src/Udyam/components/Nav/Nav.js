@@ -147,7 +147,7 @@ const Nav = (props) => {
           <div className="layer"></div>
         </div>
       </div>
-      {(udyamName || 1) && width < 800 && <Profile />}
+      {(udyamName || true) && width < 800 && <Profile />}
       {(slideNav || width > 800) && (
         <div className="udyam-nav">
           <div className="close" onClick={helloNav}>
@@ -165,7 +165,7 @@ const Nav = (props) => {
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}
             >
-              <Link to="/udyam/name" className="game-changer">
+              <Link to="/udyam" className="game-changer">
                 <BiQrScan className="info" />
                 <p>Name</p>
               </Link>
@@ -268,7 +268,7 @@ const Nav = (props) => {
               
               
                */}
-      {0 && (
+      {false && (
         <div className="token">
           <div className="back">
             <IoIosArrowBack />
