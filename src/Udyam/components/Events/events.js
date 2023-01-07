@@ -146,7 +146,7 @@ function Events() {
         <IoIosArrowBack />
       </div>
 
-      <Nav eventTitleFunc={eventName} />
+      <Nav active="#event" />
       <div className="events-main">
         <div className="event-body">
           <div className="event-heading">

@@ -163,10 +163,10 @@ const Nav = (props) => {
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}
             >
-              <a href="#" className="game-changer">
+              <Link to="/udyam/name" className="game-changer">
                 <BiQrScan className="info" />
                 <p>Name</p>
-              </a>
+              </Link>
             </div>
             <div
               className="about hovered"
