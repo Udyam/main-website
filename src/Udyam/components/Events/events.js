@@ -52,10 +52,11 @@ function Events() {
     <div>
       {true && (
         <div className="leader">
-          <div className="back" onClick={slidemobile}>
-            <IoIosArrowBack />
-          </div>
-
+          {width <= 800 && (
+            <div className="back" onClick={slidemobile}>
+              <IoIosArrowBack />
+            </div>
+          )}{' '}
           <div className="token-event" onClick={eventName}>
             <div className="digism event-name" onClick={checkNav}>
               <a href="#"> Digism</a>
