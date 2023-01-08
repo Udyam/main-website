@@ -29,7 +29,6 @@ nav {
   justify-content: space-around;
   align-self: center;
   width: 80%;
-
 }
 
 .nav-links li a {
@@ -103,7 +102,7 @@ nav {
   .nav-links li a {
     font-size: 1.1rem;
   }
-  .menu-text{
+  .menu-text {
     right: -28%;
   }
 }
