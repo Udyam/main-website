@@ -113,6 +113,7 @@ nav {
   }
   .nav-links {
     margin-left: 0rem;
+    padding-top: 6rem;
     /* overflow: hidden; */
     position: fixed;
     width: 100vw;
