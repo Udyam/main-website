@@ -66,6 +66,7 @@ function App() {
             path="/udyam/events"
             element={
               <>
+                <Nav active="#event" />
                 <Events active="#event" />
               </>
             }

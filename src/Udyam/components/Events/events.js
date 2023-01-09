@@ -1,6 +1,6 @@
 import './events.css';
 import bg from './bg2.png';
-import Nav from '../Nav/Nav';
+// import Nav from '../Nav/Nav';
 
 import { useState, useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
@@ -9,10 +9,12 @@ import './../Nav/Nav.css';
 
 function Events() {
   const [eventTitle, setEventTitle] = useState('DIGISIM');
+  const [eventtable, setEventtable] = useState(true);
+  // const [eventnav, setEventnav] = useState(false);
   const eventName = (event) => {
     var element = event.target;
     setEventTitle(element.innerText);
-
+    setEventtable(false);
     console.log(element);
   };
 
@@ -22,10 +24,12 @@ function Events() {
     if (width > 800) {
       return;
     } else {
-      document.querySelector('.leader').style.display = 'none';
-      if (document.querySelector('.udyam-nav') != null) {
-        document.querySelector('.udyam-nav').style.display = 'none';
-      }
+      // document.querySelector('.leader').style.display = 'none';
+      setEventtable(false);
+      // setEventnav(false);
+      // if (document.querySelector('.udyam-nav') != null) {
+      document.querySelector('.udyam-nav').style.display = 'none';
+      // }
     }
   }
 
@@ -40,23 +44,25 @@ function Events() {
   function slidemobile() {
     // setEvent(true);
     if (width < 800) {
-      document.querySelector('.leader').style.display = 'none';
+      // document.querySelector('.leader').style.display = 'none';
+      setEventTitle(false);
     }
   }
   function sliding() {
     // setEvent(true);
-    document.querySelector('.leader').style.display = 'block';
+    setEventtable(true);
+    // setEventTitle(true);
+    // document.querySelector('.leader').style.display = 'block';
   }
 
   return (
     <div>
-      {true && (
+      {(eventtable || width > 800) && (
         <div className="leader">
-          {width <= 800 && (
-            <div className="back" onClick={slidemobile}>
-              <IoIosArrowBack />
-            </div>
-          )}{' '}
+          <div className="back" onClick={checkNav}>
+            <IoIosArrowBack />
+          </div>
+
           <div className="token-event" onClick={eventName}>
             <div className="digism event-name" onClick={checkNav}>
               <a href="#"> Digism</a>
@@ -90,7 +96,6 @@ function Events() {
         <MdArrowForwardIos />
       </div>
 
-      <Nav active="#event" />
       <div className="events-main" onClick={slidemobile}>
         <div className="event-body">
           <div className="event-heading">

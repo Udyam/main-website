@@ -21,7 +21,9 @@
   /* padding: 0.3rem 0rem; */
 }
 .updates-udyam-head-container {
-  background-color: rgba(43, 139, 207, 255);
+  background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
+  mix-blend-mode: normal;
+  box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
   color: white;
   height: 12vh;
   padding: 1.2rem 2rem;
@@ -33,7 +35,9 @@
 }
 
 .updates-udyam-content {
-  background-color: rgba(43, 139, 207, 255);
+  background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
+  mix-blend-mode: normal;
+  box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
   color: white;
   padding: 2rem 6rem;
   position: sticky;
@@ -43,7 +47,9 @@
 }
 
 .updates-udgam-head-container {
-  background-color: rgba(78, 65, 149, 255);
+  background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
+  mix-blend-mode: normal;
+  box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
   color: white;
   height: 12vh;
   padding: 1.2rem 2rem;
@@ -55,7 +61,9 @@
 }
 
 .updates-udgam-content {
-  background-color: rgba(78, 65, 149, 255);
+  background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
+  mix-blend-mode: normal;
+  box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
   color: white;
   padding: 2rem 6rem;
   position: sticky;
@@ -65,7 +73,9 @@
 }
 
 .updates-mashal-head-container {
-  background-color: rgba(22, 22, 25, 255);
+  background: #16161a;
+  mix-blend-mode: normal;
+  /* border: 1px solid #FEFAFA; */
   color: white;
   height: 12vh;
   padding: 1.2rem 2rem;
@@ -77,7 +87,9 @@
 }
 
 .updates-mashal-content {
-  background-color: rgba(22, 22, 25, 255);
+  background: #16161a;
+  mix-blend-mode: normal;
+  /* border: 1px solid #FEFAFA; */
   color: white;
   padding: 2rem 6rem;
   position: sticky;
@@ -106,22 +118,34 @@
   text-align: right;
 }
 .udyam-background-light {
-  background-color: rgb(75 166 231);
+  background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
+  mix-blend-mode: normal;
+  /* box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25); */
 }
 .udgam-background-light {
-  background-color: rgb(125 106 230);
+  background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
+  mix-blend-mode: normal;
+  /* box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25); */
 }
 .mashal-background-light {
-  background-color: rgb(46 46 53);
+  background: #16161a;
+  mix-blend-mode: normal;
+  /* border: 1px solid #FEFAFA; */
 }
 .udyam-background-dark {
-  background-color: rgba(43, 139, 207, 255);
+  background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
+  mix-blend-mode: normal;
+  box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
 }
 .udgam-background-dark {
-  background-color: rgba(78, 65, 149, 255);
+  background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
+  mix-blend-mode: normal;
+  box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
 }
 .mashal-background-dark {
-  background-color: rgba(22, 22, 25, 255);
+  background: #16161a;
+  mix-blend-mode: normal;
+  /* border: 1px solid #FEFAFA; */
 }
 
 @media (max-width: 480px) {
@@ -143,7 +167,9 @@
     padding-top: 0;
   }
   .updates-udyam-head-container {
-    background-color: rgba(43, 139, 207, 255);
+    background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
     color: white;
     height: 6vh;
     padding: 1vh;
@@ -155,7 +181,9 @@
   }
 
   .updates-udyam-content {
-    background-color: rgba(43, 139, 207, 255);
+    background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
     color: white;
     padding: 3vh 1vh;
     position: sticky !important;
@@ -165,7 +193,9 @@
   }
 
   .updates-udgam-head-container {
-    background-color: rgba(78, 65, 149, 255);
+    background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
     color: white;
     height: 6vh;
     padding: 1vh;
@@ -177,7 +207,9 @@
   }
 
   .updates-udgam-content {
-    background-color: rgba(78, 65, 149, 255);
+    background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
     color: white;
     padding: 3vh 1vh;
     position: sticky !important;
@@ -187,7 +219,9 @@
   }
 
   .updates-mashal-head-container {
-    background-color: rgba(22, 22, 25, 255);
+    background: #16161a;
+    mix-blend-mode: normal;
+    /* border: 1px solid #FEFAFA; */
     color: white;
     height: 6vh;
     padding: 1vh;
@@ -199,7 +233,9 @@
   }
 
   .updates-mashal-content {
-    background-color: rgba(22, 22, 25, 255);
+    background: #16161a;
+    mix-blend-mode: normal;
+    /* border: 1px solid #FEFAFA; */
     color: white;
     padding: 3vh 1vh;
     position: sticky !important;
@@ -247,7 +283,9 @@
     font-size: 4vh;
   }
   .updates-udyam-head-container {
-    background-color: rgba(43, 139, 207, 255);
+    background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
     color: white;
     height: 8vh;
     padding: 1.2vh 2vh;
@@ -260,7 +298,9 @@
   }
 
   .updates-udyam-content {
-    background-color: rgba(43, 139, 207, 255);
+    background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
     color: white;
     padding: 3vh 1vh;
     position: sticky !important;
@@ -270,7 +310,9 @@
   }
 
   .updates-udgam-head-container {
-    background-color: rgba(78, 65, 149, 255);
+    background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
     color: white;
     height: 8vh;
     padding: 1.2vh 2vh;
@@ -283,7 +325,9 @@
   }
 
   .updates-udgam-content {
-    background-color: rgba(78, 65, 149, 255);
+    background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
     color: white;
     padding: 3vh 2vh;
     position: sticky !important;
@@ -293,7 +337,9 @@
   }
 
   .updates-mashal-head-container {
-    background-color: rgba(22, 22, 25, 255);
+    background: #16161a;
+    mix-blend-mode: normal;
+    /* border: 1px solid #FEFAFA; */
     color: white;
     height: 8vh;
     padding: 1.2vh 2vh;
@@ -306,7 +352,9 @@
   }
 
   .updates-mashal-content {
-    background-color: rgba(22, 22, 25, 255);
+    background: #16161a;
+    mix-blend-mode: normal;
+    /* border: 1px solid #FEFAFA; */
     color: white;
     padding: 3vh 2vh;
     position: sticky !important;
