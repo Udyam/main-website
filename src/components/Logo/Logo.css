@@ -26,8 +26,8 @@
   height: 50vh;
   width: 50vh;
   position: absolute;
-  top: 20vh;
-  left: 55vw;
+  top: 16vh;
+  right: 5vw;
   display: flex;
   justify-content: center;
   /* transform: scale(0.8); */
@@ -92,12 +92,12 @@
 
 .ring-middle {
   transform: scale(1.2);
-  height: 40vh;
+  height: 35vh;
   animation: rotating 15s linear infinite;
 }
 .ring-4 {
   filter: invert(1) brightness(2);
-  height: 60vh;
+  height: 40vh;
   animation: rotating 15s linear infinite;
 }
 
@@ -112,14 +112,6 @@
 
 .dotted-ring {
   animation: rotating 50s linear infinite;
-}
-
-.glowing-ring {
-  position: absolute;
-  height: 60vh;
-  width: 60vh;
-  border-radius: 50%;
-  box-shadow: 1px 1px 200px 50px rgba(255, 255, 255, 0.5);
 }
 
 .glass-lens {
@@ -152,28 +144,24 @@
 
 @media screen and (max-width: 600px) {
   .main-container-for-logo {
-    height: 40vw;
-    width: 40vw;
+    height: 30vw;
+    width: 30vw;
     position: absolute;
     top: -90vh !important;
-    left: 30vw !important;
+    left: 37vw !important;
     display: flex;
     justify-content: center;
     transform: scale(0.8);
   }
   .rings {
-    height: 150% !important;
-    width: 150% !important;
+    height: 55vw !important;
+    width: 55vw !important;
   }
   .dial-button {
-    height: 210% !important;
-  }
-  .glowing-ring {
-    height: 200% !important;
-    width: 200% !important;
+    height: 80vw !important;
   }
   .main-event-logo {
-    height: 150% !important;
-    margin: 5vh !important;
+    height: 120% !important;
+    margin: 8vh !important;
   }
 }

@@ -4,6 +4,7 @@ import React from 'react';
 import { teamName, teamScore } from './LB_data';
 import { useState, useEffect } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
+import { MdArrowForwardIos } from 'react-icons/md';
 const LeaderBoard = (props) => {
   // const [slideEvent, setEvent] = useState('false');
   // const [slideLeader, setLeader] = useState(true);
@@ -119,9 +120,11 @@ const LeaderBoard = (props) => {
 
       {1 && (
         <div className="leader">
-          <div className="back" onClick={slidemobile}>
-            <IoIosArrowBack />
-          </div>
+          {width <= 800 && (
+            <div className="back" onClick={slidemobile}>
+              <IoIosArrowBack />
+            </div>
+          )}
           <div className="token-event">
             <div className="digism event-name" onClick={checkNav}>
               <a href="#"> Digism</a>
@@ -152,7 +155,7 @@ const LeaderBoard = (props) => {
       )}
 
       <div className="getback" onClick={sliding}>
-        <IoIosArrowBack />
+        <MdArrowForwardIos />
       </div>
 
       <div className="leaderboards-main-container">

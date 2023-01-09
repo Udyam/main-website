@@ -43,7 +43,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="menu-text" style={{ display: 'flex' }}>
-            <span>Menu</span>
+            <span>Register</span>
           </div>
           <button className="menu" onClick={expand}>
             <i className={click ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'}></i>

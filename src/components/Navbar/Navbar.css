@@ -9,13 +9,16 @@
   width: 100vw;
   height: 10vh;
   display: flex;
-  background: #120b2c;
+  background: #120b2c00;
   font-family: 'Poppins', sans-serif;
 }
 nav {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.nav-links li {
+  z-index: 5;
 }
 .nav-links {
   display: flex;
@@ -27,17 +30,14 @@ nav {
   align-self: center;
   width: 80%;
 }
-.nav-links li {
-  z-index: 5;
-}
+
 .nav-links li a {
   text-decoration: none;
   font-size: 1.2rem;
   color: #fff;
-  /* transition: 3s; */
 }
 .nav-links li a:hover {
-  color: aqua;
+  color: rgb(0, 255, 157);
 }
 .menu {
   position: absolute;
@@ -102,6 +102,9 @@ nav {
   .nav-links li a {
     font-size: 1.1rem;
   }
+  .menu-text {
+    right: -28%;
+  }
 }
 @media screen and (max-width: 600px) {
   ::-webkit-scrollbar {
@@ -113,6 +116,7 @@ nav {
   }
   .nav-links {
     margin-left: 0rem;
+    padding-top: 6rem;
     /* overflow: hidden; */
     position: fixed;
     width: 100vw;
@@ -140,9 +144,9 @@ nav {
   }
   .menu-text {
     /* top: 28%; */
-    top: 4%;
+    top: 3.65%;
     display: flex;
-    left: 25%;
+    left: 22%;
   }
 
   .menu {
@@ -150,7 +154,7 @@ nav {
     top: -44%;
     z-index: 63;
     position: relative;
-    right: -30%;
+    right: -26%;
   }
 }
 /* @media screen and (max-width: 450px) {

@@ -112,6 +112,9 @@ const Nav = (props) => {
   //   setEvent(true);
 
   // }
+  function events() {
+    helloNav();
+  }
   function names() {
     helloNav();
   }
@@ -186,7 +189,7 @@ const Nav = (props) => {
                 <p>About Us</p>
               </a> */}
             </div>
-            <div className="events hovered" id={props.active === '#event' ? 'active' : ''}>
+            <div className="events hovered" id={props.active === '#event' ? 'active' : ''} onClick={events}>
               <Link to="/udyam/events" className="game-changer">
                 <BiNews className="info" />
                 <p>Events</p>
