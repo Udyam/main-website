@@ -18,6 +18,7 @@
 .sponsor-heading {
   font-family: headingFont;
   font-size: 50px;
+  font-weight: bold;
   color: white;
   margin: 40px;
 }
