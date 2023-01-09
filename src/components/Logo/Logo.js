@@ -44,7 +44,6 @@ const Logo = (props) => {
 
             <img height={'200%'} className="dial-button" src="/assets/New Rings/Group 1950withbg.svg" alt="" />
             <div className="glass-lens"></div>
-            
           </div>
 
           <img className="main-event-logo" height={'100vh'} src="/assets/eeslogo.svg" alt="" onClick={logoClick} />
