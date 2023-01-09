@@ -2,8 +2,8 @@
   position: absolute;
   top: 0vh;
   left: 0;
-  width: 80%;
-  height: 12.2%;
+  width: 90%;
+  height: 13.0%;
   background-image: linear-gradient(to right, rgb(3, 48, 48), rgb(36, 161, 161));
   z-index: 0;
   clip-path: polygon(0 0, 26% 0, 86.4% 29.7%, 86.4% 63.4%, 40% 100%, 0 100%, 0% 80%, 0% 38%);
