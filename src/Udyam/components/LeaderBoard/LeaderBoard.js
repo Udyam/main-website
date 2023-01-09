@@ -119,7 +119,7 @@ const LeaderBoard = (props) => {
       </div> */}
 
       {1 && (
-        <div className="leader" style={{ backgroundColor: '#FF0000' }}>
+        <div className="leader">
           {width <= 800 && (
             <div className="back" onClick={slidemobile}>
               <IoIosArrowBack />
