@@ -262,7 +262,7 @@
   display: none;
   z-index: 6;
 }
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .udyam-nav {
     width: 10vw;
   }
@@ -272,7 +272,7 @@
   .leader {
     left: 10vw;
   }
-}
+} */
 @media screen and (max-width: 800px) {
   .udyam-nav {
     width: 60vw;
