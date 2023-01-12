@@ -143,7 +143,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .circuit-img{
+  .circuit-img {
     display: none;
   }
   .main-container-for-logo {
