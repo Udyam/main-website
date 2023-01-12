@@ -45,7 +45,7 @@
     top: 13vh;
     height: 95vh;
     width: 100%;
-    background-image: linear-gradient(rgb(36, 161, 161), rgb(3, 48, 48));
+    background-image: linear-gradient(to bottom, rgb(3, 7, 54), rgb(49, 6, 150));
     clip-path: polygon(34% 18%, 66% 18%, 100% 55%, 100% 92%, 68% 92%, 30% 92%, 0 92%, 0 55%);
   }
 
