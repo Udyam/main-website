@@ -1,0 +1,114 @@
+.sponsers {
+  display: flex;
+  flex-direction: column;
+  width: 84vw;
+  position: relative;
+  top: 10%;
+  left: 12%;
+}
+.sponsers h1 {
+  color: #dadada;
+  display: inline-block;
+  position: relative;
+  top: 10%;
+  left: 25px;
+  font-size: 65px;
+  font-weight: 600;
+  font-family: 'League sparten', sans-serif;
+}
+.sponsBox {
+  position: relative;
+  top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.sponser {
+  display: inline-block;
+  width: 14rem;
+  height: 16.5rem;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sponser1 {
+  background-image: url(./images/sp1.png);
+}
+.sponser2 {
+  background-image: url(./images/sp2.png);
+}
+.sponser3 {
+  background-image: url(./images/sp3.png);
+}
+.sponser4 {
+  background-image: url(./images/sp4.png);
+}
+.sponser5 {
+  background-image: url(./images/sp5.png);
+}
+.sponser6 {
+  background-image: url(./images/sp6.png);
+}
+.sponser7 {
+  background-image: url(./images/sp7.png);
+}
+.sponser8 {
+  background-image: url(./images/sp8.png);
+}
+
+.sp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 75%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  font-family: 'League sparten', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(206, 185, 185);
+  opacity: 0.5;
+  color: white;
+  z-index: 1;
+}
+
+.sp h4 {
+  position: relative;
+  display: inline-block;
+  top: 25%;
+  z-index: 2;
+  left: 10px;
+  opacity: 25;
+}
+.spicon {
+  position: relative;
+  top: 20%;
+  margin: 0;
+  display: inline-block;
+}
+
+@media (max-width: 400px) {
+  .sponser {
+    width: 10rem;
+    height: 13rem;
+  }
+  sponsers h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .sponsers {
+    align-items: center;
+  }
+  .sponsers h1 {
+    left: 0;
+    font-size: 45px;
+  }
+}

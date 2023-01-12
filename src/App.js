@@ -9,6 +9,7 @@ import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
 // import Udyam from './Udyam/Udyam';
 import HomePage from './Udyam/components/HomePage/HomePage';
+import Sponsors from './Udyam/components/Sponsors/Sponsors';
 // import {useState,useEffect} from 'react';
 function App() {
   // let wid;
@@ -76,6 +77,7 @@ function App() {
             element={
               <>
                 <Nav active="#sponsors" />
+                <Sponsors active="#sponsors" />
               </>
             }
           />
