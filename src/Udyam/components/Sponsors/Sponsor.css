@@ -81,15 +81,16 @@
 .sp h4 {
   position: relative;
   display: inline-block;
-  top: 25%;
+  top: 35%;
   z-index: 2;
   left: 10px;
   opacity: 25;
 }
 .spicon {
+  color: #fff;
   position: relative;
-  top: 20%;
-  margin: 0;
+  top: 35%;
+  margin-right: 10px;
   display: inline-block;
 }
 
