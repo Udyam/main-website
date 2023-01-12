@@ -38,7 +38,7 @@ function App() {
             path="/udyam"
             element={
               <>
-                <Nav active="#name" />
+                <Nav active="#none" />
                 <HomePage />
               </>
             }
@@ -55,7 +55,7 @@ function App() {
           />
 
           <Route
-            path="/udyam"
+            path="/udyam/name"
             element={
               <>
                 <Nav active="#name" />
