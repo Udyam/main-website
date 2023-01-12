@@ -153,9 +153,11 @@ const Nav = (props) => {
       {(udyamName || true) && width < 800 && <Profile />}
       {(slideNav || width > 800) && (
         <div className="udyam-nav">
-          <div className="close" onClick={helloNav}>
-            <AiOutlineClose />
-          </div>
+          {width < 800 && (
+            <div className="close" onClick={helloNav}>
+              <AiOutlineClose />
+            </div>
+          )}
           <div className="udyam-img">
             <Link to="/udyam">
               <img className="udyam-logo" src={udyam} alt="hero" />
