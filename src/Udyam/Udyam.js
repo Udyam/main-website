@@ -5,6 +5,7 @@ import LeaderBoard from './components/LeaderBoard/LeaderBoard';
 import Nav from './components/Nav/Nav';
 import About from './components/about/about';
 import HomePage from './components/HomePage/HomePage';
+import Sponsors from './components/Sponsors/Sponsors';
 
 const Udyam = () => {
   return (
@@ -14,6 +15,7 @@ const Udyam = () => {
         <HomePage />
         <About />
         <Events />
+        <Sponsors />
         <LeaderBoard contentIndex={0} />
       </div>
     </>

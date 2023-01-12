@@ -201,7 +201,7 @@ const Nav = (props) => {
               className="sponsors hovered"
               // ind="#sponsors"
               onClick={sponsors}
-              id={props.active == '#sponsors' ? 'active' : ''}
+              id={props.active === '#sponsors' ? 'active' : ''}
             >
               <Link to="/udyam/sponsors" className="game-changer">
                 <BiDollarCircle className="info" />
