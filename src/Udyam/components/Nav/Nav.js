@@ -159,7 +159,7 @@ const Nav = (props) => {
             </div>
           )}
           <div className="udyam-img">
-            <Link to="/udyam">
+            <Link to="/udyam" style={{ textDecoration: 'none' }}>
               <img className="udyam-logo" src={udyam} alt="hero" />
             </Link>
           </div>
@@ -170,7 +170,7 @@ const Nav = (props) => {
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}
             >
-              <Link to="/udyam" className="game-changer">
+              <Link to="/udyam/name" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiQrScan className="info" />
                 <p>Name</p>
               </Link>
@@ -181,7 +181,7 @@ const Nav = (props) => {
               onClick={abouts}
               id={props.active === '#about' ? 'active' : ''}
             >
-              <Link to="/udyam/about" className="game-changer">
+              <Link to="/udyam/about" className="game-changer" style={{ textDecoration: 'none' }}>
                 {' '}
                 <AiOutlineInfoCircle className="info" />
                 <p>About Us</p>
@@ -192,7 +192,7 @@ const Nav = (props) => {
               </a> */}
             </div>
             <div className="events hovered" id={props.active === '#event' ? 'active' : ''} onClick={events}>
-              <Link to="/udyam/events" className="game-changer">
+              <Link to="/udyam/events" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiNews className="info" />
                 <p>Events</p>
               </Link>
@@ -203,13 +203,13 @@ const Nav = (props) => {
               onClick={sponsors}
               id={props.active === '#sponsors' ? 'active' : ''}
             >
-              <Link to="/udyam/sponsors" className="game-changer">
+              <Link to="/udyam/sponsors" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiDollarCircle className="info" />
                 <p>Sponsors</p>
               </Link>
             </div>
             <div className="leaderboard hovered" id={props.active === '#leaderboard' ? 'active' : ''}>
-              <Link to="/udyam/leaderboard" className="game-changer">
+              <Link to="/udyam/leaderboard" className="game-changer" style={{ textDecoration: 'none' }}>
                 <FaAward className="info" />
                 <p>Leaderboard</p>
               </Link>
