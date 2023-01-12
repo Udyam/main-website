@@ -59,9 +59,11 @@ function Events() {
     <div>
       {(eventtable || width > 800) && (
         <div className="leader">
-          <div className="back" onClick={checkNav}>
-            <IoIosArrowBack />
-          </div>
+          {width < 800 && (
+            <div className="back" onClick={checkNav}>
+              <IoIosArrowBack />
+            </div>
+          )}
 
           <div className="token-event" onClick={eventName}>
             <div className="digism event-name" onClick={checkNav}>
