@@ -11,6 +11,7 @@ import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
 import HomePage from './Udyam/components/HomePage/HomePage';
 import Sponsors from './Udyam/components/Sponsors/Sponsors';
 import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
+import DashBoard from './Udyam/components/DashBoard/DashBoard';
 // import {useState,useEffect} from 'react';
 function App() {
   // let wid;
@@ -60,6 +61,7 @@ function App() {
             element={
               <>
                 <Nav active="#name" />
+                <DashBoard />
               </>
             }
           />

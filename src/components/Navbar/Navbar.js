@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [click, setclick] = useState(true);
@@ -16,6 +17,7 @@ const Navbar = () => {
       document.querySelector('.menu-text').style.display = 'flex';
     }
     setclick(!click);
+    setEventLink(false);
   }
   function showEvents() {
     setEventLink(!eventLink);
@@ -23,6 +25,19 @@ const Navbar = () => {
 
   return (
     <div>
+      {eventLink && (
+        <div className="dropmenu">
+          <Link to="/udyam">
+            <a href="#">Udyam</a>
+          </Link>
+          <Link to="/udyam">
+            <a href="#">Udgam</a>
+          </Link>
+          <Link to="/udyam">
+            <a href="#">Mashal</a>
+          </Link>
+        </div>
+      )}
       <div className="container">
         <nav>
           <ul className="nav-links" style={{ display: 'none' }}>
@@ -37,13 +52,6 @@ const Navbar = () => {
                 Events
                 <BiChevronDown style={{ color: '#fff' }} />
               </a>
-              {eventLink && (
-                <div className="dropmenu">
-                  <a href="#">Udyam</a>
-                  <a href="#">Udgam</a>
-                  <a href="#">Mashal</a>
-                </div>
-              )}
             </li>
             <li>
               <a href="#sponsors" onClick={expand}>
