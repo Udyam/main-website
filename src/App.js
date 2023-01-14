@@ -61,7 +61,7 @@ function App() {
             element={
               <>
                 <Nav active="#name" />
-                <DashBoard/>
+                <DashBoard />
               </>
             }
           />

@@ -18,7 +18,6 @@ const Navbar = () => {
     }
     setclick(!click);
     setEventLink(false);
-
   }
   function showEvents() {
     setEventLink(!eventLink);
@@ -37,7 +36,6 @@ const Navbar = () => {
           <Link to="/udyam">
             <a href="#">Mashal</a>
           </Link>
-
         </div>
       )}
       <div className="container">
