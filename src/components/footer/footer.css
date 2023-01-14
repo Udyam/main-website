@@ -7,11 +7,12 @@
   padding-bottom: 0%;
 }
 .px{
-  padding: 0 1%;
+  padding: 0 0.5%;
   position: relative;
   float: right;
   padding-right: 2%;
-  transform: scale(0.8);
+  transform: scale(1);
+  height: 65px;
 }
 .pxd{
   padding-top: 3%;
