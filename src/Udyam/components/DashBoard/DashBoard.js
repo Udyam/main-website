@@ -49,6 +49,50 @@ const DashBoard = () => {
             </div>
           </div>
         </div>
+        <div className="Teams">
+          <h1>Teams</h1>
+          <div className="name-Event">
+            <div className="logo-event">
+              <img src="https://images.unsplash.com/photo-1673669024894-4b56f413c8dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80" alt="img" />
+              <h2>Devbits</h2>
+            </div>
+            <div className="text-event">
+              <h2>UserName</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia nisi, sed nemo dolor temporibus rerum, voluptate accusantium ducimus corporis et in voluptatibus repellendus ullam consequuntur?</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="add-Teams">+ Add Teams</h2>
+        <div className="row">
+          <div className="column">
+            <div className="card">
+              <h3>Card 1</h3>
+              <button className="register-btn">Register</button>
+            </div>
+          </div>
+
+          <div className="column">
+            <div className="card">
+              <h3>Card 3</h3>
+              <button className="register-btn">Register</button>
+            </div>
+          </div>
+
+          <div className="column">
+            <div className="card">
+              <h3>Card 3</h3>
+              <button className="register-btn">Register</button>
+            </div>
+          </div>
+
+          <div className="column">
+            <div className="card">
+              <h3>Card 4</h3>
+              <button className="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
