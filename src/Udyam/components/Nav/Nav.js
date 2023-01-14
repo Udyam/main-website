@@ -221,9 +221,9 @@ const Nav = (props) => {
         </div>
       )}
       <div className="udyam-ees-mobile">
-        <a href="https://eesdevelopment.netlify.app/">
+        <Link to="/">
           <img className="ees-img-mobile" src={ees} alt="hreo" />
-        </a>
+        </Link>
       </div>
       <div className="menu-icon" onClick={menuNav}>
         <TfiMenu />
