@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   width: 100vw;
   height: 10vh;
@@ -71,7 +74,7 @@ nav {
 .dropmenu {
   display: flex;
   position: absolute;
-  left: 40vw;
+  left: 35vw;
   top: 53px;
   flex-direction: column;
   padding: 1.2rem;
@@ -159,7 +162,7 @@ nav {
   .nav-links li {
     position: relative;
     top: -10%;
-    padding: 2rem;
+    padding: 1.8rem;
   }
   .nav-links li:hover {
     transition: all 0.2s ease-in-out;
@@ -180,7 +183,7 @@ nav {
     right: -26%;
   }
   .dropmenu {
-    top: 60vh;
+    top: 52vh;
     left: 50vw;
   }
 }

@@ -48,7 +48,7 @@ const sponsorData = [
 function Sponsors() {
   return (
     <>
-      <div className="sponsors-main">
+      <div id="sponsors" className="sponsors-main">
         <div className="sponsor-heading">SPONSORS</div>
         <ul className="sponsors-list">
           {sponsorData.map((key) => {
