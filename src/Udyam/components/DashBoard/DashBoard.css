@@ -104,6 +104,7 @@
   .db-main-container {
     flex-direction: column;
     width: 100%;
+    padding-left: 0;
   }
   .db-user-details {
     margin: 10%;
