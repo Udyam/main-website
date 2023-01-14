@@ -8,7 +8,7 @@ const DashBoard = () => {
           <div className="db-user-details">
             <div className="qr-and-name">
               <div className="qr">
-                <img src="#" alt="NA" />
+                <img src="#" alt="Qr-Code" />
               </div>
               <div className="userName">
                 <h1>Killjoy prime</h1>

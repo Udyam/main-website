@@ -9,6 +9,9 @@ import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
 // import Udyam from './Udyam/Udyam';
 import HomePage from './Udyam/components/HomePage/HomePage';
+import Sponsors from './Udyam/components/Sponsors/Sponsors';
+import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
+import DashBoard from './Udyam/components/DashBoard/DashBoard';
 // import {useState,useEffect} from 'react';
 function App() {
   // let wid;
@@ -37,7 +40,7 @@ function App() {
             path="/udyam"
             element={
               <>
-                <Nav active="#name" />
+                <Nav active="#none" />
                 <HomePage />
               </>
             }
@@ -54,10 +57,11 @@ function App() {
           />
 
           <Route
-            path="/udyam"
+            path="/udyam/name"
             element={
               <>
                 <Nav active="#name" />
+                <DashBoard />
               </>
             }
           />
@@ -76,6 +80,7 @@ function App() {
             element={
               <>
                 <Nav active="#sponsors" />
+                <Sponsors active="#sponsors" />
               </>
             }
           />
@@ -85,6 +90,14 @@ function App() {
               <>
                 <Nav active="#leaderboard" />
                 <LeaderBoard contentIndex={0} />
+              </>
+            }
+          />
+          <Route
+            path="/udgam/sponsors"
+            element={
+              <>
+                <UdgamSponsors />
               </>
             }
           />

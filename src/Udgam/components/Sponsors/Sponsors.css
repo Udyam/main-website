@@ -1,0 +1,126 @@
+@font-face {
+  font-family: homePageHeadingFont;
+  src: url('../Events/Poppins-Regular.otf');
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  width: 84vw;
+  position: relative;
+  top: 10%;
+  left: 12%;
+}
+
+.sponsors h1 {
+  display: inline-block;
+  position: relative;
+  top: 10%;
+  left: 25px;
+  font-size: 65px;
+  font-weight: 600;
+  font-family: homePageHeadingFont;
+  background: -webkit-linear-gradient(white, black);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sponsorContainer {
+  position: relative;
+  top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.sponsor {
+  display: inline-block;
+  width: 19%;
+  height: 17rem;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-container {
+  width: 100%;
+  height: 80%;
+  background: #121212;
+  opacity: 0.2;
+  margin-bottom: 10px;
+}
+
+.sponser1 {
+  background-image: url(./images/sp1.png);
+}
+.sponser2 {
+  background-image: url(./images/sp1.png);
+}
+.sponser3 {
+  background-image: url(./images/sp1.png);
+}
+.sponser4 {
+  background-image: url(./images/sp1.png);
+}
+.sponser5 {
+  background-image: url(./images/sp1.png);
+}
+.sponser6 {
+  background-image: url(./images/sp1.png);
+}
+.sponser7 {
+  background-image: url(./images/sp1.png);
+}
+.sponser8 {
+  background-image: url(./images/sp1.png);
+}
+
+.sponsorName {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media (max-width: 428px) {
+  .sponsor {
+    width: 80%;
+    height: 45vh;
+  }
+  sponsors h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .sponsors {
+    align-items: center;
+  }
+  .sponsors h1 {
+    left: 0;
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 429px) and (max-width: 1071px) {
+  .sponsor {
+    width: 10rem;
+    height: 13rem;
+  }
+  .sponsorName {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1072px) and (max-width: 1260px) {
+  .sponsorName {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

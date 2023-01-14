@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function SponsorCard(props) {
   return (
     <>
-      <div id="sponsors" className="sponsor-card">
+      <div className="sponsor-card">
         <div className="sponsor-image">
           <img src={props.image.default}></img>
         </div>

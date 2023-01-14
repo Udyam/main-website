@@ -143,6 +143,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .circuit-img {
+    display: none;
+  }
   .main-container-for-logo {
     height: 30vw;
     width: 30vw;
@@ -158,7 +161,7 @@
     width: 55vw !important;
   }
   .dial-button {
-    height: 80vw !important;
+    height: 150vw !important;
   }
   .main-event-logo {
     height: 120% !important;

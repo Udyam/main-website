@@ -1,0 +1,125 @@
+@font-face {
+  font-family: homePageHeadingFont;
+  src: url('../Events/Poppins-Regular.otf');
+}
+
+.sponsers {
+  display: flex;
+  flex-direction: column;
+  width: 84vw;
+  position: relative;
+  top: 10%;
+  left: 12%;
+}
+.sponsers h1 {
+  display: inline-block;
+  position: relative;
+  top: 10%;
+  left: 25px;
+  font-size: 65px;
+  font-weight: 600;
+  font-family: homePageHeadingFont;
+  background: -webkit-linear-gradient(white, black);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sponsBox {
+  position: relative;
+  top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.sponser {
+  display: inline-block;
+  width: 19%;
+  height: 16rem;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sponser1 {
+  background-image: url(./images/sp1.png);
+}
+.sponser2 {
+  background-image: url(./images/sp2.png);
+}
+.sponser3 {
+  background-image: url(./images/sp3.png);
+}
+.sponser4 {
+  background-image: url(./images/sp4.png);
+}
+.sponser5 {
+  background-image: url(./images/sp5.png);
+}
+.sponser6 {
+  background-image: url(./images/sp6.png);
+}
+.sponser7 {
+  background-image: url(./images/sp7.png);
+}
+.sponser8 {
+  background-image: url(./images/sp8.png);
+}
+
+.sp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 75%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  font-family: 'League sparten', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(18, 13, 13, 0.42);
+  color: white;
+}
+
+.sp h4 {
+  position: relative;
+  display: inline-block;
+  top: 35%;
+  left: 10px;
+}
+.spicon {
+  color: #fff;
+  position: relative;
+  top: 35%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+@media (max-width: 428px) {
+  .sponser {
+    width: 80%;
+    height: 45vh;
+  }
+  sponsers h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .sponsers {
+    align-items: center;
+  }
+  .sponsers h1 {
+    left: 0;
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 429px) and (max-width: 1071px) {
+  .sponser {
+    width: 10rem;
+    height: 13rem;
+  }
+}

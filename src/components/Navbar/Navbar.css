@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   width: 100vw;
   height: 10vh;
@@ -37,7 +40,7 @@ nav {
   color: #fff;
 }
 .nav-links li a:hover {
-  color: rgb(0, 255, 157);
+  border-bottom: 3px solid #fff;
 }
 .menu {
   position: absolute;
@@ -67,6 +70,29 @@ nav {
   right: -32%;
   z-index: 5;
 }
+
+.dropmenu {
+  display: flex;
+  position: absolute;
+  left: 35vw;
+  top: 53px;
+  flex-direction: column;
+  padding: 1.2rem;
+  gap: 3px;
+  z-index: 50;
+  background-color: #120b2c;
+  box-shadow: 4px 5px 15px #6767677c;
+}
+
+.dropmenu a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.dropmenu a:hover {
+  color: rgb(170, 164, 164);
+}
+
 @keyframes expand {
   from {
     width: 0%;
@@ -127,7 +153,7 @@ nav {
     justify-content: center;
     align-items: center;
     top: 0;
-    z-index: 60;
+    z-index: 30;
   }
   .nav-links:focus {
     transition: slide 12s ease;
@@ -136,7 +162,7 @@ nav {
   .nav-links li {
     position: relative;
     top: -10%;
-    padding: 2rem;
+    padding: 1.8rem;
   }
   .nav-links li:hover {
     transition: all 0.2s ease-in-out;
@@ -155,6 +181,10 @@ nav {
     z-index: 63;
     position: relative;
     right: -26%;
+  }
+  .dropmenu {
+    top: 52vh;
+    left: 50vw;
   }
 }
 /* @media screen and (max-width: 450px) {

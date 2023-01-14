@@ -1,9 +1,12 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
+import { BiChevronDown } from 'react-icons/bi';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [click, setclick] = useState(true);
+  const [eventLink, setEventLink] = useState(false);
 
   function expand() {
     if (click) {
@@ -14,10 +17,27 @@ const Navbar = () => {
       document.querySelector('.menu-text').style.display = 'flex';
     }
     setclick(!click);
+    setEventLink(false);
+  }
+  function showEvents() {
+    setEventLink(!eventLink);
   }
 
   return (
     <div>
+      {eventLink && (
+        <div className="dropmenu">
+          <Link to="/udyam">
+            <a href="#">Udyam</a>
+          </Link>
+          <Link to="/udyam">
+            <a href="#">Udgam</a>
+          </Link>
+          <Link to="/udyam">
+            <a href="#">Mashal</a>
+          </Link>
+        </div>
+      )}
       <div className="container">
         <nav>
           <ul className="nav-links" style={{ display: 'none' }}>
@@ -25,14 +45,24 @@ const Navbar = () => {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Registration</a>
+              <Link to="/udyam/name">
+                <a href="#">Registration</a>
+              </Link>
             </li>
             <li>
-              <a href="#events">Events</a>
+              <a href="#events" onClick={showEvents}>
+                Events
+                <BiChevronDown style={{ color: '#fff' }} />
+              </a>
             </li>
             <li>
               <a href="#sponsors" onClick={expand}>
                 Sponsors
+              </a>
+            </li>
+            <li>
+              <a href="#speakers" onClick={expand}>
+                Speakers
               </a>
             </li>
             <li>
