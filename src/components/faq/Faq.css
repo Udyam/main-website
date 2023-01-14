@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap');
+
 .faqs {
   background: #001432 fixed repeat center;
-  position: relative;
+  /* position: relative; */
   top: 0%;
   bottom: 0%;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   color: white;
 }
 
 .sec {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -22,10 +24,13 @@
 }
 
 .title {
-  font-size: 54px;
-  font-family: 'League Sparten', sans-serif;
-  line-height: 63.5px;
-  font-weight: bold;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
   margin: 4rem 3rem;
   align-items: center;
 }
@@ -38,30 +43,54 @@
 }
 
 .left {
-  height: 10vh;
   width: 42vw;
-  margin-left: 3vw;
-  padding-top: 2rem;
-  font-size: 1.1vw;
-  font-family: 'Open Sans', sans-serif;
-  /* font-family: 'Montserrat'; */
-  font-style: normal;
-  font-weight: 400;
-  text-transform: lowercase;
-  color: rgba(222, 222, 222, 0.99);
+  margin: 0vw 2vw;
+  margin-top: -10vh;  
+}
+
+#learnmorebtn{
+  width: 26vw;
+  margin-left: 1.8vw;
+}
+
+.teaminfo{
+  font-family: 'League Spartan', sans-serif;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 6vw;
+  letter-spacing: 1.6px;
+}
+
+#msgicon{
+  height: 1.2vw;
+  margin-top: 1.4px;
+}
+
+.team{
+  margin-bottom: 3vh;
+  
+}
+.headi{
+  margin: 5px 0px;
+  display: flex;
+  margin-bottom: 2vh;
+}
+.teamname{
+  margin-left: 0.6vw;
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
 }
 
 .right {
+  padding-top: 20px;
   width: 45vw;
-  height: 60vh;
+  height: 62vh;
   margin-top: 2em;
   margin-right: 0em;
   cursor: pointer;
-  /* background-color: #1f304a; */
   overflow-y: scroll;
   border-radius: 1px;
-  /* max-height: 58vh; */
-  /* width */
 }
 
 .right::-webkit-scrollbar {
@@ -86,6 +115,11 @@
 }
 
 .ques {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2vh;
+  padding: 0rem 0.65rem;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   padding: 0.7rem 0;
@@ -98,10 +132,6 @@
   padding: 0rem 1rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  /* font-weight:  */
-  /* font-style: ; */
-  /* font-size: ; */
-  /* border-top: 2px solid #fff; */
 }
 
 .question h3 {
@@ -110,91 +140,91 @@
   padding-top: 0.5rem;
 }
 
-.ans {
-  padding: 0rem 0.65rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.2s cubic-bezier(0, 1, 0, 1);
-}
-
-.ans.show {
+.ansshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 100;
-  padding: 0rem 0.65rem;
+  overflow: auto;
   height: auto;
-  max-height: 1000px;
-  transition: all 0.4s cubic-bezier(1, 0, 1, 0);
-  align-self: stretch;
-  flex-grow: 0;
-}
-.ans.show p {
+  opacity: 1;
+  transition: all 0.4s linear;
   font-size: 2vh;
   color: rgba(229, 229, 236, 0.85);
   margin: 0px 1vw;
 }
 
-.left h1 {
-  font-size: 7em;
-  font-weight: 100;
-  line-height: 0.8em;
-  opacity: 0.8;
-  letter-spacing: 0.35vw;
-}
-
-.left button {
-  width: 10px;
-}
-
-#learnmorebtn {
-  width: 25vh;
-  height: auto;
-  cursor: pointer;
-  margin-top: 2%;
+.hidden {
+  opacity: 0;
+  transition: all 0.4s linear;
+  overflow: hidden;
+  height: 0;
 }
 
 @media (max-width: 600px) {
   .faqs {
     height: auto;
   }
+
   .faq {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
-  .wanttoknow {
-    font-size: 8px;
+  #msgicon{
+    height: 4.2vw;
+    margin-top: 3px;
+    margin-right: 1vw;
   }
+
   .left {
     margin-top: -25px;
-    height: 40vh;
+    height: auto;
     align-items: center;
     line-height: 1px;
     width: 90vw;
-    /* margin-left: -42vw; */
-    /* margin-bottom: px ; */
-    /* margin-left: -40vw; */
   }
+
+  #learnmorebtn{
+    width: 80vw;
+    margin: 0vh 5vw;
+    margin-bottom: 20px;
+  }
+
   .right {
     width: 90vw;
-    height: 40vh;
+    height: 60vh;
     background: none;
     overflow-y: auto;
+    padding-bottom: 15vh;
   }
+
   .ques {
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
   }
-  #learnmorebtn {
-    margin-left: -20px;
-  }
 
-  .ans.show p {
-    font-size: 2.3vh;
+  
+
+  .ansshow {
+    font-size: 1.8vh;
     letter-spacing: 1px;
     margin: 0 15px;
     color: rgba(229, 229, 236, 0.85);
+    transition: all 0.4s linear;
+
   }
+
+  .hidden {
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.4s linear;
+
+  }
+
   .question h3 {
     font-size: 1.2rem;
     margin: 2px;
