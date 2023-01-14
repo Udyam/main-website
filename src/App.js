@@ -95,7 +95,7 @@ function App() {
             path="/udgam/sponsors"
             element={
               <>
-                <UdgamSponsors/>
+                <UdgamSponsors />
               </>
             }
           />
