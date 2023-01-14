@@ -1,9 +1,11 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
+import { BiChevronDown } from 'react-icons/bi';
 import './Navbar.css';
 
 const Navbar = () => {
   const [click, setclick] = useState(true);
+  const [eventLink, setEventLink] = useState(false);
 
   function expand() {
     if (click) {
@@ -14,6 +16,9 @@ const Navbar = () => {
       document.querySelector('.menu-text').style.display = 'flex';
     }
     setclick(!click);
+  }
+  function showEvents() {
+    setEventLink(!eventLink);
   }
 
   return (
@@ -28,7 +33,17 @@ const Navbar = () => {
               <a href="#">Registration</a>
             </li>
             <li>
-              <a href="#events">Events</a>
+              <a href="#events" onClick={showEvents}>
+                Events
+                <BiChevronDown style={{ color: '#fff' }} />
+              </a>
+              {eventLink && (
+                <div className="dropmenu">
+                  <a href="#">Udyam</a>
+                  <a href="#">Udgam</a>
+                  <a href="#">Mashal</a>
+                </div>
+              )}
             </li>
             <li>
               <a href="#sponsors" onClick={expand}>

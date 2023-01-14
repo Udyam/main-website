@@ -37,7 +37,7 @@ nav {
   color: #fff;
 }
 .nav-links li a:hover {
-  color: rgb(0, 255, 157);
+  border-bottom: 3px solid #fff;
 }
 .menu {
   position: absolute;
@@ -67,6 +67,26 @@ nav {
   right: -32%;
   z-index: 5;
 }
+.dropmenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  gap: 3px;
+  z-index: 50;
+  background-color: #120b2c;
+  box-shadow: 4px 5px 15px #6767677c;
+  text-decoration: none;
+}
+.dropmenu a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.dropmenu a:hover {
+  color: rgb(170, 164, 164);
+}
+
 @keyframes expand {
   from {
     width: 0%;
