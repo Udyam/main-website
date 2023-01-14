@@ -8,6 +8,7 @@
   flex-direction: row;
   width: 90vw;
   margin: 0 auto;
+  padding-left: 6vw;
 }
 .db-user-details {
   background-color: rgba(217, 217, 217, 0.3);
