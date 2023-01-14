@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [click, setclick] = useState(true);
@@ -10,14 +11,14 @@ const Navbar = () => {
   function expand() {
     if (click) {
       document.querySelector('.nav-links').style.display = 'flex';
-      document.querySelector('.menu-text').style.display = 'none';   
+      document.querySelector('.menu-text').style.display = 'none';
     } else {
       document.querySelector('.nav-links').style.display = 'none';
       document.querySelector('.menu-text').style.display = 'flex';
     }
     setclick(!click);
     setEventLink(false);
-    
+
   }
   function showEvents() {
     setEventLink(!eventLink);
@@ -27,9 +28,16 @@ const Navbar = () => {
     <div>
       {eventLink && (
         <div className="dropmenu">
-          <a href="#">Udyam</a>
-          <a href="#">Udgam</a>
-          <a href="#">Mashal</a>
+          <Link to="/udyam">
+            <a href="#">Udyam</a>
+          </Link>
+          <Link to="/udyam">
+            <a href="#">Udgam</a>
+          </Link>
+          <Link to="/udyam">
+            <a href="#">Mashal</a>
+          </Link>
+
         </div>
       )}
       <div className="container">
