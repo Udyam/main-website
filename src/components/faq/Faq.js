@@ -29,7 +29,7 @@ const Faq = () => {
             <div className="teaminfo">
               <div className="team">
                 <div className="headi">
-                  <img src={msg} alt=""  id="msgicon"/>
+                  <img src={msg} alt="" id="msgicon" />
                   <h2 className="teamname">EA Team</h2>
                 </div>
                 <h3>Ayushi Gupta</h3>
@@ -62,7 +62,6 @@ const Faq = () => {
                 <p>bisesh.agarwal.ece20@itbhu.ac.in</p>
               </div>
             </div>
-
           </div>
           <div className="right">
             {/*  */}
