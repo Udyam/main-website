@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 .updates-main-container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: '.Poppins', sans-serif;
 }
 .update-content a {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   border: 0.5vh;
   border-radius: 1vh;
   padding: 1vh 1vh;
@@ -26,7 +27,7 @@
   box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
   color: white;
   height: 12vh;
-  padding: 1.2rem 2rem;
+  padding: 1rem 8rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
@@ -34,13 +35,13 @@
   top: 0vh;
 }
 .updates-udyam-head-container h1 {
-  font-weight: bold;
+  font-weight: 900;
 }
 .updates-udgam-head-container h1 {
-  font-weight: bold;
+  font-weight: 900;
 }
 .updates-mashal-head-container h1 {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .updates-udyam-content {
@@ -48,6 +49,7 @@
   mix-blend-mode: normal;
   box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
   color: white;
+  /* font-size: 0.1rem; */
   padding: 2rem 6rem;
   position: sticky;
   height: 100vh;
@@ -61,7 +63,7 @@
   box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
   color: white;
   height: 12vh;
-  padding: 1.2rem 2rem;
+  padding: 1rem 8rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
@@ -84,10 +86,9 @@
 .updates-mashal-head-container {
   background: #16161a;
   mix-blend-mode: normal;
-  /* border: 1px solid #FEFAFA; */
   color: white;
   height: 12vh;
-  padding: 1.2rem 2rem;
+  padding: 1rem 8rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
@@ -98,7 +99,6 @@
 .updates-mashal-content {
   background: #16161a;
   mix-blend-mode: normal;
-  /* border: 1px solid #FEFAFA; */
   color: white;
   padding: 2rem 6rem;
   position: sticky;
@@ -108,13 +108,13 @@
 }
 
 .update-content {
-  line-height: 1.5;
-  font-size: 2rem;
+  line-height: 2;
+  font-size: 1.5rem;
 }
 .update-paragraph {
   border: 1vh;
   border-radius: 1vh;
-  margin: 1vh;
+  margin: 2vh 2vh;
   padding: 1vh 3vh;
 }
 .update-information {
