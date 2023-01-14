@@ -35,7 +35,7 @@ const Speakers = () => {
     }
   ];
   return (
-    <div className="speakers-container">
+    <div id="speakers" className="speakers-container">
       <div className="speakers-gradient"></div>
       <div className="speakers-content">
         <div className="speakers-heading">SPEAKERS</div>
