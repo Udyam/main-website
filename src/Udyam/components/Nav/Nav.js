@@ -198,7 +198,7 @@ const Nav = (props) => {
               </Link>
             </div>
             <div
-              className="sponsors hovered"
+              className="sposors hovered"
               // ind="#sponsors"
               onClick={sponsors}
               id={props.active === '#sponsors' ? 'active' : ''}
