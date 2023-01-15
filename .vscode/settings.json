@@ -1,5 +1,8 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": false,
-  "cSpell.words": ["Udyam"]
+  "cSpell.words": [
+    "UDGAM",
+    "Udyam"
+  ]
 }

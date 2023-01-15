@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Logo.css';
 import './CircularButton.css';
 
@@ -25,6 +25,26 @@ const Logo = (props) => {
     setAngle(angle + 120);
     props.eventchange();
   };
+  const animateImg = () => {
+    document.getElementsByClassName('main-event-logo')[0].animate(
+      [
+        // keyframes
+        { transform: 'scale(1)' },
+        { transform: 'scale(1.2)' },
+        { transform: 'scale(1)' }
+      ],
+      {
+        // timing options
+        duration: 1200,
+        iterations: Infinity,
+        fill: 'forwards'
+      }
+    );
+  };
+
+  useEffect(() => {
+    animateImg();
+  }, []);
 
   return (
     <div className="container-logo">
