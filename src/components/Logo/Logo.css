@@ -19,6 +19,7 @@
   left: 10%;
   top: 0%;
   user-select: none;
+  overflow: hidden;
   transform: rotate(125deg) scale(1) scaleY(1.4) scaleX(1.5) matrix(1, 0, 0.1, 1.2, 0, 0);
 }
 
@@ -77,6 +78,7 @@
   z-index: 5;
   user-select: none;
   /* top: 0; */
+  filter: hue-rotate(20deg) invert(12%) brightness(1.5);
 }
 
 .ring-10 {
