@@ -1,10 +1,11 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import './Faq.css';
-import img from './button.png';
+import img from './querybtn.png';
 import { useState } from 'react';
 import xmark from './xmark.svg';
 import plusmark from './plus.svg';
+import msg from './Vector.png';
 
 const Faq = () => {
   const [selected, setSelected] = useState(null);
@@ -23,14 +24,43 @@ const Faq = () => {
         <div className="faq">
           <div className="left">
             <div>
-              <div className="wanttoknow">
-                <h1>want to</h1>
-                <h1>know</h1>
-                <h1>more ?</h1>
-              </div>
-              {/* <button type="submit"> */}
               <img src={img} alt="buttonpng" border="0" id="learnmorebtn" onClick="." />
-              {/* </button> */}
+            </div>
+            <div className="teaminfo">
+              <div className="team">
+                <div className="headi">
+                  <img src={msg} alt="" id="msgicon" />
+                  <h2 className="teamname">EA Team</h2>
+                </div>
+                <h3>Ayushi Gupta</h3>
+                <p>ayushi.gupta.ece20@itbhu.ac.in</p>
+                <h3>Ankit</h3>
+                <p>ankit.student.ece20@itbhu.ac.in</p>
+              </div>
+              <div className="team">
+                <div className="headi">
+                  <img id="msgicon" src={msg} alt="" />
+                  <h2 className="teamname">Marketing Team</h2>
+                </div>
+                <h3>Nishanth Gounder</h3>
+                <p>nishanth.gounder.ece20@itbhu.ac.in</p>
+              </div>
+              <div className="team">
+                <div className="headi">
+                  <img id="msgicon" src={msg} alt="" />
+                  <h2 className="teamname">PR Team</h2>
+                </div>
+                <h3>Avinash Singh</h3>
+                <p>avinash.singh.ece20@itbhu.ac.in</p>
+              </div>
+              <div className="team">
+                <div className="headi">
+                  <img id="msgicon" src={msg} alt="" />
+                  <h2 className="teamname">Co-Convenor</h2>
+                </div>
+                <h3>Bisesh Agarwal</h3>
+                <p>bisesh.agarwal.ece20@itbhu.ac.in</p>
+              </div>
             </div>
           </div>
           <div className="right">
@@ -44,7 +74,7 @@ const Faq = () => {
                       <img src={selected === i ? xmark : plusmark} alt="" />
                       {/* <img src={plusmark} alt="" /> */}
                     </div>
-                    <div className={selected === i ? 'ans show' : 'ans'}>
+                    <div className={selected === i ? 'ansshow' : 'ansshow hidden'}>
                       <p>{item.answer}</p>
                     </div>
                   </div>
@@ -62,7 +92,8 @@ const Faq = () => {
 const data = [
   {
     question: 'Who developed JavaScript, and what was the first name of JavaScript?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    answer:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihilLorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   },
   {
     question: 'What is one drive?',
@@ -95,129 +126,15 @@ const data = [
   {
     question: 'What happens when my trial ends?',
     answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
-  },
-  {
-    question: 'How do i cancel my trial before it ends?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
-  },
-  {
-    question: 'Can I participate in more than 3 events?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
   }
+  // {
+  //   question: 'How do i cancel my trial before it ends?',
+  //   answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+  // },
+  // {
+  //   question: 'Can I participate in more than 3 events?',
+  //   answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+  // }
 ];
 
 export default Faq;
-
-/*
-<div className="ques">
-              <div className="question">
-                <h3>What is react JS ?</h3>
-                <img src={plusmark} />
-              </div>
-              <div className="ans">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ullam
-                  inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur
-                  accusantium temporibus omnis facere eum. Adipisci, nihil{' '}
-                </p>
-              </div>
-            </div>
-       
-            <div className="ques">
-              <div className="question">
-                <h3>What is CSS Bootstrap ?</h3>
-                <img src={plusmark} />
-              </div>
-              <div className="ans">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ullam
-                  inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur
-                  accusantium temporibus omnis facere eum. Adipisci, nihil{' '}
-                </p>
-              </div>
-            </div>
-       
-            <div className="ques">
-              <div className="question">
-                <h3>What is Lorem ipsum dolor sit ?</h3>
-                <img src={plusmark} />
-              </div>
-              <div className="ans">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ullam
-                  inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur
-                  accusantium temporibus omnis facere eum. Adipisci, nihil{' '}
-                </p>
-              </div>
-            </div>
-       
-            <div className="ques">
-              <div className="question">
-                <h3>What is Lorem ipsum dolor?</h3>
-                <img src={plusmark} />
-              </div>
-              <div className="ans">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ullam
-                  inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur
-                  accusantium temporibus omnis facere eum. Adipisci, nihil{' '}
-                </p>
-              </div>
-            </div>
-    
-            <div className="ques">
-              <div className="question">
-                <h3>How Lorem ipsum dolor sit amet ?</h3>
-                <img src={plusmark} />
-              </div>
-              <div className="ans">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ullam
-                  inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur
-                  accusantium temporibus omnis facere eum. Adipisci, nihil{' '}
-                </p>
-              </div>
-            </div>
-    
-            <div className="ques">
-              <div className="question">
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing.?</h3>
-                <img src={plusmark} />
-              </div>
-              <div className="ans">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ullam
-                  inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur
-                  accusantium temporibus omnis facere eum. Adipisci, nihil{' '}
-                </p>
-              </div>
-            </div>
-    
-            <div className="ques">
-              <div className="question">
-                <h3>why Lorem ipsum dolor sit amet consectetur. ?</h3>
-                <img src={plusmark} />
-              </div>
-              <div className="ans">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ullam
-                  inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur
-                  accusantium temporibus omnis facere eum. Adipisci, nihil{' '}
-                </p>
-              </div>
-            </div>
- 
-            <div className="ques">
-              <div className="question">
-                <h3>how Lorem ipsum dolor sit amet consectetur. ?</h3>
-                <img src={plusmark} />
-              </div>
-              <div className="ans">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ullam
-                  inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur
-                  accusantium temporibus omnis facere eum. Adipisci, nihil{' '}
-                </p>
-              </div>
-            </div>
-*/
