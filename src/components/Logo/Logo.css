@@ -144,8 +144,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  .empty-div{
-    height:auto;
+  .empty-div {
+    height: auto;
   }
   .circuit-img {
     display: none;

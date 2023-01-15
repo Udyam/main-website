@@ -42,11 +42,9 @@ const Logo = (props) => {
     );
   };
 
-
   useEffect(() => {
     animateImg();
-  },[]);
-
+  }, []);
 
   return (
     <div className="container-logo">
