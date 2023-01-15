@@ -1,12 +1,12 @@
-.footerbg{
-  height:100%;
+.footerbg {
+  height: 100%;
   background-color: #130426;
 }
-.items{
+.items {
   padding-top: 1.5%;
   padding-bottom: 0%;
 }
-.px{
+.px {
   padding: 0 0.5%;
   position: relative;
   float: right;
@@ -14,52 +14,44 @@
   transform: scale(1);
   height: 65px;
 }
-.pxd{
+.pxd {
   padding-top: 3%;
   padding-bottom: 2%;
   padding-left: 2%;
 }
 @media only screen and (max-width: 900px) {
-
-  .px{
+  .px {
     height: 65px;
   }
-
 }
 @media only screen and (max-width: 800px) {
-
-  .px{
+  .px {
     height: 55px;
   }
-
 }
 @media only screen and (max-width: 600px) {
-
-  .px{
+  .px {
     height: 52px;
     padding-top: 5%;
   }
-
 }
 @media only screen and (max-width: 500px) {
-
-  .px{
+  .px {
     height: 48px;
     padding-top: 5%;
   }
-.pxd{
-  transform: scale(0.5);
-  padding-top: 7%;
-}
+  .pxd {
+    transform: scale(0.5);
+    padding-top: 7%;
+  }
 }
 @media only screen and (max-width: 300px) {
-
-  .px{
+  .px {
     height: 30px;
     padding-top: 5%;
   }
-.pxd{
-  transform: scale(0.5);
-  padding-top: 7%;
-}
+  .pxd {
+    transform: scale(0.5);
+    padding-top: 7%;
+  }
 }
