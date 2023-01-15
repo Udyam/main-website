@@ -5,7 +5,6 @@
 
 .container-logo {
   position: relative;
-  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -145,6 +144,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .empty-div{
+    height:auto;
+  }
   .circuit-img {
     display: none;
   }
