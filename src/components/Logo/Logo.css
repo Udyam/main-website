@@ -145,7 +145,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .container-logo{
+  .container-logo {
     overflow: visible;
   }
   .empty-div {
