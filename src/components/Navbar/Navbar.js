@@ -40,8 +40,8 @@ const Navbar = () => {
       {width < 800 && (
         <div className="window">
           <div className="header">
-            <div className="burger-container">
-              <div id="burger" onClick={open}>
+            <div className="burger-container" onClick={open}>
+              <div id="burger">
                 <div className="bar topBar"></div>
                 <div className="bar btmBar"></div>
               </div>
@@ -111,7 +111,7 @@ const Navbar = () => {
                 <a href="#">Team</a>
               </li>
             </ul>
-            <div className="menu-text" style={{display:'flex'}}>
+            <div className="menu-text" style={{ display: 'flex' }}>
               <span>Register</span>
             </div>
             <button className="menu-bar" onClick={expand} style={{ position: 'fixed' }}>
