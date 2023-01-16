@@ -5,7 +5,7 @@ function Updates() {
     <>
       <section className="updates-main-container">
         <div className="updates-udyam-head-container udyam-background-dark">
-          <h1>UDYAM</h1>
+          <h1>UDYAM UPDATES</h1>
         </div>
         <div className="updates-udyam-content udyam-background-dark">
           <div className="update-content">
@@ -78,7 +78,7 @@ function Updates() {
         </div>
 
         <div className="updates-udgam-head-container udgam-background-dark">
-          <h1>UDGAM</h1>
+          <h1>UDGAM UPDATES</h1>
         </div>
         <div className="updates-udgam-content udgam-background-dark">
           <div className="update-content">
@@ -151,7 +151,7 @@ function Updates() {
         </div>
 
         <div className="updates-mashal-head-container mashal-background-dark">
-          <h1>MASHAL</h1>
+          <h1>MASHAL UPDATES</h1>
         </div>
         <div className="updates-mashal-content mashal-background-dark">
           <div className="update-content">
