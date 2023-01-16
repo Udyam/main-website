@@ -240,33 +240,7 @@ const Nav = (props) => {
               
               
               
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              this div is not used
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
+      
               
               
               
