@@ -1,15 +1,15 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Logo from './components/Logo/Logo';
+import Navbar from './Navbar/Navbar';
+import ContentCard from './ContentCard/ContentCard';
+import Logo from './Logo/Logo';
 import './Home.css';
-import ContentCard from './components/ContentCard/ContentCard';
-import Speakers from './components/Speakers/Speakers';
-import Sponsors from './components/Sponsors/sponsors';
-import Footer from './components/footer/footer';
-import About from './components/AboutUS/AboutUs';
-import Faq from './components/faq/Faq';
-import Updates from './components/updates/updates';
+import Speakers from './Speakers/Speakers';
+import Faq from './faq/Faq';
+import Footer from './footer/footer';
+import Updates from './updates/updates';
+import About from './AboutUS/AboutUs';
+import Sponsors from './Sponsors/sponsors.jsx';
 
 const eventData = [
   {
