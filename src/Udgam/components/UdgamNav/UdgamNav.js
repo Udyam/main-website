@@ -1,33 +1,33 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import './Nav.css';
+import './UdgamNav.css';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { BiNews } from 'react-icons/bi';
 import { BiDollarCircle } from 'react-icons/bi';
 import { FaAward } from 'react-icons/fa';
-import { IoIosArrowBack } from 'react-icons/io';
-import { BiQrScan } from 'react-icons/bi';
-import ees from '../Nav/ees.svg';
-import udyam from '../Nav/udyam.svg';
+// import { IoIosArrowBack } from 'react-icons/io';
+// import { BiQrScan } from 'react-icons/bi';
+import ees from './ees.svg';
+import udyam from './udyam.svg';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-import Profile from '../Profile/Profile';
+// import Profile from '../Profile/Profile';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
 // // ..
 // AOS.init();
 
-const Nav = (props) => {
+const UdgamNav = (props) => {
   // const [slideEvent, setEvent] = useState('false');
   // const [slideLeader, setLeader] = useState('false');
   const [slideNav, setNav] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
   // const [activeNav, setActiveNav] = useState('#');
-  const [udyamName, setUdyamName] = useState(true);
+  // const [udyamName, setUdyamName] = useState(true);
   // const [udyevents,setudyevents]=useState('Digism');
   // let ind=0;
 
@@ -79,7 +79,7 @@ const Nav = (props) => {
   //   // props.eventTitleFunc();
   // }
   function menuNav() {
-    setUdyamName(false);
+    // setUdyamName(false);
     // if (slideLeader === false) {
     //   document.querySelector('.leader').style.display = 'block';
     // } else {
@@ -115,9 +115,9 @@ const Nav = (props) => {
   function events() {
     helloNav();
   }
-  function names() {
-    helloNav();
-  }
+  // function names() {
+  //   helloNav();
+  // }
   function abouts() {
     helloNav();
   }
@@ -136,7 +136,6 @@ const Nav = (props) => {
   function helloNav() {
     // if(width<=800){document.querySelector('.udyam-nav').style.display = 'none';}
     setNav(false);
-    setUdyamName(true);
   }
 
   return (
@@ -150,7 +149,7 @@ const Nav = (props) => {
           <div className="layer"></div>
         </div>
       </div>
-      {(udyamName || true) && width < 800 && <Profile />}
+      {/* {(udyamName || true) && width < 800 && <Profile />} */}
       {(slideNav || width > 800) && (
         <div className="udyam-nav">
           {width < 800 && (
@@ -159,29 +158,28 @@ const Nav = (props) => {
             </div>
           )}
           <div className="udyam-img">
-            <Link to="/udyam" style={{ textDecoration: 'none' }}>
+            <Link to="/udgam" style={{ textDecoration: 'none' }}>
               <img className="udyam-logo" src={udyam} alt="hero" />
             </Link>
           </div>
           <div className="udyam-icon">
-            <div
+            {/* <div
               className="name hovered"
               // ind="#name"
               onClick={names}
-              id={props.active === '#name' ? 'active' : ''}
-            >
+              id={props.active === '#name' ? 'active' : ''}>
               <Link to="/udyam/name" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiQrScan className="info" />
                 <p>Name</p>
               </Link>
-            </div>
+            </div> */}
             <div
               className="about hovered"
               // ind="#about"
               onClick={abouts}
               id={props.active === '#about' ? 'active' : ''}
             >
-              <Link to="/udyam/about" className="game-changer" style={{ textDecoration: 'none' }}>
+              <Link to="/udgam/about" className="game-changer" style={{ textDecoration: 'none' }}>
                 {' '}
                 <AiOutlineInfoCircle className="info" />
                 <p>About Us</p>
@@ -192,7 +190,7 @@ const Nav = (props) => {
               </a> */}
             </div>
             <div className="events hovered" id={props.active === '#event' ? 'active' : ''} onClick={events}>
-              <Link to="/udyam/events" className="game-changer" style={{ textDecoration: 'none' }}>
+              <Link to="/udgam/events" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiNews className="info" />
                 <p>Events</p>
               </Link>
@@ -203,7 +201,7 @@ const Nav = (props) => {
               onClick={sponsors}
               id={props.active === '#sponsors' ? 'active' : ''}
             >
-              <Link to="/udyam/sponsors" className="game-changer" style={{ textDecoration: 'none' }}>
+              <Link to="/udgam/sponsors" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiDollarCircle className="info" />
                 <p>Sponsors</p>
               </Link>
@@ -215,73 +213,21 @@ const Nav = (props) => {
               </Link>
             </div>
           </div>
-          <div className="udyam-ees-mobile">
-            <Link to="/">
-              <img className="ees-img-mobile" src={ees} alt="hreo" />
-            </Link>
-          </div>
           {/* <div className="udyam-ees">
                     <img className='ees-img' src={ees} alt="hreo" />
                 </div> */}
         </div>
       )}
+      <div className="udyam-ees-mobile">
+        <Link to="/">
+          <img className="ees-img-mobile" src={ees} alt="hreo" />
+        </Link>
+      </div>
       <div className="menu-icon" onClick={menuNav}>
         <TfiMenu />
       </div>
-      {/* 
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-      
-              
-              
-              
-              
-              
-               */}
-      {false && (
-        <div className="token">
-          <div className="back">
-            <IoIosArrowBack />
-          </div>
-          <div className="token-event">
-            <div className="digism event-name active">
-              <a href="#"> Digism</a>
-            </div>
-            <div className="ichip event-name">
-              <a href="#">I-chip</a>
-            </div>
-            <div className="devbits event-name">
-              <a href="#">Devbits</a>
-            </div>
-            <div className="commnet event-name">
-              <a href="#">Commnet</a>
-            </div>
-            <div className="xiota event-name">
-              <a href="#">X-iota</a>
-            </div>
-            <div className="cassandra event-name">
-              <a href="#">Cassandra</a>
-            </div>
-            <div className="mosaic event-name">
-              <a href="#">Mosaic</a>
-            </div>
-            <div className="funckit event-name">
-              <a href="#">Funckit</a>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };
 
-export default Nav;
+export default UdgamNav;

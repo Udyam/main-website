@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import './footer.css';
-import cright from './images/© EES 2023.svg'
+import cright from './images/© EES 2023.svg';
 // import Main from './images/Main.svg';
 import discord from './images/Group 1966.svg';
 import fb from './images/Group 1970.svg';
@@ -12,11 +12,10 @@ import yt from './images/Group 1978.png';
 export default function Footer() {
   return (
     <div className="footerbg">
-
       <div className="items">
-      <a href="#" target="_blank" rel="noreferrer">
-        {' '}
-        <img src={cright} alt="" className="pxd" />{' '}
+        <a href="https://www.instagram.com/ees_fest/?theme=dark" target="_blank" rel="noreferrer">
+          {' '}
+          <img src={cright} alt="" className="pxd" />{' '}
         </a>
         <a href="https://www.instagram.com/ees_fest/?theme=dark" target="_blank" rel="noreferrer">
           {' '}

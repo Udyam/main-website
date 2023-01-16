@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home';
+import Home from './EES/Home';
 // import Udyam from './Udyam/Udyam.js';
 import About from './Udyam/components/about/about';
 import Events from './Udyam/components/Events/events';
@@ -12,6 +12,9 @@ import HomePage from './Udyam/components/HomePage/HomePage';
 import Sponsors from './Udyam/components/Sponsors/Sponsors';
 import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
 import DashBoard from './Udyam/components/DashBoard/DashBoard';
+import UdgamAbout from './Udgam/components/About/UdgamAbout';
+import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
+
 // import {useState,useEffect} from 'react';
 function App() {
   // let wid;
@@ -94,10 +97,28 @@ function App() {
             }
           />
           <Route
+            path="/udgam"
+            element={
+              <>
+                <UdgamNav active="#none" />
+              </>
+            }
+          />
+          <Route
             path="/udgam/sponsors"
             element={
               <>
+                <UdgamNav active="#sponsors" />
                 <UdgamSponsors />
+              </>
+            }
+          />
+          <Route
+            path="/udgam/about"
+            element={
+              <>
+                <UdgamNav active="#about" />
+                <UdgamAbout />
               </>
             }
           />
