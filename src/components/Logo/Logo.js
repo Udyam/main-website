@@ -51,7 +51,7 @@ const Logo = (props) => {
       <div className="empty-div"></div>
       <div className="main-container-for-logo">
         <div className="circular-mai-container"></div>
-        <img className="circuit-img" src="/Groupouter-circuit.png" alt="" />
+        {/* <img className="circuit-img" src="/Groupouter-circuit.png" alt="" /> */}
         <div className="main-logo-container">
           <div className="ring-box-1">
             <img height={'150%'} className="rings" src="/assets/New Rings/inner_ring.svg" alt="" />
