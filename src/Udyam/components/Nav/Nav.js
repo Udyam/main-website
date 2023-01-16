@@ -215,16 +215,16 @@ const Nav = (props) => {
               </Link>
             </div>
           </div>
+          <div className="udyam-ees-mobile">
+            <Link to="/">
+              <img className="ees-img-mobile" src={ees} alt="hreo" />
+            </Link>
+          </div>
           {/* <div className="udyam-ees">
                     <img className='ees-img' src={ees} alt="hreo" />
                 </div> */}
         </div>
       )}
-      <div className="udyam-ees-mobile">
-        <Link to="/">
-          <img className="ees-img-mobile" src={ees} alt="hreo" />
-        </Link>
-      </div>
       <div className="menu-icon" onClick={menuNav}>
         <TfiMenu />
       </div>
