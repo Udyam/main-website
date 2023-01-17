@@ -101,6 +101,8 @@
 /* Leaderboard-main */
 .leader {
   top: 0;
+}
+.lb-leader {
   display: none;
 }
 .getback {
