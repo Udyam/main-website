@@ -4,6 +4,7 @@
   background-color: rgba(0, 20, 50, 1);
   left: 0;
   top: 0;
+  /* overflow: hidden; */
 }
 .landing {
   height: 100vh;

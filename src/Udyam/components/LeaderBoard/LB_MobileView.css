@@ -2,9 +2,13 @@
   /* .remaining-leaderboard {
     display: none;
   } */
+  .lb-coming-soon {
+    top: 30vh;
+  }
   .leaderboards-main-container {
+    display: none;
     left: unset;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
   }
   .leaderboards-main-container h1 {
