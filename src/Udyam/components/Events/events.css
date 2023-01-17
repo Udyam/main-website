@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Russo+One&display=swap');
+
 .events-main {
   display: flex;
   justify-content: center;
@@ -71,6 +73,11 @@
 
 .events-heading-box {
   margin-left: 100px;
+  font-weight: 600;
+  font-family: homePageHeadingFont;
+  background: -webkit-linear-gradient(white, black);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .event-img {
@@ -126,8 +133,9 @@
   /* height: 50px; */
   color: white;
   background-color: #232323;
-  border-radius: 5px;
-  font-size: 15px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 800px) {
