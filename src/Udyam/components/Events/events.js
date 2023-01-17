@@ -67,19 +67,19 @@ function Events() {
 
           <div className="token-event" onClick={eventName}>
             <div className="digism event-name" onClick={checkNav}>
-              <a href="#"> Digism</a>
+              <a href="#"> Digisim</a>
             </div>
             <div className="ichip event-name" onClick={checkNav}>
-              <a href="#">I-chip</a>
+              <a href="#">I-Chip</a>
             </div>
             <div className="devbits event-name" onClick={checkNav}>
-              <a href="#">Devbits</a>
+              <a href="#">DevBits</a>
             </div>
             <div className="commnet event-name" onClick={checkNav}>
-              <a href="#">Commnet</a>
+              <a href="#">CommNet</a>
             </div>
             <div className="xiota event-name" onClick={checkNav}>
-              <a href="#">X-iota</a>
+              <a href="#">X-Iot-A</a>
             </div>
             <div className="cassandra event-name" onClick={checkNav}>
               <a href="#">Cassandra</a>
@@ -109,7 +109,7 @@ function Events() {
           <div className="event-title">{eventTitle}</div>
           <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
           <div className="event-buttons">
-            <div className="ps-link">PS LINK</div>
+            <div className="ps-link">Problem Statement</div>
             <div className="event-submit">SUBMIT</div>
           </div>
         </div>
