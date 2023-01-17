@@ -101,8 +101,10 @@
 /* Leaderboard-main */
 .leader {
   top: 0;
+  display: none;
 }
 .getback {
+  display: none;
   position: fixed;
   color: white;
   font-size: 30px;
@@ -113,8 +115,18 @@
   height: 4vh;
   background-color: rgba(42, 41, 41, 0.9);
 }
-
+.lb-coming-soon {
+  color: aliceblue;
+  position: relative;
+  font-size: 5rem;
+  padding: 1rem;
+  /* left: 30%; */
+  text-align: center;
+  top: 45vh;
+  font-family: 'Russo One', sans-serif;
+}
 .leaderboards-main-container {
+  display: none;
   height: 100vh;
   width: 70%;
   color: white;
