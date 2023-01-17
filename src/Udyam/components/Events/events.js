@@ -125,7 +125,11 @@ function Events() {
               <a href="#">CommNet</a>
             </div>
             <div className="xiota event-name" onClick={checkNav}>
+<<<<<<< HEAD
               <a href="#">X-IoT-A</a>
+=======
+              <a href="#">X-Iot-A</a>
+>>>>>>> 8521ddd7709184a86dec56afa183e6014fb07e76
             </div>
             <div className="cassandra event-name" onClick={checkNav}>
               <a href="#">Cassandra</a>
@@ -155,7 +159,7 @@ function Events() {
           <div className="event-title">{eventTitle}</div>
           <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
           <div className="event-buttons">
-            <div className="ps-link">PS LINK</div>
+            <div className="ps-link">Problem Statement</div>
             <div className="event-submit">SUBMIT</div>
           </div>
           <div className="event-arrows">

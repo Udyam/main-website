@@ -8,7 +8,6 @@ import { FaAward } from 'react-icons/fa';
 // import { IoIosArrowBack } from 'react-icons/io';
 // import { BiQrScan } from 'react-icons/bi';
 import ees from './ees.svg';
-import udyam from './udyam.svg';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
@@ -159,7 +158,7 @@ const UdgamNav = (props) => {
           )}
           <div className="udyam-img">
             <Link to="/udgam" style={{ textDecoration: 'none' }}>
-              <img className="udyam-logo" src={udyam} alt="hero" />
+              <img className="udyam-logo" src="/assets/udgam_nav_img.svg" alt="hero" />
             </Link>
           </div>
           <div className="udyam-icon">
