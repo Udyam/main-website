@@ -25,27 +25,27 @@
   color: white;
   background-color: #232323;
   position: fixed;
-  top: 90vh;
+  bottom: 2vh;
   left: 50vw;
   /* line-height: 100%; */
   padding: 20px;
   text-align: center;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 15px;
   /* height: 10vh; */
-  width: 20vh;
+  width: 30vw;
 }
 .title {
   position: fixed;
   color: white;
-  top: 3vh;
-  font-size: 10vw;
+  top: 1vh;
+  font-size: 8vw;
   width: 100vw;
   text-align: center;
   z-index: 10;
 }
 @media screen and (min-width: 800px) {
   .title {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
