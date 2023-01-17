@@ -4,12 +4,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .bg {
-  background: url(./background.png) no-repeat;
+  background: url(./udgam_bg.svg) no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+.bg_filter {
+  position: fixed;
+  background: url('./filter_bg.svg') no-repeat;
+  background-size: cover;
+  height: 105%;
+  width: 105%;
+  position: fixed;
+  top: -5%;
   left: 0;
   z-index: -3;
 }
