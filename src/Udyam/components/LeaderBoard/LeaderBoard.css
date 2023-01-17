@@ -106,12 +106,8 @@
   position: fixed;
   color: white;
   font-size: 30px;
-  top: 91vh;
-  left: 2vh;
+  top: 48.8vh;
   z-index: 9;
-  width: 4vh;
-  height: 4vh;
-  background-color: rgba(42, 41, 41, 0.9);
 }
 
 .leaderboards-main-container {

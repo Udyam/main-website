@@ -117,6 +117,10 @@
   height: 40px;
 }
 
+.event-arrows {
+  display: none;
+}
+
 .ps-link,
 .event-submit {
   display: flex;
@@ -159,5 +163,16 @@
   }
   .event-title {
     font-size: 30px;
+  }
+  .event-arrows {
+    display: flex;
+    margin: 3vh 0vw;
+  }
+
+  #left {
+    margin-right: 35vw;
+  }
+  #right {
+    margin-left: 35vw;
   }
 }
