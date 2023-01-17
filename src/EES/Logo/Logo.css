@@ -4,8 +4,9 @@
 }
 
 .container-logo {
-  position: relative;
-  width: 100vw;
+  position: absolute;
+  right: 0;
+  width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +149,9 @@
   .container-logo {
     overflow: visible;
   }
+  .container-logo {
+    width: 100vw;
+  }
   .empty-div {
     height: 100vh;
   }
@@ -158,8 +162,8 @@
     height: 30vw;
     width: 30vw;
     position: absolute;
-    top: 20vh !important;
-    left: 37vw !important;
+    top: 12vh !important;
+    right: 35vw;
     display: flex;
     justify-content: center;
     transform: scale(0.8);
