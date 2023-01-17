@@ -28,7 +28,7 @@
 
 .descriptionContainer {
   height: 250px;
-  overflow-y: scroll;
+  overflow-y: scroll !important;
   margin: 20px;
 }
 
@@ -44,7 +44,7 @@
     left: 0;
     top: 13vh;
     height: 95vh;
-    width: 100%;
+    width: 100vw;
     background-image: linear-gradient(to bottom, rgb(3, 7, 54), rgb(49, 6, 150));
     clip-path: polygon(34% 18%, 66% 18%, 100% 55%, 100% 92%, 68% 92%, 30% 92%, 0 92%, 0 55%);
   }

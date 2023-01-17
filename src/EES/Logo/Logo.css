@@ -4,8 +4,9 @@
 }
 
 .container-logo {
-  position: relative;
-  width: 100vw;
+  position: absolute;
+  right: 0;
+  width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +29,7 @@
   width: 50vh;
   position: absolute;
   top: 16vh;
-  right: 5vw;
+  right: 7vw;
   display: flex;
   justify-content: center;
   /* transform: scale(0.8); */
@@ -148,8 +149,11 @@
   .container-logo {
     overflow: visible;
   }
+  .container-logo {
+    width: 100vw;
+  }
   .empty-div {
-    height: auto;
+    height: 100vh;
   }
   .circuit-img {
     display: none;
@@ -158,8 +162,8 @@
     height: 30vw;
     width: 30vw;
     position: absolute;
-    top: -90vh !important;
-    left: 37vw !important;
+    top: 12vh !important;
+    right: 35vw;
     display: flex;
     justify-content: center;
     transform: scale(0.8);
