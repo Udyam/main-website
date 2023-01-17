@@ -43,8 +43,11 @@ const Home = () => {
     <>
       <div className="Home">
         <Navbar />
-        <ContentCard event={eventData[eventindex]} />
-        <Logo eventchange={changeEvent} />
+        <div className="landing">
+          <ContentCard event={eventData[eventindex]} />
+          <Logo eventchange={changeEvent} />
+        </div>
+
         <About />
         <Updates />
         <Sponsors />
