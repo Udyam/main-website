@@ -14,6 +14,7 @@ import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
 import DashBoard from './Udyam/components/DashBoard/DashBoard';
 import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
+import UdgamEvents from './Udgam/components/Events/udgamEvents';
 
 // import {useState,useEffect} from 'react';
 function App() {
@@ -119,6 +120,15 @@ function App() {
               <>
                 <UdgamNav active="#about" />
                 <UdgamAbout />
+              </>
+            }
+          />
+          <Route
+            path="/udgam/events"
+            element={
+              <>
+                <UdgamNav active="#event" />
+                <UdgamEvents active="#event" />
               </>
             }
           />

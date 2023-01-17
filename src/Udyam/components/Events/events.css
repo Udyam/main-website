@@ -74,14 +74,15 @@
 }
 
 .event-img {
+  
   display: flex;
   justify-content: center;
-  width: 65%;
+  width: 50%;
   padding: 10px 0;
   /* height: 300px; */
 }
 .event-img img {
-  width: 80%;
+  width: 50%;
 }
 
 .event-title {
