@@ -11,9 +11,7 @@ function ContentCard(props) {
           <img className="logo" height={'100px'} src={eventData.imgUrl} alt="" />
         </div>
         <div className="descriptionContainer">
-          <p className="description">
-            {eventData.description}
-          </p>
+          <p className="description">{eventData.description}</p>
         </div>
       </div>
     </div>
