@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 .updates-main-container {
   font-family: '.Poppins', sans-serif;
+  /* overflow: hidden; */
 }
 .update-content a {
   position: relative;
@@ -9,6 +10,7 @@
   border: 0.5vh;
   border-radius: 1vh;
   padding: 1vh 1vh;
+  margin: 2vh 2vh;
   text-decoration: none;
   color: white;
   font-style: italic;
@@ -19,6 +21,8 @@
 }
 .updates-main-container h1 {
   font-size: 6vh;
+  margin: 0;
+  margin-top: 1vh;
   /* padding: 0.3rem 0rem; */
 }
 .updates-udyam-head-container {
@@ -27,7 +31,7 @@
   box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
   color: white;
   height: 12vh;
-  padding: 1rem 8rem;
+  padding: 0.5rem 8rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
@@ -63,7 +67,7 @@
   box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
   color: white;
   height: 12vh;
-  padding: 1rem 8rem;
+  padding: 0.5rem 8rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
@@ -88,7 +92,7 @@
   mix-blend-mode: normal;
   color: white;
   height: 12vh;
-  padding: 1rem 8rem;
+  padding: 0.5rem 8rem;
   font-size: 2rem;
   position: sticky;
   z-index: 1;
@@ -108,14 +112,17 @@
 }
 
 .update-content {
-  line-height: 2;
+  line-height: 1;
   font-size: 1.5rem;
 }
 .update-paragraph {
   border: 1vh;
   border-radius: 1vh;
   margin: 2vh 2vh;
-  padding: 1vh 3vh;
+  padding: 2.5vh 3vh;
+}
+.update-paragraph p {
+  margin: 0;
 }
 .update-information {
   width: 80%;
@@ -174,6 +181,7 @@
   .updates-main-container h1 {
     font-size: 3vh;
     padding-top: 0;
+    margin: 0;
   }
   .updates-udyam-head-container {
     background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
@@ -303,7 +311,7 @@
     z-index: 1;
     bottom: 16vh;
     top: 0vh;
-    width: 100vw;
+    /* width: 100vw; */
   }
 
   .updates-udyam-content {
@@ -330,7 +338,7 @@
     z-index: 1;
     bottom: 8vh;
     top: 8vh;
-    width: 100vw;
+    /* width: 100vw; */
   }
 
   .updates-udgam-content {
@@ -357,7 +365,7 @@
     z-index: 1;
     bottom: 0vh;
     top: 16vh;
-    width: 100vw;
+    /* width: 100vw; */
   }
 
   .updates-mashal-content {
@@ -380,8 +388,8 @@
     border: 1vh;
 
     border-radius: 1vh;
-    margin: 1vh;
-    padding: 1vh 1vh;
+    margin: 2vh 2vh;
+    padding: 2vh 1vh;
   }
   .update-information {
     width: 75%;

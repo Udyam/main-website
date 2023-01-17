@@ -240,33 +240,7 @@ const Nav = (props) => {
               
               
               
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              this div is not used
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
+      
               
               
               
@@ -280,19 +254,19 @@ const Nav = (props) => {
           </div>
           <div className="token-event">
             <div className="digism event-name active">
-              <a href="#"> Digism</a>
+              <a href="#"> Digisim</a>
             </div>
             <div className="ichip event-name">
-              <a href="#">I-chip</a>
+              <a href="#">I-Chip</a>
             </div>
             <div className="devbits event-name">
-              <a href="#">Devbits</a>
+              <a href="#">DevBits</a>
             </div>
             <div className="commnet event-name">
-              <a href="#">Commnet</a>
+              <a href="#">CommNet</a>
             </div>
             <div className="xiota event-name">
-              <a href="#">X-iota</a>
+              <a href="#">X-IoT-A</a>
             </div>
             <div className="cassandra event-name">
               <a href="#">Cassandra</a>

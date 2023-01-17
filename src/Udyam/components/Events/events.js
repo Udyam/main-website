@@ -1,14 +1,38 @@
 import './events.css';
 import bg from './bg2.png';
-// import Nav from '../Nav/Nav';
-
+import right from './right.png';
+import left from './left.png';
 import { useState, useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { IoIosArrowBack } from 'react-icons/io';
 import './../Nav/Nav.css';
 
+const copyeventitem = new Map([
+  [0, 'Digisim'],
+  [1, 'I-Chip'],
+  [2, 'DevBits'],
+  [3, 'CommNet'],
+  [4, 'X-IoT-A'],
+  [5, 'Cassandra'],
+  [6, 'Mosaic'],
+  [7, 'Funckit']
+]);
+
+const eventitem = new Map([
+  ['Digisim', 0],
+  ['I-Chip', 1],
+  ['DevBits', 2],
+  ['CommNet', 3],
+  ['X-IoT-A', 4],
+  ['Cassandra', 5],
+  ['Mosaic', 6],
+  ['Funckit', 7]
+]);
+
+// console.log(copyeventitem.get(2));
+
 function Events() {
-  const [eventTitle, setEventTitle] = useState('DIGISIM');
+  const [eventTitle, setEventTitle] = useState('Digisim');
   const [eventtable, setEventtable] = useState(true);
   // const [eventnav, setEventnav] = useState(false);
   const eventName = (event) => {
@@ -45,7 +69,7 @@ function Events() {
     // setEvent(true);
     if (width < 800) {
       // document.querySelector('.leader').style.display = 'none';
-      setEventTitle(false);
+      // setEventTitle(false);
     }
   }
   function sliding() {
@@ -53,6 +77,28 @@ function Events() {
     setEventtable(true);
     // setEventTitle(true);
     // document.querySelector('.leader').style.display = 'block';
+  }
+
+  function lastone() {
+    var i = eventitem.get(`${eventTitle}`);
+    i = i - 1;
+    if (i === -1) {
+      i = 7;
+    }
+    // console.log(eventitem.get(`${eventTitle}`));
+    // console.log(copyeventitem.get(i));
+    setEventTitle(copyeventitem.get(i));
+  }
+
+  function nextone() {
+    var i = eventitem.get(`${eventTitle}`);
+    i = i + 1;
+    if (i === 8) {
+      i = 0;
+    }
+    // console.log(eventitem.get(`${eventTitle}`));
+    // console.log(copyeventitem.get(i));
+    setEventTitle(copyeventitem.get(i));
   }
 
   return (
@@ -67,19 +113,23 @@ function Events() {
 
           <div className="token-event" onClick={eventName}>
             <div className="digism event-name" onClick={checkNav}>
-              <a href="#"> Digism</a>
+              <a href="#"> Digisim</a>
             </div>
             <div className="ichip event-name" onClick={checkNav}>
-              <a href="#">I-chip</a>
+              <a href="#">I-Chip</a>
             </div>
             <div className="devbits event-name" onClick={checkNav}>
-              <a href="#">Devbits</a>
+              <a href="#">DevBits</a>
             </div>
             <div className="commnet event-name" onClick={checkNav}>
-              <a href="#">Commnet</a>
+              <a href="#">CommNet</a>
             </div>
             <div className="xiota event-name" onClick={checkNav}>
-              <a href="#">X-iota</a>
+<<<<<<< HEAD
+              <a href="#">X-IoT-A</a>
+=======
+              <a href="#">X-Iot-A</a>
+>>>>>>> 8521ddd7709184a86dec56afa183e6014fb07e76
             </div>
             <div className="cassandra event-name" onClick={checkNav}>
               <a href="#">Cassandra</a>
@@ -109,8 +159,12 @@ function Events() {
           <div className="event-title">{eventTitle}</div>
           <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
           <div className="event-buttons">
-            <div className="ps-link">PS LINK</div>
+            <div className="ps-link">Problem Statement</div>
             <div className="event-submit">SUBMIT</div>
+          </div>
+          <div className="event-arrows">
+            <img id="left" src={left} alt="" onClick={lastone} />
+            <img id="right" src={right} alt="" onClick={nextone} />
           </div>
         </div>
       </div>
