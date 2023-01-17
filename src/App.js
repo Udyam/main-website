@@ -14,6 +14,7 @@ import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
 import DashBoard from './Udyam/components/DashBoard/DashBoard';
 import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
+import UDGmain from './Udgam/components/main-page/main-page';
 
 // import {useState,useEffect} from 'react';
 function App() {
@@ -101,6 +102,7 @@ function App() {
             element={
               <>
                 <UdgamNav active="#none" />
+                <UDGmain />
               </>
             }
           />
