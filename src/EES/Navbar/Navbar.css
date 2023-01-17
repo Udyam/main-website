@@ -24,7 +24,6 @@ body {
   left: 0;
   height: 8%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.626);
   overflow: hidden;
   transition: all 0.5s ease-out, background 1s ease-out;
   transition-delay: 0.2s;
@@ -33,17 +32,20 @@ body {
 .window .header .burger-container {
   position: relative;
   display: inline-block;
-  height: 64px;
-  width: 69px;
+  height: 55px;
+  width: 60px;
   cursor: pointer;
+  background: rgba(23, 52, 86, 0.763);
   transform: rotate(0deg);
   transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   user-select: none;
+  /* border-radius: 5px; */
   -webkit-tap-highlight-color: transparent;
 }
 .window .header .burger-container #burger {
   width: 18px;
   height: 8px;
+
   position: relative;
   display: block;
   margin: -4px auto 0;
@@ -127,6 +129,9 @@ body {
   font-family: 'Ek Mukta', sans-serif;
   font-weight: 100;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 22px;
   line-height: 2.35;
   font-weight: 200;
@@ -212,7 +217,10 @@ body {
 }
 
 .event-names li a {
-  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   line-height: 1.6;
   text-decoration: none;
   color: #fff;
