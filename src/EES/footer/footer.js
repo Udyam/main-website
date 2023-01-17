@@ -21,7 +21,7 @@ export default function Footer() {
           {' '}
           <img src={ig} alt="" className="px" />{' '}
         </a>
-        <a href="">
+        <a href="https://discord.gg/gNrEW8vp4G" target="_blank" rel="noreferrer">
           {' '}
           <img src={discord} alt="" className="px" />
         </a>
@@ -32,7 +32,7 @@ export default function Footer() {
         <a href="https://www.facebook.com/ees.fiesta/" target="_blank" rel="noreferrer">
           <img src={fb} alt="" className="px" />
         </a>
-        <a href="">
+        <a href="https://www.youtube.com/@EES_IITBHU" target="_blank" rel="noreferrer">
           {' '}
           <img src={yt} alt="" className="px" />
         </a>

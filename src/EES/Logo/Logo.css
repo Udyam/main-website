@@ -28,7 +28,7 @@
   width: 50vh;
   position: absolute;
   top: 16vh;
-  right: 5vw;
+  right: 7vw;
   display: flex;
   justify-content: center;
   /* transform: scale(0.8); */
@@ -149,7 +149,7 @@
     overflow: visible;
   }
   .empty-div {
-    height: auto;
+    height: 100vh;
   }
   .circuit-img {
     display: none;
@@ -158,7 +158,7 @@
     height: 30vw;
     width: 30vw;
     position: absolute;
-    top: -90vh !important;
+    top: 20vh !important;
     left: 37vw !important;
     display: flex;
     justify-content: center;
