@@ -157,7 +157,7 @@ const LeaderBoard = (props) => {
       <div className="getback" onClick={sliding}>
         <MdArrowForwardIos />
       </div>
-
+      <div className="lb-coming-soon">COMING SOON</div>
       <div className="leaderboards-main-container">
         <h1>LEADERBOARDS</h1>
         <div className="lb-container">
