@@ -55,6 +55,9 @@
   .columnn {
     width: 100vw;
   }
+  .columnn img {
+    width: 100vw;
+  }
   .udy {
     padding-top: 6%;
   }

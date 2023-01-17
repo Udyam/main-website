@@ -7,7 +7,7 @@ export default function About() {
     <div className="abg">
       <div className="aboutx">
         <div className="columnn imgx">
-          <img src={xd} alt="" style={{ width: '100vw' }} />
+          <img src={xd} alt="" />
         </div>
         <div className="columnn udy">
           <h1 className="hdx">Udyam</h1>
