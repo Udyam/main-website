@@ -125,11 +125,7 @@ function Events() {
               <a href="#">CommNet</a>
             </div>
             <div className="xiota event-name" onClick={checkNav}>
-<<<<<<< HEAD
-              <a href="#">X-IoT-A</a>
-=======
               <a href="#">X-Iot-A</a>
->>>>>>> 8521ddd7709184a86dec56afa183e6014fb07e76
             </div>
             <div className="cassandra event-name" onClick={checkNav}>
               <a href="#">Cassandra</a>
