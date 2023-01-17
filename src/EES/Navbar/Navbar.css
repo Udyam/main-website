@@ -8,8 +8,8 @@ body {
   position: fixed;
   display: block;
   /* top: 10%; */
-  width: 100vw;
-  height: 567px;
+  /* width: 100vw;
+  height: 567px; */
   /* margin: 100px auto 0; */
   box-shadow: 0 0 65px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
