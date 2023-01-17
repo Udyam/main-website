@@ -63,7 +63,7 @@ const Logo = (props) => {
             <img height={'150%'} className="rings ring-3" src="/assets/rings/3.png" alt="" />
 
             <img height={'350%'} className="dial-button" src="/assets/New Rings/Group 1950withbg.svg" alt="" />
-            <div className="glass-lens"></div>
+            {/* <div className="glass-lens"></div> */}
           </div>
 
           <img className="main-event-logo" height={'100vh'} src="/assets/eeslogo.svg" alt="" onClick={logoClick} />
