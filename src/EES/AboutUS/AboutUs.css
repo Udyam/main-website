@@ -249,7 +249,7 @@ body {
     width: 90%;
     height: 130vw;
     margin-top: -40vw;
-    text-align: center;
+    text-align: justify;
   }
   .content-box h3 {
     position: static;
@@ -258,6 +258,7 @@ body {
     margin-top: 15%;
     padding-bottom: 0;
     margin-bottom: 25px;
+    text-align: center;
   }
   .content {
     width: 90%;
