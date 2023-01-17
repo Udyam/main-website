@@ -9,7 +9,6 @@ const Navbar = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [eventLink, setEventLink] = useState(false);
   const [click, setclick] = useState(true);
-  const [slideUdyam, setSlideUdyam] = useState(false);
 
   function expand() {
     if (click) {
@@ -20,7 +19,6 @@ const Navbar = () => {
       document.querySelector('.menu-text').style.display = 'flex';
     }
     setclick(!click);
-    setEventLink(false);
   }
   function showEvents() {
     setEventLink(!eventLink);
@@ -35,9 +33,6 @@ const Navbar = () => {
 
   function open() {
     document.querySelector('.header').classList.toggle('menu-opened');
-  }
-  function nameOfEvents() {
-    setSlideUdyam(!slideUdyam);
   }
 
   return (
@@ -61,28 +56,9 @@ const Navbar = () => {
                   <a href="#">Registration</a>
                 </Link>
               </li>
-              <li className="menu-item" onClick={nameOfEvents}>
+              <li className="menu-item">
                 <a href="#">Events</a>
               </li>
-              {slideUdyam && (
-                <div className="event-names">
-                  <li>
-                    <Link to="/udyam">
-                      <a href="#">Udyam</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/udyam">
-                      <a href="#">Udgam</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/udyam">
-                      <a href="#">Mashal</a>
-                    </Link>
-                  </li>
-                </div>
-              )}
               <li className="menu-item">
                 <a href="#">Sponsors</a>
               </li>
@@ -99,19 +75,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-      {eventLink && (
-        <div className="dropmenu">
-          <Link to="/udyam">
-            <a href="#">Udyam</a>
-          </Link>
-          <Link to="/udyam">
-            <a href="#">Udgam</a>
-          </Link>
-          <Link to="/udyam">
-            <a href="#">Mashal</a>
-          </Link>
-        </div>
-      )}
+
       {width > 800 && (
         <div className="container">
           <nav>
