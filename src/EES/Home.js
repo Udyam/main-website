@@ -15,7 +15,7 @@ const eventData = [
   {
     title: 'Udyam',
     description: `Udyam is the Annual Technological Festival of the department of Electronics Engineering, IIT (BHU) Varanasi. It brings a broad spectrum of events spanning Data Science, Machine Learning, Digital and Analog Electronics and others to boost the participant's skill sets. Since 2010, Udyam has provided a platform to develop and showcase the technical skills of Indian technocrats. And we are pleased to announce that the grand event is again returning this spring as UDYAM'23!`,
-    imgUrl: '/assets/eeslogo.svg'
+    imgUrl: '/assets/udyam.svg'
   },
 
   {
