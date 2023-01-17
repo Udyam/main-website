@@ -21,6 +21,7 @@ body {
   font-size: 5vw;
   color: white;
   font-family: 'League Sparten', sans-serif;
+  margin-bottom: 0;
 }
 .base1 {
   display: block;
@@ -81,7 +82,7 @@ body {
   background-image: url('./images/bgContent.png');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 .content-box::-webkit-scrollbar {
   display: none;
@@ -94,8 +95,8 @@ body {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  font-size: 2.5rem;
-  left: 30%;
+  font-size: 2rem;
+  left: 10%;
   margin-top: 1rem;
   padding-top: 1rem;
   padding-bottom: 3rem;
@@ -145,7 +146,7 @@ body {
   position: relative;
   left: 1vw;
   margin-bottom: 0;
-  bottom: 15vw;
+  bottom: 13vw;
 }
 
 @media (max-width: 850px) {
@@ -190,8 +191,8 @@ body {
   width: 100%;
 }
 .squares:hover .square1 {
-  width: 25vw;
-  height: 24vw;
+  width: 23vw;
+  height: 22vw;
   left: 0;
   top: 25vw;
   transform: none;
@@ -253,9 +254,10 @@ body {
   .content-box h3 {
     position: static;
     display: inline-block;
-    font-size: 200%;
+    font-size: 150%;
     margin-top: 15%;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 25px;
   }
   .content {
     width: 90%;
@@ -266,14 +268,14 @@ body {
   }
   .square1 {
     width: 55vw;
-    height: 45vw;
+    height: 44vw;
     position: relative;
     bottom: 5vw;
     top: 48vw;
   }
   .square2 {
-    width: 44vw;
-    height: 48vw;
+    width: 48vw;
+    height: 44vw;
     position: relative;
     right: 15vw;
     bottom: 1vw;
@@ -282,8 +284,8 @@ body {
     bottom: 17vw;
   }
   .squares:hover .square1 {
-    width: 42vw;
-    height: 40vw;
+    width: 40vw;
+    height: 38vw;
     left: 0;
     top: 41vw;
     transform: none;
