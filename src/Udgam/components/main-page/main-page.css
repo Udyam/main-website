@@ -40,12 +40,12 @@
   color: white;
   top: 3vh;
   font-size: 10vw;
-width: 100vw;
+  width: 100vw;
   text-align: center;
   z-index: 10;
 }
-@media screen and (min-width:800px) {
-	.title{
-		font-size: 80px;
-	}
+@media screen and (min-width: 800px) {
+  .title {
+    font-size: 80px;
+  }
 }
