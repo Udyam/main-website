@@ -1,5 +1,5 @@
 import './events.css';
-import bg from './bg2.png';
+import bg from './photo.png';
 // import Nav from '../Nav/Nav';
 
 import { useState, useEffect } from 'react';
