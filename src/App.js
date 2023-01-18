@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home';
+import Home from './EES/Home';
 // import Udyam from './Udyam/Udyam.js';
 import About from './Udyam/components/about/about';
 import Events from './Udyam/components/Events/events';
@@ -15,6 +15,7 @@ import DashBoard from './Udyam/components/DashBoard/DashBoard';
 import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 import UdgamEvents from './Udgam/components/Events/udgamEvents';
+import UDGmain from './Udgam/components/main-page/main-page';
 
 // import {useState,useEffect} from 'react';
 function App() {
@@ -102,6 +103,7 @@ function App() {
             element={
               <>
                 <UdgamNav active="#none" />
+                <UDGmain />
               </>
             }
           />

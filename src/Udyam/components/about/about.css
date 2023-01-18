@@ -12,20 +12,20 @@
   font-family: aboutparaFont;
   src: url('../Events/Comfortaa-Regular.ttf');
 }
-.bg {
+.abg {
   background: url(./images/ABOUT.svg);
   min-height: 100vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.column {
+.columnn {
   float: left;
-  width: 50%;
+  width: 45%;
   padding-top: 14%;
 }
 .udy {
-  padding-top: 16%;
+  padding-top: 12%;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -42,9 +42,14 @@
   font-size: 48px;
   padding-bottom: 5px;
 }
+.columnn img {
+  width: 42vw;
+}
 .udx {
   font-family: aboutparaFont;
   font-size: 18px;
+  height: 50vh;
+  overflow-y: auto;
 }
 @media screen and (min-width: 1300px) {
   .imgx {
@@ -52,11 +57,18 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .column {
+  .columnn {
+    width: 100vw;
+    padding-top: 0;
+  }
+  .columnn img {
     width: 100vw;
   }
   .udy {
-    padding-top: 6%;
+    padding-top: 0;
+  }
+  .hdx {
+    margin-top: 0;
   }
 
   .aboutx {
@@ -67,10 +79,11 @@
     transform: scaleY(0.8);
     width: 100%;
   }
-  .bg {
-    height: 950px;
+  .abg {
+    background-image: none;
   }
   .udx {
     font-size: 14px;
+    height: fit-content;
   }
 }

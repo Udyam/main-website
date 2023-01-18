@@ -159,7 +159,7 @@ const UdgamNav = (props) => {
           )}
           <div className="udyam-img">
             <Link to="/udgam" style={{ textDecoration: 'none' }}>
-              <img className="udyam-logo" src={udyam} alt="hero" />
+              <img className="udyam-logo" src="/assets/udgam_nav_img.svg" alt="hero" />
             </Link>
           </div>
           <div className="udyam-icon">

@@ -8,7 +8,6 @@
   flex-direction: column;
   width: 84vw;
   position: relative;
-  top: 10%;
   left: 12%;
 }
 
@@ -23,6 +22,7 @@
   background: -webkit-linear-gradient(white, black);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-block-end: 0;
 }
 
 .sponsorContainer {
@@ -38,7 +38,7 @@
 .sponsor {
   display: inline-block;
   width: 19%;
-  height: 17rem;
+  height: 16rem;
   margin: 20px;
   background-size: cover;
   background-position: center;
@@ -48,34 +48,36 @@
 .logo-container {
   width: 100%;
   height: 80%;
-  background: #121212;
-  opacity: 0.2;
+  background: rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
-.sponser1 {
+.sponsor1 {
   background-image: url(./images/sp1.png);
 }
-.sponser2 {
-  background-image: url(./images/sp1.png);
+.sponsor2 {
+  background-image: url(./images/sp2.png);
 }
-.sponser3 {
-  background-image: url(./images/sp1.png);
+.sponsor3 {
+  background-image: url(./images/sp3.png);
 }
-.sponser4 {
-  background-image: url(./images/sp1.png);
+.sponsor4 {
+  background-image: url(./images/sp4.png);
 }
-.sponser5 {
-  background-image: url(./images/sp1.png);
+.sponsor5 {
+  background-image: url(./images/sp5.png);
 }
-.sponser6 {
-  background-image: url(./images/sp1.png);
+.sponsor6 {
+  background-image: url(./images/sp6.png);
 }
-.sponser7 {
-  background-image: url(./images/sp1.png);
+.sponsor7 {
+  background-image: url(./images/sp7.png);
 }
-.sponser8 {
-  background-image: url(./images/sp1.png);
+.sponsor8 {
+  background-image: url(./images/sp8.png);
 }
 
 .sponsorName {
@@ -85,12 +87,14 @@
   font-size: 20px;
   line-height: 25px;
   text-align: center;
+  color: white;
 }
 
 @media (max-width: 428px) {
   .sponsor {
     width: 80%;
     height: 45vh;
+    margin: 30px;
   }
   sponsors h1 {
     font-size: 3rem;
