@@ -6,13 +6,15 @@
 }
 
 .about-container > h1 {
+  position: absolute;
   color: aliceblue;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-left: 12%;
   margin-top: 10%;
 }
 
 .about-content {
+  position: relative;
   display: flex;
   height: 60vh;
   width: 60vw;
@@ -20,9 +22,10 @@
   border-radius: 50px;
   background: linear-gradient(277.69deg, #aad9d9 10%, #9090dc 80%, #7d7ddc 100%);
   margin-left: 8%;
-  margin-top: 1%;
+  top: 35%;
   flex-direction: column;
   justify-content: center;
+  overflow: auto;
 }
 
 .about-content > p {
@@ -30,12 +33,16 @@
   margin-right: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  height: 80%;
+}
+--webkit-scrollbar {
+  display: none;
 }
 
 .about-image-shadow {
   position: absolute;
-  top: 30vh;
+  top: 35%;
   right: 5vw;
   width: 20vw;
   height: 60vh;
@@ -47,10 +54,42 @@
 
 .about-image {
   position: absolute;
-  top: 30vh;
+  top: 35%;
   right: 5vw;
   width: 20vw;
   height: 60vh;
   background-color: #7d7ddc;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .about-title {
+    position: relative;
+    font-size: 1.2rem !important;
+    left: 10%;
+  }
+  .about-content > p {
+    font-size: 0.6rem;
+    margin: auto 10px;
+    height: 70%;
+  }
+  .about-content {
+    position: relative;
+    top: 37%;
+    height: 55%;
+    width: 85%;
+    overflow: scroll;
+  }
+  .about-image-shadow {
+    width: 35vw;
+    height: 25vh;
+    top: 17vh;
+    left: 10%;
+  }
+  .about-image {
+    width: 35vw;
+    height: 25vh;
+    top: 17vh;
+    left: 10%;
+  }
 }

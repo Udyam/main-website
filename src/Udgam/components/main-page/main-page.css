@@ -1,0 +1,50 @@
+.backg {
+  width: 100vw;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1631631480669-535cc43f2327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.moving {
+  z-index: 3;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  /* background-repeat: no-repeat; */
+  /* background-size:cover; */
+  /* background-position: center center; */
+  /* width: 100vw; */
+}
+
+.namesdiv {
+  z-index: 8;
+  color: white;
+  background-color: #232323;
+  position: fixed;
+  bottom: 2vh;
+  left: 50vw;
+  /* line-height: 100%; */
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  /* height: 10vh; */
+  width: 30vw;
+}
+.title {
+  position: fixed;
+  color: white;
+  top: 1vh;
+  font-size: 8vw;
+  width: 100vw;
+  text-align: center;
+  z-index: 10;
+}
+@media screen and (min-width: 800px) {
+  .title {
+    font-size: 60px;
+  }
+}

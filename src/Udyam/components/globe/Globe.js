@@ -13,7 +13,6 @@ const eGlobe = () => {
   useEffect(() => {
     init();
     initGlobe();
-    onWindowResize();
     animate();
 
     // SECTION Initializing core ThreeJS elements
@@ -47,9 +46,6 @@ const eGlobe = () => {
 
       scene.add(camera);
 
-      // Additional effects
-      // scene.fog = new Fog(0x535ef3, 400, 2000);
-
       // Initialize controls
       controls = new OrbitControls(camera, renderer.domElement);
       controls.enableDamping = false;
@@ -66,8 +62,8 @@ const eGlobe = () => {
     function initGlobe() {
       // Initialize the Globe
       Globe = new ThreeGlobe({
-        waitForGlobeReady: false,
-        animateIn: false
+        waitForGlobeReady: true,
+        animateIn: true
       })
         .hexPolygonsData(countries.features)
         .hexPolygonResolution(3)
@@ -109,15 +105,9 @@ const eGlobe = () => {
       // globe colour
       globeMaterial.emissive = new Color(0x220038);
       globeMaterial.emissiveIntensity = 0.1;
-      globeMaterial.shininess = 0.7;
+      globeMaterial.shininess = 0.5;
 
       scene.add(Globe);
-    }
-
-    function onWindowResize() {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
     function animate() {
