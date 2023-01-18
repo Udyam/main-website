@@ -111,9 +111,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
   position: fixed;
-  /* top: 0; */
   left: 7vw;
   height: 100vh;
   width: 15vw;
