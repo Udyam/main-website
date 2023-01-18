@@ -54,7 +54,7 @@ function App() {
             path="/mashal"
             element={
               <>
-                <Nav active="#none" />
+                {/* <Nav active="#none" /> */}
                 <Mashal />
               </>
             }

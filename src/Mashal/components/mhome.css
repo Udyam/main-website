@@ -68,9 +68,9 @@
   padding-top: 0.5rem;
 }
 
-.px {
+.pxet {
   padding-bottom: 25%;
-  height: 55px;
+  height: 35px;
 }
 .pxd {
   padding-top: 17%;
@@ -92,5 +92,5 @@ p {
 }
 .spx {
   position: relative;
-  top: 48%;
+  top: 34%;
 }

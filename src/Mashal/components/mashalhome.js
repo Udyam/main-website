@@ -4,11 +4,11 @@ import React from 'react';
 import logod from './image/MASHAL LOGO.svg';
 import mtext from './image/HEADING.svg';
 import elogo from './image/EES-LOGO.svg';
-import insta from './image/akar-icons_instagram-fill.svg';
-import twitter from './image/akar-icons_twitter-fill.svg';
-import fb from './image/akar-icons_facebook-fill.svg';
-import world from './image/tabler_world.svg';
-import follow from './image/FOLLOW US_.svg';
+import instax from './image/akar-icons_instagram-fill.svg';
+import twitterx from './image/akar-icons_twitter-fill.svg';
+import fbx from './image/akar-icons_facebook-fill.svg';
+import worldx from './image/tabler_world.svg';
+import followx from './image/FOLLOW US_.svg';
 function Mhome() {
   return (
     <div className="bg">
@@ -31,11 +31,11 @@ function Mhome() {
         </div>
       </div>
       <div className="four">
-        <img src={insta} className="px" alt="" />
-        <img src={twitter} className="px" alt="" />
-        <img src={fb} className="px" alt="" />
-        <img src={world} className="px" alt="" />
-        <img src={follow} className="pxd" alt="" />
+        <img src={instax} className="pxet" alt="" />
+        <img src={twitterx} className="pxet" alt="" />
+        <img src={fbx} className="pxet" alt="" />
+        <img src={worldx} className="pxet" alt="" />
+        <img src={followx} className="pxd" alt="" />
       </div>
       <div className="five"></div>
     </div>
