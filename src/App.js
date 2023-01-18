@@ -16,7 +16,7 @@ import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
-
+import Mashal from './Mashal/mashal';
 // import {useState,useEffect} from 'react';
 function App() {
   // let wid;
@@ -47,6 +47,15 @@ function App() {
               <>
                 <Nav active="#none" />
                 <HomePage />
+              </>
+            }
+          />
+          <Route
+            path="/mashal"
+            element={
+              <>
+                <Nav active="#none" />
+                <Mashal />
               </>
             }
           />
