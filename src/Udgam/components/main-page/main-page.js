@@ -11,36 +11,41 @@ function UDGmain() {
   ];
   const names = ['kumar sonu', 'athar', 'nikhil', 'dhruv'];
   const [counter, setCounter] = useState(0);
-  const arr = ['0vw', '0vw', '0vw', '0vw', '100vw', '100vw'];
+  const arr = ['100vw', '0vw', '0vw', '0vw', '0vw', '0vw'];
+  let interval = 0;
   useEffect(() => {
-    const interval = setInterval(() => {
+    interval = setInterval(() => {
       setCounter((prevCounter) => prevCounter + 1);
       // setCounter(prevCounter);
 
       console.log(counter);
-    }, 7000);
+    }, 8000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [counter]);
+  function clicked() {
+    setCounter(counter + 1);
+    clearInterval(interval);
+  }
 
   return (
-    <div id="main">
+    <div id="main" onScroll={clicked}>
       <div className="title">
         <h1>UDGAM</h1>
       </div>
-      <motion.div className="moving" key={counter} initial={{ x: '0vw' }} animate={{ x: arr }} transition={{ duration: 3 }}>
+      <motion.div className="moving" key={counter} initial={{ x: '100vw', opacity: 0, scale: 0.6 }} animate={{ x: arr, opacity: 1, scale: 1 }} transition={{ duration: 3 }} onClick={clicked}>
         <img src={arrimg[(counter + 1) % arrimg.length]} />
-        <div className="namesdiv">
-          <p>
-            clicked by - <strong>{names[(counter + 1) % names.length]}</strong>
-          </p>
-        </div>
+      </motion.div>
+      <motion.div className="moving namesdiv" key={counter} initial={{ x: '100vw' }} animate={{ x: '0vw' }} transition={{ duration: 3 }}>
+        <p>
+          clicked by - <strong>{names[(counter + 1) % names.length]}</strong>
+        </p>
       </motion.div>
       <div className="static">
-        <img src={arrimg[(counter + 2) % arrimg.length]} />
+        <img src={arrimg[counter % arrimg.length]} />
         <div className="namesdiv">
           <p>
-            clicked by - <strong>{names[(counter + 2) % names.length]}</strong>
+            clicked by - <strong>{names[counter % names.length]}</strong>
           </p>
         </div>
       </div>
