@@ -25,6 +25,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+#globe {
+  margin-left: 467px;
+}
+
 @media screen and (max-width: 1500px) {
   .main-container {
     font-size: 31px;

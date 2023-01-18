@@ -6,7 +6,6 @@ import facebook from '../images/icons8-facebook-480.png';
 import twitter from '../images/icons8-twitter-480.png';
 
 const SpeakerCard = ({ name, title, image, back }) => {
-  console.log(name);
   return (
     <div className="card-container">
       <div className="speaker-card">
