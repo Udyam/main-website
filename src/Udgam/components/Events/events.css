@@ -172,16 +172,19 @@
   margin: 10px 50px;
 }
 
-.event-img {
+.event-box {
+  margin: 10%;
+}
+
+.event-img-pc {
   display: flex;
   justify-content: center;
   padding: 10px 0;
   position: absolute;
-  top:20vh;
+  top: 20vh;
   left: 50vw;
-  
 }
-.event-img img {
+.event-img-pc img {
   width: 70%;
   z-index: -1;
 }
@@ -194,7 +197,6 @@
   width: 70%;
   color: white;
   background: none;
-  border-radius: 10px;
 }
 
 @font-face {
@@ -222,8 +224,8 @@
   justify-content: flex-start;
   width: 70%;
   height: 40px;
-  gap: 50px;
-  margin: 0;
+  gap: 30px;
+  margin: 10px;
 }
 
 .register,
@@ -238,18 +240,41 @@
   font-family: eventHeadingfont;
 }
 
-.event-submit{
+.event-submit {
   border: 1px solid #ffffff;
   border-radius: 0px;
   background: rgba(190, 190, 190, 0.233);
   color: #ffffff;
 }
 
-.event-btn{
- color: white; 
+.event-btn {
+  color: white;
 }
-.prev{
-  position: relative;
+.prev {
+  position: absolute;
+  top: 17%;
+  left: 23%;
+}
+.next {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+@media screen and (max-width: 1260px) {
+  .event-title {
+    width: 30%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .events-main-mob {
+    display: none;
+  }
+  .events-img-mob{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -258,28 +283,65 @@
     left: 0;
     width: 100vw;
     height: 90vh;
+    display: none;
   }
-  .event-heading {
+
+  .event-body-mob{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  .event-box-mob{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-heading-mob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: eventHeadingfont;
     font-size: 50px;
-  }
-  .events-heading-box {
+    color: #dadada;
     margin-left: 50px;
   }
-  .event-body {
-    margin: 0;
-    padding: 0;
+
+  .event-img-pc {
+    display: none;
   }
-  .event-img {
-    width: 80%;
+  .event-img-mob {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
   }
-  .event-img img {
-    width: 90%;
+  .event-img-mob img{
+    width: 70%;
   }
   .event-desc {
     font-size: 15px;
     line-height: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .event-buttons{
+    justify-content: center;
+  }
+  .register,.event-submit{
+    width:40%
   }
   .event-title {
     font-size: 30px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
   }
 }

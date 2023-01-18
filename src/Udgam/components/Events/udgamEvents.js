@@ -103,24 +103,40 @@ function UdgamEvents() {
           <div className="event-heading">
             <div className="events-heading-box">EVENTS</div>
           </div>
-          <div className="event-title">{eventTitle}</div>
-          <div className="event-desc-box">
-            <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-          </div>
-          <div className="event-buttons">
-            <div className="register">Register</div>
-            <div className="event-submit">SUBMIT</div>
+          <div className="event-box">
+            <div className="event-title">{eventTitle}</div>
+            <div className="event-desc-box">
+              <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            </div>
+            <div className="event-buttons">
+              <div className="register">Register</div>
+              <div className="event-submit">SUBMIT</div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="event-img">
+      <div className="event-img-pc">
         <img src={bg} />
-        {/* <div className="event-btn prev" onClick={moveBack}>
-          prev
+      </div>
+      <div className="events-main-mob" onClick={slidemobile}>
+        <div className="event-body-mob">
+          <div className="event-heading-mob">
+            <div className="events-heading-box">EVENTS</div>
+          </div>
+          <div className="event-box-mob">
+            <div className="event-img-mob">
+              <img src={bg} />
+            </div>
+            <div className="event-title">{eventTitle}</div>
+            <div className="event-desc-box">
+              <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            </div>
+            <div className="event-buttons">
+              <div className="register">Register</div>
+              <div className="event-submit">SUBMIT</div>
+            </div>
+          </div>
         </div>
-        <div className="event-btn next" onClick={movefwd}>
-          next
-        </div> */}
       </div>
     </div>
   );
