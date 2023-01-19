@@ -39,13 +39,7 @@ function UDGmain() {
           clicked by - <strong>{names[(counter + 1) % names.length]}</strong>
         </p>
       </motion.div>
-      <div className="moving " style={{ backgroundImage: `url(${arrimg[counter % arrimg.length]})`, zIndex: '0' }}>
-        <div className="namesdiv">
-          <p>
-            clicked by - <strong>{names[counter % names.length]}</strong>
-          </p>
-        </div>
-      </div>
+      <div className="moving " style={{ backgroundImage: `url(${arrimg[counter % arrimg.length]})`, zIndex: '0' }}></div>
     </div>
   );
 }
