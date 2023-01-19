@@ -17,6 +17,7 @@ import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
 import Mashal from './Mashal/mashal';
+import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
 // import {useState,useEffect} from 'react';
 function App() {
   // let wid;
@@ -140,6 +141,14 @@ function App() {
               <>
                 <UdgamNav active="#event" />
                 <UdgamEvents active="#event" />
+              </>
+            }
+          />
+          <Route
+            path="/mashal/leaderboard"
+            element={
+              <>
+                <MashalLeaderboard/>
               </>
             }
           />
