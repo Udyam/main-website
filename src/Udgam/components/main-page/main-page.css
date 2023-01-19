@@ -40,7 +40,7 @@
   /* height: 10vh; */
   width: 30vw;
 }
-.title {
+.title-udgam {
   width: 50vw;
   /* height: 20vh; */
   background-color: rgba(0, 0, 0, 0.4);
@@ -70,7 +70,7 @@ line-height: 240px; */
   color: #fcfbfc;
 }
 @media screen and (max-width: 800px) {
-  .title {
+  .title-udgam {
     left: 8vw;
     font-size: 12vw;
     width: 70vw;

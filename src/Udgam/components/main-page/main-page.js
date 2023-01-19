@@ -29,8 +29,8 @@ function UDGmain() {
   }
 
   return (
-    <div id="main" onClick={clicked}>
-      <div className="title">UDGAM</div>
+    <div id="main-udgam" onClick={clicked}>
+      <div className="title-udgam">UDGAM</div>
       <motion.div className="moving" key={counter} initial={{ y: '100vh' }} animate={{ y: '0vh' }} transition={{ duration: 2, ease: 'easeInOut' }} style={{ backgroundImage: `url(${arrimg[(counter + 1) % arrimg.length]})` }}>
         {/* <img src={arrimg[(counter + 1) % arrimg.length]} /> */}
       </motion.div>
