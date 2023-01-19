@@ -34,19 +34,18 @@ function UDGmain() {
       <motion.div className="moving" key={counter} initial={{ y: '100vh' }} animate={{ y: '0vh' }} transition={{ duration: 2, ease: 'easeInOut' }} style={{ backgroundImage: `url(${arrimg[(counter + 1) % arrimg.length]})` }}>
         {/* <img src={arrimg[(counter + 1) % arrimg.length]} /> */}
       </motion.div>
-      <motion.div className="namesdiv" key={counter} initial={{ x: '-20vw', opacity: 0 }} animate={{ x: '0vw', opacity: 1 }} transition={{ duration: 3 }}>
+      <motion.div className="namesdiv" key={counter} initial={{ x: '50vw', opacity: 0 }} animate={{ x: '30vw', opacity: 1 }} transition={{ duration: 3 }}>
         <p>
           clicked by - <strong>{names[(counter + 1) % names.length]}</strong>
         </p>
       </motion.div>
-      {/* <div className="static">
-        <img src={arrimg[counter % arrimg.length]} />
+      <div className="moving " style={{ backgroundImage: `url(${arrimg[counter % arrimg.length]})`, zIndex: '0' }}>
         <div className="namesdiv">
           <p>
             clicked by - <strong>{names[counter % names.length]}</strong>
           </p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
