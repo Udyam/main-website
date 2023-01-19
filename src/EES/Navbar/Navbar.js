@@ -72,12 +72,12 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/udyam">
+                    <Link to="/udgam">
                       <a href="#">Udgam</a>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/udyam">
+                    <Link to="/mashal">
                       <a href="#">Mashal</a>
                     </Link>
                   </li>
@@ -104,10 +104,10 @@ const Navbar = () => {
           <Link to="/udyam">
             <a href="#">Udyam</a>
           </Link>
-          <Link to="/udyam">
+          <Link to="/udgam">
             <a href="#">Udgam</a>
           </Link>
-          <Link to="/udyam">
+          <Link to="/mashal">
             <a href="#">Mashal</a>
           </Link>
         </div>

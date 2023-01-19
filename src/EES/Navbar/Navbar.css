@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ek+Mukta:200);
-body {
+/* body {
   margin: 0;
   line-height: 1.4;
-  /* background: #e1e1e1; */
-}
+  /* background: #e1e1e1; 
+} */
 .window {
   position: fixed;
   display: block;
