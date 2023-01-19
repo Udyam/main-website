@@ -11,15 +11,15 @@ import worldx from './image/tabler_world.svg';
 import followx from './image/FOLLOW US_.svg';
 function Mhome() {
   return (
-    <div className="bg">
+    <div className="bgxd">
       <div className="one"></div>
       <div className="two"></div>
       <div className="three">
         {/* <img src={bg2} className='bg3' alt="" /> */}
         <div className="navx">
-          <p>LEADERBOARD</p>
-          <p>EVENTS</p>
-          <p>ABOUT US</p>
+          <p className="tpx">LEADERBOARD</p>
+          <p className="tpx">EVENTS</p>
+          <p className="tpx">ABOUT US</p>
           <p className="spx">sponsors ↗</p>
         </div>
         <div className="textx">

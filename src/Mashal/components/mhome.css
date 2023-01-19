@@ -4,7 +4,7 @@
   font-family: navfont;
   src: url(./Inconsolata-Regular.ttf);
 }
-.bg {
+.bgxd {
   background: url('./image/Mashal-Home.png');
   min-height: 100vh;
   min-width: 100vw;
@@ -87,7 +87,7 @@
   font-weight: 480;
   letter-spacing: 0.4ch;
 }
-p {
+.tpx {
   padding-bottom: 8%;
 }
 .spx {
