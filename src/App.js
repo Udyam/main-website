@@ -148,7 +148,7 @@ function App() {
             path="/mashal/leaderboard"
             element={
               <>
-                <MashalLeaderboard/>
+                <MashalLeaderboard />
               </>
             }
           />
