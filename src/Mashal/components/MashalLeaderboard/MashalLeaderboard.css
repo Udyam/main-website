@@ -3,7 +3,7 @@
   src: url(../Inconsolata-Regular.ttf);
 }
 
-.background {
+.leaderboard-background {
   min-height: 100vh;
   min-width: 100vw;
   background: url('../image/Mashal-Home.png') no-repeat center center fixed;
@@ -67,7 +67,7 @@
   justify-content: space-between;
   align-items: center;
   letter-spacing: 0.15em;
-  background-blend-mode: luminosity;
+  background: url("./images/matteFinish.png") no-repeat center center cover;
 }
 
 .first-team {
