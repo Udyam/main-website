@@ -119,8 +119,6 @@
   width: 7vw;
   position: fixed;
   background-color: #232323;
-  /* display: flex;
-        flex-direction: row; */
   z-index: 10;
   left: 0%;
   top: 0%;
@@ -147,7 +145,8 @@
   color: #fff;
 }
 .hovered {
-  padding: 12px 0;
+  padding: 0px 0;
+  padding-top: 10px;
   width: 7vw;
 }
 .hovered:hover {
@@ -161,8 +160,8 @@
 .info {
   color: #fff;
   padding: 0%;
-  margin: 0 auto;
-  height: 5.5vh;
+  /* margin: 0 auto; */
+  height: 4.5vh;
   width: 7vw;
 }
 
@@ -186,12 +185,6 @@
   background: #4e4b4b;
 }
 
-/* @media screen and (min-width: 800px){
-        .udyam-ees-mobile{
-            display: none;
-        }
-    }
-      */
 .back {
   color: #fff;
   font-size: 1.6rem;
@@ -202,12 +195,10 @@
 /* ---------- Token - events-------- */
 
 .token {
-  /* font-family: 'Poppins', sans-serif; */
   left: 7vw;
   height: 100vh;
   position: fixed;
   background: #4e4b4b;
-  /* width: 16%; */
   width: 15vw;
   z-index: 16;
 }

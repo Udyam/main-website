@@ -11,6 +11,9 @@
   top: 10%;
   left: 12%;
 }
+.sponser img {
+  height: 8rem;
+}
 .sponsers h1 {
   display: inline-block;
   position: relative;
@@ -35,14 +38,14 @@
 .sponser {
   display: inline-block;
   width: 19%;
-  height: 16rem;
+  /* height: 16rem; */
   margin: 10px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.sponser1 {
+/* .sponser1 {
   background-image: url(./images/sp1.jpg);
 }
 .sponser2 {
@@ -65,7 +68,7 @@
 }
 .sponser8 {
   background-image: url(./images/sp8.jpg);
-}
+} */
 
 .sp {
   display: flex;
@@ -73,7 +76,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 75%;
+  /* top: 75%; */
   height: 25%;
   width: 100%;
   text-align: center;
@@ -99,7 +102,7 @@
 @media (max-width: 428px) {
   .sponser {
     width: 80%;
-    height: 45vh;
+    /* height: 45vh; */
   }
   sponsers h1 {
     font-size: 3rem;
@@ -119,6 +122,6 @@
 @media (min-width: 429px) and (max-width: 1071px) {
   .sponser {
     width: 10rem;
-    height: 13rem;
+    /* height: 13rem; */
   }
 }

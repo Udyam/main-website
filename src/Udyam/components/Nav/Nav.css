@@ -116,7 +116,7 @@
 }
 
 .udyam-icon {
-  height: 50vh;
+  height: 45vh;
   /* width: 100%; */
   position: relative;
   top: 15vh;
@@ -151,7 +151,7 @@
   color: #fff;
   padding: 0%;
   margin: 0 auto;
-  height: 5.5vh;
+  height: 4.5vh;
   width: 7vw;
 }
 
@@ -300,7 +300,7 @@
   .hovered {
     display: flex;
     padding-top: 0px;
-    gap: 4rem;
+    gap: 3rem;
     width: 100%;
   }
   .game-changer {

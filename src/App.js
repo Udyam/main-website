@@ -2,21 +2,21 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './EES/Home';
-// import Udyam from './Udyam/Udyam.js';
 import About from './Udyam/components/about/about';
 import Events from './Udyam/components/Events/events';
 import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
-// import Udyam from './Udyam/Udyam';
 import HomePage from './Udyam/components/HomePage/HomePage';
 import Sponsors from './Udyam/components/Sponsors/Sponsors';
 import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
 import DashBoard from './Udyam/components/DashBoard/DashBoard';
 import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
+import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
-
-// import {useState,useEffect} from 'react';
+import Mashal from './Mashal/mashal';
+import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
+import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
 function App() {
   // let wid;
   // const [width, setWidth] = useState(window.innerWidth);
@@ -46,6 +46,15 @@ function App() {
               <>
                 <Nav active="#none" />
                 <HomePage />
+              </>
+            }
+          />
+          <Route
+            path="/mashal"
+            element={
+              <>
+                {/* <Nav active="#none" /> */}
+                <Mashal />
               </>
             }
           />
@@ -121,6 +130,31 @@ function App() {
               <>
                 <UdgamNav active="#about" />
                 <UdgamAbout />
+              </>
+            }
+          />
+          <Route
+            path="/udgam/events"
+            element={
+              <>
+                <UdgamNav active="#event" />
+                <UdgamEvents active="#event" />
+              </>
+            }
+          />
+          <Route
+            path="/mashal/leaderboard"
+            element={
+              <>
+                <MashalLeaderboard />
+              </>
+            }
+          />
+          <Route
+            path="/mashal/event"
+            element={
+              <>
+                <MashalEvent />
               </>
             }
           />
