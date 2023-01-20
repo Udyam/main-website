@@ -14,10 +14,28 @@ import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
+
 import Mashal from './Mashal/mashal';
 import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
 import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
+
+import { gapi } from 'gapi-script';
+import { useEffect } from 'react';
+import Register from './EES/Register/Register';
+// import {useState,useEffect} from 'react';
 function App() {
+  const clientId = '868476725043-56q2l17h7bf2a1fpvkqp04t5br7mti4p.apps.googleusercontent.com';
+  const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
+
+  useEffect(() => {
+    const initClient = () => {
+      gapi.client.init({
+        clientId: clientId,
+        scope: scope
+      });
+    };
+    gapi.load('client:auth2', initClient);
+  });
   // let wid;
   // const [width, setWidth] = useState(window.innerWidth);
   // const updateWidth = () => {
@@ -31,6 +49,9 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Routes>
+          <Route path="/register" element={<Register />} />
+        </Routes>
         <Routes>
           <Route
             path="/"

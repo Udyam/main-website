@@ -4,13 +4,18 @@ import { useState, useEffect } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { GoogleLogin } from 'react-google-login';
+import { useNavigate } from 'react-router-dom';
+const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const clientId = '868476725043-56q2l17h7bf2a1fpvkqp04t5br7mti4p.apps.googleusercontent.com';
   const [width, setWidth] = useState(window.innerWidth);
   const [eventLink, setEventLink] = useState(false);
   const [click, setclick] = useState(true);
   const [slideUdyam, setSlideUdyam] = useState(false);
-
+  console.log('client_id: ', clientId);
   function expand() {
     if (click) {
       document.querySelector('.nav-links').style.display = 'flex';
@@ -39,6 +44,17 @@ const Navbar = () => {
   function nameOfEvents() {
     setSlideUdyam(!slideUdyam);
   }
+
+  const onGoogleLoginSuccess = (res) => {
+    console.log('SUCCESS!!! Current User: ', res);
+    window.sessionStorage.setItem('profileData', JSON.stringify(res.profileObj));
+    window.sessionStorage.setItem('tokenId', res.tokenId);
+    navigate('/register');
+  };
+
+  const onGoogleLoginFailure = (res) => {
+    console.log('FAILURE!!! res: ', res);
+  };
 
   return (
     <>
@@ -147,9 +163,25 @@ const Navbar = () => {
                 <a href="#">Team</a>
               </li>
             </ul>
-            <div className="menu-text" style={{ display: 'flex' }}>
-              <span>Register</span>
-            </div>
+            {window.sessionStorage.getItem('registered_email') == null && (
+              <GoogleLogin
+                theme="dark"
+                accessType="online"
+                disabled={false}
+                client_id={clientId} // your Google app client ID
+                buttonText="Sign in with Google"
+                onSuccess={onGoogleLoginSuccess} // perform your user logic here
+                onFailure={onGoogleLoginFailure} // handle errors here
+                cookiePolicy={'single-host-origin'}
+                scope={scope}
+                render={(renderProps) => (
+                  <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+                    <span>Register</span>
+                  </div>
+                )}
+              />
+            )}
+
             <button className="menu-bar" onClick={expand}>
               <i className={click ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'}></i>
             </button>
