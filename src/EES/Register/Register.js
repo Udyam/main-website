@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import RegisterLogo from './RegisterLogo';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -121,7 +122,7 @@ const Register = () => {
   //   window.history.back();
   // };
   return (
-    <div className="register">
+    <div className="registerPage">
       <ToastContainer />
       <div className="form-container">
         <div className="form"></div>
@@ -129,8 +130,7 @@ const Register = () => {
         <form
           action="
         "
-          onSubmit={handleSubmit((data) => postData(data))}
-        >
+          onSubmit={handleSubmit((data) => postData(data))}>
           <h1>SIGN UP!</h1>
           <input type="text" {...register('name')} value={JSON.parse(profileData).givenName} placeholder={JSON.parse(profileData).givenName} readOnly />
           <input type="text" {...register('email')} value={JSON.parse(profileData).email} placeholder={JSON.parse(profileData).email} readOnly />
@@ -153,7 +153,11 @@ const Register = () => {
           </div>
         </form>
       </div>
-      <div className="dial">{/* <img src="/dial_reg.png" alt="" /> */}</div>
+      {window.innerWidth > 600 && (
+        <div className="register_logo_cont">
+          <RegisterLogo />
+        </div>
+      )}
     </div>
   );
 };

@@ -1,0 +1,163 @@
+.register_logo_cont {
+  position: absolute;
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  right: 0;
+}
+
+.main-container-for-logo_reg {
+  position: relative;
+  height: 50vh;
+  width: 100vh;
+  top: 25vh;
+  right: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.main-logo-container-register {
+  position: relative;
+  margin: auto 20px;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@keyframes rotating_ {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.ring-box-1 {
+  position: absolute;
+  height: 25vh;
+  width: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  margin: auto 20px;
+  user-select: none;
+}
+
+.rings {
+  position: absolute;
+  z-index: 5;
+  user-select: none;
+  /* top: 0; */
+  filter: hue-rotate(20deg) invert(12%) brightness(1.5);
+}
+
+.ring-10 {
+  animation: rotating 10s linear infinite;
+}
+.ring-8 {
+  animation: rotating_ 10s linear infinite;
+}
+
+.ring-7 {
+  animation: rotating 10s linear infinite;
+}
+
+.ring-middle {
+  transform: scale(1.2);
+  height: 35vh;
+  animation: rotating 15s linear infinite;
+}
+.ring-4 {
+  filter: invert(1) brightness(2);
+  height: 40vh;
+  animation: rotating 15s linear infinite;
+}
+
+.ring-3 {
+  filter: invert(1);
+  animation: rotating_ 15s linear infinite;
+}
+
+.ring-6 {
+  z-index: 3;
+}
+
+.dotted-ring {
+  animation: rotating 50s linear infinite;
+}
+
+.glass-lens {
+  position: absolute;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+  transform: scale(0.9);
+  filter: opacity(0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  user-select: none;
+  z-index: 3;
+}
+
+.main-event-logo {
+  position: relative;
+  margin: auto;
+  z-index: 6;
+  transition: all 0.5s ease;
+}
+
+.main-event-logo:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.button-container {
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .container-logo {
+    overflow: visible;
+  }
+  .container-logo {
+    width: 100vw;
+  }
+  .empty-div {
+    height: 100vh;
+  }
+  .circuit-img {
+    display: none;
+  }
+  .main-container-for-logo {
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    top: 12vh !important;
+    right: 35vw;
+    display: flex;
+    justify-content: center;
+    transform: scale(0.8);
+  }
+  .rings {
+    height: 55vw !important;
+    width: 55vw !important;
+  }
+  .dial-button {
+    height: 150vw !important;
+  }
+  .main-event-logo {
+    height: 120% !important;
+    margin: 8vh !important;
+  }
+}

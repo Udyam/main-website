@@ -1,4 +1,4 @@
-.register {
+.registerPage {
   height: 100vh;
   width: 100vw;
   background-color: rgb(5, 4, 43);
@@ -6,6 +6,8 @@
 }
 
 .form-container {
+  position: absolute;
+  left: 0 !important;
   height: 100vh;
   width: 50vw;
   background-color: #052121;
@@ -82,6 +84,17 @@ select {
 .dial {
   position: absolute;
   right: 0;
-  opacity: 0.8;
-  filter: brightness(0.7);
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 100vw;
+  }
+  .form-submit {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .form-container > form {
+    width: 100vw;
+  }
 }
