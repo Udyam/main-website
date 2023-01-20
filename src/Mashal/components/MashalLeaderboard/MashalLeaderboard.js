@@ -3,7 +3,7 @@ import './MashalLeaderboard.css';
 
 function MashalLeaderboard() {
   return (
-    <div className="background">
+    <div className="leaderboard-background">
       <div className="leaderboard-heading">LEADERBOARD</div>
       <div className="leaderboard-container">
         <div className="heading-container">TOP PLAYERS SCORE</div>
