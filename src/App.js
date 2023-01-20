@@ -154,7 +154,7 @@ function App() {
             path="/mashal/event"
             element={
               <>
-                <MashalEvent/>
+                <MashalEvent />
               </>
             }
           />
