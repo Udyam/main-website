@@ -67,7 +67,7 @@
   justify-content: space-between;
   align-items: center;
   letter-spacing: 0.15em;
-  background: url("./images/matteFinish.png") no-repeat center center cover;
+  background: url('./images/matteFinish.png') no-repeat center center cover;
 }
 
 .first-team {
