@@ -4,6 +4,12 @@ import img1 from './images/img1.jpg';
 import img2 from './images/img2.jpg';
 import img3 from './images/img3.jpg';
 import img4 from './images/img4.jpg';
+import { BsInstagram } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
+import { BsTwitter } from 'react-icons/bs';
+import { BsGlobe } from 'react-icons/bs';
+import lg from './images/mashalLogo.svg';
+
 const MashalEvent = () => {
   return (
     <>
@@ -11,6 +17,7 @@ const MashalEvent = () => {
         <div className="heading-mashal">
           <h1>EVENTS</h1>
         </div>
+
         <div className="container1">
           <div className="card">
             <figure className="card__thumb">
@@ -59,6 +66,13 @@ const MashalEvent = () => {
                 </a>
               </figcaption>
             </figure>
+          </div>
+          <div className="four">
+            <img src={lg} alt="hw" />
+            <BsInstagram />
+            <BsFacebook />
+            <BsTwitter />
+            <BsGlobe />
           </div>
         </div>
       </div>

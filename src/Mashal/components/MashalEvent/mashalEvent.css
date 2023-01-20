@@ -15,9 +15,8 @@
   flex-wrap: wrap;
   height: auto;
   justify-content: center;
-  width: 90%;
+  width: 100vw;
   margin: 20px;
-  background: linear-gradient(296.82deg, #161616 0%, #3e3e3e 100%);
 }
 .heading-mashal h1 {
   color: #f34b4b;
@@ -162,4 +161,10 @@
 .disclaimer__link {
   color: #755d87;
   text-decoration: none;
+}
+.four{
+    color: #fff;
+    width: 10%;
+    font-size: 24px;
+    gap: 1rem;
 }
