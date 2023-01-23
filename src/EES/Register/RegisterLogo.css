@@ -127,37 +127,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .container-logo {
-    overflow: visible;
-  }
-  .container-logo {
-    width: 100vw;
-  }
-  .empty-div {
-    height: 100vh;
-  }
-  .circuit-img {
+  .main-container-for-logo_reg {
     display: none;
-  }
-  .main-container-for-logo {
-    height: 30vw;
-    width: 30vw;
-    position: absolute;
-    top: 12vh !important;
-    right: 35vw;
-    display: flex;
-    justify-content: center;
-    transform: scale(0.8);
-  }
-  .rings {
-    height: 55vw !important;
-    width: 55vw !important;
-  }
-  .dial-button {
-    height: 150vw !important;
-  }
-  .main-event-logo {
-    height: 120% !important;
-    margin: 8vh !important;
   }
 }
