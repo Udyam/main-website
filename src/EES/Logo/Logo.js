@@ -4,7 +4,7 @@ import './Logo.css';
 import './CircularButton.css';
 
 const Logo = (props) => {
-  const [angle, setAngle] = React.useState(window.innerWidth > 600 ? 0 : 30);
+  const [angle, setAngle] = React.useState(window.innerWidth > 600 ? 0 : 270);
 
   const logoClick = () => {
     document.getElementsByClassName('dial-button')[0].animate(

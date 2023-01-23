@@ -5,7 +5,10 @@
   },
   "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended", "prettier"],
   "overrides": [],
+  
   "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false,
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
@@ -13,11 +16,15 @@
   "rules": {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": 0,
     "prettier/prettier": [
       "error",
       {
         "endOfLine": "auto"
       }
     ]
+  },
+  "globals": {
+    "process": true
   }
 }
