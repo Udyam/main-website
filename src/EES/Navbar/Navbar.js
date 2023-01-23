@@ -4,13 +4,16 @@ import { useState, useEffect } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import { GoogleLogin } from 'react-google-login';
+import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
 const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const clientId = '868476725043-56q2l17h7bf2a1fpvkqp04t5br7mti4p.apps.googleusercontent.com';
+  const clientId = process.env.REACT_APP_CLIENT_ID;
+
   const [width, setWidth] = useState(window.innerWidth);
   const [eventLink, setEventLink] = useState(false);
   const [click, setclick] = useState(true);
@@ -49,11 +52,22 @@ const Navbar = () => {
     console.log('SUCCESS!!! Current User: ', res);
     window.sessionStorage.setItem('profileData', JSON.stringify(res.profileObj));
     window.sessionStorage.setItem('tokenId', res.tokenId);
+
     navigate('/register');
   };
 
   const onGoogleLoginFailure = (res) => {
     console.log('FAILURE!!! res: ', res);
+  };
+
+  const logout = () => {
+    window.sessionStorage.removeItem('registered_email');
+    toast.success('Logout was successfull!', {
+      theme: 'dark',
+      position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
+      autoClose: 1200
+    });
+    navigate('/');
   };
 
   return (
@@ -163,7 +177,7 @@ const Navbar = () => {
                 <a href="#">Team</a>
               </li>
             </ul>
-            {window.sessionStorage.getItem('registered_email') == null && (
+            {window.sessionStorage.getItem('registered_email') == null ? (
               <GoogleLogin
                 theme="dark"
                 accessType="online"
@@ -179,6 +193,16 @@ const Navbar = () => {
                     <span>Register</span>
                   </div>
                 )}
+              />
+            ) : (
+              <GoogleLogout
+                clientId={clientId}
+                render={(renderProps) => (
+                  <button className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+                    <span>LOGOUT</span>
+                  </button>
+                )}
+                onLogoutSuccess={logout}
               />
             )}
 
