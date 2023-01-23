@@ -34,9 +34,8 @@ export default function Form() {
     );
   };
   const navigate = useNavigate();
-  const { register, handleSubmit
-  } = useForm();
-  const [isGSignedIn,] = useState(0);
+  const { register, handleSubmit } = useForm();
+  const [isGSignedIn] = useState(0);
   const profileData = window.sessionStorage.getItem('profileData');
   const postData = (profdata) => {
     console.log(profdata);
