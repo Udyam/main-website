@@ -96,6 +96,9 @@
     left: 0;
     font-size: 45px;
   }
+  .msponser {
+    margin: 2rem;
+  }
 }
 
 @media (min-width: 429px) and (max-width: 1071px) {
