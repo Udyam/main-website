@@ -112,17 +112,13 @@ const eGlobe = () => {
 
     function animate() {
       camera.lookAt(scene.position);
-      if (window.innerWidth < 800) {
-        controls.minDistance = 270;
-        controls.maxDistance = 270;
-      }
       controls.update();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     }
   }, []);
   return (
-    <div id="globe-div">
+    <div>
       <canvas id="globe"></canvas>
     </div>
   );
