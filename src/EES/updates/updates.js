@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import './updates.css';
+import Upddata from './updates-data';
 function Updates() {
   return (
     <>
@@ -9,19 +10,7 @@ function Updates() {
         </div>
         <div className="updates-udyam-content udyam-background-dark">
           <div className="update-content">
-            <div className="update-paragraph udyam-background-light">
-              <div className="update-information">
-                <p>
-                  Event <strong>xyz</strong> is live. Register
-                </p>
-              </div>
-              <div className="event-update-link">
-                <a className="udyam-background-dark" href="#">
-                  Register
-                </a>
-              </div>
-              <br style={{ clear: 'both' }} />
-            </div>
+            <Upddata data='fetched from api' />
             <div className="update-paragraph udyam-background-light">
               <div className="update-information">
                 <p>
