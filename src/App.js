@@ -26,7 +26,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import {useState,useEffect} from 'react';
 function App() {
-const clientId = process.env.REACT_APP_CLIENT_ID;
+  const clientId = process.env.REACT_APP_CLIENT_ID;
 
   const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
 
