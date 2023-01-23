@@ -39,11 +39,17 @@
   .main-container {
     font-size: 27px;
   }
+  #globe {
+    margin-left: 332px;
+  }
 }
 
 @media screen and (max-width: 950px) {
   .main-container {
     font-size: 24px;
+  }
+  #globe {
+    margin-left: 231px;
   }
 }
 
@@ -59,10 +65,24 @@
     position: inherit;
     margin: 15vh;
   }
+  #globe {
+    /* width: 600px !important;
+    height: 350px !important; */
+    margin-left: 0;
+  }
+  #globe-div {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 }
-
 @media screen and (max-width: 600px) {
   .main-container {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 488px) {
+  #globe {
+    width: 100vw !important;
+    height: 700px !important;
   }
 }
