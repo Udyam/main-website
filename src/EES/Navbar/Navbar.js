@@ -84,7 +84,7 @@ const Navbar = () => {
 
             <ul className="menu">
               <li className="menu-item">
-                <a href="#">Home</a>
+                <a href="#" onClick={open}>Home</a>
               </li>
               <li className="menu-item">
                 <Link to="/udyam/name">
@@ -114,16 +114,16 @@ const Navbar = () => {
                 </div>
               )}
               <li className="menu-item">
-                <a href="#">Sponsors</a>
+                <a href="#sponsors" onClick={open}>Sponsors</a>
               </li>
               <li className="menu-item">
-                <a href="#">Speakers</a>
+                <a href="#speakers" onClick={open}>Speakers</a>
               </li>
               <li className="menu-item">
-                <a href="#">Gallery</a>
+                <a href="/gallery">Gallery</a>
               </li>
               <li className="menu-item">
-                <a href="#">Team</a>
+                <a href="/team">Team</a>
               </li>
             </ul>
           </div>
