@@ -5,8 +5,7 @@ import Collegelist from './college_list';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import RegisterLogo from './RegisterLogo';
 
 const Register = () => {
@@ -123,7 +122,6 @@ const Register = () => {
   // };
   return (
     <div className="registerPage">
-      <ToastContainer />
       <div className="form-container">
         <div className="form"></div>
 
@@ -145,9 +143,9 @@ const Register = () => {
             <option value="FIFTH">Fifth</option>
           </select>
           <input type="text" {...register('branch')} placeholder="Branch" required />
-          <div className="form-submit" onClick={handleSubmit((data) => postData(data))}>
+          <button type="submit" className="form-submit">
             <span>SIGN UP</span>
-          </div>
+          </button>
         </form>
       </div>
       {window.innerWidth > 600 && (
