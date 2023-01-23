@@ -31,11 +31,22 @@ function Mhome() {
         </div>
       </div>
       <div className="four">
-        <img src={instax} className="pxet" alt="" />
-        <img src={twitterx} className="pxet" alt="" />
-        <img src={fbx} className="pxet" alt="" />
-        <img src={worldx} className="pxet" alt="" />
-        <img src={followx} className="pxd" alt="" />
+        <a href="https://www.instagram.com/mashal_ees/">
+          <img src={instax} className="pxet" alt="" />
+        </a>
+        <a href="https://www.youtube.com/@EES_IITBHU ">
+          {' '}
+          <img src={twitterx} className="pxet" alt="" />
+        </a>
+        <a href="https://www.facebook.com/ees.fiesta/">
+          <img src={fbx} className="pxet" alt="" />
+        </a>
+        <a href="https://discord.gg/gNrEW8vp4G">
+          <img src={worldx} className="pxet" alt="" />
+        </a>
+        <a href="#">
+          <img src={followx} className="pxd" alt="" />
+        </a>
       </div>
       <div className="five"></div>
     </div>
