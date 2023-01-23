@@ -62,8 +62,8 @@ const eGlobe = () => {
     function initGlobe() {
       // Initialize the Globe
       Globe = new ThreeGlobe({
-        waitForGlobeReady: true,
-        animateIn: true
+        waitForGlobeReady: false,
+        animateIn: false
       })
         .hexPolygonsData(countries.features)
         .hexPolygonResolution(3)
@@ -76,7 +76,7 @@ const eGlobe = () => {
       setTimeout(() => {
         Globe.arcsData(travelHistory.flights)
           .arcColor((e) => {
-            return e.status ? '#9cff00' : '#9cff00';
+            return e.status ? '#ffffff' : '#ffffff';
           })
           .arcAltitude((e) => {
             return e.arcAlt;

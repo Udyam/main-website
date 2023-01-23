@@ -75,11 +75,13 @@
     overflow-y: hidden;
   }
 }
+
 @media screen and (max-width: 600px) {
   .main-container {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 488px) {
   #globe {
     width: 100vw !important;
