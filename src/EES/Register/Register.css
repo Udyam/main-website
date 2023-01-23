@@ -97,4 +97,7 @@ select {
   .form-container > form {
     width: 100vw;
   }
+  .form-container h1{
+    font-size: 1.2rem;
+  }
 }
