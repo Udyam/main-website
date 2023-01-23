@@ -38,7 +38,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 0;
-  background-color: #3C3C3C;
+  background-color: #3c3c3c;
   background-image: url('./images/FAIN.png');
   background-position: center;
   background-size: cover;
@@ -51,7 +51,7 @@
   width: 18%;
   margin: 5%;
 }
-.msponser img{
+.msponser img {
   height: 18vh;
 }
 
@@ -82,7 +82,7 @@
   msponsers h1 {
     font-size: 3rem;
   }
-  .msponsorBox{
+  .msponsorBox {
     overflow-y: auto;
     height: 90vh;
   }
