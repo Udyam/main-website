@@ -5,12 +5,12 @@
   },
   "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended", "prettier"],
   "overrides": [],
-  
   "parserOptions": {
-    "parser": "@babel/eslint-parser",
-    "requireConfigFile": false,
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "plugins": ["react"],
   "rules": {
