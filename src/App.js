@@ -16,6 +16,7 @@ import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
 
 import Mashal from './Mashal/mashal';
+import Masponsor from './Mashal/components/Sponsors/Sponsors';
 import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
 import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
 
@@ -76,6 +77,15 @@ function App() {
               <>
                 {/* <Nav active="#none" /> */}
                 <Mashal />
+              </>
+            }
+          />
+          <Route
+            path="/mashal/sponsors"
+            element={
+              <>
+                {/* <Nav active="#none" /> */}
+                <Masponsor />
               </>
             }
           />
