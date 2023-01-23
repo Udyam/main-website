@@ -204,6 +204,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .contain {
+    margin-top: 30px;
+  }
   .base1 {
     width: 17rem;
   }
