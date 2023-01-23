@@ -7,17 +7,51 @@ import { MdArrowForwardIos } from 'react-icons/md';
 import { IoIosArrowBack } from 'react-icons/io';
 
 function UdgamEvents() {
-  const [eventTitle, setEventTitle] = useState('Campus in pixels');
+  const events = [
+    {
+      id: 1,
+      genre: 'Photography',
+      subEvents: ['Photog Event 1', 'Photog Event 2']
+    },
+    {
+      id: 2,
+      genre: 'Dance',
+      subEvents: ['Dance Event 1']
+    },
+    {
+      id: 3,
+      genre: 'Art',
+      subEvents: ['Art Event 1', 'Art Event 2', 'Art Event 3']
+    },
+    {
+      id: 4,
+      genre: 'Music',
+      subEvents: ['Music Event 1']
+    },
+    {
+      id: 5,
+      genre: 'Literature',
+      subEvents: ['Literature Event 1', 'Literature Event 1']
+    },
+    {
+      id: 6,
+      genre: 'Treasure Hunt',
+      subEvents: ['Treasure hunt Event 1']
+    }
+  ];
+  const [eventTitle, setEventTitle] = useState(events[0].subEvents[0]);
   const [eventtable, setEventtable] = useState(true);
   // const [eventnav, setEventnav] = useState(false);
+
   const eventName = (event) => {
     var element = event.target;
-
-    if (element.innerText === 'Photography') {
-      setEventTitle('Campus in pixels');
-    } else {
-      setEventTitle(element.innerText);
-    }
+    let obj = events.find((o) => o.genre === element.innerText);
+    // if (element.innerText === 'Photography') {
+    //   setEventTitle(events[0].subEvents[0]);
+    // } else {
+    //   setEventTitle(element.innerText);
+    // }
+    setEventTitle(obj.subEvents[0]);
     setEventtable(false);
     console.log(element);
   };
@@ -118,6 +152,7 @@ function UdgamEvents() {
       <div className="event-img-pc">
         <img src={bg} />
       </div>
+      {/* for mobile view */}
       <div className="events-main-mob" onClick={slidemobile}>
         <div className="event-body-mob">
           <div className="event-heading-mob">
