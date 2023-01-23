@@ -12,7 +12,8 @@ const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.go
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const clientId = '868476725043-56q2l17h7bf2a1fpvkqp04t5br7mti4p.apps.googleusercontent.com';
+  const clientId = process.env.REACT_APP_CLIENT_ID;
+
   const [width, setWidth] = useState(window.innerWidth);
   const [eventLink, setEventLink] = useState(false);
   const [click, setclick] = useState(true);
@@ -197,9 +198,9 @@ const Navbar = () => {
               <GoogleLogout
                 clientId={clientId}
                 render={(renderProps) => (
-                  <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+                  <button className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
                     <span>LOGOUT</span>
-                  </div>
+                  </button>
                 )}
                 onLogoutSuccess={logout}
               />
