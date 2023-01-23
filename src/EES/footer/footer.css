@@ -14,7 +14,7 @@
   transform: scale(1);
   height: 65px;
 }
-.pxd {
+.pxde {
   padding-top: 3%;
   padding-bottom: 2%;
   padding-left: 2%;
@@ -37,20 +37,31 @@
 }
 @media only screen and (max-width: 500px) {
   .px {
-    height: 48px;
+    height: 30px;
     padding-top: 5%;
   }
-  .pxd {
+  .pxde {
     transform: scale(0.5);
     padding-top: 7%;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 350px) {
   .px {
-    height: 30px;
+    height: 28px;
     padding-top: 5%;
   }
-  .pxd {
+  .pxde {
+    transform: scale(0.5);
+    padding-top: 7%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .px {
+    height: 25px;
+    padding-top: 5%;
+  }
+  .pxde {
     transform: scale(0.5);
     padding-top: 7%;
   }

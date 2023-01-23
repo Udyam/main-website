@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&family=Outfit:wght@400;700;900&display=swap');
+
+.mashal-aboutUs-main-container h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #f34b4b;
+}
+.mashal-bg {
+  overflow: hidden;
+  position: absolute;
+  height: 76vh;
+  width: 74vw;
+  padding: 2vh 3vw;
+  top: 10vh;
+  left: 10vw;
+  background: url('../image/Mashal-Home2.png') no-repeat;
+  background-size: cover;
+  color: #373636;
+}
+.mashal-aboutUs-main-container {
+  height: 100vh;
+  width: 100vw;
+  background: url('../image/Mashal-Home.png') no-repeat;
+  background-size: cover;
+}
+.mashal-aboutUS-inner-container {
+  /* display: none; */
+  z-index: 1;
+  position: relative;
+  display: flex;
+  height: 76vh;
+  width: 74vw;
+  padding: 2vh 3vw;
+  top: 10vh;
+  left: 10vw;
+  /* background-color: #3E3E3E; */
+}
+.heading-about-us {
+  position: absolute;
+  padding: 1vw;
+  font-size: 3rem;
+  left: 43vw;
+  letter-spacing: 1vh;
+  font-family: 'Inconsolata';
+}
+.aboutUs-image {
+  margin: 3vh 2vw;
+  max-height: 70vh;
+  max-width: 35vw;
+  object-fit: fill;
+}
+.aboutUS-paragraph {
+  margin: 8vh 2vw;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Outfit';
+}
+.social-icons {
+  position: absolute;
+  height: 60vh;
+  width: 4vw;
+  /* background-color: black; */
+  top: 5vh;
+  right: 0;
+  color: white;
+}
+.social-icons img {
+  margin: 1vh;
+  padding: 0.5vw;
+}
+.social-icons p {
+  /* display: inline; */
+  /* padding-right: 5vh; */
+  margin: 0;
+  padding: 1vh;
+  position: relative;
+  top: 8vh;
+  left: -6vh;
+  letter-spacing: 0.5vh;
+  width: 18vh;
+  transform: rotate(-90deg);
+  font-family: 'Inconsolata';
+}
