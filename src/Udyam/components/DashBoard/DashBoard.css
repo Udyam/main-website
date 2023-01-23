@@ -2,6 +2,7 @@
 .dashboard-main {
   background-color: #001432;
   width: 100vw;
+  overflow: hidden;
   /* height: 200vh; */
 }
 .db-main-container {
@@ -154,7 +155,7 @@
 
 /* Remove extra left and right margins, due to padding */
 .row {
-  margin: 0 -5px;
+  margin: 0 10%;
 }
 
 /* Clear floats after the columns */
@@ -204,7 +205,7 @@
     padding-left: 0;
   }
   .db-user-details {
-    margin: 10%;
+    margin: 10% auto;
     padding: 2%;
     width: 80%;
     height: 100%;
@@ -223,7 +224,7 @@
     padding: 3%;
   }
   .db-radianite {
-    margin: 10%;
+    margin: 10% auto;
     padding: 2%;
     width: 80%;
   }
