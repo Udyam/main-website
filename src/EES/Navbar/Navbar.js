@@ -8,7 +8,6 @@ import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-
 const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
 
 const Navbar = () => {
@@ -52,7 +51,7 @@ const Navbar = () => {
     console.log('SUCCESS!!! Current User: ', res);
     window.sessionStorage.setItem('profileData', JSON.stringify(res.profileObj));
     window.sessionStorage.setItem('tokenId', res.tokenId);
-    
+
     navigate('/register');
   };
 

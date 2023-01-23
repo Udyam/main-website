@@ -127,7 +127,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .main-container-for-logo_reg{
+  .main-container-for-logo_reg {
     display: none;
   }
 }
