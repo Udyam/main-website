@@ -20,5 +20,8 @@
         "endOfLine": "auto"
       }
     ]
+  },
+  "globals": {
+    "process": true
   }
 }

@@ -22,9 +22,12 @@ import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
 import { gapi } from 'gapi-script';
 import { useEffect } from 'react';
 import Register from './EES/Register/Register';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import {useState,useEffect} from 'react';
 function App() {
-  const clientId = '868476725043-56q2l17h7bf2a1fpvkqp04t5br7mti4p.apps.googleusercontent.com';
+  const clientId = process.env.REACT_APP_CLIENT_ID;
+
   const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
 
   useEffect(() => {
@@ -48,6 +51,7 @@ function App() {
   // }, []);
   return (
     <div className="App">
+      <ToastContainer />
       <Router>
         <Routes>
           <Route path="/register" element={<Register />} />
