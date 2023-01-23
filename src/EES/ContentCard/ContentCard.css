@@ -9,7 +9,6 @@
   clip-path: polygon(0 0, 40% 0, 100% 40%, 100% 60%, 60% 100%, 0 100%, 0% 80%, 0% 38%);
   display: flex;
   align-items: center;
-  /* z-index: 10; */
 }
 
 .contentContainer {
@@ -56,10 +55,9 @@
   .contentContainer {
     flex-direction: column;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     left: 0;
     bottom: 8%;
-    padding: 2.5%;
   }
 
   .logo {
