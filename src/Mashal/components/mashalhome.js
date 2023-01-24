@@ -42,7 +42,7 @@ function Mhome() {
           <img src={logod} className="logod" alt="" />
         </div>
       </div>
-      <div className="four">
+      <div className="fourth">
         <a href="https://www.instagram.com/mashal_ees/">
           <img src={instax} className="pxet" alt="" />
         </a>
