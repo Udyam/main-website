@@ -30,7 +30,7 @@
   height: 100%;
 }
 .four {
-  grid-column: 38/41;
+  grid-column: 39/41;
   grid-row: 3/19;
 }
 .five {
@@ -80,7 +80,7 @@
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
-  color: white;
+  color: white !important;
   font-family: navfont;
   padding-top: 10%;
   padding-left: 10%;
