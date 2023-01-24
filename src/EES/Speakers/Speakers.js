@@ -14,28 +14,28 @@ const Speakers = () => {
       title: 'Senior Engineering Manager at CISCO',
       backContent: 'Girish Gupta is the Director of Software Engineering at Cisco. He is an esteemed alumnus of IIT(BHU), Varanasi.',
       image: person1,
-      links: ["https://www.linkedin.com/in/girishkg/"]
+      links: ['https://www.linkedin.com/in/girishkg/']
     },
     {
       name: 'Aman Kumar',
       title: 'Co-Founder and Director of Teeshood | TedEx Speaker',
       backContent: 'Aman Kumar is the Co Founder and Director of Teeshood and also a TedEx speaker.',
       image: person2,
-      links: ["https://www.linkedin.com/in/aman-kumar-a1a63294/"]
+      links: ['https://www.linkedin.com/in/aman-kumar-a1a63294/']
     },
     {
       name: 'Pankaj Dwivedi',
       title: 'Engineering Manager at Mentor Graphics',
       backContent: 'Pankaj Dwivedi is the Engineering Manager at Mentor Graphics.',
       image: person3,
-      links: ["https://www.linkedin.com/in/pankaj-dwivedi-512b8324/"]
+      links: ['https://www.linkedin.com/in/pankaj-dwivedi-512b8324/']
     },
     {
       name: 'Aman Shreshtha',
       title: 'MS(Research) CSE,IIT Delhi(2020-22) ECE,IIT (BHU) Varanasi 2020',
       backContent: 'Aman Shrestha is a Research Scholar at IIT Delhi and also a distinguished alumnus of IIT(BHU), Varanasi.',
       image: person4,
-      links: ["https://www.linkedin.com/in/aman-shreshtha/"]
+      links: ['https://www.linkedin.com/in/aman-shreshtha/']
     }
   ];
   return (
