@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300;400&family=Russo+One&display=swap');
-/* *{
-    padding: 0;
-    margin: 0;
-} */
 
 .event-section {
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  min-height: 100vh;
   background: linear-gradient(296.82deg, #161616 0%, #3e3e3e 100%);
 }
 .container1 {
@@ -15,10 +11,10 @@
   flex-wrap: wrap;
   height: auto;
   justify-content: center;
-  width: 100vw;
-  margin: 20px;
+  width: auto;
 }
 .heading-mashal h1 {
+  margin: 0;
   color: #f34b4b;
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -29,8 +25,8 @@
   width: 230px;
   /* margin: 10px; */
   height: 15%;
-  position: relative;
-  top: 40%;
+  /* position: relative; */
+  /* top: 60%; */
   /* height: 100%; */
   background-color: rgba(99, 26, 225, 0.858);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
@@ -167,4 +163,9 @@
   width: 10%;
   font-size: 24px;
   gap: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .four {
+    display: none;
+  }
 }
