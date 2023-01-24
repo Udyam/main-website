@@ -1,4 +1,7 @@
+/* eslint-disable prettier/prettier */
 import './mhome.css';
+import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import React from 'react';
 // import bg2 from './image/Mashal-Home2.png';
 import logod from './image/MASHAL LOGO.svg';
@@ -17,10 +20,19 @@ function Mhome() {
       <div className="three">
         {/* <img src={bg2} className='bg3' alt="" /> */}
         <div className="navx">
-          <p className="tpx">LEADERBOARD</p>
-          <p className="tpx">EVENTS</p>
-          <p className="tpx">ABOUT US</p>
-          <p className="spx">sponsors ↗</p>
+          <Link to="/mashal/leaderboard">
+            <p className="tpx">LEADERBOARD</p>
+          </Link>
+          <Link to="/mashal/events">
+            <p className="tpx">EVENTS</p>
+          </Link>
+          <Link to="/mashal/about">
+            <p className="tpx">ABOUT US</p>
+          </Link>
+
+          <Link to="/mashal/sponsors">
+            <p className="spx">sponsors ↗</p>
+          </Link>
         </div>
         <div className="textx">
           <img src={mtext} className="mtext" alt="" />

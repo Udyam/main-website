@@ -13,22 +13,68 @@ const Sponsors = () => {
       <h1>SPONSORS</h1>
       <div className="msponsorBox">
         <div className="msponser msponser1">
-          <img src={codechef} alt="" style={{ width: '100%' }} />
+          <img className="img" src={cisco} alt="" style={{ width: '100%' }} />
+          <div className="mcontent">
+            <div className="details">
+              <h3>CISCO</h3>
+              <p>Take your client onboard seamlessly. </p>
+            </div>
+          </div>
         </div>
         <div className="msponser msponser2">
-          <img src={nvidia} alt="" style={{ width: '100%' }} />
+          <div>
+            <img src={coins} alt="" style={{ width: '100%' }} />
+            <div className="mcontent">
+              <div className="details">
+                <h3>COINSWITCH</h3>
+                <p>Take your client onboard seamlessly.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="msponser msponser3">
-          <img src={coins} alt="" style={{ width: '100%' }} />
+          <div>
+            <img src={mentor} alt="" style={{ width: '100%' }} />
+            <div className="mcontent">
+              <div className="details">
+                <h3>MENTOR</h3>
+                <p>Take your client onboard seamlessly.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="msponser msponser4">
-          <img src={cisco} alt="" style={{ width: '100%' }} />
+          <div>
+            <img src={codechef} alt="" style={{ width: '100%' }} />
+            <div className="mcontent">
+              <div className="details">
+                <h3>CODECHEF</h3>
+                <p>Take your client onboard seamlessly.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="msponser msponser5">
-          <img src={mentor} alt="" style={{ width: '100%' }} />
+          <div>
+            <img src={nvidia} alt="" style={{ width: '100%' }} />
+            <div className="mcontent">
+              <div className="details">
+                <h3>NVIDIA</h3>
+                <p>Take your client onboard seamlessly.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="msponser msponser6">
-          <img src={silence} alt="" style={{ width: '100%' }} />
+          <div>
+            <img src={silence} alt="" style={{ width: '100%' }} />
+            <div className="mcontent">
+              <div className="details">
+                <h3>SILENCE</h3>
+                <p>Take your client onboard seamlessly.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
