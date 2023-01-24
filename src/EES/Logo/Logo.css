@@ -133,6 +133,7 @@
 @media screen and (max-width: 600px) {
   .container-logo {
     overflow: visible;
+    pointer-events: none;
   }
   .container-logo {
     width: 100vw;
@@ -163,5 +164,6 @@
   .main-event-logo {
     height: 120% !important;
     margin: 8vh !important;
+    pointer-events: auto;
   }
 }

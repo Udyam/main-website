@@ -152,10 +152,14 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="menu-item">
-                <a href="/gallery">Gallery</a>
+                <Link to="/gallery">
+                  <a href="#">Gallery</a>
+                </Link>
               </li>
               <li className="menu-item">
-                <a href="/team">Team</a>
+                <Link to="/team">
+                  <a href="/team">Team</a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -203,10 +207,14 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#">Gallery</a>
+                <Link to="/gallery">
+                  <a href="#">Gallery</a>
+                </Link>
               </li>
               <li>
-                <a href="#">Team</a>
+                <Link to="/team">
+                  <a href="#">Team</a>
+                </Link>
               </li>
             </ul>
             {window.sessionStorage.getItem('registered_email') == null ? (
