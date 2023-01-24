@@ -42,7 +42,7 @@ const eGlobe = () => {
 
       camera.position.z = 210;
       camera.position.x = 0;
-      camera.position.y = 0;
+      camera.position.y = 250;
 
       scene.add(camera);
 
@@ -112,10 +112,21 @@ const eGlobe = () => {
 
     function animate() {
       camera.lookAt(scene.position);
-      if (window.innerWidth < 800) {
+      if (window.innerWidth <= 800) {
         controls.minDistance = 270;
         controls.maxDistance = 270;
+        camera.position.y = 100;
       }
+      if (window.innerWidth <= 900 && window.innerWidth > 800) {
+        controls.minDistance = 270;
+        controls.maxDistance = 270;
+        camera.position.y = 100;
+      }
+      // if (window.innerWidth <= 950 && window.innerWidth > 900) {
+      //   controls.minDistance = 400;
+      //   controls.maxDistance = 400;
+      //   camera.position.y = 100;
+      // }
       controls.update();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
