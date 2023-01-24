@@ -158,7 +158,6 @@ function Events() {
               </a>
             </div>
             <div className="xiota event-name" onClick={checkNav}>
-              <a href="#">X-IoT-A</a>
               <a href="#" className="4">
                 X-Iot-A
               </a>
