@@ -1,6 +1,7 @@
 import './DashBoard.css';
 import React from 'react';
 import { useEffect } from 'react';
+import QRCode from 'react-qr-code';
 const DashBoard = () => {
   const [user, setUser] = React.useState({
     name: 'Killjoy prime',
@@ -23,7 +24,7 @@ const DashBoard = () => {
           <div className="db-user-details">
             <div className="qr-and-name">
               <div className="qr">
-                <img src="#" alt="Qr-Code" />
+                <QRCode size={256} style={{ height: 'auto', maxWidth: '100%', width: '100%' }} value={user.email} viewBox={`0 0 256 256`} />
               </div>
               <div className="userName">
                 <h1>{user.name}</h1>

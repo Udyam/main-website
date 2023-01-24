@@ -52,6 +52,7 @@ const Navbar = () => {
     console.log('SUCCESS!!! Current User: ', res);
     window.sessionStorage.setItem('profileData', JSON.stringify(res.profileObj));
     window.sessionStorage.setItem('tokenId', res.tokenId);
+    window.sessionStorage.setItem('imageUrl', res.profileObj.imageUrl);
     // console.log('res.profileObj: ', res);
     axios({
       url: 'https://udyam.pythonanywhere.com/auth/google-login/',
