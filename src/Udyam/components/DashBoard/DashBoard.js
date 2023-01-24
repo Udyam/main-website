@@ -17,6 +17,8 @@ const DashBoard = () => {
     var newUser = JSON.parse(window.sessionStorage.getItem('profileData'));
     setUser(newUser);
   }, []);
+  var userName = JSON.parse(window.sessionStorage.getItem('profileData')).name;
+  var displayName = userName.split(' ').slice(0, 2).join(' ');
   return (
     <>
       <div className="dashboard-main">
@@ -27,7 +29,7 @@ const DashBoard = () => {
                 <QRCode size={256} style={{ height: 'auto', maxWidth: '100%', width: '100%' }} value={user.email} viewBox={`0 0 256 256`} />
               </div>
               <div className="userName">
-                <h1>{user.name}</h1>
+                <h1>{displayName}</h1>
               </div>
             </div>
             <div className="userDetails">
