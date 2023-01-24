@@ -34,13 +34,8 @@ export default function Form() {
     );
   };
   const navigate = useNavigate();
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors }
-  } = useForm();
-  const [isGSignedIn, setisGSignedIn] = useState(0);
+  const { register, handleSubmit } = useForm();
+  const [isGSignedIn] = useState(0);
   const profileData = window.sessionStorage.getItem('profileData');
   const postData = (profdata) => {
     console.log(profdata);
@@ -108,10 +103,6 @@ export default function Form() {
       position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
       autoClose: 1200
     });
-
-    const header = {
-      Authorization: res.tokenId
-    };
     axios({
       url: 'https://udyam.pythonanywhere.com/auth/google-login/',
       method: 'post',
@@ -133,7 +124,7 @@ export default function Form() {
         window.sessionStorage.setItem('registered_email', res.profileObj.email);
         navigate('/');
       })
-      .catch((e) => {
+      .catch(() => {
         setTimeout(() => {
           toast.warning('Registeration is temporarily closed. We apologize for the inconvenience.', {
             theme: 'dark',
