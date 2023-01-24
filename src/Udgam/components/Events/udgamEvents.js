@@ -1,5 +1,7 @@
 import './events.css';
-import bg from './photo.png';
+import bg from './photography.png';
+import bg1 from './Ellipse2.png';
+import bg2 from './Ellipse4.png';
 // import Nav from '../Nav/Nav';
 
 import { useState, useEffect } from 'react';
@@ -31,7 +33,7 @@ function UdgamEvents() {
     {
       id: 5,
       genre: 'Literature',
-      subEvents: ['Literature Event 1', 'Literature Event 1']
+      subEvents: ['Literature Event 1', 'Literature Event 2']
     },
     {
       id: 6,
@@ -41,17 +43,15 @@ function UdgamEvents() {
   ];
   const [eventTitle, setEventTitle] = useState(events[0].subEvents[0]);
   const [eventtable, setEventtable] = useState(true);
+  const [whichEvent, setwhichEvent] = useState('Photography');
   // const [eventnav, setEventnav] = useState(false);
-
+  const [clickct, setClickct] = useState(0);
   const eventName = (event) => {
     var element = event.target;
+    setwhichEvent(element.innerText);
+    setClickct(0);
     let obj = events.find((o) => o.genre === element.innerText);
-    // if (element.innerText === 'Photography') {
-    //   setEventTitle(events[0].subEvents[0]);
-    // } else {
-    //   setEventTitle(element.innerText);
-    // }
-    setEventTitle(obj.subEvents[0]);
+    setEventTitle(obj.subEvents[clickct]);
     setEventtable(false);
     console.log(element);
   };
@@ -93,8 +93,26 @@ function UdgamEvents() {
     // document.querySelector('.leader').style.display = 'block';
   }
 
-  // const moveBack = () => {};
-  // const movefwd = () => {};
+  const circleOneClicked = () => {
+    let obj = events.find((o) => o.genre === whichEvent);
+    if (clickct <= 0) {
+      setClickct(obj.subEvents.length - 1);
+    } else {
+      setClickct(clickct - 1);
+    }
+    setEventTitle(obj.subEvents[clickct]);
+    console.log(clickct);
+  };
+  const circleTwoClicked = () => {
+    let obj = events.find((o) => o.genre === whichEvent);
+    if (clickct >= obj.subEvents.length - 1) {
+      setClickct(0);
+    } else {
+      setClickct(clickct + 1);
+    }
+    setEventTitle(obj.subEvents[clickct]);
+    console.log(clickct);
+  };
 
   return (
     <div>
@@ -150,7 +168,18 @@ function UdgamEvents() {
         </div>
       </div>
       <div className="event-img-pc">
-        <img src={bg} />
+        <img className="circle-one" src={bg1} onClick={circleOneClicked} />
+        <img className="circle-two" onClick={circleTwoClicked} src={bg2} />
+        <img className="main-img" src={bg} />
+        {/* <div className="circle-one" onClick={circleOneClicked}>
+          <img src={bg1} />
+        </div>
+        <div className="circle-two" onClick={circleTwoClicked}>
+          <img src={bg2} />
+        </div>
+        <div className="main-img">
+          <img src={bg} />
+        </div> */}
       </div>
       {/* for mobile view */}
       <div className="events-main-mob" onClick={slidemobile}>

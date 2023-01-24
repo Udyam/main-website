@@ -172,7 +172,7 @@
   margin: 10%;
 }
 
-.event-img-pc {
+ .event-img-pc {
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -180,9 +180,29 @@
   top: 20vh;
   left: 50vw;
 }
-.event-img-pc img {
+
+ .circle-one {
+  position: absolute;
+  width: 30%;
+  left: 5%;
+  pointer-events: all;
+}
+
+.circle-two {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 30%;
+  pointer-events: all;
+}
+
+.main-img{
   width: 70%;
-  z-index: -1;
+  margin: auto;
+} 
+
+.event-img-pc img {
+  z-index: 0;
 }
 
 .event-title {
