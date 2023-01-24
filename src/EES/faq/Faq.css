@@ -9,7 +9,7 @@
   top: 0%;
   bottom: 0%;
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
   color: white;
 }
 
@@ -45,7 +45,7 @@
 .left {
   width: 42vw;
   margin: 0vw 2vw;
-  margin-top: -10vh;
+  margin-top: -16vh;
 }
 
 #learnmorebtn {
@@ -55,7 +55,6 @@
 
 .teaminfo {
   font-family: 'League Spartan', sans-serif;
-  line-height: 22px;
   display: flex;
   flex-direction: column;
   margin-left: 6vw;
@@ -63,22 +62,28 @@
 }
 
 #msgicon {
-  height: 1.2vw;
-  margin-top: 1.4px;
+  height: 2vh;
+  margin-top: 1vh;
 }
 
-.team {
-  margin-bottom: 3vh;
+.team h3 {
+  margin: 1vh 3.8vh;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.team h2 {
+  font-size: 22px;
 }
 .headi {
-  margin: 5px 0px;
+  margin: 0px 0px;
   display: flex;
-  margin-bottom: 2vh;
+  /* margin-bottom: 2vh; */
 }
 .teamname {
   margin-left: 0.6vw;
   font-family: sans-serif;
   letter-spacing: 1.2px;
+  margin: 0px 10px;
 }
 
 .right {
@@ -121,14 +126,14 @@
   padding: 0rem 0.65rem;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  padding: 0.7rem 0;
+  /* padding: 0.7rem 0; */
 }
 
 .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 1rem;
+  /* padding: 0rem -1rem; */
   font-family: 'Inter', sans-serif;
   font-style: normal;
 }
@@ -136,7 +141,7 @@
 .question h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  padding-top: 0.5rem;
+  /* padding-top: 0.5rem; */
 }
 
 .ansshow {
@@ -153,6 +158,9 @@
   font-size: 2vh;
   color: rgba(229, 229, 236, 0.85);
   margin: 0px 1vw;
+  /* margin-top: -20px; */
+  /* top: 10px; */
+  margin-top: -5px;
 }
 
 .hidden {
@@ -172,17 +180,37 @@
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .left {
+    margin-left: -3vw;
+  }
+
   #msgicon {
     height: 4.2vw;
-    margin-top: 3px;
+    margin-top: 7.8px;
     margin-right: 1vw;
+  }
+
+  .team h3 {
+    /* font-size: 10px; */
+    margin: 1vh 8vw;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+
+  .teamname {
+    margin-left: 6px;
+  }
+
+  .team {
+    margin-bottom: 7px;
   }
 
   .left {
     margin-top: -25px;
     height: auto;
     align-items: center;
-    line-height: 1px;
+    /* line-height: 1px; */
     width: 90vw;
   }
 
@@ -194,10 +222,11 @@
 
   .right {
     width: 90vw;
-    height: 60vh;
+    height: 30vh;
     background: none;
     overflow-y: auto;
     padding-bottom: 15vh;
+    margin-bottom: 10vh;
   }
 
   .ques {
@@ -222,7 +251,7 @@
 
   .question h3 {
     font-size: 1.2rem;
-    margin: 2px;
+    margin: 10px 0px;
     font-weight: 300;
   }
 }

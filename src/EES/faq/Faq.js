@@ -32,34 +32,49 @@ const Faq = () => {
                   <img src={msg} alt="" id="msgicon" />
                   <h2 className="teamname">EA Team</h2>
                 </div>
-                <h3>Ayushi Gupta</h3>
-                <p>ayushi.gupta.ece20@itbhu.ac.in</p>
-                <h3>Ankit</h3>
-                <p>ankit.student.ece20@itbhu.ac.in</p>
+                <h3>
+                  <b>Ayushi Gupta</b>
+                  <br />
+                  ayushi.gupta.ece20@itbhu.ac.in
+                </h3>
+                <h3>
+                  <b>Ankit</b>
+                  <br />
+                  ankit.student.ece20@itbhu.ac.in
+                </h3>
               </div>
               <div className="team">
                 <div className="headi">
                   <img id="msgicon" src={msg} alt="" />
                   <h2 className="teamname">Marketing Team</h2>
                 </div>
-                <h3>Nishanth Gounder</h3>
-                <p>nishanth.gounder.ece20@itbhu.ac.in</p>
+                <h3>
+                  <b>Nishanth Gounder</b>
+                  <br />
+                  nishanth.gounder.ece20@itbhu.ac.in
+                </h3>
               </div>
               <div className="team">
                 <div className="headi">
                   <img id="msgicon" src={msg} alt="" />
                   <h2 className="teamname">PR Team</h2>
                 </div>
-                <h3>Avinash Singh</h3>
-                <p>avinash.singh.ece20@itbhu.ac.in</p>
+                <h3>
+                  <b>Avinash Singh</b>
+                  <br />
+                  avinash.singh.ece20@itbhu.ac.in
+                </h3>
               </div>
               <div className="team">
                 <div className="headi">
                   <img id="msgicon" src={msg} alt="" />
                   <h2 className="teamname">Co-Convenor</h2>
                 </div>
-                <h3>Bisesh Agarwal</h3>
-                <p>bisesh.agarwal.ece20@itbhu.ac.in</p>
+                <h3>
+                  <b>Bisesh Agarwal</b>
+                  <br />
+                  bisesh.agarwal.ece20@itbhu.ac.in
+                </h3>
               </div>
             </div>
           </div>
@@ -91,50 +106,38 @@ const Faq = () => {
 
 const data = [
   {
-    question: 'Who developed JavaScript, and what was the first name of JavaScript?',
+    question: ' What if we were not able to attend the workshop on schedule?',
+    answer: 'You can watch the recorded workshop on EES YouTube channel, but we recommend you to attend the workshop on time so that you can clear your all doubts in the workshop itself and get maximum Radianite points.'
+  },
+  {
+    question: 'What will be the mode of workshops?',
+    answer: 'First phase of workshop will be conducted in online mode. From January onwards the workshops will be conducted in offline mode.'
+  },
+  {
+    question: 'Will there be any Prerequisites to attend the workshops?',
+    answer: 'The only prerequisite for all the workshops is your enthusiasm. Don’t worry we will start everything from basics so that you can understand everything properly.'
+  },
+  {
+    question: 'How these events will help us to get/prepare for our dream job.',
     answer:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihilLorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+      'Udyam comprises of both core end non-core events. Core events like Digisim, continuum, CommNet, I-chip and X-IoT-A comprises of core electronics topics which are important for interviews and help you get your dream job. Non-Core events like Mosaic, Devbits and Cassandra will teach you most important industry level skills required to get your dream job and will help you prepare your projects that you can mention in your resume for interviews. Also, you can get some great achievements to flex in your resume.  The winners of the events sometimes get direct internship opportunities at tech giants.'
   },
   {
-    question: 'What is one drive?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    question: 'Will there be any participation fees for any event?',
+    answer: 'No, the participation in all the events is free.'
   },
   {
-    question: 'How much OneDrive storage do I get with MS?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    question: 'Will there be any entry fees for workshops?',
+    answer: ' No, all the workshops are free to attend. You can also rewatch them later on EES official YouTube channel.'
   },
   {
-    question: 'What happens to the files ?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    question: 'When will the events be conducted?',
+    answer: ' The events will be conducted in the second week of April, from 7th to 9th April 2023. Final dates to be declared soon.'
   },
   {
-    question: 'which udyam event is best?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
-  },
-  {
-    question: 'Should I use my existing account ?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
-  },
-  {
-    question: 'Do I need to keep my password safe?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
-  },
-  {
-    question: 'what is the procedure to change password?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
-  },
-  {
-    question: 'What happens when my trial ends?',
-    answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
+    question: 'What will be the prizes for the event winners?',
+    answer: ' Winners will get exciting vouchers, coupons and Internship opportunities at tech giants.'
   }
-  // {
-  //   question: 'How do i cancel my trial before it ends?',
-  //   answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
-  // },
-  // {
-  //   question: 'Can I participate in more than 3 events?',
-  //   answer: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore hic ulla inventore, earum ex aut in aliquid eaque pariatur rerum maiores consectetur accusantium temporibus omnis facere eum. Adipisci, nihil'
-  // }
 ];
 
 export default Faq;
