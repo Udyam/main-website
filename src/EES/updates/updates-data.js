@@ -11,7 +11,7 @@ function Upddata(props) {
           <p>{props.description}</p>
         </div>
         <div className="event-update-link">
-          <a className={props.classi2} href={props.link}>
+          <a className={props.classi2} href={props.link} target="__blank">
             Link <BiLinkExternal />
           </a>
         </div>
