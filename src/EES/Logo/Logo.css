@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  pointer-events: none;
   /* background-color: #000; */
 }
 .circuit-img {
@@ -134,6 +135,7 @@
   margin: auto;
   z-index: 6;
   transition: all 0.5s ease;
+  pointer-events: auto;
 }
 
 .main-event-logo:hover {
@@ -173,7 +175,7 @@
     width: 55vw !important;
   }
   .dial-button {
-    height: 150vw !important;
+    height: 89.8vw !important;
   }
   .main-event-logo {
     height: 120% !important;

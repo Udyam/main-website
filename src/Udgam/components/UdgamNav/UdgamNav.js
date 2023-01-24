@@ -8,6 +8,7 @@ import { FaAward } from 'react-icons/fa';
 // import { IoIosArrowBack } from 'react-icons/io';
 // import { BiQrScan } from 'react-icons/bi';
 import ees from './ees.svg';
+// import udyam from './udgam.svg';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
@@ -142,11 +143,7 @@ const UdgamNav = (props) => {
       {' '}
       <div className="background">
         <div className="bg"></div>
-        <div className="star-field">
-          <div className="layer"></div>
-          <div className="layer"></div>
-          <div className="layer"></div>
-        </div>
+        <div className="bg_filter"></div>
       </div>
       {/* {(udyamName || true) && width < 800 && <Profile />} */}
       {(slideNav || width > 800) && (

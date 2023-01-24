@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ek+Mukta:200);
-body {
+/* body {
   margin: 0;
   line-height: 1.4;
-  /* background: #e1e1e1; */
-}
+  /* background: #e1e1e1; 
+} */
 .window {
   position: fixed;
   display: block;
@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 0;
   height: 8%;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   transition: all 0.5s ease-out, background 1s ease-out;
   transition-delay: 0.2s;
@@ -305,6 +305,7 @@ nav {
   top: 28%;
   right: -32%;
   z-index: 5;
+  cursor: pointer;
 }
 
 .dropmenu {

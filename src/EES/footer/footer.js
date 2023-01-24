@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="items">
         <a href="https://www.instagram.com/ees_fest/?theme=dark" target="_blank" rel="noreferrer">
           {' '}
-          <img src={cright} alt="" className="pxd" />{' '}
+          <img src={cright} alt="" className="pxde" />{' '}
         </a>
         <a href="https://www.instagram.com/ees_fest/?theme=dark" target="_blank" rel="noreferrer">
           {' '}

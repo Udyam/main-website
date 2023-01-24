@@ -1,5 +1,6 @@
 .dial-button {
   position: relative;
+  pointer-events: none;
 }
 
 .circular-mai-container {
@@ -12,6 +13,6 @@
 
 @media screen and (max-width: 600px) {
   .dial-button {
-    transform: rotate(30deg);
+    transform: rotate(270deg);
   }
 }

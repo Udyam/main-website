@@ -1,0 +1,82 @@
+.backg {
+  width: 100vw;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1631631480669-535cc43f2327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.moving {
+  z-index: 3;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: white; */
+  /* background-repeat: no-repeat; */
+  /* background-size:cover; */
+  /* background-position: center center; */
+  /* width: 100vw; */
+}
+@font-face {
+  font-family: titleFont;
+  src: url('./Ellen-Luff_Leyton-Free-Font_170217/LeytonPersonal-Bold.otf');
+}
+
+.namesdiv {
+  z-index: 8;
+  color: white;
+  /* background-color: #232323; */
+  position: fixed;
+  bottom: 2vh;
+  left: 20vw;
+  /* line-height: 100%; */
+  padding: 20px;
+  text-align: center;
+  /* font-weight: 900; */
+  font-weight: bolder;
+  font-size: 30px;
+  /* height: 10vh; */
+  width: 30vw;
+}
+.title-udgam {
+  width: 50vw;
+  /* height: 20vh; */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* padding: 20vh; */
+  top: 30vh;
+  z-index: 10;
+  font-family: titleFont;
+  font-size: 8vw;
+  line-height: 30vh;
+  position: absolute;
+  left: 24vw;
+  /* width: 1049px;
+height: 240px;
+left: 196px;
+top: 377px; */
+
+  /* font-family: 'Leyton Personal'; */
+  /* font-style: normal;
+font-weight: 400;
+font-size: 200px;
+line-height: 240px; */
+  /* identical to box height */
+
+  text-align: center;
+  /* letter-spacing: -0.005em; */
+
+  color: #fcfbfc;
+}
+@media screen and (max-width: 800px) {
+  .title-udgam {
+    left: 8vw;
+    font-size: 12vw;
+    width: 70vw;
+    line-height: 20vh;
+  }
+  .namesdiv {
+    font-size: 20px;
+  }
+}

@@ -7,17 +7,24 @@
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "plugins": ["react"],
   "rules": {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": 0,
     "prettier/prettier": [
       "error",
       {
         "endOfLine": "auto"
       }
     ]
+  },
+  "globals": {
+    "process": true
   }
 }

@@ -1,0 +1,119 @@
+.team-members-main {
+  background-color: #001432;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.ct-main {
+  position: relative;
+  height: 100vh;
+  width: 85vw;
+  left: 15vw;
+}
+
+.core-team {
+  color: white;
+  text-align: center;
+  padding: 2vw;
+  font-size: 2rem;
+}
+
+.core-team h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw 2vw;
+}
+
+.team-card {
+  margin: 2vw;
+  height: 38vh;
+  width: 25vh;
+  padding: 1rem;
+  border-radius: 1vh;
+  box-shadow: 5px 5px 20px black;
+}
+.member-image {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 2vh;
+  overflow: hidden;
+}
+.tm-image {
+  height: 25vh;
+  width: 25vh;
+  object-fit: cover;
+}
+.content-on-hover {
+  visibility: hidden;
+  /* object-fit: fill; */
+  height: 0vh;
+  width: 25vh;
+  /* padding: 1vh; */
+  font-size: 2.2rem;
+  box-sizing: border-box;
+  border-radius: 2vh;
+  position: relative;
+  background: rgba(226, 201, 201, 0.3);
+  bottom: 26vh;
+  /* transition: .3s ease-in-out; */
+}
+.content-on-hover h6 {
+  padding: 2vh 2vh 0 2vh;
+}
+.member-image:hover .content-on-hover {
+  visibility: visible;
+  height: 25vh;
+}
+.team-contact-handles {
+  position: absolute;
+  /* margin-top: 8vh; */
+  padding: 0 auto;
+  top: 17vh;
+  left: 1.2vh;
+  padding: 1vh;
+}
+.team-contact-handles a {
+  /* margin-top: 3vh; */
+  padding: 1vh;
+}
+.member-details {
+  padding: 2vh;
+  font-size: 1.4rem;
+}
+.mobile-contact-links {
+  display: none;
+}
+@media (max-width: 600px) {
+  .ct-main {
+    width: 100vw;
+    left: 0;
+  }
+  .team-row {
+    flex-direction: column;
+  }
+  .team-card {
+    margin: 8vw 2vw;
+    height: 42vh;
+  }
+  .content-on-hover {
+    display: none;
+  }
+  .mobile-contact-links {
+    display: block;
+  }
+  .mobile-contact-links a {
+    padding: 1vh;
+  }
+}
