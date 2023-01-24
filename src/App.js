@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './EES/Home';
@@ -14,7 +13,7 @@ import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
-
+// import Teams from './EES/Teams/Teams';
 import Mashal from './Mashal/mashal';
 import Masponsor from './Mashal/components/Sponsors/Sponsors';
 import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
@@ -25,6 +24,7 @@ import { useEffect } from 'react';
 import Register from './EES/Register/Register';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ComingSoon from './EES/ComingSoon/ComingSoon';
 // import {useState,useEffect} from 'react';
 function App() {
   const clientId = process.env.REACT_APP_CLIENT_ID;
@@ -63,6 +63,30 @@ function App() {
             element={
               <>
                 <Home />
+              </>
+            }
+          />
+          <Route
+            path="/gallery"
+            element={
+              <>
+                <ComingSoon />
+              </>
+            }
+          />
+          {/* <Route
+            path="/team"
+            element={
+              <>
+                <Teams />
+              </>
+            }
+          /> */}
+          <Route
+            path="/team"
+            element={
+              <>
+                <ComingSoon />
               </>
             }
           />
