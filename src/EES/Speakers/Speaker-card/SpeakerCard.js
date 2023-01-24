@@ -19,7 +19,10 @@ const SpeakerCard = ({ name, title, image, back }) => {
           </div>
         </div>
         <div className="card-back">
-          <p>{back}</p>
+          <div className="card-back-content">
+            <h1>About {name}</h1>
+            <p>{back}</p>
+          </div>
         </div>
       </div>
       <div className="links-container-speakers">
@@ -35,7 +38,8 @@ SpeakerCard.propTypes = {
   name: PropTypes.string,
   title: PropTypes.string,
   image: PropTypes.string,
-  back: PropTypes.string
+  back: PropTypes.string,
+  links: PropTypes.array
 };
 
 export default SpeakerCard;
