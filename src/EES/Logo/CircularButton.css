@@ -1,6 +1,6 @@
 .dial-button {
   position: relative;
-  pointer-events: none;
+  z-index: 1;
 }
 
 .circular-mai-container {

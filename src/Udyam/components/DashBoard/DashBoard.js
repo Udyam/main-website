@@ -1,6 +1,24 @@
 import './DashBoard.css';
 import React from 'react';
+import { useEffect } from 'react';
+import QRCode from 'react-qr-code';
 const DashBoard = () => {
+  const [user, setUser] = React.useState({
+    name: 'Killjoy prime',
+    email: 'killjoyprime40@gmail.com',
+    college: 'Indian Institute of Technology Varanasi',
+    year: 'Part II',
+    phone: '1234567890',
+    referral: '1223456',
+    radianite_points: 90
+  });
+  useEffect(() => {
+    console.log('user', user);
+    var newUser = JSON.parse(window.sessionStorage.getItem('profileData'));
+    setUser(newUser);
+  }, []);
+  var userName = JSON.parse(window.sessionStorage.getItem('profileData')).name;
+  var displayName = userName.split(' ').slice(0, 2).join(' ');
   return (
     <>
       <div className="dashboard-main">
@@ -8,32 +26,32 @@ const DashBoard = () => {
           <div className="db-user-details">
             <div className="qr-and-name">
               <div className="qr">
-                <img src="#" alt="Qr-Code" />
+                <QRCode size={256} style={{ height: 'auto', maxWidth: '100%', width: '100%' }} value={user.email} viewBox={`0 0 256 256`} />
               </div>
               <div className="userName">
-                <h1>Killjoy prime</h1>
+                <h1>{displayName}</h1>
               </div>
             </div>
             <div className="userDetails">
               <div className="userEmail padding-between">
                 <div className="textSmall">Email</div>
-                <div className="textLarge">killjoyprime40@gmail.com</div>
+                <div className="textLarge">{user.email}</div>
               </div>
               <div className="userCollege padding-between">
                 <div className="textSmall">College</div>
-                <div className="textLarge">Indian Institute of Technology Varanasi</div>
+                <div className="textLarge">{user.college}</div>
               </div>
               <div className="userBranch-year padding-between">
-                <div className="textSmall">Branch and year of study</div>
-                <div className="textLarge">Electronics Engineering Part II</div>
+                <div className="textSmall">year of study</div>
+                <div className="textLarge">{user.year} YEAR</div>
               </div>
               <div className="userPhone padding-between">
                 <div className="textSmall">Mobile Number</div>
-                <div className="textLarge">1234567890</div>
+                <div className="textLarge">{user.phone}</div>
               </div>
               <div className="userRefferal padding-between">
                 <div className="textSmall">Referral Code</div>
-                <div className="textLarge">1223456</div>
+                <div className="textLarge">{user.referral}</div>
               </div>
             </div>
           </div>
@@ -41,7 +59,7 @@ const DashBoard = () => {
             <div className="rImage-Score">
               <img className="radianiteImage" src="/assets/radianite.png" alt="" />
               <div className="rPoints" style={{}}>
-                <div className="scoreMain">90</div>
+                <div className="scoreMain">{user.radianite_points}</div>
               </div>
             </div>
             <div className="radianiteHeading" style={{}}>
