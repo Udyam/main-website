@@ -1,4 +1,6 @@
 import React from 'react';
+import { BiLinkExternal } from 'react-icons/bi';
+
 function Upddata(props) {
   return (
     <>
@@ -10,7 +12,7 @@ function Upddata(props) {
         </div>
         <div className="event-update-link">
           <a className={props.classi2} href={props.link}>
-            Link →
+            Link <BiLinkExternal />
           </a>
         </div>
         <br style={{ clear: 'both' }} />
