@@ -1,4 +1,50 @@
+.Teams-Nav {
+  height: 100vh;
+}
+.Teams-Nav-1,
+.Teams-Nav-2 {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 150px;
+  z-index: 10;
+}
+.Teams-Nav-1 {
+  left: 30px;
+}
+.Teams-Nav-2 {
+  right: 30px;
+}
+
+@font-face {
+  font-family: NavFont;
+  src: './Spartan-SemiBold.ttf';
+}
+
+.Teams-Nav-Item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: NavFont;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  color: white;
+  text-shadow: 4px 4px 4px #323534;
+  font-size: 20px;
+  background: rgb(136, 30, 173);
+  background: linear-gradient(225deg, rgba(136, 30, 173, 1) 35%, rgba(41, 246, 173, 1) 100%);
+}
+
 .team-members-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #001432;
   height: 100vh;
   width: 100vw;
@@ -8,8 +54,8 @@
 .ct-main {
   position: relative;
   height: 100vh;
-  width: 85vw;
-  left: 15vw;
+  width: 80vw;
+  /* left: 15vw; */
 }
 
 .core-team {
@@ -96,9 +142,41 @@ p {
   display: none;
 }
 @media (max-width: 600px) {
-  .ct-main {
+  .team-members-main {
+    flex-direction: column;
+  }
+  .Teams-Nav {
+    display: flex;
+    /* position: absolute; */
+    height: auto;
+    /* bottom: 0; */
+    overflow-x: scroll;
     width: 100vw;
-    left: 0;
+  }
+  .Teams-Nav-1,
+  .Teams-Nav-2 {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    width: auto;
+    /* overflow: scroll; */
+  }
+  .Teams-Nav-Item {
+    height: 80px;
+    width: 80px;
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  .active {
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+  }
+  .ct-main {
+    height: 80vh;
+    overflow: scroll;
+    /* width: 100vw; */
+    /* left: 0; */
   }
   .team-row {
     flex-direction: column;
