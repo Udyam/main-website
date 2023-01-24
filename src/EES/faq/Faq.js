@@ -29,18 +29,29 @@ const Faq = () => {
             <div className="teaminfo">
               <div className="team">
                 <div className="headi">
+                  <img id="msgicon" src={msg} alt="" />
+                  <h2 className="teamname">Co-Convenor</h2>
+                </div>
+                <h3>
+                  <b>Bisesh Agarwal</b>
+                  <br />
+                  <p>bisesh.agarwal.ece20@itbhu.ac.in</p>
+                </h3>
+              </div>
+              <div className="team">
+                <div className="headi">
                   <img src={msg} alt="" id="msgicon" />
                   <h2 className="teamname">EA Team</h2>
                 </div>
                 <h3>
                   <b>Ayushi Gupta</b>
                   <br />
-                  ayushi.gupta.ece20@itbhu.ac.in
+                  <p>ayushi.gupta.ece20@itbhu.ac.in</p>
                 </h3>
                 <h3>
                   <b>Ankit</b>
                   <br />
-                  ankit.student.ece20@itbhu.ac.in
+                  <p>ankit.student.ece20@itbhu.ac.in</p>
                 </h3>
               </div>
               <div className="team">
@@ -51,7 +62,7 @@ const Faq = () => {
                 <h3>
                   <b>Nishanth Gounder</b>
                   <br />
-                  nishanth.gounder.ece20@itbhu.ac.in
+                  <p>nishanth.gounder.ece20@itbhu.ac.in</p>
                 </h3>
               </div>
               <div className="team">
@@ -62,18 +73,7 @@ const Faq = () => {
                 <h3>
                   <b>Avinash Singh</b>
                   <br />
-                  avinash.singh.ece20@itbhu.ac.in
-                </h3>
-              </div>
-              <div className="team">
-                <div className="headi">
-                  <img id="msgicon" src={msg} alt="" />
-                  <h2 className="teamname">Co-Convenor</h2>
-                </div>
-                <h3>
-                  <b>Bisesh Agarwal</b>
-                  <br />
-                  bisesh.agarwal.ece20@itbhu.ac.in
+                  <p>avinash.singh.ece20@itbhu.ac.in</p>
                 </h3>
               </div>
             </div>
