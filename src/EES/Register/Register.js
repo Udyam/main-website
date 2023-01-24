@@ -57,6 +57,7 @@ const Register = () => {
           });
         }, 1000);
         window.sessionStorage.setItem('registered_email', profdata.email);
+        window.sessionStorage.setItem('profileData', JSON.stringify(profdata));
         navigate('/');
       })
       .catch((err) => {
@@ -142,7 +143,7 @@ const Register = () => {
             <option value="FOURTH">Fourth</option>
             <option value="FIFTH">Fifth</option>
           </select>
-          <input type="text" {...register('branch')} placeholder="Branch" required />
+          <input type="text" {...register('referral')} placeholder="Referral" required />
           <button type="submit" className="form-submit">
             <span>SIGN UP</span>
           </button>
