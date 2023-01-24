@@ -125,6 +125,12 @@
     overflow-y: auto;
     height: 90vh;
   }
+  .details {
+    padding: 25px;
+  }
+  .mcontent:hover .details {
+    top: 10px;
+  }
 }
 
 @media (max-width: 800px) {
