@@ -2,6 +2,44 @@
   font-family: homePageHeadingFont;
   src: url('../Inconsolata-Regular.ttf');
 }
+.mcontent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  height: 19vh;
+  position: relative;
+  bottom: 19vh;
+  opacity: 0;
+  border-radius: 40px;
+  text-align: center;
+  background-color: rgba(187, 204, 226, 0.7);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.mcontent:hover .details {
+  top: -15px;
+  opacity: 1;
+}
+.mcontent:hover {
+  opacity: 1;
+}
+
+.msponser:hover img {
+  opacity: 0.45;
+  box-shadow: none;
+}
+
+.details {
+  position: relative;
+  color: rgb(31, 24, 25);
+  top: 20%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
 
 .msponsers {
   display: flex;
@@ -50,6 +88,7 @@
   display: inline-block;
   width: 18%;
   margin: 5%;
+  height: 20vh;
 }
 .msponser img {
   height: 18vh;
@@ -59,7 +98,7 @@
   box-shadow: 0 5px 5px 5px white;
 }
 .msponser2 img {
-  box-shadow: 0 5px 5px 5px black;
+  box-shadow: 0 5px 5px 5px white;
 }
 .msponser3 img {
   box-shadow: 0 5px 5px 5px white;
@@ -68,7 +107,7 @@
   box-shadow: 0 5px 5px 5px white;
 }
 .msponser5 img {
-  box-shadow: 0 5px 5px 5px white;
+  box-shadow: 0 5px 5px 5px black;
 }
 .msponser6 img {
   box-shadow: 0 5px 5px 5px white;

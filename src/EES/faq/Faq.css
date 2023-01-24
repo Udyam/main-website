@@ -132,7 +132,6 @@
   font-size: 2vh;
   padding: 0rem 0.65rem;
   border-top: 0.8px solid #fff;
-
 }
 
 .question {
@@ -175,7 +174,6 @@
   height: 0;
   transition: max-height 5s linear;
 }
-
 
 @media (max-width: 600px) {
   .faqs {

@@ -2,13 +2,15 @@ import React from 'react';
 function Upddata(props) {
   return (
     <>
-      <div className="update-paragraph udyam-background-light">
+      <div className={props.classi1}>
         <div className="update-information">
-          <p>{props.data}</p>
+          <h2>{props.title}</h2>
+          {/* <p>{props.date}</p> */}
+          <p>{props.description}</p>
         </div>
         <div className="event-update-link">
-          <a className="udyam-background-dark" href="#">
-            Register
+          <a className={props.classi2} href={props.link}>
+            Link →
           </a>
         </div>
         <br style={{ clear: 'both' }} />
