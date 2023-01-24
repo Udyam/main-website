@@ -72,6 +72,7 @@ const Navbar = () => {
             autoClose: 1200
           });
           console.log('stored Data', JSON.parse(window.sessionStorage.getItem('profileData')));
+          navigate('/');
         }
       })
       .catch((err) => {
@@ -227,15 +228,15 @@ const Navbar = () => {
             ) : (
               <GoogleLogout
                 clientId={clientId}
+                theme="dark"
                 render={(renderProps) => (
-                  <button className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+                  <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
                     <span>LOGOUT</span>
-                  </button>
+                  </div>
                 )}
                 onLogoutSuccess={logout}
               />
             )}
-
             <button className="menu-bar" onClick={expand}>
               <i className={click ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'}></i>
             </button>

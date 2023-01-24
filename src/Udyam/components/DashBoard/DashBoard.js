@@ -6,17 +6,15 @@ const DashBoard = () => {
     name: 'Killjoy prime',
     email: 'killjoyprime40@gmail.com',
     college: 'Indian Institute of Technology Varanasi',
-    branch: 'Electronics Engineering',
     year: 'Part II',
     phone: '1234567890',
-    referral: '1223456'
+    referral: '1223456',
+    radianite_points: 90
   });
   useEffect(() => {
     console.log('user', user);
-    setUser({
-      ...user,
-      ...{ name: 'prime' }
-    });
+    var newUser = JSON.parse(window.sessionStorage.getItem('profileData'));
+    setUser(newUser);
   }, []);
   return (
     <>
@@ -41,8 +39,8 @@ const DashBoard = () => {
                 <div className="textLarge">{user.college}</div>
               </div>
               <div className="userBranch-year padding-between">
-                <div className="textSmall">Branch and year of study</div>
-                <div className="textLarge">{user.branch + ' ' + user.college}</div>
+                <div className="textSmall">year of study</div>
+                <div className="textLarge">{user.year} YEAR</div>
               </div>
               <div className="userPhone padding-between">
                 <div className="textSmall">Mobile Number</div>
@@ -58,7 +56,7 @@ const DashBoard = () => {
             <div className="rImage-Score">
               <img className="radianiteImage" src="/assets/radianite.png" alt="" />
               <div className="rPoints" style={{}}>
-                <div className="scoreMain">90</div>
+                <div className="scoreMain">{user.radianite_points}</div>
               </div>
             </div>
             <div className="radianiteHeading" style={{}}>

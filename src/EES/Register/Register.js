@@ -126,11 +126,7 @@ const Register = () => {
       <div className="form-container">
         <div className="form"></div>
 
-        <form
-          action="
-        "
-          onSubmit={handleSubmit((data) => postData(data))}
-        >
+        <form action=" " onSubmit={handleSubmit((data) => postData(data))}>
           <h1>SIGN UP!</h1>
           <input type="text" {...register('name')} value={JSON.parse(profileData).givenName} placeholder={JSON.parse(profileData).givenName} readOnly />
           <input type="text" {...register('email')} value={JSON.parse(profileData).email} placeholder={JSON.parse(profileData).email} readOnly />
