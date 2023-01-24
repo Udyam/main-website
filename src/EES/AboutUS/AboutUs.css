@@ -257,7 +257,7 @@ body {
   .content-box h3 {
     position: static;
     display: inline-block;
-    font-size: 150%;
+    font-size: 135%;
     margin-top: 15%;
     padding-bottom: 0;
     margin-bottom: 25px;
@@ -268,7 +268,7 @@ body {
     height: 82vw;
   }
   .content p {
-    font-size: 100%;
+    font-size: 85%;
   }
   .square1 {
     width: 55vw;
@@ -303,7 +303,7 @@ body {
 
 @media (max-width: 400px) {
   .squares {
-    bottom: 8vw;
+    bottom: 13vw;
   }
   .square1 {
     bottom: 20vw;
