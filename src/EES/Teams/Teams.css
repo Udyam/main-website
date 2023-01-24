@@ -117,13 +117,11 @@ p {
 }
 .member-image:hover .content-on-hover {
   visibility: visible;
-  height: 25vh;
+  height: 26vh;
 }
 .team-contact-handles {
-  position: absolute;
-  padding: 0 auto;
-  top: 17vh;
-  left: 1.2vh;
+  position: relative;
+  top: 15vh;
   padding: 1vh;
 }
 .team-contact-handles a {
