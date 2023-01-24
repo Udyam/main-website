@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { memo } from 'react';
 import ThreeGlobe from 'three-globe';
 import { WebGLRenderer, Scene } from 'three';
 import { PerspectiveCamera, AmbientLight, Color, PointLight } from 'three';
@@ -9,7 +10,7 @@ import travelHistory from './files/my-flights.json';
 var renderer, camera, scene, controls;
 var Globe;
 
-const eGlobe = () => {
+const eGlobe = memo(() => {
   useEffect(() => {
     init();
     initGlobe();
@@ -131,12 +132,14 @@ const eGlobe = () => {
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     }
-  }, []);
+  });
   return (
     <div id="globe-div">
       <canvas id="globe"></canvas>
     </div>
   );
-};
+});
+
+eGlobe.displayName = 'eGlobe';
 
 export default eGlobe;
