@@ -63,22 +63,31 @@
 
 #msgicon {
   height: 2vh;
-  margin-top: 1vh;
+  margin-top: 0.8vh;
 }
 
 .team h3 {
-  margin: 1vh 3.8vh;
+  margin: 2vh 3.8vh;
   font-size: 16px;
   font-weight: lighter;
 }
+
+.team p {
+  margin-top: 8px;
+}
+
 .team h2 {
   font-size: 22px;
+  letter-spacing: 1.6px;
+  font-family: sans-serif;
 }
+
 .headi {
   margin: 0px 0px;
   display: flex;
   /* margin-bottom: 2vh; */
 }
+
 .teamname {
   margin-left: 0.6vw;
   font-family: sans-serif;
@@ -89,7 +98,7 @@
 .right {
   padding-top: 20px;
   width: 45vw;
-  height: 62vh;
+  height: 58vh;
   margin-top: 2em;
   margin-right: 0em;
   cursor: pointer;
@@ -120,13 +129,9 @@
 
 .ques {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 100;
   font-size: 2vh;
   padding: 0rem 0.65rem;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  /* padding: 0.7rem 0; */
+  border-top: 0.8px solid #fff;
 }
 
 .question {
@@ -141,6 +146,7 @@
 .question h3 {
   font-size: 1.2rem;
   font-weight: 600;
+  letter-spacing: 0.7px;
   /* padding-top: 0.5rem; */
 }
 
@@ -152,22 +158,21 @@
   font-style: normal;
   font-weight: 100;
   overflow: auto;
-  height: auto;
   opacity: 1;
-  transition: all 0.4s linear;
+  transition: all 0.5s linear;
   font-size: 2vh;
   color: rgba(229, 229, 236, 0.85);
   margin: 0px 1vw;
-  /* margin-top: -20px; */
-  /* top: 10px; */
   margin-top: -5px;
+  letter-spacing: 0.5px;
+  /* height: auto; */
 }
 
 .hidden {
   opacity: 0;
-  transition: all 0.4s linear;
   overflow: hidden;
   height: 0;
+  transition: max-height 5s linear;
 }
 
 @media (max-width: 600px) {
@@ -230,8 +235,8 @@
   }
 
   .ques {
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-top: 1px solid #fff;
+    /* border-bottom: 2px solid #fff; */
   }
 
   .ansshow {
