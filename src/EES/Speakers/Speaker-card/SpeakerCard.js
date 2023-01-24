@@ -5,7 +5,7 @@ import linkedin from '../images/icons8-linkedin-480.png';
 import facebook from '../images/icons8-facebook-480.png';
 import twitter from '../images/icons8-twitter-480.png';
 
-const SpeakerCard = ({ name, title, image, back }) => {
+const SpeakerCard = ({ name, title, image, back, links }) => {
   return (
     <div className="card-container">
       <div className="speaker-card">
@@ -26,7 +26,9 @@ const SpeakerCard = ({ name, title, image, back }) => {
         </div>
       </div>
       <div className="links-container-speakers">
-        <img src={linkedin} />
+        <a href={links[0]}>
+          <img src={linkedin} />
+        </a>
         <img src={twitter} />
         <img src={facebook} />
       </div>
