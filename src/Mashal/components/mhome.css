@@ -80,13 +80,13 @@
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
-  color: white !important; 
+  color: white !important;
   font-family: navfont;
   padding-top: 10%;
   padding-left: 10%;
   font-weight: 480;
   letter-spacing: 0.4ch;
-} 
+}
 .tpx {
   padding-bottom: 8%;
 }
