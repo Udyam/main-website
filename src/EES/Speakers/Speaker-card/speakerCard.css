@@ -39,6 +39,9 @@
   justify-content: space-evenly;
   z-index: 1;
 }
+.links-container-speakers img:hover {
+  filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(70deg) brightness(108%) contrast(108%);
+}
 
 .speaker-card .card-back {
   position: absolute;
