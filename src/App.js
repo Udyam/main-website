@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './EES/Home';
