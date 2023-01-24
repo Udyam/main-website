@@ -49,11 +49,11 @@ const Logo = (props) => {
   return (
     <div className="container-logo">
       <div className="empty-div"></div>
-      <div className="main-container-for-logo" >
+      <div className="main-container-for-logo">
         <div className="circular-mai-container"></div>
         {/* <img className="circuit-img" src="/Groupouter-circuit.png" alt="" /> */}
-        <div className="main-logo-container" >
-          <div className="ring-box-1" onClick={logoClick} >
+        <div className="main-logo-container">
+          <div className="ring-box-1" onClick={logoClick}>
             <img height={'150%'} className="rings" src="/assets/New Rings/inner_ring.svg" alt="" />
             <img height={'180%'} className="rings ring-middle" src="/assets/New Rings/middle_ring.svg" alt="" />
             <img height={'150%'} className="rings dotted-ring" src="/assets/New Rings/dotted_circle.svg" alt="" />
@@ -66,7 +66,7 @@ const Logo = (props) => {
             {/* <div className="glass-lens"></div> */}
           </div>
 
-          <img className="main-event-logo" height={'100vh'} src="/assets/eeslogo.svg" alt="" onClick={logoClick}  />
+          <img className="main-event-logo" height={'100vh'} src="/assets/eeslogo.svg" alt="" onClick={logoClick} />
         </div>
       </div>
     </div>
