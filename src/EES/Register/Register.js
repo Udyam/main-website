@@ -57,6 +57,7 @@ const Register = () => {
           });
         }, 1000);
         window.sessionStorage.setItem('registered_email', profdata.email);
+        window.sessionStorage.setItem('profileData', JSON.stringify(profdata));
         navigate('/');
       })
       .catch((err) => {
@@ -125,7 +126,14 @@ const Register = () => {
       <div className="form-container">
         <div className="form"></div>
 
+<<<<<<< HEAD
         <form action=" " onSubmit={handleSubmit((data) => postData(data))}>
+=======
+        <form
+          action="
+        "
+          onSubmit={handleSubmit((data) => postData(data))}>
+>>>>>>> a57bf81 (changes)
           <h1>SIGN UP!</h1>
           <input type="text" {...register('name')} value={JSON.parse(profileData).givenName} placeholder={JSON.parse(profileData).givenName} readOnly />
           <input type="text" {...register('email')} value={JSON.parse(profileData).email} placeholder={JSON.parse(profileData).email} readOnly />
@@ -142,7 +150,7 @@ const Register = () => {
             <option value="FOURTH">Fourth</option>
             <option value="FIFTH">Fifth</option>
           </select>
-          <input type="text" {...register('branch')} placeholder="Branch" required />
+          <input type="text" {...register('referral')} placeholder="Referral" required />
           <button type="submit" className="form-submit">
             <span>SIGN UP</span>
           </button>

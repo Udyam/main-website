@@ -1,6 +1,23 @@
 import './DashBoard.css';
 import React from 'react';
+import { useEffect } from 'react';
 const DashBoard = () => {
+  const [user, setUser] = React.useState({
+    name: 'Killjoy prime',
+    email: 'killjoyprime40@gmail.com',
+    college: 'Indian Institute of Technology Varanasi',
+    branch: 'Electronics Engineering',
+    year: 'Part II',
+    phone: '1234567890',
+    referral: '1223456'
+  });
+  useEffect(() => {
+    console.log('user', user);
+    setUser({
+      ...user,
+      ...{ name: 'prime' }
+    });
+  }, []);
   return (
     <>
       <div className="dashboard-main">
@@ -11,29 +28,29 @@ const DashBoard = () => {
                 <img src="#" alt="Qr-Code" />
               </div>
               <div className="userName">
-                <h1>Killjoy prime</h1>
+                <h1>{user.name}</h1>
               </div>
             </div>
             <div className="userDetails">
               <div className="userEmail padding-between">
                 <div className="textSmall">Email</div>
-                <div className="textLarge">killjoyprime40@gmail.com</div>
+                <div className="textLarge">{user.email}</div>
               </div>
               <div className="userCollege padding-between">
                 <div className="textSmall">College</div>
-                <div className="textLarge">Indian Institute of Technology Varanasi</div>
+                <div className="textLarge">{user.college}</div>
               </div>
               <div className="userBranch-year padding-between">
                 <div className="textSmall">Branch and year of study</div>
-                <div className="textLarge">Electronics Engineering Part II</div>
+                <div className="textLarge">{user.branch + ' ' + user.college}</div>
               </div>
               <div className="userPhone padding-between">
                 <div className="textSmall">Mobile Number</div>
-                <div className="textLarge">1234567890</div>
+                <div className="textLarge">{user.phone}</div>
               </div>
               <div className="userRefferal padding-between">
                 <div className="textSmall">Referral Code</div>
-                <div className="textLarge">1223456</div>
+                <div className="textLarge">{user.referral}</div>
               </div>
             </div>
           </div>

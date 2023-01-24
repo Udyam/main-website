@@ -7,12 +7,13 @@ import { Link } from 'react-router-dom';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const clientId = process.env.REACT_APP_CLIENT_ID;
+  const clientId = '868476725043-56q2l17h7bf2a1fpvkqp04t5br7mti4p.apps.googleusercontent.com';
 
   const [width, setWidth] = useState(window.innerWidth);
   const [eventLink, setEventLink] = useState(false);
@@ -52,8 +53,33 @@ const Navbar = () => {
     console.log('SUCCESS!!! Current User: ', res);
     window.sessionStorage.setItem('profileData', JSON.stringify(res.profileObj));
     window.sessionStorage.setItem('tokenId', res.tokenId);
-
-    navigate('/register');
+    // console.log('res.profileObj: ', res);
+    axios({
+      url: 'https://udyam.pythonanywhere.com/auth/google-login/',
+      method: 'post',
+      headers: { Authorization: res.tokenId },
+      data: {
+        email: res.profileObj.email
+      }
+    })
+      .then((res) => {
+        console.log('res: ', res);
+        if (res.status === 200) {
+          window.sessionStorage.setItem('registered_email', res.data.email);
+          window.sessionStorage.setItem('profileData', JSON.stringify(res.data));
+          toast.success('Login was successfull!', {
+            theme: 'dark',
+            position:
+              window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
+            autoClose: 1200
+          });
+          console.log('stored Data', JSON.parse(window.sessionStorage.getItem('profileData')));
+        }
+      })
+      .catch((err) => {
+        console.log('err: ', err);
+        navigate('/register');
+      });
   };
 
   const onGoogleLoginFailure = (res) => {
@@ -195,7 +221,14 @@ const Navbar = () => {
                 cookiePolicy={'single-host-origin'}
                 scope={scope}
                 render={(renderProps) => (
+<<<<<<< HEAD
                   <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+=======
+                  <div
+                    className="menu-text"
+                    style={{ display: 'flex' }}
+                    onClick={renderProps.onClick}>
+>>>>>>> a57bf81 (changes)
                     <span>Register</span>
                   </div>
                 )}
@@ -204,7 +237,14 @@ const Navbar = () => {
               <GoogleLogout
                 clientId={clientId}
                 render={(renderProps) => (
+<<<<<<< HEAD
                   <button className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+=======
+                  <button
+                    className="menu-text"
+                    style={{ display: 'flex' }}
+                    onClick={renderProps.onClick}>
+>>>>>>> a57bf81 (changes)
                     <span>LOGOUT</span>
                   </button>
                 )}
