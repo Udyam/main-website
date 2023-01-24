@@ -31,12 +31,13 @@
 .qr-and-name .qr {
   width: 38%;
   padding: 2%;
+  font-size: 1.3rem;
 }
 .qr-and-name .userName {
   width: 58%;
   padding: 2%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .userDetails {
   height: 50%;
@@ -250,5 +251,20 @@
   .radianiteHeading {
     font-size: 3rem;
     padding: 6%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .textLarge {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .userName h1 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .textLarge {
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 }
