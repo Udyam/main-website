@@ -14,7 +14,7 @@ import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
-
+import Teams from './EES/Teams/Teams';
 import Mashal from './Mashal/mashal';
 import Masponsor from './Mashal/components/Sponsors/Sponsors';
 import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
@@ -63,6 +63,14 @@ function App() {
             element={
               <>
                 <Home />
+              </>
+            }
+          />
+          <Route
+            path="/team"
+            element={
+              <>
+                <Teams />
               </>
             }
           />
