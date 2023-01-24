@@ -4,7 +4,7 @@ import './Logo.css';
 import './CircularButton.css';
 
 const Logo = (props) => {
-  const [angle, setAngle] = React.useState(window.innerWidth > 600 ? 0 : 30);
+  const [angle, setAngle] = React.useState(window.innerWidth > 600 ? 0 : 270);
 
   const logoClick = () => {
     document.getElementsByClassName('dial-button')[0].animate(
@@ -62,7 +62,7 @@ const Logo = (props) => {
             <img height={'180%'} className="rings ring-4" src="/assets/rings/4.png" alt="" />
             <img height={'150%'} className="rings ring-3" src="/assets/rings/3.png" alt="" />
 
-            <img height={'350%'} className="dial-button" src="/assets/New Rings/Group 1950withbg.svg" alt="" />
+            <img height={'209.6%'} className="dial-button" src="/assets/New Rings/Group 1950withbg.svg" alt="" />
             {/* <div className="glass-lens"></div> */}
           </div>
 

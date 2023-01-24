@@ -10,7 +10,7 @@ function Updates() {
         </div>
         <div className="updates-udyam-content udyam-background-dark">
           <div className="update-content">
-            <Upddata data='fetched from api' />
+            <Upddata data="fetched from api" />
             <div className="update-paragraph udyam-background-light">
               <div className="update-information">
                 <p>
