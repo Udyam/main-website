@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
@@ -69,8 +68,7 @@ const Navbar = () => {
           window.sessionStorage.setItem('profileData', JSON.stringify(res.data));
           toast.success('Login was successfull!', {
             theme: 'dark',
-            position:
-              window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
+            position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
             autoClose: 1200
           });
           console.log('stored Data', JSON.parse(window.sessionStorage.getItem('profileData')));
@@ -221,14 +219,7 @@ const Navbar = () => {
                 cookiePolicy={'single-host-origin'}
                 scope={scope}
                 render={(renderProps) => (
-<<<<<<< HEAD
                   <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
-=======
-                  <div
-                    className="menu-text"
-                    style={{ display: 'flex' }}
-                    onClick={renderProps.onClick}>
->>>>>>> a57bf81 (changes)
                     <span>Register</span>
                   </div>
                 )}
@@ -237,14 +228,7 @@ const Navbar = () => {
               <GoogleLogout
                 clientId={clientId}
                 render={(renderProps) => (
-<<<<<<< HEAD
                   <button className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
-=======
-                  <button
-                    className="menu-text"
-                    style={{ display: 'flex' }}
-                    onClick={renderProps.onClick}>
->>>>>>> a57bf81 (changes)
                     <span>LOGOUT</span>
                   </button>
                 )}
