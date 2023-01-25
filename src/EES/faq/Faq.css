@@ -161,20 +161,29 @@
   font-weight: 100;
   overflow: auto;
   opacity: 1;
-  transition: all 0.5s linear;
+  max-height: 70px;
+  position: relative;
+  -webkit-transition: max-height 0.5s linear;
+  -moz-transition: max-height 0.5s linear;
+  -o-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
+  left: 0;
   font-size: 2vh;
   color: rgba(229, 229, 236, 0.85);
-  margin: 0px 1vw;
+  margin: 10px 1vw;
   margin-top: -5px;
   letter-spacing: 0.5px;
-  /* height: auto; */
+  /* top: 0; */
 }
 
 .hidden {
   opacity: 0;
   overflow: hidden;
-  height: 0;
-  transition: max-height 5s linear;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s linear;
+  -moz-transition: max-height 0.5s linear;
+  -o-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
 }
 
 @media (max-width: 600px) {
