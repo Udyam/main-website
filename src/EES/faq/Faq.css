@@ -160,7 +160,7 @@
   font-weight: 100;
   overflow: auto;
   opacity: 1;
-  max-height: 70px;
+  max-height: 160px;
   position: relative;
   -webkit-transition: max-height 0.5s linear;
   -moz-transition: max-height 0.5s linear;
@@ -179,10 +179,10 @@
   opacity: 0;
   overflow: hidden;
   max-height: 0;
-  -webkit-transition: max-height 0.5s linear;
-  -moz-transition: max-height 0.5s linear;
-  -o-transition: max-height 0.5s linear;
-  transition: max-height 0.5s linear;
+  -webkit-transition: max-height 0.2s linear;
+  -moz-transition: max-height 0.2s linear;
+  -o-transition: max-height 0.2s linear;
+  transition: max-height 0.2s linear;
 }
 
 @media (max-width: 600px) {
@@ -254,14 +254,23 @@
     letter-spacing: 1px;
     margin: 0 15px;
     color: rgba(229, 229, 236, 0.85);
-    transition: all 0.4s linear;
+    max-height: 250px;
+    position: relative;
+    -webkit-transition: max-height 0.5s linear;
+    -moz-transition: max-height 0.5s linear;
+    -o-transition: max-height 0.5s linear;
+    transition: max-height 0.5s linear;
   }
 
   .hidden {
     opacity: 0;
     overflow: hidden;
-    height: 0;
-    transition: all 0.4s linear;
+    /* height: 0; */
+    max-height: 0;
+    -webkit-transition: max-height 0.2s linear;
+    -moz-transition: max-height 0.2s linear;
+    -o-transition: max-height 0.2s linear;
+    transition: max-height 0.2s linear;
   }
 
   .question h3 {
