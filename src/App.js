@@ -8,12 +8,12 @@ import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
 import HomePage from './Udyam/components/HomePage/HomePage';
 import Sponsors from './Udyam/components/Sponsors/Sponsors';
 import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
-import DashBoard from './Udyam/components/DashBoard/DashBoard';
+import DashBoard from './Dashboard/DashBoard';
 import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
-// import Teams from './EES/Teams/Teams';
+import Teams from './EES/Teams/Teams';
 import Mashal from './Mashal/mashal';
 import Masponsor from './Mashal/components/Sponsors/Sponsors';
 import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
@@ -74,22 +74,22 @@ function App() {
               </>
             }
           />
-          {/* <Route
+          <Route
             path="/team"
             element={
               <>
                 <Teams />
               </>
             }
-          /> */}
-          <Route
+          />
+          {/* <Route
             path="/team"
             element={
               <>
                 <ComingSoon />
               </>
             }
-          />
+          /> */}
           <Route
             path="/udyam"
             element={
@@ -129,7 +129,7 @@ function App() {
           />
 
           <Route
-            path="/udyam/name"
+            path="/udyam/dashboard"
             element={
               <>
                 <Nav active="#name" />

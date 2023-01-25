@@ -113,7 +113,7 @@ p {
   bottom: 26vh;
 }
 .content-on-hover h6 {
-  padding: 2vh 2vh 0 2vh;
+  padding: 2vh 1vh 0 1vh;
 }
 .member-image:hover .content-on-hover {
   visibility: visible;
@@ -121,7 +121,7 @@ p {
 }
 .team-contact-handles {
   position: relative;
-  top: 15vh;
+  top: 12vh;
   padding: 1vh;
 }
 .team-contact-handles a {
@@ -181,7 +181,7 @@ p {
   }
   .team-card {
     margin: 8vw 2vw;
-    height: 42vh;
+    height: 45vh;
   }
   .content-on-hover {
     display: none;
@@ -190,6 +190,9 @@ p {
     display: block;
   }
   .mobile-contact-links a {
+    padding: 1vh;
+  }
+  .member-details {
     padding: 1vh;
   }
 }

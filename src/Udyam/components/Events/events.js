@@ -1,7 +1,7 @@
 import './events.css';
-import bg from './bg2.png';
-import right from './right.png';
-import left from './left.png';
+import bg from './images/bg2.png';
+import right from './images/right.png';
+import left from './images/left.png';
 import { useState, useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { IoIosArrowBack } from 'react-icons/io';
@@ -137,43 +137,43 @@ function Events() {
           )}
 
           <div className="token-event" onClick={eventName}>
-            <div className="digism event-name" onClick={checkNav}>
+            <div className="0 digism event-name" onClick={checkNav}>
               <a href="#" className="0">
                 {/* {' '} */}
                 Digisim
               </a>
             </div>
-            <div className="ichip event-name" onClick={checkNav}>
+            <div className="1 ichip event-name" onClick={checkNav}>
               <a href="#" className="1">
                 I-Chip
               </a>
             </div>
-            <div className="devbits event-name" onClick={checkNav}>
+            <div className="2 devbits event-name" onClick={checkNav}>
               <a href="#" className="2">
                 DevBits
               </a>
             </div>
-            <div className="commnet event-name" onClick={checkNav}>
+            <div className="3 commnet event-name" onClick={checkNav}>
               <a href="#" className="3">
                 CommNet
               </a>
             </div>
-            <div className="xiota event-name" onClick={checkNav}>
+            <div className="4 xiota event-name" onClick={checkNav}>
               <a href="#" className="4">
                 X-Iot-A
               </a>
             </div>
-            <div className="cassandra event-name" onClick={checkNav}>
+            <div className="5 cassandra event-name" onClick={checkNav}>
               <a href="#" className="5">
                 Cassandra
               </a>
             </div>
-            <div className="mosaic event-name" onClick={checkNav}>
+            <div className="6 mosaic event-name" onClick={checkNav}>
               <a href="#" className="6">
                 Mosaic
               </a>
             </div>
-            <div className="funckit event-name" onClick={checkNav}>
+            <div className="7 funckit event-name" onClick={checkNav}>
               <a href="#" className="7">
                 Funckit
               </a>

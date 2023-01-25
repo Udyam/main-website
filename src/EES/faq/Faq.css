@@ -26,10 +26,11 @@
 .title {
   font-family: 'League Spartan', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 55px;
+  font-weight: 700;
+  /* font-size: 55px; */
+  font-size: 4rem;
   line-height: 64px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.3rem;
   color: #ffffff;
   margin: 4rem 3rem;
   align-items: center;
@@ -131,7 +132,7 @@
 .ques {
   font-family: 'Inter', sans-serif;
   font-size: 2vh;
-  padding: 0rem 0.65rem;
+  padding: 0.5rem 0.65rem;
   border-top: 0.8px solid #fff;
 }
 
@@ -148,6 +149,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.7px;
+  margin: 12px 0;
   /* padding-top: 0.5rem; */
 }
 
