@@ -21,31 +21,31 @@ function UdgamEvents() {
     {
       id: 2,
       genre: 'Dance',
-      desc: '“Do it big, do it right, and do it with style.” - Fred Astaire If you have the potential to sweep the audience off their feet and dance to the top, then Udgam’s stage is the right place to exhibit your talent. Udgam presents its dance event for you to make the move on the beat.',
+      desc:'“Do it big, do it right, and do it with style.” - Fred Astaire If you have the potential to sweep the audience off their feet and dance to the top, then Udgam’s stage is the right place to exhibit your talent. Udgam presents its dance event for you to make the move on the beat.',
       subEvents: ['Ignite']
     },
     {
       id: 3,
       genre: 'Art',
-      desc: 'Do you have a zeal for art and want to compete with the best? If yes, Udgam brings you the opportunity to show your talent at its art event. So, pick up your pencils and paintbrushes, as the time has come to let your imaginations run wild.',
+      desc:'Do you have a zeal for art and want to compete with the best? If yes, Udgam brings you the opportunity to show your talent at its art event. So, pick up your pencils and paintbrushes, as the time has come to let your imaginations run wild.',
       subEvents: ['India in 2050', 'Character Designing', 'Face Painting']
     },
     {
       id: 4,
       genre: 'Music',
-      desc: '“Where words fail, music speaks.” Udgam is setting the stage for its music event in its new edition. It’s time to showcase the flair of your voice and stun the masses!',
+      desc:'“Where words fail, music speaks.” Udgam is setting the stage for its music event in its new edition. It’s time to showcase the flair of your voice and stun the masses!',
       subEvents: ['Ridham']
     },
     {
       id: 5,
       genre: 'Literature',
-      desc: '“Literature is the immortality of speech”.To keep the spirits of cultural events high, Udgam presents literary events like Poetry, Shayari, and more, with an intent to celebrate the author, the poet, and the orator hidden within you.',
+      desc:'“Literature is the immortality of speech”.To keep the spirits of cultural events high, Udgam presents literary events like Poetry, Shayari, and more, with an intent to celebrate the author, the poet, and the orator hidden within you.',
       subEvents: ['Open Mic Stand', 'Creative Writing']
     },
     {
       id: 6,
       genre: 'Treasure Hunt',
-      desc: 'As exciting as it sounds, gear up to become sleuth-hounds! The campus awaits to grace the exquisite event of Treasure Hunt, an unmissable and amazing opportunity to bring out your inner Sherlock and join the blazing quest of finding the enigmatic trove.',
+      desc:'As exciting as it sounds, gear up to become sleuth-hounds! The campus awaits to grace the exquisite event of Treasure Hunt, an unmissable and amazing opportunity to bring out your inner Sherlock and join the blazing quest of finding the enigmatic trove.',
       subEvents: ['Treasure Hunt']
     }
   ];
