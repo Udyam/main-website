@@ -131,7 +131,7 @@
 .ques {
   font-family: 'Inter', sans-serif;
   font-size: 2vh;
-  padding: 0rem 0.65rem;
+  padding: 0.5rem 0.65rem;
   border-top: 0.8px solid #fff;
 }
 
@@ -148,6 +148,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.7px;
+  margin: 12px 0;
   /* padding-top: 0.5rem; */
 }
 
@@ -160,20 +161,29 @@
   font-weight: 100;
   overflow: auto;
   opacity: 1;
-  transition: all 0.5s linear;
+  max-height: 160px;
+  position: relative;
+  -webkit-transition: max-height 0.5s linear;
+  -moz-transition: max-height 0.5s linear;
+  -o-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
+  left: 0;
   font-size: 2vh;
   color: rgba(229, 229, 236, 0.85);
-  margin: 0px 1vw;
+  margin: 10px 1vw;
   margin-top: -5px;
   letter-spacing: 0.5px;
-  /* height: auto; */
+  /* top: 0; */
 }
 
 .hidden {
   opacity: 0;
   overflow: hidden;
-  height: 0;
-  transition: max-height 5s linear;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s linear;
+  -moz-transition: max-height 0.2s linear;
+  -o-transition: max-height 0.2s linear;
+  transition: max-height 0.2s linear;
 }
 
 @media (max-width: 600px) {
@@ -245,14 +255,23 @@
     letter-spacing: 1px;
     margin: 0 15px;
     color: rgba(229, 229, 236, 0.85);
-    transition: all 0.4s linear;
+    max-height: 250px;
+    position: relative;
+    -webkit-transition: max-height 0.5s linear;
+    -moz-transition: max-height 0.5s linear;
+    -o-transition: max-height 0.5s linear;
+    transition: max-height 0.5s linear;
   }
 
   .hidden {
     opacity: 0;
     overflow: hidden;
-    height: 0;
-    transition: all 0.4s linear;
+    /* height: 0; */
+    max-height: 0;
+    -webkit-transition: max-height 0.2s linear;
+    -moz-transition: max-height 0.2s linear;
+    -o-transition: max-height 0.2s linear;
+    transition: max-height 0.2s linear;
   }
 
   .question h3 {
