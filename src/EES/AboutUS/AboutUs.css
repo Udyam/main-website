@@ -108,9 +108,10 @@ body {
   height: 23vw;
   width: 38vw;
   position: relative;
-  bottom: 4vw;
+  bottom: 2vw;
   margin-left: 4vw;
   overflow-y: auto;
+  text-align: justify;
 }
 
 .content p {
@@ -154,22 +155,22 @@ body {
   position: relative;
   left: 1vw;
   margin-bottom: 0;
-  bottom: 12vw;
+  bottom: 28%;
 }
 
 @media (max-width: 850px) {
   .squares {
-    bottom: 13vw;
+    bottom: 17%;
   }
 }
 @media (min-width: 850px) and (max-width: 950px) {
   .content {
-    height: 23vw;
+    height: 73%;
   }
 }
 @media (max-width: 1100px) and (min-width: 850px) {
   .squares {
-    bottom: 15vw;
+    bottom: 20%;
   }
   .square1 {
     bottom: 20vw;
@@ -211,7 +212,7 @@ body {
   transform: none;
 }
 
-.hover1 {
+/* .hover1 {
   width: 21vw;
   height: 20vw;
   left: 0;
@@ -223,7 +224,7 @@ body {
   width: 21vw;
   height: 20vw;
   transform: none;
-}
+} */
 
 @media screen and (max-width: 600px) {
   .contain {
@@ -288,8 +289,9 @@ body {
     text-align: center;
   }
   .content {
-    width: 90%;
+    width: 80%;
     height: 82vw;
+    margin: auto;
   }
   .content p {
     font-size: 85%;
@@ -352,6 +354,7 @@ body {
   }
   .content-box h3 {
     padding-bottom: 2rem;
+    left: 5%;
   }
 }
 
