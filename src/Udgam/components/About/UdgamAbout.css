@@ -33,8 +33,10 @@
   margin-right: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   height: 80%;
+  font-family: Comfortaa;
+  
 }
 --webkit-scrollbar {
   display: none;
@@ -69,27 +71,27 @@
     left: 10%;
   }
   .about-content > p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin: auto 10px;
     height: 70%;
   }
   .about-content {
     position: relative;
-    top: 37%;
-    height: 55%;
+    top: 40%;
+    height: 50%;
     width: 85%;
     overflow: scroll;
   }
   .about-image-shadow {
     width: 35vw;
     height: 25vh;
-    top: 17vh;
-    left: 10%;
+    top: 13vh;
+    left: 30%;
   }
   .about-image {
     width: 35vw;
     height: 25vh;
-    top: 17vh;
-    left: 10%;
+    top: 13vh;
+    left: 30%;
   }
 }
