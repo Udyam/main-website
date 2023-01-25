@@ -139,7 +139,7 @@
   top: 50%;
   transform: translateY(-50%);
   /* height: 50vh; */
-  /* width: 100%; */
+  width: 100%;
   position: absolute;
   /* top: 15vh; */
   display: flex;
