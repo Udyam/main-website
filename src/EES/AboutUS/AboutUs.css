@@ -108,9 +108,10 @@ body {
   height: 23vw;
   width: 38vw;
   position: relative;
-  bottom: 4vw;
+  bottom: 2vw;
   margin-left: 4vw;
   overflow-y: auto;
+  text-align: justify;
 }
 
 .content p {
@@ -154,22 +155,22 @@ body {
   position: relative;
   left: 1vw;
   margin-bottom: 0;
-  bottom: 12vw;
+  bottom: 28%;
 }
 
 @media (max-width: 850px) {
   .squares {
-    bottom: 13vw;
+    bottom: 17%;
   }
 }
 @media (min-width: 850px) and (max-width: 950px) {
   .content {
-    height: 23vw;
+    height: 73%;
   }
 }
 @media (max-width: 1100px) and (min-width: 850px) {
   .squares {
-    bottom: 15vw;
+    bottom: 20%;
   }
   .square1 {
     bottom: 20vw;
@@ -352,6 +353,7 @@ body {
   }
   .content-box h3 {
     padding-bottom: 2rem;
+    left: 5%;
   }
 }
 
