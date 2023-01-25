@@ -64,7 +64,11 @@ const GoogleButton = (props) => {
           onFailure={onGoogleLoginFailure} // handle errors here
           cookiePolicy={'single-host-origin'}
           scope={scope}
-          render={(renderProps) => <div onClick={renderProps.onClick}>{props.initialHTML}</div>}
+          render={(renderProps) => (
+            <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+              {props.initialHTML}
+            </div>
+          )}
         />
       ) : (
         <>{props.laterHTML}</>
