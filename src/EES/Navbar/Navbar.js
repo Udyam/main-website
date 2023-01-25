@@ -3,12 +3,10 @@ import { useState, useEffect } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import { GoogleLogout } from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import axios from 'axios';
-
-const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
+import GoogleButton from '../../Dashboard/GoogleButton';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -47,44 +45,6 @@ const Navbar = () => {
   function nameOfEvents() {
     setSlideUdyam(!slideUdyam);
   }
-
-  const onGoogleLoginSuccess = (res) => {
-    console.log('SUCCESS!!! Current User: ', res);
-    window.sessionStorage.setItem('profileData', JSON.stringify(res.profileObj));
-    window.sessionStorage.setItem('tokenId', res.tokenId);
-    window.sessionStorage.setItem('imageUrl', res.profileObj.imageUrl);
-    // console.log('res.profileObj: ', res);
-    axios({
-      url: 'https://udyam.pythonanywhere.com/auth/google-login/',
-      method: 'post',
-      headers: { Authorization: res.tokenId },
-      data: {
-        email: res.profileObj.email
-      }
-    })
-      .then((res) => {
-        console.log('res: ', res);
-        if (res.status === 200) {
-          window.sessionStorage.setItem('registered_email', res.data.email);
-          window.sessionStorage.setItem('profileData', JSON.stringify(res.data));
-          toast.success('Login was successfull!', {
-            theme: 'dark',
-            position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
-            autoClose: 1200
-          });
-          console.log('stored Data', JSON.parse(window.sessionStorage.getItem('profileData')));
-          navigate('/');
-        }
-      })
-      .catch((err) => {
-        console.log('err: ', err);
-        navigate('/register');
-      });
-  };
-
-  const onGoogleLoginFailure = (res) => {
-    console.log('FAILURE!!! res: ', res);
-  };
 
   const logout = () => {
     window.sessionStorage.removeItem('registered_email');
@@ -217,35 +177,25 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            {window.sessionStorage.getItem('registered_email') == null ? (
-              <GoogleLogin
-                theme="dark"
-                accessType="online"
-                disabled={false}
-                client_id={clientId} // your Google app client ID
-                buttonText="Sign in with Google"
-                onSuccess={onGoogleLoginSuccess} // perform your user logic here
-                onFailure={onGoogleLoginFailure} // handle errors here
-                cookiePolicy={'single-host-origin'}
-                scope={scope}
-                render={(renderProps) => (
-                  <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
-                    <span>Register</span>
-                  </div>
-                )}
-              />
-            ) : (
-              <GoogleLogout
-                clientId={clientId}
-                theme="dark"
-                render={(renderProps) => (
-                  <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
-                    <span>LOGOUT</span>
-                  </div>
-                )}
-                onLogoutSuccess={logout}
-              />
-            )}
+            <GoogleButton
+              initialHTML={
+                <div className="menu-text" style={{ display: 'flex' }}>
+                  <span>Register</span>
+                </div>
+              }
+              laterHTML={
+                <GoogleLogout
+                  clientId={clientId}
+                  theme="dark"
+                  render={(renderProps) => (
+                    <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+                      <span>Logout</span>
+                    </div>
+                  )}
+                  onLogoutSuccess={logout}
+                />
+              }
+            />
             <button className="menu-bar" onClick={expand}>
               <i className={click ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'}></i>
             </button>

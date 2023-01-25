@@ -4,13 +4,13 @@ import { useEffect } from 'react';
 import QRCode from 'react-qr-code';
 const DashBoard = () => {
   const [user, setUser] = React.useState({
-    name: 'Killjoy prime',
-    email: 'killjoyprime40@gmail.com',
-    college: 'Indian Institute of Technology Varanasi',
+    name: 'Default',
+    email: 'default@gmail.com',
+    college: 'Default',
     year: 'Part II',
     phone: '1234567890',
-    referral: '1223456',
-    radianite_points: 90
+    referral: 'default#EES-10000',
+    radianite_points: 0
   });
   useEffect(() => {
     console.log('user', user);
