@@ -162,7 +162,6 @@
 .info {
   color: #fff;
   padding: 0%;
-  margin: 0 auto;
   height: 4.5vh;
   width: 7vw;
 }
@@ -336,7 +335,8 @@
   }
   .udyam-nav p {
     font-size: 1rem;
-    margin: auto;
+    text-align: left !important;
+    margin: auto 8px !important;
   }
   .hovered {
     gap: 1rem;

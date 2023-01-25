@@ -114,7 +114,7 @@
   animation: sf-fly-by-3 5s linear infinite;
 }
 
-.udyam-nav {
+.udgam-nav {
   height: 100vh;
   width: 7vw;
   position: fixed;
@@ -125,7 +125,7 @@
   /* float: left; */
 }
 
-.udyam-icon {
+.udgam-icon {
   /* height: 50vh; */
   /* width: 100%; */
   /* position: relative;
@@ -148,7 +148,7 @@
   align-items: center;
   flex-direction: column;
 }
-.udyam-icon p {
+.udgam-icon p {
   font-family: 'Poppins', sans-serif;
   /* padding-top: 1rem 0; */
   cursor: pointer;
@@ -177,7 +177,7 @@
   width: 7vw;
 }
 
-.udyam-img {
+.udgam-img {
   position: relative;
   top: 1.2%;
   margin: 5%;
@@ -262,7 +262,7 @@
   width: 15vw;
   z-index: 15;
 }
-.udyam-ees-mobile {
+.udgam-ees-mobile {
   display: flex;
   /* justify-content: center; */
   margin-bottom: 3vh;
@@ -279,7 +279,7 @@
   z-index: 6;
 }
 /* @media screen and (max-width: 1000px) {
-  .udyam-nav {
+  .udgam-nav {
     width: 10vw;
   }
   .hovered {
@@ -290,14 +290,14 @@
   }
 } */
 @media screen and (max-width: 800px) {
-  .udyam-nav {
+  .udgam-nav {
     width: 205px;
   }
 
-  .udyam-nav p {
+  .udgam-nav p {
     font-size: 1.2rem;
   }
-  /* .udyam-icon {
+  /* .udgam-icon {
     top: 10vh;
   } */
   .menu-icon {
@@ -342,7 +342,7 @@
     left: 0;
     width: 60vw;
   }
-  .udyam-nav p {
+  .udgam-nav p {
     font-size: 1rem;
     margin: auto;
   }
@@ -359,7 +359,7 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .udyam-nav p {
+  .udgam-nav p {
     font-size: 1rem;
     margin: auto;
   }

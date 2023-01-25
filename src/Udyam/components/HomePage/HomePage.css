@@ -23,6 +23,13 @@
   background: -webkit-linear-gradient(white, black);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: justify;
+}
+
+.heading h5 {
+  background: rgb(186, 181, 181);
+  background-clip: text;
+  font-size: 0.3em;
 }
 
 #globe {
@@ -66,6 +73,10 @@
   .heading {
     position: inherit;
     margin: 15vh;
+    width: 100%;
+  }
+  .heading {
+    text-align: center;
   }
   #globe {
     /* width: 600px !important;

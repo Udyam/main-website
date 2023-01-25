@@ -75,10 +75,18 @@
 .udyam-events-heading-box {
   font-weight: 900;
   font-family: homePageHeadingFont;
-  backgrounrd: -webkit-linear-gradient(white, black);
+  background: -webkit-linear-gradient(white, rgb(160, 158, 158));
   background-clip: text;
   -webkit-text-fill-colo: transparent;
   letter-spacing: 2px;
+}
+
+.getback-btn {
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  top: 48.8vh;
+  z-index: 9;
 }
 
 .udyam-event-img {
@@ -153,6 +161,7 @@
   font-family: 'Poppins', sans-serif;
   box-shadow: 0px 0px 5px white;
   cursor: pointer;
+  text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -195,6 +204,8 @@
   .udyam-event-arrows {
     display: flex;
     margin: 3vh 0vw;
+    position: fixed;
+    bottom: 20px;
   }
 
   #left {
@@ -203,5 +214,13 @@
 
   #right {
     margin-left: 35vw;
+  }
+  .udyam-event-buttons {
+    display: block;
+  }
+  .udyam-event-buttons div {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
   }
 }

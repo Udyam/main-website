@@ -22,7 +22,7 @@
   font-size: 65px;
   font-weight: 600;
   font-family: homePageHeadingFont;
-  background: -webkit-linear-gradient(white, black);
+  background: -webkit-linear-gradient(white, rgb(160, 158, 158));
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

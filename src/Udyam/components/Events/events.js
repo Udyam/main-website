@@ -1,5 +1,4 @@
 import './events.css';
-import bg from './images/bg2.png';
 import right from './images/right.png';
 import left from './images/left.png';
 import { useState, useEffect } from 'react';
@@ -8,14 +7,14 @@ import { IoIosArrowBack } from 'react-icons/io';
 import './../Nav/Nav.css';
 
 const eventitem = new Map([
-  ['Digisim', 0],
-  ['I-Chip', 1],
-  ['DevBits', 2],
-  ['CommNet', 3],
-  ['X-IoT-A', 4],
-  ['Cassandra', 5],
-  ['Mosaic', 6],
-  ['Funckit', 7]
+  ['DIGISIM', 0],
+  ['I-CHIP', 1],
+  ['DEVBITS', 2],
+  ['COMMNET', 3],
+  ['X-IOT-A', 4],
+  ['CASSANDRA', 5],
+  ['MOSAIC', 6],
+  ['FUNCKIT', 7]
 ]);
 
 const data = [
@@ -36,7 +35,7 @@ const data = [
     description: 'Become proficient in Network Architecture and MATLAB implementation of coding theory, compression algorithms, signal processing, modulation and demodulation techniques, designing and simulating analog circuits & filters to perform computations using CAD tools.'
   },
   {
-    title: 'X-IOTA',
+    title: 'X-IOT-A',
     description: 'Propose and implement a solution to a real-world problem with the help of the booming technology of the Internet of Things involving circuit designing and the incorporation of hardware and software.'
   },
   {
@@ -182,7 +181,7 @@ function Events() {
         </div>
       )}
 
-      <div className="getback" onClick={sliding}>
+      <div className="getback-btn" onClick={sliding}>
         <MdArrowForwardIos />
       </div>
 
@@ -192,7 +191,7 @@ function Events() {
             <div className="udyam-events-heading-box">EVENTS</div>
           </div>
           <div className="udyam-event-img">
-            <img src={bg} />
+            <img src={'/assets/events/' + eventData.title + '.png'} />
           </div>
           <div className="udyam-event-title">{eventData.title}</div>
           <div className="udyam-event-desc">{eventData.description}</div>
