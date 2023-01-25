@@ -102,6 +102,30 @@
   margin: 3px 0;
 }
 
+.sponsor-content a:link {
+  /* color: #2c1250; */
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.sponsor-content a:visited {
+  /* color: #2c1250; */
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.sponsor-content a:hover {
+  /* color: #2c1250; */
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.sponsor-content a:active {
+  /* color: #2c1250; */
+  background-color: transparent;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 900px) {
   .sponsor-card {
     width: 400px;
