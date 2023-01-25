@@ -179,6 +179,7 @@
   position: absolute;
   top: 20vh;
   left: 50vw;
+  margin-left: 50px;
 }
 
  .circle-one {
@@ -199,6 +200,7 @@
 .main-img{
   width: 70%;
   margin: auto;
+  border-radius: 50%;
 } 
 
 .event-img-pc img {
@@ -224,6 +226,7 @@
   width: 80%;
   display: flex;
   justify-content: flex-start;
+  z-index: 1;
 }
 
 .event-desc {
@@ -277,7 +280,7 @@
   right: 20%;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1290px) {
   .event-title {
     width: 30%;
     padding: 0 10px;
@@ -339,6 +342,13 @@
   }
   .event-img-mob img {
     width: 70%;
+  }
+  .circle-one-mob {
+    width: 10%;
+    position: absolute;
+  }
+  .circle-two-mob{
+    width: 10%;
   }
   .event-desc {
     font-size: 15px;

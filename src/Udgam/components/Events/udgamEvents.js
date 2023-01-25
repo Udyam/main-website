@@ -2,6 +2,7 @@ import './events.css';
 import bg from './photography.png';
 import bg1 from './Ellipse2.png';
 import bg2 from './Ellipse4.png';
+import bgg from './bg2.png';
 // import Nav from '../Nav/Nav';
 
 import { useState, useEffect } from 'react';
@@ -13,7 +14,8 @@ function UdgamEvents() {
     {
       id: 1,
       genre: 'Photography',
-      subEvents: ['Photog Event 1', 'Photog Event 2']
+      subEvents: ['Photog Event 1', 'Photog Event 2'],
+      subEventsImg: [bg, bgg]
     },
     {
       id: 2,
@@ -44,6 +46,7 @@ function UdgamEvents() {
   const [eventTitle, setEventTitle] = useState(events[0].subEvents[0]);
   const [eventtable, setEventtable] = useState(true);
   const [whichEvent, setwhichEvent] = useState('Photography');
+  const [subEventImg, setsubEventImg] = useState(events[0].subEventsImg[0]);
   // const [eventnav, setEventnav] = useState(false);
   const [clickct, setClickct] = useState(0);
   const eventName = (event) => {
@@ -52,6 +55,7 @@ function UdgamEvents() {
     setClickct(0);
     let obj = events.find((o) => o.genre === element.innerText);
     setEventTitle(obj.subEvents[clickct]);
+    setsubEventImg(obj.subEventsImg[clickct]);
     setEventtable(false);
     console.log(element);
   };
@@ -101,7 +105,7 @@ function UdgamEvents() {
       setClickct(clickct - 1);
     }
     setEventTitle(obj.subEvents[clickct]);
-    console.log(clickct);
+    setsubEventImg(obj.subEventsImg[clickct]);
   };
   const circleTwoClicked = () => {
     let obj = events.find((o) => o.genre === whichEvent);
@@ -111,6 +115,7 @@ function UdgamEvents() {
       setClickct(clickct + 1);
     }
     setEventTitle(obj.subEvents[clickct]);
+    setsubEventImg(obj.subEventsImg[clickct]);
     console.log(clickct);
   };
 
@@ -170,7 +175,7 @@ function UdgamEvents() {
       <div className="event-img-pc">
         <img className="circle-one" src={bg1} onClick={circleOneClicked} />
         <img className="circle-two" onClick={circleTwoClicked} src={bg2} />
-        <img className="main-img" src={bg} />
+        <img className="main-img" src={subEventImg} />
         {/* <div className="circle-one" onClick={circleOneClicked}>
           <img src={bg1} />
         </div>
@@ -189,7 +194,7 @@ function UdgamEvents() {
           </div>
           <div className="event-box-mob">
             <div className="event-img-mob">
-              <img src={bg} />
+              <img src={subEventImg} />
             </div>
             <div className="event-title">{eventTitle}</div>
             <div className="event-desc-box">
