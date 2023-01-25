@@ -289,8 +289,9 @@ body {
     text-align: center;
   }
   .content {
-    width: 90%;
+    width: 80%;
     height: 82vw;
+    margin: auto;
   }
   .content p {
     font-size: 85%;
