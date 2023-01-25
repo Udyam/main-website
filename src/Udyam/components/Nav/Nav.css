@@ -116,10 +116,22 @@
 }
 
 .udyam-icon {
-  height: 45vh;
+  /* height: 45vh; */
   /* width: 100%; */
-  position: relative;
-  top: 15vh;
+  /* position: relative;
+  top: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  flex-direction: column; */
+
+  top: 50%;
+  transform: translateY(-50%);
+  /* height: 50vh; */
+  /* width: 100%; */
+  position: absolute;
+  /* top: 15vh; */
   display: flex;
   justify-content: space-around;
   align-self: center;
@@ -276,7 +288,7 @@
 } */
 @media screen and (max-width: 800px) {
   .udyam-nav {
-    width: 60vw;
+    width: 205px;
   }
   .udyam-nav p {
     font-size: 1.2rem;
