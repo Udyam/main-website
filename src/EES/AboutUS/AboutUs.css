@@ -212,7 +212,7 @@ body {
   transform: none;
 }
 
-.hover1 {
+/* .hover1 {
   width: 21vw;
   height: 20vw;
   left: 0;
@@ -224,7 +224,7 @@ body {
   width: 21vw;
   height: 20vw;
   transform: none;
-}
+} */
 
 @media screen and (max-width: 600px) {
   .contain {
