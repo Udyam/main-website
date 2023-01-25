@@ -6,10 +6,12 @@
   /* height: 200vh; */
 }
 .db-main-container {
+  margin-top: 3em;
   display: flex;
   flex-direction: row;
   width: 90vw;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 3vh auto 0 auto;
   padding-left: 6vw;
 }
 .db-user-details {

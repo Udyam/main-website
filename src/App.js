@@ -13,11 +13,12 @@ import UdgamAbout from './Udgam/components/About/UdgamAbout';
 import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 import UdgamEvents from './Udgam/components/Events/udgamEvents';
 import UDGmain from './Udgam/components/main-page/main-page';
-import Teams from './EES/Teams/Teams';
+// import Teams from './EES/Teams/Teams';
 import Mashal from './Mashal/mashal';
 import Masponsor from './Mashal/components/Sponsors/Sponsors';
 import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
 import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
+import Navbar from './EES/Navbar/Navbar';
 
 import { gapi } from 'gapi-script';
 import { useEffect } from 'react';
@@ -74,22 +75,22 @@ function App() {
               </>
             }
           />
-          <Route
+          {/* <Route
             path="/team"
             element={
               <>
                 <Teams />
               </>
             }
-          />
-          {/* <Route
+          /> */}
+          <Route
             path="/team"
             element={
               <>
                 <ComingSoon />
               </>
             }
-          /> */}
+          />
           <Route
             path="/udyam"
             element={
@@ -129,10 +130,12 @@ function App() {
           />
 
           <Route
-            path="/udyam/dashboard"
+            path="/dashboard"
             element={
               <>
-                <Nav active="#name" />
+                <div style={{ position: 'fixed' }}>
+                  <Navbar />
+                </div>
                 <DashBoard />
               </>
             }

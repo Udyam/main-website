@@ -170,7 +170,7 @@ const Nav = (props) => {
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}
             >
-              <Link to="/udyam/name" className="game-changer" style={{ textDecoration: 'none' }}>
+              <Link to="/dashboard" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiQrScan className="info" />
                 <p>Name</p>
               </Link>
