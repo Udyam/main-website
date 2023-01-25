@@ -35,6 +35,7 @@
   font-size: 1.5rem;
   color: white;
   text-align: justify;
+  font-family: Poppins;
 }
 
 @media screen and (max-width: 600px) {
