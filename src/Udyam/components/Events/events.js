@@ -62,10 +62,10 @@ function Events() {
   const eventName = (event) => {
     var element = event.target.classList[0];
     setEventData(data[element]);
-    setEventtable(false);
+    // setEventtable(false);
     console.log(element);
   };
-
+  // console.log(data[0]);
   const [width, setWidth] = useState(window.innerWidth);
 
   function checkNav() {
@@ -76,7 +76,7 @@ function Events() {
       setEventtable(false);
       // setEventnav(false);
       // if (document.querySelector('.udyam-nav') != null) {
-      document.querySelector('.udyam-nav').style.display = 'none';
+      // document.querySelector('.udyam-nav').style.display = 'none';
       // }
     }
   }
@@ -93,9 +93,10 @@ function Events() {
     // setEvent(true);
     if (width < 800) {
       // document.querySelector('.leader').style.display = 'none';
-      // setEventTitle(false);
+      setEventtable(false);
     }
   }
+
   function sliding() {
     // setEvent(true);
     setEventtable(true);
@@ -138,7 +139,7 @@ function Events() {
           <div className="token-event" onClick={eventName}>
             <div className="0 digism event-name" onClick={checkNav}>
               <a href="#" className="0">
-                {' '}
+                {/* {' '} */}
                 Digisim
               </a>
             </div>
@@ -185,21 +186,21 @@ function Events() {
         <MdArrowForwardIos />
       </div>
 
-      <div className="events-main" onClick={slidemobile}>
-        <div className="event-body">
-          <div className="event-heading">
-            <div className="events-heading-box">EVENTS</div>
+      <div className="udyam-events-main" onClick={slidemobile}>
+        <div className="udyam-event-body">
+          <div className="udyam-event-heading">
+            <div className="udyam-events-heading-box">EVENTS</div>
           </div>
-          <div className="event-img">
+          <div className="udyam-event-img">
             <img src={bg} />
           </div>
-          <div className="event-title">{eventData.title}</div>
-          <div className="event-desc">{eventData.description}</div>
-          <div className="event-buttons">
-            <div className="ps-link">Problem Statement</div>
-            <div className="event-submit">SUBMIT</div>
+          <div className="udyam-event-title">{eventData.title}</div>
+          <div className="udyam-event-desc">{eventData.description}</div>
+          <div className="udyam-event-buttons">
+            <div className="ps-link">PROBLEM STATEMENT</div>
+            <div className="udyam-event-submit">SUBMIT</div>
           </div>
-          <div className="event-arrows">
+          <div className="udyam-event-arrows">
             <img id="left" src={left} alt="" onClick={lastone} />
             <img id="right" src={right} alt="" onClick={nextone} />
           </div>

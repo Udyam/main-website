@@ -24,7 +24,7 @@
   border-radius: 5%;
 }
 .qr-and-name {
-  height: 30%;
+  height: auto;
   display: flex;
   flex-direction: row;
 }
@@ -40,7 +40,7 @@
   font-size: 1rem;
 }
 .userDetails {
-  margin-top: 3rem;
+  margin-top: 1.2rem;
   height: 50%;
 }
 .padding-between {
