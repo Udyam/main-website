@@ -153,11 +153,10 @@ const Nav = (props) => {
       {(udyamName || true) && width < 800 && <Profile />}
       {(slideNav || width > 800) && (
         <div className="udyam-nav">
-          {width < 800 && (
-            <div className="close" onClick={helloNav}>
-              <IoIosArrowBack />
-            </div>
-          )}
+          <div className="close" onClick={helloNav}>
+            <IoIosArrowBack />
+          </div>
+
           <div className="udyam-img">
             <Link to="/udyam" style={{ textDecoration: 'none' }}>
               <img className="udyam-logo" src={udyam} alt="hero" />
@@ -170,7 +169,7 @@ const Nav = (props) => {
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}
             >
-              <Link to="/udyam/name" className="game-changer" style={{ textDecoration: 'none' }}>
+              <Link to="/dashboard" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiQrScan className="info" />
                 <p>Name</p>
               </Link>

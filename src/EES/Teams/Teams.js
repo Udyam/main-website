@@ -1,4 +1,5 @@
 import './Teams.css';
+import Navbar from '../Navbar/Navbar';
 import TeamMemberCard from './TeamMemberCard';
 import { TeamMemberName, TeamDomain, Designation, TeamMemberDetails, ContactInstagram, ContactMail, ContactLinkedIn, MemberImage } from './TeamData';
 import { useState } from 'react';
@@ -19,6 +20,9 @@ const Teams = () => {
   console.log(TeamArr);
   return (
     <>
+      <div className="Teams-Navbar">
+        <Navbar />
+      </div>
       <div className="Teams-main-container">
         <div className="team-members-main">
           <div className="ct-main">

@@ -75,7 +75,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="menu-item">
-                <Link to="/udyam/name">
+                <Link to="/dashboard">
                   <a href="#">Registration</a>
                 </Link>
               </li>
@@ -146,7 +146,7 @@ const Navbar = () => {
                 <a href="#">Home</a>
               </li>
               <li>
-                <Link to="/udyam/name">
+                <Link to="/dashboard">
                   <a href="#">Registration</a>
                 </Link>
               </li>
@@ -178,7 +178,11 @@ const Navbar = () => {
               </li>
             </ul>
             <GoogleButton
-              initialHTML={<span>Register</span>}
+              initialHTML={
+                <div className="menu-text" style={{ display: 'flex' }}>
+                  <span>Register</span>
+                </div>
+              }
               laterHTML={
                 <GoogleLogout
                   clientId={clientId}

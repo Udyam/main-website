@@ -1,7 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: SpartanRegular;
+  src: url(./Spartan-Regular.ttf);
+}
+@font-face {
+  font-family: SpartanBold;
+  src: url(./Spartan-Bold.ttf);
+}
+@font-face {
+  font-family: SpartanSemiBold;
+  src: url(./Spartan-SemiBold.ttf);
+}
 .updates-main-container {
-  font-family: '.Poppins', sans-serif;
+  font-family: SpartanRegular;
   /* overflow: hidden; */
 }
 .update-content a {
@@ -23,9 +33,15 @@
   font-size: 6vh;
   margin: 0;
   margin-top: 1vh;
-  /* padding: 0.3rem 0rem; */
+  padding: 0.3rem 0rem;
+}
+.updates-main-container h2 {
+  font-family: SpartanSemiBold;
+  margin: 2vh 0;
+  font-size: 1.5rem;
 }
 .updates-udyam-head-container {
+  font-family: SpartanBold;
   background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
   mix-blend-mode: normal;
   box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
@@ -56,13 +72,14 @@
   /* font-size: 0.1rem; */
   padding: 2rem 6rem;
   /* position: sticky; */
-  min-height: 100vh;
+  min-height: 90vh;
   /* top: 12vh; */
   padding-bottom: 0;
   overflow-y: auto;
 }
 
 .updates-udgam-head-container {
+  font-family: SpartanBold;
   background: linear-gradient(180deg, #4e4195 0%, #22185c 100%);
   mix-blend-mode: normal;
   box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
@@ -83,12 +100,13 @@
   color: white;
   padding: 2rem 6rem;
   /* position: sticky; */
-  min-height: 100vh;
+  min-height: 80vh;
   top: 24vh;
   padding-bottom: 8em;
 }
 
 .updates-mashal-head-container {
+  font-family: SpartanBold;
   background: #16161a;
   mix-blend-mode: normal;
   color: white;
@@ -107,21 +125,22 @@
   color: white;
   padding: 2rem 6rem;
   /* position: sticky; */
-  min-height: 100vh;
+  min-height: 70vh;
   top: 36vh;
   padding-bottom: 8em;
 }
 
 .update-content {
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .update-paragraph {
   display: flex;
   border: 1vh;
+  height: max-content;
   border-radius: 1vh;
   margin: 2vh 2vh;
-  padding: 2.5vh 3vh;
+  padding: 1vh 3vh;
 }
 .update-paragraph p {
   margin: 0;
@@ -131,11 +150,10 @@
   float: left;
 }
 .event-update-link {
-  /* width: 25%; */
-  padding: 3%;
+  width: 12%;
+  padding: 1vh 1vh;
   float: right;
-  text-align: right;
-  justify-content: space-between;
+  text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -179,6 +197,7 @@
     border: 0.1vh;
     border-radius: 0.6vh;
     padding: 0.4vh 0.6vh;
+    margin: 1vh 1vh;
     text-decoration: none;
     color: white;
     font-style: italic;
@@ -188,9 +207,13 @@
     cursor: pointer;
   }
   .updates-main-container h1 {
-    font-size: 3vh;
-    padding-top: 0;
+    font-size: 1.2rem;
+    padding-top: 1.4vh;
     margin: 0;
+  }
+  .updates-main-container h2 {
+    font-size: 1rem;
+    margin: 0.5vh 0vh;
   }
   .updates-udyam-head-container {
     background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
@@ -198,8 +221,8 @@
     box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.25);
     color: white;
     height: 6vh;
-    padding: 1vh;
-    font-size: 2vh;
+    padding: 0.5vh 2vh;
+    /* font-size: 2vh; */
     position: sticky !important;
     z-index: 1;
     bottom: 12vh;
@@ -224,7 +247,7 @@
     box-shadow: 0px 5px 6px 7px rgba(0, 0, 0, 0.25);
     color: white;
     height: 6vh;
-    padding: 1vh;
+    padding: 0.5vh 2vh;
     font-size: 2vh;
     position: sticky !important;
     z-index: 1;
@@ -250,7 +273,7 @@
     /* border: 1px solid #FEFAFA; */
     color: white;
     height: 6vh;
-    padding: 1vh;
+    padding: 0.5vh 2vh;
     font-size: 2vh;
     position: sticky !important;
     z-index: 1;
@@ -271,8 +294,8 @@
   }
 
   .update-content {
-    line-height: 1.5;
-    font-size: 2.5vh;
+    line-height: 1.2;
+    font-size: 1.5vh;
   }
   .update-paragraph {
     border: 0.5vh;
@@ -286,9 +309,9 @@
     float: left;
   }
   .event-update-link {
-    width: 30%;
-    float: right;
-    text-align: right;
+    width: 20%;
+    /* float: right; */
+    text-align: center;
   }
 }
 
@@ -297,6 +320,7 @@
     border: 0.1vh;
     border-radius: 0.6vh;
     padding: 1vh 1vh;
+    margin: 0.5vh;
     text-decoration: none;
     color: white;
     font-style: italic;
@@ -307,6 +331,10 @@
   }
   .updates-main-container h1 {
     font-size: 4vh;
+  }
+  .updates-main-container h2 {
+    margin: 0.5vh 0vh;
+    font-size: 2rem;
   }
   .updates-udyam-head-container {
     background: linear-gradient(283.87deg, #2306ab -1.02%, #0b0554 100%);
@@ -391,23 +419,23 @@
 
   .update-content {
     line-height: 1.5;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
   }
   .update-paragraph {
     border: 1vh;
 
     border-radius: 1vh;
-    margin: 2vh 2vh;
-    padding: 2vh 1vh;
+    margin: 1vh 2vh;
+    padding: 1vh 1vh;
   }
   .update-information {
     width: 75%;
     float: left;
   }
   .event-update-link {
-    /* width: 25%; */
+    width: 18%;
     /* width: 30%; */
-    float: right;
-    text-align: right;
+    /* float: right; */
+    text-align: center;
   }
 }

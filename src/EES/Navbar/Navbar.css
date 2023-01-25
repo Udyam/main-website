@@ -4,6 +4,9 @@
   line-height: 1.4;
   /* background: #e1e1e1; 
 } */
+.Teams-Navbar {
+  background-color: #001432;
+}
 .window {
   position: fixed;
   display: block;
