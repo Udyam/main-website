@@ -113,7 +113,7 @@ p {
   bottom: 26vh;
 }
 .content-on-hover h6 {
-  padding: 2vh 2vh 0 2vh;
+  padding: 2vh 1vh 0 1vh;
 }
 .member-image:hover .content-on-hover {
   visibility: visible;
