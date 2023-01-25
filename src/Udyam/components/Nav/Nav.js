@@ -12,7 +12,7 @@ import udyam from '../Nav/udyam.svg';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
-import { AiOutlineClose } from 'react-icons/ai';
+// import { IoIosArrowBack } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
 import Profile from '../Profile/Profile';
@@ -155,7 +155,7 @@ const Nav = (props) => {
         <div className="udyam-nav">
           {width < 800 && (
             <div className="close" onClick={helloNav}>
-              <AiOutlineClose />
+              <IoIosArrowBack />
             </div>
           )}
           <div className="udyam-img">
@@ -170,7 +170,7 @@ const Nav = (props) => {
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}
             >
-              <Link to="/udyam/name" className="game-changer" style={{ textDecoration: 'none' }}>
+              <Link to="/dashboard" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiQrScan className="info" />
                 <p>Name</p>
               </Link>
@@ -215,9 +215,9 @@ const Nav = (props) => {
               </Link>
             </div>
           </div>
-          <div className="udyam-ees-mobile">
-            <Link to="/">
-              <img className="ees-img-mobile" src={ees} alt="hreo" />
+          <div className="hovered ees-div-img">
+            <Link to="/" className="game-changer">
+              <img className="eesimg" src={ees} alt="hreo" />
             </Link>
           </div>
           {/* <div className="udyam-ees">

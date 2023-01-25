@@ -1,14 +1,23 @@
 import React from 'react';
 import './Profile.css';
 import { Link } from 'react-router-dom';
+import default_img from './default_img.png';
 const Profile = () => {
+  var userName = 'Udyam';
+  var img_url = default_img;
+  if (window.sessionStorage.getItem('profileData') != null) {
+    console.log(window.sessionStorage.getItem('profileData'));
+    JSON.parse(window.sessionStorage.getItem('profileData')).name;
+    img_url = window.sessionStorage.getItem('imageUrl');
+  }
+  var displayName1 = userName.split(' ').slice(0, 2).join(' ');
   return (
     <div>
       <div className="top-bar">
-        <h1 className="emma">Emma</h1>
+        <h1 className="emma">{displayName1}</h1>
         <Link to="/udyam/name">
           <div className="profile">
-            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="caR" />
+            <img src={img_url} alt="G" />
           </div>
         </Link>
       </div>

@@ -16,14 +16,14 @@ const Sponsors = () => {
       <h1>PREVIOUS SPONSORS</h1>
       <div className="sponsBox">
         <div className="sponser sponser1">
-          <img src={codechef} alt="" style={{ width: '100%' }} />
+          <img className="sponsorImage" src={codechef} alt="" style={{ width: '100%' }} />
           <a href="https://www.codechef.com" target="_blank" rel="noreferrer" className="sp" style={{ textDecoration: 'none' }}>
             {' '}
             <h4>Codechef</h4> <FaChevronCircleRight className="spicon" />
           </a>
         </div>
         <div className="sponser sponser2">
-          <img src={nvidia} alt="" style={{ width: '100%' }} />
+          <img className="sponsorImage" src={nvidia} alt="" style={{ width: '100%' }} />
           <a href="https://www.nvidia.com" target="_blank" rel="noreferrer" className="sp" style={{ textDecoration: 'none' }}>
             {' '}
             <h4>Nvidia</h4>
@@ -31,7 +31,7 @@ const Sponsors = () => {
           </a>
         </div>
         <div className="sponser sponser3">
-          <img src={coins} alt="" style={{ width: '100%' }} />
+          <img className="sponsorImage" src={coins} alt="" style={{ width: '100%' }} />
           <a href="https://www.coinswitch.co" target="_blank" rel="noreferrer" className="sp" style={{ textDecoration: 'none' }}>
             {' '}
             <h4>CoinSwitch Kuber</h4>
@@ -39,7 +39,7 @@ const Sponsors = () => {
           </a>
         </div>
         <div className="sponser sponser4">
-          <img src={cisco} alt="" style={{ width: '100%' }} />
+          <img className="sponsorImage" src={cisco} alt="" style={{ width: '100%' }} />
           <a href="https://www.cisco.in" target="_blank" rel="noreferrer" className="sp" style={{ textDecoration: 'none' }}>
             {' '}
             <h4>Cisco</h4>
@@ -47,28 +47,28 @@ const Sponsors = () => {
           </a>
         </div>
         <div className="sponser sponser5">
-          <img src={mentor} alt="" style={{ width: '100%' }} />
+          <img className="sponsorImage" src={mentor} alt="" style={{ width: '100%' }} />
           <a href="https://eda.sw.siemens.com" target="_blank" rel="noreferrer" className="sp" style={{ textDecoration: 'none' }}>
             <h4>Mentor</h4>
             <FaChevronCircleRight className="spicon" />{' '}
           </a>
         </div>
         <div className="sponser sponser6">
-          <img src={silence} alt="" style={{ width: '100%' }} />
+          <img className="sponsorImage" src={silence} alt="" style={{ width: '100%' }} />
           <a href="https://www.silencelaboratories.com" target="_blank" rel="noreferrer" className="sp" style={{ textDecoration: 'none' }}>
             <h4>Silence Laboratories</h4>
             <FaChevronCircleRight className="spicon" />
           </a>
         </div>
         <div className="sponser sponser7">
-          <img src={tees} alt="" style={{ width: '100%' }} />
+          <img className="sponsorImage" src={tees} alt="" style={{ width: '100%' }} />
           <a href="https://www.teeshood.com" target="_blank" rel="noreferrer" className="sp" style={{ textDecoration: 'none' }}>
             <h4>Teeshood</h4>
             <FaChevronCircleRight className="spicon" />
           </a>
         </div>
         <div className="sponser sponser8">
-          <img src={rapid} alt="" style={{ width: '100%' }} />
+          <img className="sponsorImage" src={rapid} alt="" style={{ width: '100%' }} />
           <a href="https://www.rapidai.com" target="_blank" rel="noreferrer" className="sp" style={{ textDecoration: 'none' }}>
             {' '}
             <h4>RapidAI</h4>

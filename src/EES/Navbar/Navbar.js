@@ -1,16 +1,17 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import { GoogleLogin } from 'react-google-login';
+import { GoogleLogout } from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
-const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
+import { toast } from 'react-toastify';
+import GoogleButton from '../../Dashboard/GoogleButton';
 
 const Navbar = () => {
   const navigate = useNavigate();
   const clientId = '868476725043-56q2l17h7bf2a1fpvkqp04t5br7mti4p.apps.googleusercontent.com';
+
   const [width, setWidth] = useState(window.innerWidth);
   const [eventLink, setEventLink] = useState(false);
   const [click, setclick] = useState(true);
@@ -45,15 +46,14 @@ const Navbar = () => {
     setSlideUdyam(!slideUdyam);
   }
 
-  const onGoogleLoginSuccess = (res) => {
-    console.log('SUCCESS!!! Current User: ', res);
-    window.sessionStorage.setItem('profileData', JSON.stringify(res.profileObj));
-    window.sessionStorage.setItem('tokenId', res.tokenId);
-    navigate('/register');
-  };
-
-  const onGoogleLoginFailure = (res) => {
-    console.log('FAILURE!!! res: ', res);
+  const logout = () => {
+    window.sessionStorage.removeItem('registered_email');
+    toast.success('Logout was successfull!', {
+      theme: 'dark',
+      position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
+      autoClose: 1200
+    });
+    navigate('/');
   };
 
   return (
@@ -70,10 +70,12 @@ const Navbar = () => {
 
             <ul className="menu">
               <li className="menu-item">
-                <a href="#">Home</a>
+                <a href="#" onClick={open}>
+                  Home
+                </a>
               </li>
               <li className="menu-item">
-                <Link to="/udyam/name">
+                <Link to="/dashboard">
                   <a href="#">Registration</a>
                 </Link>
               </li>
@@ -100,16 +102,24 @@ const Navbar = () => {
                 </div>
               )}
               <li className="menu-item">
-                <a href="#">Sponsors</a>
+                <a href="#sponsors" onClick={open}>
+                  Sponsors
+                </a>
               </li>
               <li className="menu-item">
-                <a href="#">Speakers</a>
+                <a href="#speakers" onClick={open}>
+                  Speakers
+                </a>
               </li>
               <li className="menu-item">
-                <a href="#">Gallery</a>
+                <Link to="/gallery">
+                  <a href="#">Gallery</a>
+                </Link>
               </li>
               <li className="menu-item">
-                <a href="#">Team</a>
+                <Link to="/team">
+                  <a href="/team">Team</a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -136,7 +146,7 @@ const Navbar = () => {
                 <a href="#">Home</a>
               </li>
               <li>
-                <Link to="/udyam/name">
+                <Link to="/dashboard">
                   <a href="#">Registration</a>
                 </Link>
               </li>
@@ -157,31 +167,35 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#">Gallery</a>
+                <Link to="/gallery">
+                  <a href="#">Gallery</a>
+                </Link>
               </li>
               <li>
-                <a href="#">Team</a>
+                <Link to="/team">
+                  <a href="#">Team</a>
+                </Link>
               </li>
             </ul>
-            {window.sessionStorage.getItem('registered_email') == null && (
-              <GoogleLogin
-                theme="dark"
-                accessType="online"
-                disabled={false}
-                client_id={clientId} // your Google app client ID
-                buttonText="Sign in with Google"
-                onSuccess={onGoogleLoginSuccess} // perform your user logic here
-                onFailure={onGoogleLoginFailure} // handle errors here
-                cookiePolicy={'single-host-origin'}
-                scope={scope}
-                render={(renderProps) => (
-                  <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
-                    <span>Register</span>
-                  </div>
-                )}
-              />
-            )}
-
+            <GoogleButton
+              initialHTML={
+                <div className="menu-text" style={{ display: 'flex' }}>
+                  <span>Register</span>
+                </div>
+              }
+              laterHTML={
+                <GoogleLogout
+                  clientId={clientId}
+                  theme="dark"
+                  render={(renderProps) => (
+                    <div className="menu-text" style={{ display: 'flex' }} onClick={renderProps.onClick}>
+                      <span>Logout</span>
+                    </div>
+                  )}
+                  onLogoutSuccess={logout}
+                />
+              }
+            />
             <button className="menu-bar" onClick={expand}>
               <i className={click ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'}></i>
             </button>

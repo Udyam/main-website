@@ -1,0 +1,153 @@
+@font-face {
+  font-family: homePageHeadingFont;
+  src: url('../Inconsolata-Regular.ttf');
+}
+.mcontent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  height: 19vh;
+  position: relative;
+  bottom: 19vh;
+  opacity: 0;
+  border-radius: 40px;
+  text-align: center;
+  background-color: rgba(187, 204, 226, 0.7);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.mcontent:hover .details {
+  top: -15px;
+  opacity: 1;
+}
+.mcontent:hover {
+  opacity: 1;
+}
+
+.msponser:hover img {
+  opacity: 0.45;
+  box-shadow: none;
+}
+
+.details {
+  position: relative;
+  color: rgb(31, 24, 25);
+  top: 20%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.msponsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 84vw; */
+  position: relative;
+  top: 10%;
+  height: 100vh;
+  /* margin: auto; */
+  background-image: url('./images//BG.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.msponser img {
+  height: 8rem;
+  border-radius: 40px;
+}
+.msponsers h1 {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0;
+  position: relative;
+  font-size: 60px;
+  font-weight: 500;
+  font-family: homePageHeadingFont;
+  background-clip: text;
+  color: #5630ce;
+}
+.msponsorBox {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  background-color: #3c3c3c;
+  background-image: url('./images/FAIN.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 84%;
+  height: 80vh;
+}
+.msponser {
+  display: inline-block;
+  width: 18%;
+  margin: 5%;
+  height: 20vh;
+}
+.msponser img {
+  height: 18vh;
+}
+
+.msponser1 img {
+  box-shadow: 0 5px 5px 5px white;
+}
+.msponser2 img {
+  box-shadow: 0 5px 5px 5px white;
+}
+.msponser3 img {
+  box-shadow: 0 5px 5px 5px white;
+}
+.msponser4 img {
+  box-shadow: 0 5px 5px 5px white;
+}
+.msponser5 img {
+  box-shadow: 0 5px 5px 5px black;
+}
+.msponser6 img {
+  box-shadow: 0 5px 5px 5px white;
+}
+
+@media (max-width: 428px) {
+  .msponser {
+    width: 80%;
+    /* height: 45vh; */
+  }
+  msponsers h1 {
+    font-size: 3rem;
+  }
+  .msponsorBox {
+    overflow-y: auto;
+    height: 90vh;
+  }
+  .details {
+    padding: 25px;
+  }
+  .mcontent:hover .details {
+    top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .msponsers {
+    align-items: center;
+  }
+  .msponsers h1 {
+    left: 0;
+    font-size: 45px;
+  }
+  .msponser {
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 429px) and (max-width: 1071px) {
+  .msponser {
+    width: 10rem;
+  }
+}

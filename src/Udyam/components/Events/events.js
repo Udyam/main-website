@@ -1,22 +1,11 @@
 import './events.css';
-import bg from './bg2.png';
-import right from './right.png';
-import left from './left.png';
+import bg from './images/bg2.png';
+import right from './images/right.png';
+import left from './images/left.png';
 import { useState, useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { IoIosArrowBack } from 'react-icons/io';
 import './../Nav/Nav.css';
-
-const copyeventitem = new Map([
-  [0, 'Digisim'],
-  [1, 'I-Chip'],
-  [2, 'DevBits'],
-  [3, 'CommNet'],
-  [4, 'X-IoT-A'],
-  [5, 'Cassandra'],
-  [6, 'Mosaic'],
-  [7, 'Funckit']
-]);
 
 const eventitem = new Map([
   ['Digisim', 0],
@@ -29,19 +18,54 @@ const eventitem = new Map([
   ['Funckit', 7]
 ]);
 
+const data = [
+  {
+    title: 'DIGISIM',
+    description: 'Gain mastery of digital system designing and computer architecture by designing optimized digital systems and simulating them on Proteus. Grab this chance to put to test your debugging and logic-building skills.'
+  },
+  {
+    title: 'I-CHIP',
+    description: 'Design, simulate, validate, and debug digital systems, from flip-flops to microprocessors. Work with Verilog HDL and get your hands on FPGA Boards through this Verilog-based event.'
+  },
+  {
+    title: 'DEVBITS',
+    description: 'Get the hang of two of the most sought-after verticals under the programming umbrella. Test your critical thinking abilities with a competitive-programming round. Work on creating highly functional web applications built using industry-sought tech stacks.'
+  },
+  {
+    title: 'COMMNET',
+    description: 'Become proficient in Network Architecture and MATLAB implementation of coding theory, compression algorithms, signal processing, modulation and demodulation techniques, designing and simulating analog circuits & filters to perform computations using CAD tools.'
+  },
+  {
+    title: 'X-IOTA',
+    description: 'Propose and implement a solution to a real-world problem with the help of the booming technology of the Internet of Things involving circuit designing and the incorporation of hardware and software.'
+  },
+  {
+    title: 'CASSANDRA',
+    description: 'Prove yourself a good data analyst by designing a model that learns and optimizes the dataset provided, implementing Machine Learning algorithms in industrial problems and gain exposure to the ABCs of data science.'
+  },
+  {
+    title: 'MOSAIC',
+    description: 'Get the opportunity to decipher canonical problems based on the intriguing subject of Machine Learning and Computer Vision. Know about deep learning and image processing inside out and acquire expertise in machine learning.'
+  },
+  {
+    title: 'FUNCKIT',
+    description: 'Test your problem-solving abilities through low-level programming and building gate-level circuitry to optimize the logic and hardware and decrease execution time.'
+  }
+];
+
 // console.log(copyeventitem.get(2));
 
 function Events() {
-  const [eventTitle, setEventTitle] = useState('Digisim');
+  const [eventData, setEventData] = useState(data[0]);
   const [eventtable, setEventtable] = useState(true);
   // const [eventnav, setEventnav] = useState(false);
   const eventName = (event) => {
-    var element = event.target;
-    setEventTitle(element.innerText);
-    setEventtable(false);
+    var element = event.target.classList[0];
+    setEventData(data[element]);
+    // setEventtable(false);
     console.log(element);
   };
-
+  // console.log(data[0]);
   const [width, setWidth] = useState(window.innerWidth);
 
   function checkNav() {
@@ -52,7 +76,7 @@ function Events() {
       setEventtable(false);
       // setEventnav(false);
       // if (document.querySelector('.udyam-nav') != null) {
-      document.querySelector('.udyam-nav').style.display = 'none';
+      // document.querySelector('.udyam-nav').style.display = 'none';
       // }
     }
   }
@@ -69,9 +93,10 @@ function Events() {
     // setEvent(true);
     if (width < 800) {
       // document.querySelector('.leader').style.display = 'none';
-      // setEventTitle(false);
+      setEventtable(false);
     }
   }
+
   function sliding() {
     // setEvent(true);
     setEventtable(true);
@@ -80,25 +105,25 @@ function Events() {
   }
 
   function lastone() {
-    var i = eventitem.get(`${eventTitle}`);
+    var i = eventitem.get(`${eventData.title}`);
     i = i - 1;
     if (i === -1) {
       i = 7;
     }
     // console.log(eventitem.get(`${eventTitle}`));
     // console.log(copyeventitem.get(i));
-    setEventTitle(copyeventitem.get(i));
+    setEventData(data[i]);
   }
 
   function nextone() {
-    var i = eventitem.get(`${eventTitle}`);
+    var i = eventitem.get(`${eventData.title}`);
     i = i + 1;
     if (i === 8) {
       i = 0;
     }
     // console.log(eventitem.get(`${eventTitle}`));
     // console.log(copyeventitem.get(i));
-    setEventTitle(copyeventitem.get(i));
+    setEventData(data[i]);
   }
 
   return (
@@ -112,29 +137,46 @@ function Events() {
           )}
 
           <div className="token-event" onClick={eventName}>
-            <div className="digism event-name" onClick={checkNav}>
-              <a href="#"> Digisim</a>
+            <div className="0 digism event-name" onClick={checkNav}>
+              <a href="#" className="0">
+                {/* {' '} */}
+                Digisim
+              </a>
             </div>
-            <div className="ichip event-name" onClick={checkNav}>
-              <a href="#">I-Chip</a>
+            <div className="1 ichip event-name" onClick={checkNav}>
+              <a href="#" className="1">
+                I-Chip
+              </a>
             </div>
-            <div className="devbits event-name" onClick={checkNav}>
-              <a href="#">DevBits</a>
+            <div className="2 devbits event-name" onClick={checkNav}>
+              <a href="#" className="2">
+                DevBits
+              </a>
             </div>
-            <div className="commnet event-name" onClick={checkNav}>
-              <a href="#">CommNet</a>
+            <div className="3 commnet event-name" onClick={checkNav}>
+              <a href="#" className="3">
+                CommNet
+              </a>
             </div>
-            <div className="xiota event-name" onClick={checkNav}>
-              <a href="#">X-Iot-A</a>
+            <div className="4 xiota event-name" onClick={checkNav}>
+              <a href="#" className="4">
+                X-Iot-A
+              </a>
             </div>
-            <div className="cassandra event-name" onClick={checkNav}>
-              <a href="#">Cassandra</a>
+            <div className="5 cassandra event-name" onClick={checkNav}>
+              <a href="#" className="5">
+                Cassandra
+              </a>
             </div>
-            <div className="mosaic event-name" onClick={checkNav}>
-              <a href="#">Mosaic</a>
+            <div className="6 mosaic event-name" onClick={checkNav}>
+              <a href="#" className="6">
+                Mosaic
+              </a>
             </div>
-            <div className="funckit event-name" onClick={checkNav}>
-              <a href="#">Funckit</a>
+            <div className="7 funckit event-name" onClick={checkNav}>
+              <a href="#" className="7">
+                Funckit
+              </a>
             </div>
           </div>
         </div>
@@ -144,21 +186,21 @@ function Events() {
         <MdArrowForwardIos />
       </div>
 
-      <div className="events-main" onClick={slidemobile}>
-        <div className="event-body">
-          <div className="event-heading">
-            <div className="events-heading-box">EVENTS</div>
+      <div className="udyam-events-main" onClick={slidemobile}>
+        <div className="udyam-event-body">
+          <div className="udyam-event-heading">
+            <div className="udyam-events-heading-box">EVENTS</div>
           </div>
-          <div className="event-img">
+          <div className="udyam-event-img">
             <img src={bg} />
           </div>
-          <div className="event-title">{eventTitle}</div>
-          <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-          <div className="event-buttons">
-            <div className="ps-link">Problem Statement</div>
-            <div className="event-submit">SUBMIT</div>
+          <div className="udyam-event-title">{eventData.title}</div>
+          <div className="udyam-event-desc">{eventData.description}</div>
+          <div className="udyam-event-buttons">
+            <div className="ps-link">PROBLEM STATEMENT</div>
+            <div className="udyam-event-submit">SUBMIT</div>
           </div>
-          <div className="event-arrows">
+          <div className="udyam-event-arrows">
             <img id="left" src={left} alt="" onClick={lastone} />
             <img id="right" src={right} alt="" onClick={nextone} />
           </div>

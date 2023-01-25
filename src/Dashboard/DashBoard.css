@@ -2,13 +2,16 @@
 .dashboard-main {
   background-color: #001432;
   width: 100vw;
+  overflow: hidden;
   /* height: 200vh; */
 }
 .db-main-container {
+  margin-top: 3em;
   display: flex;
   flex-direction: row;
   width: 90vw;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 3vh auto 0 auto;
   padding-left: 6vw;
 }
 .db-user-details {
@@ -23,21 +26,23 @@
   border-radius: 5%;
 }
 .qr-and-name {
-  height: 30%;
+  height: auto;
   display: flex;
   flex-direction: row;
 }
 .qr-and-name .qr {
   width: 38%;
   padding: 2%;
+  font-size: 1.3rem;
 }
 .qr-and-name .userName {
   width: 58%;
   padding: 2%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .userDetails {
+  margin-top: 1.2rem;
   height: 50%;
 }
 .padding-between {
@@ -154,7 +159,7 @@
 
 /* Remove extra left and right margins, due to padding */
 .row {
-  margin: 0 -5px;
+  margin: 0 10%;
 }
 
 /* Clear floats after the columns */
@@ -204,7 +209,7 @@
     padding-left: 0;
   }
   .db-user-details {
-    margin: 10%;
+    margin: 10% auto;
     padding: 2%;
     width: 80%;
     height: 100%;
@@ -223,7 +228,7 @@
     padding: 3%;
   }
   .db-radianite {
-    margin: 10%;
+    margin: 10% auto;
     padding: 2%;
     width: 80%;
   }
@@ -249,5 +254,20 @@
   .radianiteHeading {
     font-size: 3rem;
     padding: 6%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .textLarge {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .userName h1 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .textLarge {
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 }

@@ -126,10 +126,22 @@
 }
 
 .udyam-icon {
-  height: 50vh;
+  /* height: 50vh; */
   /* width: 100%; */
-  position: relative;
+  /* position: relative;
   top: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  flex-direction: column; */
+
+  top: 50%;
+  transform: translateY(-50%);
+  /* height: 50vh; */
+  /* width: 100%; */
+  position: absolute;
+  /* top: 15vh; */
   display: flex;
   justify-content: space-around;
   align-self: center;
@@ -170,16 +182,17 @@
   top: 1.2%;
   margin: 5%;
   display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
-.udyam-ees {
-  /* z-index: 2; */
-  position: absolute;
-  width: 100%;
-  /* top: 55%; */
-  bottom: 0%;
-  height: 17vh;
+.eesimg {
+  width: 4vw;
+}
+.ees-div-img {
+  text-align: center;
+  position: fixed;
+  bottom: 5vh;
+  margin-top: 7vh;
 }
 #active {
   background: #4e4b4b;
@@ -251,12 +264,12 @@
 }
 .udyam-ees-mobile {
   display: flex;
-  justify-content: center;
-  margin-bottom: 1.4%;
+  /* justify-content: center; */
+  margin-bottom: 3vh;
   position: fixed;
-  left: 1%;
+  /* left: 1%; */
   top: 90vh;
-  width: 70px;
+  /* width: 70px; */
   z-index: 22;
 }
 
@@ -278,11 +291,15 @@
 } */
 @media screen and (max-width: 800px) {
   .udyam-nav {
-    width: 60vw;
+    width: 205px;
   }
+
   .udyam-nav p {
     font-size: 1.2rem;
   }
+  /* .udyam-icon {
+    top: 10vh;
+  } */
   .menu-icon {
     display: block;
     color: #fff;
@@ -320,6 +337,7 @@
     width: 6vh;
     height: 10vh;
   }
+
   .leader {
     left: 0;
     width: 60vw;
@@ -330,6 +348,14 @@
   }
   .hovered {
     gap: 1rem;
+  }
+  .eesimg {
+    margin-left: 5vw;
+    width: 6vh;
+    height: 10vh;
+  }
+  .ees-div-img {
+    margin-top: 10vh;
   }
 }
 @media screen and (max-width: 600px) {
