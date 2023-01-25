@@ -178,11 +178,7 @@ const Navbar = () => {
               </li>
             </ul>
             <GoogleButton
-              initialHTML={
-                <div className="menu-text" style={{ display: 'flex' }}>
-                  <span>Register</span>
-                </div>
-              }
+              initialHTML={<span>Register</span>}
               laterHTML={
                 <GoogleLogout
                   clientId={clientId}
