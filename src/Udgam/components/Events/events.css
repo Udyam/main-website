@@ -159,8 +159,6 @@
   justify-content: flex-end;
   align-items: flex-end;
   width: 80%;
-  /* position: absolute; */
-  /* height: 50px; */
   font-family: eventHeadingfont;
   font-size: 70px;
   color: #dadada;
@@ -181,10 +179,32 @@
   position: absolute;
   top: 20vh;
   left: 50vw;
+  margin-left: 50px;
 }
-.event-img-pc img {
+
+.circle-one {
+  position: absolute;
+  width: 30%;
+  left: 5%;
+  pointer-events: all;
+}
+
+.circle-two {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 30%;
+  pointer-events: all;
+}
+
+.main-img {
   width: 70%;
-  z-index: -1;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.event-img-pc img {
+  z-index: 0;
 }
 
 .event-title {
@@ -206,6 +226,7 @@
   width: 80%;
   display: flex;
   justify-content: flex-start;
+  z-index: 1;
 }
 
 .event-desc {
@@ -259,7 +280,7 @@
   right: 20%;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1290px) {
   .event-title {
     width: 30%;
     padding: 0 10px;
@@ -321,6 +342,13 @@
   }
   .event-img-mob img {
     width: 70%;
+  }
+  .circle-one-mob {
+    width: 10%;
+    position: absolute;
+  }
+  .circle-two-mob {
+    width: 10%;
   }
   .event-desc {
     font-size: 15px;
