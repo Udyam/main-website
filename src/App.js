@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './EES/Home';
 import About from './Udyam/components/about/about';
 import Events from './Udyam/components/Events/events';
-import Nav from './Udyam/components/Nav/Nav';
+// import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
 import HomePage from './Udyam/components/HomePage/HomePage';
 import Sponsors from './Udyam/components/Sponsors/Sponsors';
@@ -26,6 +26,7 @@ import Register from './EES/Register/Register';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ComingSoon from './EES/ComingSoon/ComingSoon';
+import Nav_udy_udg from './nav-udy-udg/nav-udy-udg';
 // import {useState,useEffect} from 'react';
 function App() {
   const clientId = process.env.REACT_APP_CLIENT_ID;
@@ -101,8 +102,7 @@ function App() {
             path="/udyam"
             element={
               <>
-                <Nav active="#none" />
-                <HomePage />
+                <Nav_udy_udg whichevent="udyam" active="#none" /> <HomePage />
               </>
             }
           />
@@ -133,7 +133,8 @@ function App() {
             path="/udyam/about"
             element={
               <>
-                <Nav active="#about" />
+                {/* <Nav active="#about" /> */}
+                <Nav_udy_udg whichevent="udyam" active="#about" />
                 <About />
               </>
             }
@@ -155,7 +156,7 @@ function App() {
             path="/udyam/events"
             element={
               <>
-                <Nav active="#event" />
+                <Nav_udy_udg whichevent="udyam" active="#event" />
                 <Events active="#event" />
               </>
             }
@@ -164,7 +165,7 @@ function App() {
             path="/udyam/sponsors"
             element={
               <>
-                <Nav active="#sponsors" />
+                <Nav_udy_udg whichevent="udyam" active="#sponsors" />
                 <Sponsors active="#sponsors" />
               </>
             }
@@ -173,7 +174,7 @@ function App() {
             path="/udyam/leaderboard"
             element={
               <>
-                <Nav active="#leaderboard" />
+                <Nav_udy_udg whichevent="udyam" active="#leaderboard" />
                 <LeaderBoard contentIndex={0} />
               </>
             }
@@ -184,6 +185,7 @@ function App() {
               <>
                 <div style={{ position: 'fixed', zIndex: '999' }}>
                   <Navbar />
+                  {/* <Nav_udy_udg whichevent="udgam" active="#none" /> */}
                 </div>
                 <ComingSoon />
               </>
