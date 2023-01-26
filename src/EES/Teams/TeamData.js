@@ -116,7 +116,7 @@ const ContactMail = [
     'nishanth.gounder.ece20@itbhu.ac.in'
   ],
   ['yash.jain.ece19@itbhu.ac.in', 'vikash.prajapati.ece19@itbhu.ac.in'],
-  ['ankur.agrawal.ece20@itbhu.ac.in', 'raina.jain.ece20@itbhu.ac.in', 'akash.kumar.ece21@itbhu.ac.in', 'avnesh.kumar.ece21@itbhu.ac.in', 'kumar.sonu.ece21@itbhu.ac.in', 'dhruv.chaudhary.ece21@itbhu.ac.in', 'anant.jain.ece21@itbhu.ac.in', 'md.athar.ece21@itbhu.ac.in'],
+  ['ankur.agrawal.ece20@itbhu.ac.in', 'raina.jain.ece20@itbhu.ac.in', 'akash.kumar.ece21@itbhu.ac.in', 'avnesh.kumar.ece21@itbhu.ac.in', 'dhruv.chaudhary.ece21@itbhu.ac.in', 'anant.jain.ece21@itbhu.ac.in', 'md.athar.ece21@itbhu.ac.in'],
   ['dtanuja.vasamsetty.ece20@itbhu.ac.in', 'korivi.vedharshini.ece20@itbhu.ac.in', 'riya.saini.ece20@itbhu.ac.in', 'kalpit.adhao.ece20@itbhu.ac.in'],
   [
     'shubhi.singh.ece20@itbhu.ac.in',
@@ -185,7 +185,7 @@ const ContactInstagram = [
     'https://www.instagram.com/nishu_07.02/'
   ],
   ['https://instagram.com/yashjain484?igshid=ZDdkNTZiNTM=', 'https://instagram.com/vikash_0307?igshid=ZDdkNTZiNTM='],
-  ['', 'https://www.instagram.com/raina_jainn/', 'https://instagram.com/akash_kourav03?igshid=ZDdkNTZiNTM=', 'https://instagram.com/avnesh141?igshid=ZDdkNTZiNTM=', '', 'https://www.instagram.com/dhruv_chaudhary_1380/', 'https://www.instagram.com/anant_jain_01/', 'https://www.instagram.com/mdathar44__/'],
+  ['', 'https://www.instagram.com/raina_jainn/', 'https://instagram.com/akash_kourav03?igshid=ZDdkNTZiNTM=', 'https://instagram.com/avnesh141?igshid=ZDdkNTZiNTM=', 'https://www.instagram.com/dhruv_chaudhary_1380/', 'https://www.instagram.com/anant_jain_01/', 'https://www.instagram.com/mdathar44__/'],
   ['https://instagram.com/tanuja_winniee?igshid=ZDdkNTZiNTM=', 'https://instagram.com/vedharshinikorivi?igshid=ZDdkNTZiNTM=', 'https://instagram.com/r.i.y.a_s.a.i.n.i?igshid=ZDdkNTZiNTM=', 'https://instagram.com/kalpit_adhao?igshid=ZDdkNTZiNTM='],
   [
     '',
@@ -255,7 +255,7 @@ const ContactLinkedIn = [
     'https://www.linkedin.com/in/nishanth-gounder-15477a224/'
   ],
   ['https://www.linkedin.com/in/yash-jain-780332208', 'https://www.linkedin.com/in/vikash-prajapati-a82ba01b0'],
-  ['', 'https://www.linkedin.com/in/raina-jain-6b4b68143/', 'https://www.linkedin.com/in/akash-kumar-371439246', 'https://www.linkedin.com/in/avnesh-kumar-08b549230', '', 'https://www.linkedin.com/in/dhruv-chaudhary-4b6179233', 'https://www.linkedin.com/in/anant-jain-8255a022b/', 'https://www.linkedin.com/in/md-athar4403/'],
+  ['', 'https://www.linkedin.com/in/raina-jain-6b4b68143/', 'https://www.linkedin.com/in/akash-kumar-371439246', 'https://www.linkedin.com/in/avnesh-kumar-08b549230', 'https://www.linkedin.com/in/dhruv-chaudhary-4b6179233', 'https://www.linkedin.com/in/anant-jain-8255a022b/', 'https://www.linkedin.com/in/md-athar4403/'],
   ['https://www.linkedin.com/in/devi-tanuja-vasamsetty-34b811218', 'https://www.linkedin.com/in/vedharshini-korivi-060317224', 'https://www.linkedin.com/in/riya-saini-ba7928229', 'https://www.linkedin.com/in/kalpit-adhao-6a4a25206'],
   [
     'https://www.linkedin.com/in/shubhi-singh-b13aba220',
