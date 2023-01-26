@@ -27,7 +27,7 @@ const MemberImage = [
     '/assets/TeamsSectionImages/Nishanth Gounder.jpg'
   ],
   ['/assets/TeamsSectionImages/Yash_Jain.jpg', '/assets/TeamsSectionImages/Vikash_Prajapati.jpg'],
-  ['/assets/TeamsSectionImages/Ankur Agarwal.jpg', '/assets/TeamsSectionImages/Raina Jain.jpg', '/assets/TeamsSectionImages/Akash_Kumar.jpg', '/assets/TeamsSectionImages/Avnesh kumar.jpg', 'https://imgur.com/chgHt2C.jpg', '/assets/TeamsSectionImages/Dhruv Chaudhary.jpg', '/assets/TeamsSectionImages/Anant Jain.jpg', '/assets/TeamsSectionImages/Md_Athar.jpg'],
+  ['/assets/TeamsSectionImages/Ankur Agarwal.jpg', '/assets/TeamsSectionImages/Raina Jain.jpg', '/assets/TeamsSectionImages/Akash_Kumar.jpg', '/assets/TeamsSectionImages/Avnesh kumar.jpg', 'https://imgur.com/chgHt2C.jpg', '/assets/TeamsSectionImages/Dhruv Chaudhary.jpg', 'https://imgur.com/pQqz3VF.jpg', '/assets/TeamsSectionImages/Md_Athar.jpg'],
   ['/assets/TeamsSectionImages/Devi_Tanuja_Vasamsetty.jpg', '/assets/TeamsSectionImages/Korivi Vedharshini.jpg', '/assets/TeamsSectionImages/Riya Saini.jpg', '/assets/TeamsSectionImages/Kalpit Adhao.jpg'],
   [
     '/assets/TeamsSectionImages/Shubhi Singh.jpg',
