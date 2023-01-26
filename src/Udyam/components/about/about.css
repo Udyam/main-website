@@ -47,7 +47,9 @@
 }
 .udx {
   font-family: aboutparaFont;
-  font-size: 18px;
+  font-size: 20px;
+  word-spacing: 0.5em;
+  line-height: 1.5em;
   height: 50vh;
   overflow-y: auto;
 }

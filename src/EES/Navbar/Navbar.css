@@ -380,3 +380,14 @@ nav {
     right: -28%;
   }
 }
+.logout-btn {
+  display: none;
+  position: fixed;
+  color: white;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+}
+.show-now {
+  display: block;
+}

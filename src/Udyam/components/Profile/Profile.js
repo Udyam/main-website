@@ -15,7 +15,7 @@ const Profile = () => {
     <div>
       <div className="top-bar">
         <h1 className="emma">{displayName1}</h1>
-        <Link to="/udyam/name">
+        <Link to="/udyam">
           <div className="profile">
             <img src={img_url} alt="G" />
           </div>

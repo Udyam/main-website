@@ -8,7 +8,7 @@ import { FaAward } from 'react-icons/fa';
 // import { IoIosArrowBack } from 'react-icons/io';
 // import { BiQrScan } from 'react-icons/bi';
 import ees from './ees.svg';
-// import udyam from './udgam.svg';
+// import udgam from './udgam.svg';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
@@ -27,7 +27,7 @@ const UdgamNav = (props) => {
   const [slideNav, setNav] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
   // const [activeNav, setActiveNav] = useState('#');
-  // const [udyamName, setUdyamName] = useState(true);
+  // const [udgamName, setudgamName] = useState(true);
   // const [udyevents,setudyevents]=useState('Digism');
   // let ind=0;
 
@@ -36,7 +36,7 @@ const UdgamNav = (props) => {
 
   //   // The current location.
   //   console.log(location);
-  //   if(location.pathname=='/udyam/about'){setActiveNav('#about');}
+  //   if(location.pathname=='/udgam/about'){setActiveNav('#about');}
 
   // }
   // useEffect(() => {
@@ -60,12 +60,12 @@ const UdgamNav = (props) => {
   // });
 
   // const Token = document.getElementsByClassName('.token')
-  // const UdyamNav = document.getElementsByClassName('.udyam-nav');
+  // const udgamNav = document.getElementsByClassName('.udgam-nav');
 
   // function checkNav() {
   //   // props.eventTitleFunc=e;
   //   // eventTitleFunc(e);
-  //   setUdyamName(true);
+  //   setudgamName(true);
   //   if (width > 800) {
   //     return;
   //   } else {
@@ -74,12 +74,12 @@ const UdgamNav = (props) => {
   //     } else {
   //       document.querySelector('.token').style.display = 'none';
   //     }
-  //     document.querySelector('.udyam-nav').style.display = 'none';
+  //     document.querySelector('.udgam-nav').style.display = 'none';
   //   }
   //   // props.eventTitleFunc();
   // }
   function menuNav() {
-    // setUdyamName(false);
+    // setudgamName(false);
     // if (slideLeader === false) {
     //   document.querySelector('.leader').style.display = 'block';
     // } else {
@@ -89,7 +89,7 @@ const UdgamNav = (props) => {
     // document.querySelector('.leader').style.display = 'block';
 
     setNav(true);
-    document.querySelector('.udyam-nav').style.display = 'block';
+    document.querySelector('.udgam-nav').style.display = 'block';
     // setNav(!slideNav);
   }
 
@@ -134,7 +134,7 @@ const UdgamNav = (props) => {
   //   // setLeader(true);
   // }
   function helloNav() {
-    // if(width<=800){document.querySelector('.udyam-nav').style.display = 'none';}
+    // if(width<=800){document.querySelector('.udgam-nav').style.display = 'none';}
     setNav(false);
   }
 
@@ -145,26 +145,26 @@ const UdgamNav = (props) => {
         <div className="bg"></div>
         <div className="bg_filter"></div>
       </div>
-      {/* {(udyamName || true) && width < 800 && <Profile />} */}
+      {/* {(udgamName || true) && width < 800 && <Profile />} */}
       {(slideNav || width > 800) && (
-        <div className="udyam-nav">
+        <div className="udgam-nav">
           {width < 800 && (
             <div className="close" onClick={helloNav}>
               <AiOutlineClose />
             </div>
           )}
-          <div className="udyam-img">
+          <div className="udgam-img">
             <Link to="/udgam" style={{ textDecoration: 'none' }}>
-              <img className="udyam-logo" src="/assets/udgam_nav_img.svg" alt="hero" />
+              <img className="udgam-logo" src="/assets/udgam_nav_img.svg" alt="hero" />
             </Link>
           </div>
-          <div className="udyam-icon">
+          <div className="udgam-icon">
             {/* <div
               className="name hovered"
               // ind="#name"
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}>
-              <Link to="/udyam/name" className="game-changer" style={{ textDecoration: 'none' }}>
+              <Link to="/udgam/name" className="game-changer" style={{ textDecoration: 'none' }}>
                 <BiQrScan className="info" />
                 <p>Name</p>
               </Link>
@@ -180,7 +180,7 @@ const UdgamNav = (props) => {
                 <AiOutlineInfoCircle className="info" />
                 <p>About Us</p>
               </Link>
-              {/* <a href="/udyam/about" className="game-changer">
+              {/* <a href="/udgam/about" className="game-changer">
                 <AiOutlineInfoCircle className="info" />
                 <p>About Us</p>
               </a> */}
@@ -203,18 +203,18 @@ const UdgamNav = (props) => {
               </Link>
             </div>
             <div className="leaderboard hovered" id={props.active === '#leaderboard' ? 'active' : ''}>
-              <Link to="/udyam/leaderboard" className="game-changer" style={{ textDecoration: 'none' }}>
+              <Link to="/udgam/leaderboard" className="game-changer" style={{ textDecoration: 'none' }}>
                 <FaAward className="info" />
                 <p>Leaderboard</p>
               </Link>
             </div>
           </div>
-          {/* <div className="udyam-ees">
+          {/* <div className="udgam-ees">
                     <img className='ees-img' src={ees} alt="hreo" />
                 </div> */}
         </div>
       )}
-      <div className="udyam-ees-mobile">
+      <div className="udgam-ees-mobile">
         <Link to="/">
           <img className="ees-img-mobile" src={ees} alt="hreo" />
         </Link>

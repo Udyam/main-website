@@ -7,17 +7,17 @@ import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
 import HomePage from './Udyam/components/HomePage/HomePage';
 import Sponsors from './Udyam/components/Sponsors/Sponsors';
-import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
-import DashBoard from './Dashboard/DashBoard';
-import UdgamAbout from './Udgam/components/About/UdgamAbout';
-import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
-import UdgamEvents from './Udgam/components/Events/udgamEvents';
-import UDGmain from './Udgam/components/main-page/main-page';
-// import Teams from './EES/Teams/Teams';
-import Mashal from './Mashal/mashal';
-import Masponsor from './Mashal/components/Sponsors/Sponsors';
-import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
-import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
+// import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
+import DashBoard from './EES/Dashboard/DashBoard';
+// import UdgamAbout from './Udgam/components/About/UdgamAbout';
+// import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
+// import UdgamEvents from './Udgam/components/Events/udgamEvents';
+// import UDGmain from './Udgam/components/main-page/main-page';
+import Teams from './EES/Teams/Teams';
+// import Mashal from './Mashal/mashal';
+// import Masponsor from './Mashal/components/Sponsors/Sponsors';
+// import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
+// import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
 import Navbar from './EES/Navbar/Navbar';
 
 import { gapi } from 'gapi-script';
@@ -71,7 +71,18 @@ function App() {
             path="/gallery"
             element={
               <>
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
                 <ComingSoon />
+              </>
+            }
+          />
+          <Route
+            path="/team"
+            element={
+              <>
+                <Teams />
               </>
             }
           />
@@ -79,18 +90,13 @@ function App() {
             path="/team"
             element={
               <>
-                <Teams />
-              </>
-            }
-          /> */}
-          <Route
-            path="/team"
-            element={
-              <>
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
                 <ComingSoon />
               </>
             }
-          />
+          /> */}
           <Route
             path="/udyam"
             element={
@@ -104,8 +110,10 @@ function App() {
             path="/mashal"
             element={
               <>
-                {/* <Nav active="#none" /> */}
-                <Mashal />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -113,8 +121,10 @@ function App() {
             path="/mashal/sponsors"
             element={
               <>
-                {/* <Nav active="#none" /> */}
-                <Masponsor />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -133,7 +143,7 @@ function App() {
             path="/dashboard"
             element={
               <>
-                <div style={{ position: 'fixed' }}>
+                <div style={{ position: 'fixed', zIndex: '999' }}>
                   <Navbar />
                 </div>
                 <DashBoard />
@@ -172,8 +182,10 @@ function App() {
             path="/udgam"
             element={
               <>
-                <UdgamNav active="#none" />
-                <UDGmain />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -181,8 +193,10 @@ function App() {
             path="/udgam/sponsors"
             element={
               <>
-                <UdgamNav active="#sponsors" />
-                <UdgamSponsors />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -190,8 +204,10 @@ function App() {
             path="/udgam/about"
             element={
               <>
-                <UdgamNav active="#about" />
-                <UdgamAbout />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -199,8 +215,10 @@ function App() {
             path="/udgam/events"
             element={
               <>
-                <UdgamNav active="#event" />
-                <UdgamEvents active="#event" />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -208,7 +226,10 @@ function App() {
             path="/mashal/leaderboard"
             element={
               <>
-                <MashalLeaderboard />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -216,7 +237,10 @@ function App() {
             path="/mashal/event"
             element={
               <>
-                <MashalEvent />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />

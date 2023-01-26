@@ -3,7 +3,7 @@
   background-color: #001432;
   width: 100vw;
   overflow: hidden;
-  /* height: 200vh; */
+  min-height: 100vh;
 }
 .db-main-container {
   margin-top: 3em;

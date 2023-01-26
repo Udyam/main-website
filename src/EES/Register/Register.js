@@ -46,8 +46,8 @@ const Register = () => {
       headers: { Authorization: window.sessionStorage.getItem('tokenId') },
       data: profdata
     })
-      .then((resp) => {
-        console.log(resp);
+      .then((res) => {
+        console.log(res);
 
         setTimeout(() => {
           toast.success('Registered Successfully', {
@@ -56,8 +56,8 @@ const Register = () => {
             autoClose: 1200
           });
         }, 1000);
-        window.sessionStorage.setItem('registered_email', profdata.email);
-        window.sessionStorage.setItem('profileData', JSON.stringify(profdata));
+        window.sessionStorage.setItem('registered_email', res.data.email);
+        window.sessionStorage.setItem('profileData', JSON.stringify(res.data));
         navigate('/');
       })
       .catch((err) => {
@@ -143,7 +143,7 @@ const Register = () => {
             <option value="FOURTH">Fourth</option>
             <option value="FIFTH">Fifth</option>
           </select>
-          <input type="text" {...register('referral')} placeholder="Referral" required />
+          <input type="text" {...register('referral')} placeholder="Referral" />
           <button type="submit" className="form-submit">
             <span>SIGN UP</span>
           </button>
