@@ -110,25 +110,25 @@ h6 {
   transform: rotate(-90deg);
   font-family: 'Inconsolata';
 }
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .mashal-aboutUs-main-container p {
     font-size: 1rem;
   }
   .mashal-aboutUs-main-container {
-    /* background-color: #3e3e3e; */
-    /* background: url('../image/BG\ LAYER-Mobile.svg') no-repeat;
-    background-size: cover; */
+    background: url('../image/BG\ LAYER-Mobile\(1\).jpg') no-repeat;
+    background-size: cover;
     overflow: hidden;
   }
   .mashal-aboutUS-inner-container {
+    position: relative;
+    top: 6vh;
     height: 90vh;
     width: 90vw;
     padding: 5vh 5vw;
     left: 0;
     /* top: 10vh; */
     flex-direction: column;
-    background: url('../image/Mashal-Home2.png') no-repeat;
-    background-size: cover;
+    background: none;
   }
   .social-icons {
     display: none;
@@ -137,7 +137,9 @@ h6 {
     display: none;
   }
   .mashal-aboutUs-heading-container-mobile {
+    position: relative;
     display: flex;
+    /* top: 5vh; */
     letter-spacing: 1vh;
     display: flex;
     justify-content: center;
