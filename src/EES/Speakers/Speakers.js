@@ -32,7 +32,7 @@ const Speakers = () => {
     },
     {
       name: 'Aman Shreshtha',
-      title: 'MS(Research) CSE,IIT Delhi(2020-22) ECE,IIT (BHU) Varanasi 2020',
+      title: 'Research Scholar(PhD) at CSE,IIT Delhi, ECE, IIT (BHU) Varanasi 2020',
       backContent: 'Aman Shrestha is a Research Scholar at IIT Delhi and also a distinguished alumnus of IIT(BHU), Varanasi.',
       image: person4,
       links: ['https://www.linkedin.com/in/aman-shreshtha/']
