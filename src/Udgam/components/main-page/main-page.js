@@ -31,7 +31,7 @@ function UDGmain() {
   return (
     <div id="main-udgam" onClick={clicked}>
       <div className="title-udgam">UDGAM</div>
-      <motion.div className="moving" key={counter} initial={{ y: '100vh' }} animate={{ y: '0vh' }} transition={{ duration: 2, ease: 'easeInOut' }} style={{ backgroundImage: `url(${arrimg[(counter + 1) % arrimg.length]})` }}>
+      <motion.div className="moving" key={counter} initial={{ x: '100vw' }} animate={{ x: '0vw' }} transition={{ duration: 2, ease: 'easeInOut' }} style={{ backgroundImage: `url(${arrimg[(counter + 1) % arrimg.length]})` }}>
         {/* <img src={arrimg[(counter + 1) % arrimg.length]} /> */}
       </motion.div>
       <motion.div className="namesdiv" key={counter} initial={{ x: '50vw', opacity: 0 }} animate={{ x: '30vw', opacity: 1 }} transition={{ duration: 3 }}>

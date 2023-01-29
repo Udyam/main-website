@@ -186,6 +186,7 @@ function App() {
                 <div style={{ position: 'fixed', zIndex: '999' }}>
                   <Navbar />
                   {/* <Nav_udy_udg whichevent="udgam" active="#none" /> */}
+                  {/* <UDGmain /> */}
                 </div>
                 <ComingSoon />
               </>
