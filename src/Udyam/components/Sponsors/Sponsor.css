@@ -12,7 +12,7 @@
   left: 12%;
 }
 .sponser img {
-  height: 8rem;
+  height: 10rem;
 }
 .sponsers h1 {
   display: inline-block;
@@ -22,7 +22,7 @@
   font-size: 65px;
   font-weight: 600;
   font-family: homePageHeadingFont;
-  background: -webkit-linear-gradient(white, black);
+  background: -webkit-linear-gradient(white, rgb(160, 158, 158));
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -37,12 +37,17 @@
 }
 .sponser {
   display: inline-block;
-  width: 19%;
+  width: 25%;
   /* height: 16rem; */
-  margin: 10px;
+  margin: 40px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.sponsorImage {
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 10px rgba(255, 255, 255, 0.25);
 }
 
 /* .sponser1 {
@@ -99,13 +104,21 @@
   display: inline-block;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 456px) {
   .sponser {
     width: 80%;
+    margin: 35px;
     /* height: 45vh; */
   }
-  sponsers h1 {
+  .sponsers h1 {
     font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 456px) and (max-width: 600px) {
+  .sponser {
+    width: 60%;
   }
 }
 
@@ -119,9 +132,21 @@
   }
 }
 
-@media (min-width: 429px) and (max-width: 1071px) {
+@media (min-width: 600px) and (max-width: 635px) {
   .sponser {
-    width: 10rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 635px) and (max-width: 1071px) {
+  .sponser {
+    width: 35%;
     /* height: 13rem; */
+  }
+}
+
+@media (min-width: 1071px) and (max-width: 1142px) {
+  .sponser {
+    width: 32%;
   }
 }

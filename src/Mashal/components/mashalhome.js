@@ -1,4 +1,6 @@
 import './mhome.css';
+import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import React from 'react';
 // import bg2 from './image/Mashal-Home2.png';
 import logod from './image/MASHAL LOGO.svg';
@@ -17,10 +19,19 @@ function Mhome() {
       <div className="three">
         {/* <img src={bg2} className='bg3' alt="" /> */}
         <div className="navx">
-          <p className="tpx">LEADERBOARD</p>
-          <p className="tpx">EVENTS</p>
-          <p className="tpx">ABOUT US</p>
-          <p className="spx">sponsors ↗</p>
+          <Link to="/mashal/leaderboard">
+            <p className="tpx">LEADERBOARD</p>
+          </Link>
+          <Link to="/mashal/events">
+            <p className="tpx">EVENTS</p>
+          </Link>
+          <Link to="/mashal/about">
+            <p className="tpx">ABOUT US</p>
+          </Link>
+
+          <Link to="/mashal/sponsors">
+            <p className="spx">sponsors ↗</p>
+          </Link>
         </div>
         <div className="textx">
           <img src={mtext} className="mtext" alt="" />
@@ -30,12 +41,23 @@ function Mhome() {
           <img src={logod} className="logod" alt="" />
         </div>
       </div>
-      <div className="four">
-        <img src={instax} className="pxet" alt="" />
-        <img src={twitterx} className="pxet" alt="" />
-        <img src={fbx} className="pxet" alt="" />
-        <img src={worldx} className="pxet" alt="" />
-        <img src={followx} className="pxd" alt="" />
+      <div className="fourth">
+        <a href="https://www.instagram.com/mashal_ees/">
+          <img src={instax} className="pxet" alt="" />
+        </a>
+        <a href="https://www.youtube.com/@EES_IITBHU ">
+          {' '}
+          <img src={twitterx} className="pxet" alt="" />
+        </a>
+        <a href="https://www.facebook.com/ees.fiesta/">
+          <img src={fbx} className="pxet" alt="" />
+        </a>
+        <a href="https://discord.gg/gNrEW8vp4G">
+          <img src={worldx} className="pxet" alt="" />
+        </a>
+        <a href="#">
+          <img src={followx} className="pxd" alt="" />
+        </a>
       </div>
       <div className="five"></div>
     </div>

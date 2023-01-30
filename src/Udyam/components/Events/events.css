@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Russo+One&display=swap');
 
-.events-main {
+.udyam-events-main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
   width: 100vw;
 }
 
-.events-list {
+.udyam-events-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,12 +27,12 @@
 }
 
 @font-face {
-  font-family: eventListFont;
+  font-family: udyam-eventListFont;
   src: url('./Comfortaa-Regular.ttf');
 }
 
-.events-item {
-  font-family: eventListFont;
+.udyam-events-item {
+  font-family: udyam-eventListFont;
   color: #6f6f6f;
   margin: 20px;
 }
@@ -42,7 +42,7 @@
   text-decoration: underline;
 }
 
-.event-body {
+.udyam-event-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,133 +54,173 @@
 }
 
 @font-face {
-  font-family: eventHeadingFont;
+  font-family: udyam-eventHeadingFont;
   src: url('./RussoOne-Regular.ttf');
 }
 
-.event-heading {
+.udyam-event-heading {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
-  /* position: absolute; */
+  width: auto;
+  position: absolute;
   /* height: 50px; */
-  font-family: eventHeadingfont;
-  font-size: 70px;
+  font-family: udyam-eventHeadingfont;
+  font-size: 75px;
   color: #dadada;
-  /* margin-top: 50px; */
+  margin-left: -52vw;
+  top: 20px;
 }
 
-.events-heading-box {
-  margin-left: 100px;
-  font-weight: 600;
+.udyam-events-heading-box {
+  font-weight: 900;
   font-family: homePageHeadingFont;
-  background: -webkit-linear-gradient(white, black);
+  background: -webkit-linear-gradient(white, rgb(160, 158, 158));
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-colo: transparent;
+  letter-spacing: 2px;
 }
 
-.event-img {
+.getback-btn {
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  top: 48.8vh;
+  z-index: 9;
+}
+
+.udyam-event-img {
   display: flex;
   justify-content: center;
-  width: 50%;
-  padding: 10px 0;
+  width: 60vw;
+  margin-bottom: 35px;
+  margin-top: 13vh;
+  /* padding: 20px 0px; */
   /* height: 300px; */
 }
-.event-img img {
+
+.udyam-event-img img {
   width: 50%;
 }
 
-.event-title {
+.udyam-event-title {
   display: flex;
   justify-content: center;
-  font-family: eventHeadingFont;
+  font-family: udyam-eventHeadingFont;
   font-size: 40px;
-  padding: 10px;
+  padding: 7px;
   width: 70%;
   color: white;
   background-color: #232323;
   border-radius: 10px;
+  font-style: normal;
+  letter-spacing: 3px;
 }
 
 @font-face {
-  font-family: eventDescFont;
+  font-family: udyam-eventDescFont;
   src: url('./Poppins-Regular.otf');
 }
-.event-desc {
+
+.udyam-event-desc {
   display: flex;
-  font-family: eventDescFont;
+  font-family: udyam-eventDescFont;
   font-size: 20px;
-  line-height: 25px;
-  width: 70%;
+  line-height: 26px;
+  width: 60%;
   color: white;
-  margin: 20px;
+  margin: 25px;
+  letter-spacing: 1.2px;
+  text-align: center;
 }
 
-.event-buttons {
+.udyam-event-buttons {
   display: flex;
   justify-content: space-evenly;
   width: 70%;
-  height: 40px;
+  height: 45px;
+  margin-top: 10px;
 }
 
-.event-arrows {
+.udyam-event-arrows {
   display: none;
 }
 
 .ps-link,
-.event-submit {
+.udyam-event-submit {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 28%;
   /* height: 50px; */
   color: white;
   background-color: #232323;
-  border-radius: 3px;
-  font-size: 12px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
   font-family: 'Poppins', sans-serif;
+  box-shadow: 0px 0px 5px white;
+  cursor: pointer;
+  text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-  .events-main {
-    /* position: static; */
+@media (max-width: 800px) {
+  .udyam-events-main {
     left: 0;
     width: 100vw;
     height: 90vh;
   }
-  .event-heading {
+
+  .udyam-event-heading {
     font-size: 50px;
   }
-  .events-heading-box {
+
+  .udyam-events-heading-box {
     margin-left: 50px;
   }
-  .event-body {
+
+  .udyam-event-body {
     margin: 0;
     padding: 0;
   }
-  .event-img {
+
+  .udyam-event-img {
     width: 80%;
   }
-  .event-img img {
+
+  .udyam-event-img img {
     width: 90%;
   }
-  .event-desc {
+
+  .udyam-event-desc {
     font-size: 15px;
     line-height: 20px;
   }
-  .event-title {
+
+  .udyam-event-title {
     font-size: 30px;
   }
-  .event-arrows {
+
+  .udyam-event-arrows {
     display: flex;
     margin: 3vh 0vw;
+    position: fixed;
+    bottom: 20px;
   }
 
   #left {
     margin-right: 35vw;
   }
+
   #right {
     margin-left: 35vw;
+  }
+  .udyam-event-buttons {
+    display: block;
+  }
+  .udyam-event-buttons div {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
   }
 }

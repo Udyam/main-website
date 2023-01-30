@@ -8,17 +8,18 @@ body {
   display: -moz-inline-grid;
 }
 .contain {
-  height: auto;
+  height: 105vh;
   background-color: rgba(0, 20, 50, 1);
+  position: relative;
+  bottom: 10vh;
 }
 .head {
   display: inline-block;
   position: relative;
   left: 6rem;
-  top: 2%;
 }
 .head h1 {
-  font-size: 5vw;
+  font-size: 3rem;
   color: white;
   font-family: 'League Sparten', sans-serif;
   margin-bottom: 0;
@@ -76,12 +77,13 @@ body {
   left: 6rem;
   top: 4rem;
   width: 56vw;
-  height: 35vw;
+  height: 32vw;
   padding-bottom: 5rem;
   border-radius: 10px;
   background-image: url('./images/bgContent.png');
   background-position: center;
   background-size: cover;
+  text-align: center;
   /* background-repeat: no-repeat; */
 }
 .content-box::-webkit-scrollbar {
@@ -96,10 +98,10 @@ body {
   position: relative;
   display: inline-block;
   font-size: 2rem;
-  left: 10%;
   margin-top: 1rem;
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  width: 80%;
+  /* padding-bottom: 3rem; */
   color: rgba(152, 87, 211, 1);
 }
 .content {
@@ -110,22 +112,27 @@ body {
   bottom: 2vw;
   margin-left: 4vw;
   overflow-y: auto;
+  text-align: justify;
 }
 
 .content p {
   margin-top: 0;
+  font-family: Poppins;
 }
 
 .square1 {
   position: relative;
   z-index: 1;
-  top: 25vw;
+  top: 24vw;
   left: -5vw;
-  width: 28vw;
-  height: 25vw;
+  width: 25vw;
+  height: 22vw;
   box-shadow: 0 0 200px rgba(62, 84, 211, 1);
   transform: perspective(300px) rotateY(-13deg);
   border: solid 1vw rgba(62, 84, 211, 1);
+  /* -webkit-transition: all 0.05s ease-in-out 0s;
+  -moz-transition: all 0.05s ease-in-out 0s;
+  transition: all 0.05s ease-in-out 0s; */
 }
 
 .square2 {
@@ -140,28 +147,31 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  /* -webkit-transition: all 0.05s ease-in-out 0s;
+  -moz-transition: all 0.05s ease-in-out 0s;
+  transition: all 0.05s ease-in-out 0s; */
 }
 .squares {
   display: inline-block;
   position: relative;
   left: 1vw;
   margin-bottom: 0;
-  bottom: 13vw;
+  bottom: 26%;
 }
 
 @media (max-width: 850px) {
   .squares {
-    bottom: 13vw;
+    bottom: 17%;
   }
 }
 @media (min-width: 850px) and (max-width: 950px) {
   .content {
-    height: 23vw;
+    height: 73%;
   }
 }
 @media (max-width: 1100px) and (min-width: 850px) {
   .squares {
-    bottom: 15vw;
+    bottom: 20%;
   }
   .square1 {
     bottom: 20vw;
@@ -171,7 +181,7 @@ body {
   display: inline-block;
   position: relative;
   left: 9vw;
-  top: 13vw;
+  top: 15vw;
 }
 .dot {
   height: 10px;
@@ -191,19 +201,38 @@ body {
   width: 100%;
 }
 .squares:hover .square1 {
-  width: 23vw;
-  height: 22vw;
+  width: 21vw;
+  height: 20vw;
   left: 0;
-  top: 25vw;
+  top: 23vw;
   transform: none;
 }
 .squares:hover .square2 {
-  width: 23vw;
-  height: 22vw;
+  width: 21vw;
+  height: 20vw;
   transform: none;
 }
 
+/* .hover1 {
+  width: 21vw;
+  height: 20vw;
+  left: 0;
+  top: 23vw;
+  transform: none;
+}
+
+.hover2 {
+  width: 21vw;
+  height: 20vw;
+  transform: none;
+} */
+
 @media screen and (max-width: 600px) {
+  .contain {
+    height: auto;
+    margin-top: 30px;
+    bottom: 0;
+  }
   .base1 {
     width: 17rem;
   }
@@ -247,25 +276,25 @@ body {
   .content-box {
     left: auto;
     width: 90%;
-    height: 130vw;
+    height: 120vw;
     margin-top: -40vw;
-    text-align: justify;
   }
   .content-box h3 {
     position: static;
     display: inline-block;
-    font-size: 150%;
+    font-size: 135%;
     margin-top: 15%;
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
     margin-bottom: 25px;
     text-align: center;
   }
   .content {
-    width: 90%;
+    width: 80%;
     height: 82vw;
+    margin: auto;
   }
   .content p {
-    font-size: 100%;
+    font-size: 85%;
   }
   .square1 {
     width: 55vw;
@@ -291,7 +320,20 @@ body {
     top: 41vw;
     transform: none;
   }
+  .hover1 {
+    width: 40vw;
+    height: 38vw;
+    left: 0;
+    top: 41vw;
+    transform: none;
+  }
   .squares:hover .square2 {
+    width: 40vw;
+    height: 38vw;
+    transform: none;
+  }
+
+  .hover2 {
     width: 40vw;
     height: 38vw;
     transform: none;
@@ -300,7 +342,7 @@ body {
 
 @media (max-width: 400px) {
   .squares {
-    bottom: 8vw;
+    bottom: 13vw;
   }
   .square1 {
     bottom: 20vw;
@@ -309,9 +351,6 @@ body {
 @media (min-width: 600px) and (max-width: 1100px) {
   .dot-pair {
     margin-bottom: -1vw;
-  }
-  .content-box h3 {
-    padding-bottom: 2rem;
   }
 }
 
@@ -328,8 +367,8 @@ body {
 }
 @media (max-width: 700px) and (min-width: 600px) {
   .squares {
-    left: 5vw;
-    bottom: 10vw;
+    left: 7vw;
+    bottom: 5vw;
   }
   .content {
     height: 15vw;
@@ -341,4 +380,16 @@ body {
 
 body {
   overflow-x: hidden;
+}
+
+@media (min-width: 1200px) {
+  .content-box h3 {
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 835px) and (max-width: 980px) {
+  .squares {
+    left: 5vw;
+    bottom: 13%;
+  }
 }

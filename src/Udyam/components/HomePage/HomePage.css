@@ -23,6 +23,13 @@
   background: -webkit-linear-gradient(white, black);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: justify;
+}
+
+.heading h5 {
+  background: rgb(186, 181, 181);
+  background-clip: text;
+  font-size: 0.3em;
 }
 
 #globe {
@@ -40,7 +47,7 @@
     font-size: 27px;
   }
   #globe {
-    margin-left: 332px;
+    margin-left: 450px;
   }
 }
 
@@ -49,7 +56,9 @@
     font-size: 24px;
   }
   #globe {
-    margin-left: 231px;
+    margin-left: 400px;
+    /* width: 600px !important;
+      height: 350px !important; */
   }
 }
 
@@ -64,6 +73,10 @@
   .heading {
     position: inherit;
     margin: 15vh;
+    width: 100%;
+  }
+  .heading {
+    text-align: center;
   }
   #globe {
     /* width: 600px !important;
@@ -75,11 +88,13 @@
     overflow-y: hidden;
   }
 }
+
 @media screen and (max-width: 600px) {
   .main-container {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 488px) {
   #globe {
     width: 100vw !important;

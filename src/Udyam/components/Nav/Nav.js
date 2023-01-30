@@ -12,16 +12,65 @@ import udyam from '../Nav/udyam.svg';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
-import { AiOutlineClose } from 'react-icons/ai';
+// import { IoIosArrowBack } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-
+import { GoogleLogin } from 'react-google-login';
 import Profile from '../Profile/Profile';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
 // // ..
 // AOS.init();
+import { toast } from 'react-toastify';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
+const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
+const clientId = process.env.REACT_APP_CLIENT_ID;
 
 const Nav = (props) => {
+  const navigate = useNavigate();
+  const onGoogleLoginSuccess = (res) => {
+    console.log('SUCCESS!!! Current User: ', res);
+    window.sessionStorage.setItem('profileData', JSON.stringify(res.profileObj));
+    window.sessionStorage.setItem('tokenId', res.tokenId);
+    window.sessionStorage.setItem('imageUrl', res.profileObj.imageUrl);
+    // console.log('res.profileObj: ', res);
+    axios({
+      url: 'https://udyam.pythonanywhere.com/auth/google-login/',
+      method: 'post',
+      headers: { Authorization: res.tokenId },
+      data: {
+        email: res.profileObj.email
+      }
+    })
+      .then((res) => {
+        console.log('res: ', res);
+        if (res.status === 200) {
+          window.sessionStorage.setItem('registered_email', res.data.email);
+          window.sessionStorage.setItem('profileData', JSON.stringify(res.data));
+          toast.success('Login was successfull!', {
+            theme: 'dark',
+            position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
+            autoClose: 1200
+          });
+          console.log('stored Data', JSON.parse(window.sessionStorage.getItem('profileData')));
+          navigate('/dashboard');
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.warning('Your registeration is incomplete.', {
+          theme: 'dark',
+          position: window.innerWidth < 600 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.BOTTOM_RIGHT,
+          autoClose: 3000
+        });
+        navigate('/dashboard');
+      });
+  };
+
+  const onGoogleLoginFailure = (res) => {
+    console.log('FAILURE!!! res: ', res);
+  };
   // const [slideEvent, setEvent] = useState('false');
   // const [slideLeader, setLeader] = useState('false');
   const [slideNav, setNav] = useState(false);
@@ -153,11 +202,10 @@ const Nav = (props) => {
       {(udyamName || true) && width < 800 && <Profile />}
       {(slideNav || width > 800) && (
         <div className="udyam-nav">
-          {width < 800 && (
-            <div className="close" onClick={helloNav}>
-              <AiOutlineClose />
-            </div>
-          )}
+          <div className="close" onClick={helloNav}>
+            <IoIosArrowBack />
+          </div>
+
           <div className="udyam-img">
             <Link to="/udyam" style={{ textDecoration: 'none' }}>
               <img className="udyam-logo" src={udyam} alt="hero" />
@@ -170,10 +218,31 @@ const Nav = (props) => {
               onClick={names}
               id={props.active === '#name' ? 'active' : ''}
             >
-              <Link to="/udyam/name" className="game-changer" style={{ textDecoration: 'none' }}>
-                <BiQrScan className="info" />
-                <p>Name</p>
-              </Link>
+              {window.sessionStorage.getItem('registered_email') == null ? (
+                <GoogleLogin
+                  theme="dark"
+                  accessType="online"
+                  disabled={false}
+                  client_id={clientId} // your Google app client ID
+                  buttonText="Sign in with Google"
+                  onSuccess={onGoogleLoginSuccess} // perform your user logic here
+                  onFailure={onGoogleLoginFailure} // handle errors here
+                  cookiePolicy={'single-host-origin'}
+                  scope={scope}
+                  render={(renderProps) => (
+                    <Link to="#" className="game-changer" style={{ textDecoration: 'none' }} onClick={renderProps.onClick}>
+                      <BiQrScan className="info" />
+                      <p>Name</p>
+                    </Link>
+                  )}
+                />
+              ) : (
+                <Link to="/dashboard" className="game-changer" style={{ textDecoration: 'none' }}>
+                  <BiQrScan className="info" />
+                  <p>Name</p>
+                </Link>
+              )}
+              ;
             </div>
             <div
               className="about hovered"
@@ -215,9 +284,9 @@ const Nav = (props) => {
               </Link>
             </div>
           </div>
-          <div className="udyam-ees-mobile">
-            <Link to="/">
-              <img className="ees-img-mobile" src={ees} alt="hreo" />
+          <div className="hovered ees-div-img">
+            <Link to="/" className="game-changer">
+              <img className="eesimg" src={ees} alt="hreo" />
             </Link>
           </div>
           {/* <div className="udyam-ees">

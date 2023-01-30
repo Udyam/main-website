@@ -1,30 +1,36 @@
-/* eslint-disable prettier/prettier */
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './EES/Home';
 import About from './Udyam/components/about/about';
 import Events from './Udyam/components/Events/events';
-import Nav from './Udyam/components/Nav/Nav';
+// import Nav from './Udyam/components/Nav/Nav';
 import LeaderBoard from './Udyam/components/LeaderBoard/LeaderBoard';
 import HomePage from './Udyam/components/HomePage/HomePage';
 import Sponsors from './Udyam/components/Sponsors/Sponsors';
-import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
-import DashBoard from './Udyam/components/DashBoard/DashBoard';
-import UdgamAbout from './Udgam/components/About/UdgamAbout';
-import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
-import UdgamEvents from './Udgam/components/Events/udgamEvents';
-import UDGmain from './Udgam/components/main-page/main-page';
-
-import Mashal from './Mashal/mashal';
-import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
-import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
+// import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
+import DashBoard from './EES/Dashboard/DashBoard';
+// import UdgamAbout from './Udgam/components/About/UdgamAbout';
+// import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
+// import UdgamEvents from './Udgam/components/Events/udgamEvents';
+// import UDGmain from './Udgam/components/main-page/main-page';
+import Teams from './EES/Teams/Teams';
+// import Mashal from './Mashal/mashal';
+// import Masponsor from './Mashal/components/Sponsors/Sponsors';
+// import MashalLeaderboard from './Mashal/components/MashalLeaderboard/MashalLeaderboard';
+// import MashalEvent from './Mashal/components/MashalEvent/mashalEvent';
+import Navbar from './EES/Navbar/Navbar';
 
 import { gapi } from 'gapi-script';
 import { useEffect } from 'react';
 import Register from './EES/Register/Register';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ComingSoon from './EES/ComingSoon/ComingSoon';
+import Nav_udy_udg from './nav-udy-udg/nav-udy-udg';
 // import {useState,useEffect} from 'react';
 function App() {
-  const clientId = '868476725043-56q2l17h7bf2a1fpvkqp04t5br7mti4p.apps.googleusercontent.com';
+  const clientId = process.env.REACT_APP_CLIENT_ID;
+
   const scope = 'https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/user.organization.read';
 
   useEffect(() => {
@@ -48,6 +54,7 @@ function App() {
   // }, []);
   return (
     <div className="App">
+      <ToastContainer />
       <Router>
         <Routes>
           <Route path="/register" element={<Register />} />
@@ -62,11 +69,40 @@ function App() {
             }
           />
           <Route
+            path="/gallery"
+            element={
+              <>
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
+              </>
+            }
+          />
+          <Route
+            path="/team"
+            element={
+              <>
+                <Teams />
+              </>
+            }
+          />
+          {/* <Route
+            path="/team"
+            element={
+              <>
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
+              </>
+            }
+          /> */}
+          <Route
             path="/udyam"
             element={
               <>
-                <Nav active="#none" />
-                <HomePage />
+                <Nav_udy_udg whichevent="udyam" active="#none" /> <HomePage />
               </>
             }
           />
@@ -74,8 +110,21 @@ function App() {
             path="/mashal"
             element={
               <>
-                {/* <Nav active="#none" /> */}
-                <Mashal />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
+              </>
+            }
+          />
+          <Route
+            path="/mashal/sponsors"
+            element={
+              <>
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -84,17 +133,20 @@ function App() {
             path="/udyam/about"
             element={
               <>
-                <Nav active="#about" />
+                {/* <Nav active="#about" /> */}
+                <Nav_udy_udg whichevent="udyam" active="#about" />
                 <About />
               </>
             }
           />
 
           <Route
-            path="/udyam/name"
+            path="/dashboard"
             element={
               <>
-                <Nav active="#name" />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
                 <DashBoard />
               </>
             }
@@ -104,7 +156,7 @@ function App() {
             path="/udyam/events"
             element={
               <>
-                <Nav active="#event" />
+                <Nav_udy_udg whichevent="udyam" active="#event" />
                 <Events active="#event" />
               </>
             }
@@ -113,7 +165,7 @@ function App() {
             path="/udyam/sponsors"
             element={
               <>
-                <Nav active="#sponsors" />
+                <Nav_udy_udg whichevent="udyam" active="#sponsors" />
                 <Sponsors active="#sponsors" />
               </>
             }
@@ -122,7 +174,7 @@ function App() {
             path="/udyam/leaderboard"
             element={
               <>
-                <Nav active="#leaderboard" />
+                <Nav_udy_udg whichevent="udyam" active="#leaderboard" />
                 <LeaderBoard contentIndex={0} />
               </>
             }
@@ -131,8 +183,12 @@ function App() {
             path="/udgam"
             element={
               <>
-                <UdgamNav active="#none" />
-                <UDGmain />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                  {/* <Nav_udy_udg whichevent="udgam" active="#none" /> */}
+                  {/* <UDGmain /> */}
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -140,8 +196,10 @@ function App() {
             path="/udgam/sponsors"
             element={
               <>
-                <UdgamNav active="#sponsors" />
-                <UdgamSponsors />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -149,8 +207,10 @@ function App() {
             path="/udgam/about"
             element={
               <>
-                <UdgamNav active="#about" />
-                <UdgamAbout />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -158,8 +218,10 @@ function App() {
             path="/udgam/events"
             element={
               <>
-                <UdgamNav active="#event" />
-                <UdgamEvents active="#event" />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -167,7 +229,10 @@ function App() {
             path="/mashal/leaderboard"
             element={
               <>
-                <MashalLeaderboard />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />
@@ -175,7 +240,10 @@ function App() {
             path="/mashal/event"
             element={
               <>
-                <MashalEvent />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
               </>
             }
           />

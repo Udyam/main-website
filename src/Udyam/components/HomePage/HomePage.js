@@ -5,7 +5,10 @@ import Globe from '../globe/Globe';
 function HomePage() {
   return (
     <div className="main-container">
-      <h1 className="heading">UDYAM&apos;23</h1>
+      <h1 className="heading">
+        Udyam
+        <h5 className="tag-line">Connecting techies around the globe ...</h5>
+      </h1>
       <Globe />
     </div>
   );

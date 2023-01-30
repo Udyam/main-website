@@ -168,7 +168,7 @@
   margin: 10%;
 }
 
- .event-img-pc {
+.event-img-pc {
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -178,7 +178,7 @@
   margin-left: 50px;
 }
 
- .circle-one {
+.circle-one {
   position: absolute;
   width: 30%;
   left: 5%;

@@ -13,7 +13,7 @@ body {
   padding: 0;
 }
 .profile {
-  padding: 3vh;
+  padding: 2vh;
 }
 .profile img {
   height: 5vh;
@@ -24,9 +24,10 @@ body {
   font-family: 'Poppins', sans-serif;
   position: relative;
   /* line-height: 5vh; */
-  font-size: 4vh;
+  font-size: 3vh;
   /* top: 1vh; */
-  left: 36%;
+  left: 10%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;

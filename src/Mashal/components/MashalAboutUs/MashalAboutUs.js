@@ -8,11 +8,17 @@ import InstagramIcon from '../image/akar-icons_instagram-fill.svg';
 const MashalAboutUs = () => {
   return (
     <>
-      <div className="mashal-bg"></div>
       <div className="mashal-aboutUs-main-container">
-        <h1 className="heading-about-us">ABOUT US</h1>
+        <div className="mashal-aboutUs-heading-container">
+          <h1>ABOUT US</h1>
+        </div>
+        {/* <h1 className="heading-about-us">ABOUT US</h1> */}
+        {/* <div className="mashal-aboutus-bg"></div> */}
         <div className="mashal-aboutUS-inner-container">
-          <div>
+          <div className="mashal-aboutUs-heading-container-mobile">
+            <h1>ABOUT US</h1>
+          </div>
+          <div className="mashal-about-us-image-container">
             <img className="aboutUs-image" src={MashalAboutUsImage} alt="" />
           </div>
           <div className="aboutUS-paragraph">

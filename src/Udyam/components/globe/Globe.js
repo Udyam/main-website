@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { memo } from 'react';
 import ThreeGlobe from 'three-globe';
 import { WebGLRenderer, Scene } from 'three';
 import { PerspectiveCamera, AmbientLight, Color, PointLight } from 'three';
@@ -9,7 +10,7 @@ import travelHistory from './files/my-flights.json';
 var renderer, camera, scene, controls;
 var Globe;
 
-const eGlobe = () => {
+const eGlobe = memo(() => {
   useEffect(() => {
     init();
     initGlobe();
@@ -42,7 +43,7 @@ const eGlobe = () => {
 
       camera.position.z = 210;
       camera.position.x = 0;
-      camera.position.y = 0;
+      camera.position.y = 250;
 
       scene.add(camera);
 
@@ -62,8 +63,8 @@ const eGlobe = () => {
     function initGlobe() {
       // Initialize the Globe
       Globe = new ThreeGlobe({
-        waitForGlobeReady: true,
-        animateIn: true
+        waitForGlobeReady: false,
+        animateIn: false
       })
         .hexPolygonsData(countries.features)
         .hexPolygonResolution(3)
@@ -76,7 +77,7 @@ const eGlobe = () => {
       setTimeout(() => {
         Globe.arcsData(travelHistory.flights)
           .arcColor((e) => {
-            return e.status ? '#9cff00' : '#9cff00';
+            return e.status ? '#ffffff' : '#ffffff';
           })
           .arcAltitude((e) => {
             return e.arcAlt;
@@ -112,20 +113,33 @@ const eGlobe = () => {
 
     function animate() {
       camera.lookAt(scene.position);
-      if (window.innerWidth < 800) {
+      if (window.innerWidth <= 800) {
         controls.minDistance = 270;
         controls.maxDistance = 270;
+        camera.position.y = 100;
       }
+      if (window.innerWidth <= 900 && window.innerWidth > 800) {
+        controls.minDistance = 270;
+        controls.maxDistance = 270;
+        camera.position.y = 100;
+      }
+      // if (window.innerWidth <= 950 && window.innerWidth > 900) {
+      //   controls.minDistance = 400;
+      //   controls.maxDistance = 400;
+      //   camera.position.y = 100;
+      // }
       controls.update();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     }
-  }, []);
+  });
   return (
     <div id="globe-div">
       <canvas id="globe"></canvas>
     </div>
   );
-};
+});
+
+eGlobe.displayName = 'eGlobe';
 
 export default eGlobe;

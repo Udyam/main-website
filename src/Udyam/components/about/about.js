@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import xd from './images/logo.svg';
+import xd from './images/about_us.png';
 // import aboutx from "./images/ABOUT.svg"
 export default function About() {
   return (
