@@ -187,6 +187,7 @@
   width: 30%;
   left: 5%;
   pointer-events: all;
+  border-radius: 50%;
 }
 
 .circle-two {
@@ -195,10 +196,11 @@
   right: 5%;
   width: 30%;
   pointer-events: all;
+  border-radius: 50%;
 }
 
 .main-img{
-  width: 70%;
+  width: 60%;
   margin: auto;
   border-radius: 50%;
 } 
