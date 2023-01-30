@@ -22,18 +22,7 @@
   opacity: 0.3;
 }
 
-/* Valo Button Over */
-@keyframes sf-fly-by-1 {
-  from {
-    transform: translateZ(-600px);
-    opacity: 0.5;
-  }
 
-  to {
-    transform: translateZ(0);
-    opacity: 0.5;
-  }
-}
 
 @keyframes sf-fly-by-2 {
   from {
@@ -168,6 +157,13 @@
   margin: 10px 50px;
 }
 
+.events-heading-box {
+  font-family: homePageHeadingFont;
+  background: white;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .event-box {
   margin: 10%;
 }
@@ -188,6 +184,7 @@
   left: 5%;
   pointer-events: all;
   border-radius: 50%;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.272);
 }
 
 .circle-two {
@@ -197,12 +194,14 @@
   width: 30%;
   pointer-events: all;
   border-radius: 50%;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.397);
 }
 
 .main-img{
   width: 60%;
   margin: auto;
   border-radius: 50%;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.715);
 } 
 
 .event-img-pc img {
@@ -305,7 +304,10 @@
     width: 100vw;
     height: 90vh;
     display: none;
+
   }
+
+  
 
   .event-body-mob {
     display: flex;
@@ -314,6 +316,7 @@
     align-items: center;
     margin-right: 5%;
     margin-bottom: 5%;
+    padding-left: 3%;
   }
 
   .event-box-mob {
@@ -329,9 +332,10 @@
     align-items: center;
     width: 100%;
     font-family: eventHeadingfont;
-    font-size: 50px;
+    font-size: 40px;
     color: #dadada;
-    margin-left: 50px;
+    margin-top: 10px;
+    padding-left: 5vw;
   }
 
   .event-img-pc {
@@ -344,13 +348,28 @@
   }
   .event-img-mob img {
     width: 70%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0.3em rgb(32, 82, 140);
+  }
+  .circular-btns{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    justify-content: space-between;
+    
   }
   .circle-one-mob {
-    width: 10%;
-    position: absolute;
+    width: 12%;
+    border-radius: 50%;
+    margin-left: 1%;
+    box-shadow: 0px 0px 5px 2.5px rgb(18, 32, 65);
   }
   .circle-two-mob{
-    width: 10%;
+    width: 12%;
+    margin-right: 1%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2.5px rgb(18, 32, 65);
   }
   .event-desc {
     font-size: 15px;
@@ -367,8 +386,14 @@
   .event-submit {
     width: 40%;
   }
-  .event-title {
+  .event-title-mob {
+    font-family: eventHeadingFont;
+    font-size: 40px;
+    width: 70%;
+    color: white;
+    background: none;
     font-size: 30px;
+    display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 30px;

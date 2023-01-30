@@ -1,4 +1,4 @@
-import './events.css';
+import './udgamEvents.css';
 
 import { useState, useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
@@ -108,19 +108,19 @@ function UdgamEvents() {
     // setEventTitle(true);
     // document.querySelector('.leader').style.display = 'block';
   }
-
   const circleOneClicked = () => {
     let obj = events.find((o) => o.genre === whichEvent);
     let l = obj.subEvents.length;
+
     if (clickct <= 0) {
       setClickct(obj.subEvents.length - 1);
     } else {
       setClickct(clickct - 1);
     }
-    setEventTitle(obj.subEvents[clickct]);
     setsubEventImg(obj.subEventsImg[clickct]);
     setCircleOne(obj.subEventsImg[(clickct - 1 + l) % l]);
     setCircleTwo(obj.subEventsImg[(clickct + 1) % l]);
+    setEventTitle(obj.subEvents[clickct]);
   };
   const circleTwoClicked = () => {
     let obj = events.find((o) => o.genre === whichEvent);
@@ -131,6 +131,7 @@ function UdgamEvents() {
       setClickct(clickct + 1);
     }
     setEventTitle(obj.subEvents[clickct]);
+    console.log(eventTitle);
     setsubEventImg(obj.subEventsImg[clickct]);
     setCircleTwo(obj.subEventsImg[(clickct + 1) % l]);
     setCircleOne(obj.subEventsImg[(clickct - 1 + l) % l]);
@@ -206,17 +207,23 @@ function UdgamEvents() {
       </div>
       {/* for mobile view */}
       <div className="events-main-mob" onClick={slidemobile}>
+        {obj.subEvents.length > 1 && (
+          <div className="circular-btns">
+            <img className="circle-one-mob" src="/assets/udgam-events/images/circleOne.png" onClick={circleOneClicked} />
+            <img className="circle-two-mob" src="/assets/udgam-events/images/circleTwo.png" onClick={circleTwoClicked} />
+          </div>
+        )}
         <div className="event-body-mob">
           <div className="event-heading-mob">
-            <div className="events-heading-box">EVENTS</div>
+            <div className="events-heading-box">{whichEvent}</div>
           </div>
           <div className="event-box-mob">
             <div className="event-img-mob">
-              <img src={subEventImg} />
+              <img src={'/assets/udgam-events/images/' + subEventImg + '.jpg'} />
             </div>
-            <div className="event-title">{eventTitle}</div>
+            <div className="event-title-mob">{eventTitle}</div>
             <div className="event-desc-box">
-              <div className="event-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+              <div className="event-desc">{eventDesc}</div>
             </div>
             <div className="event-buttons">
               <div className="register">Register</div>
