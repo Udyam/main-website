@@ -10,7 +10,7 @@ import Sponsors from './Udyam/components/Sponsors/Sponsors';
 // import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
 import DashBoard from './EES/Dashboard/DashBoard';
 // import UdgamAbout from './Udgam/components/About/UdgamAbout';
-// import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
+import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 // import UdgamEvents from './Udgam/components/Events/udgamEvents';
 // import UDGmain from './Udgam/components/main-page/main-page';
 import Teams from './EES/Teams/Teams';
@@ -27,6 +27,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ComingSoon from './EES/ComingSoon/ComingSoon';
 import Nav_udy_udg from './nav-udy-udg/nav-udy-udg';
+import UdgamEvents from './Udgam/components/Events/udgamEvents';
 // import {useState,useEffect} from 'react';
 function App() {
   const clientId = process.env.REACT_APP_CLIENT_ID;
@@ -218,10 +219,12 @@ function App() {
             path="/udgam/events"
             element={
               <>
-                <div style={{ position: 'fixed', zIndex: '999' }}>
-                  <Navbar />
-                </div>
-                <ComingSoon />
+                {/* <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar /> */}
+                {/* </div> */}
+                {/* <ComingSoon /> */}
+                <UdgamNav active="#event" />
+                <UdgamEvents active="#events" />
               </>
             }
           />

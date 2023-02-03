@@ -99,7 +99,7 @@ function UdgamEvents() {
     // setEvent(true);
     if (width < 800) {
       // document.querySelector('.leader').style.display = 'none';
-      setEventTitle(false);
+      setEventtable(false);
     }
   }
   function sliding() {
@@ -221,7 +221,7 @@ function UdgamEvents() {
             <div className="event-img-mob">
               <img src={'/assets/udgam-events/images/' + subEventImg + '.jpg'} />
             </div>
-            <div className="event-title-mob">{eventTitle}</div>
+            <div className="event-title-mo">{eventTitle}</div>
             <div className="event-desc-box">
               <div className="event-desc">{eventDesc}</div>
             </div>

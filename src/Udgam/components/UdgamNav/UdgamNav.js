@@ -134,7 +134,7 @@ const UdgamNav = (props) => {
   //   // setLeader(true);
   // }
   function helloNav() {
-    // if(width<=800){document.querySelector('.udgam-nav').style.display = 'none';}
+    if(width<=800){document.querySelector('.udgam-nav').style.display = 'none';}
     setNav(false);
   }
 

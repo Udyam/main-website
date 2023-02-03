@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-.bg {
+/* .bg {
   background: url(./background.png) no-repeat;
   background-size: cover;
   height: 100%;
@@ -85,7 +85,7 @@
 
 .star-field .layer:nth-child(3) {
   animation: sf-fly-by-3 5s linear infinite;
-}
+} */
 
 .events-main {
   display: flex;
@@ -386,7 +386,7 @@
   .event-submit {
     width: 40%;
   }
-  .event-title-mob {
+  .event-title-mo {
     font-family: eventHeadingFont;
     font-size: 40px;
     width: 70%;
