@@ -2,7 +2,7 @@ import './udgamEvents.css';
 
 import { useState, useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
-import { IoIosArrowBack } from 'react-icons/io';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 function UdgamEvents() {
   const events = [
@@ -78,14 +78,18 @@ function UdgamEvents() {
     if (width > 800) {
       return;
     } else {
-      document.querySelector('.leader').style.display = 'none';
+      // document.querySelector('.leader').style.display = 'none';
       setEventtable(false);
       // setEventnav(false);
       // if (document.querySelector('.udyam-nav') != null) {
-      document.querySelector('.udyam-nav').style.display = 'none';
+      // document.querySelector('.udyam-nav').style.display = 'none';
       // }
     }
   };
+
+  function showEvents() {
+    setEventtable(true);
+  }
 
   const updateWidth = () => {
     setWidth(window.innerWidth);
@@ -147,7 +151,6 @@ function UdgamEvents() {
               <IoIosArrowBack />
             </div>
           )}
-
           <div className="token-event" onClick={eventName}>
             <div className="event-name" onClick={checkNav}>
               <a href="#">Photography</a>
@@ -231,6 +234,9 @@ function UdgamEvents() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="open-nav" onClick={showEvents}>
+        <IoIosArrowForward />
       </div>
     </div>
   );

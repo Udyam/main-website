@@ -309,6 +309,17 @@
 
   
 
+.open-nav{
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  position: fixed;
+  top: 48.8vh;
+  z-index: 9;
+  background: #65626292;
+  padding: 10px 5px 5px 0px;
+  border-radius: 0px 15px 15px 0px;
+}
   .event-body-mob {
     display: flex;
     flex-direction: column;
