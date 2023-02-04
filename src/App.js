@@ -12,6 +12,7 @@ import DashBoard from './EES/Dashboard/DashBoard';
 // import UdgamAbout from './Udgam/components/About/UdgamAbout';
 // import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 // import UdgamEvents from './Udgam/components/Events/udgamEvents';
+// import UdgamEvents from './Udgam/components/Events/udgamEvents';
 // import UDGmain from './Udgam/components/main-page/main-page';
 import Teams from './EES/Teams/Teams';
 // import Mashal from './Mashal/mashal';
@@ -222,6 +223,8 @@ function App() {
                   <Navbar />
                 </div>
                 <ComingSoon />
+                {/* <UdgamNav active="#event" />
+                <UdgamEvents active="#events" /> */}
               </>
             }
           />
