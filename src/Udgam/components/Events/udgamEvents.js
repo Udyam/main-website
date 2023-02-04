@@ -78,7 +78,7 @@ function UdgamEvents() {
     if (width > 800) {
       return;
     } else {
-      // document.querySelector('.leader').style.display = 'none';
+      document.querySelector('.leader').style.display = 'none';
       setEventtable(false);
       // setEventnav(false);
       // if (document.querySelector('.udyam-nav') != null) {
@@ -141,7 +141,7 @@ function UdgamEvents() {
   return (
     <div>
       {(eventtable || width > 800) && (
-        <div className="leader">
+        <div className="leader" id="events-name-list">
           {width < 800 && (
             <div className="back" onClick={checkNav}>
               <IoIosArrowBack />

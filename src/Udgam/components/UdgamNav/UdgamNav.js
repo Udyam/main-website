@@ -114,6 +114,7 @@ const UdgamNav = (props) => {
   // }
   function events() {
     helloNav();
+    showEvents();
   }
   // function names() {
   //   helloNav();
@@ -134,10 +135,19 @@ const UdgamNav = (props) => {
   //   // setLeader(true);
   // }
   function helloNav() {
-    if(width<=800){document.querySelector('.udgam-nav').style.display = 'none';}
+    if (width <= 800) {
+      document.querySelector('.udgam-nav').style.display = 'none';
+    }
     setNav(false);
   }
 
+  function showEvents() {
+    if (width <= 800) {
+    document.querySelector('.leader').style.display = 'block';
+    }
+    setNav(false);
+  }
+  //leader
   return (
     <>
       {' '}
