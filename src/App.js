@@ -10,7 +10,7 @@ import Sponsors from './Udyam/components/Sponsors/Sponsors';
 // import UdgamSponsors from './Udgam/components/Sponsors/Sponsors';
 import DashBoard from './EES/Dashboard/DashBoard';
 // import UdgamAbout from './Udgam/components/About/UdgamAbout';
-import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
+// import UdgamNav from './Udgam/components/UdgamNav/UdgamNav';
 // import UdgamEvents from './Udgam/components/Events/udgamEvents';
 // import UDGmain from './Udgam/components/main-page/main-page';
 import Teams from './EES/Teams/Teams';
@@ -219,12 +219,12 @@ function App() {
             path="/udgam/events"
             element={
               <>
-                {/* <div style={{ position: 'fixed', zIndex: '999' }}>
-                  <Navbar /> */}
-                {/* </div> */}
-                {/* <ComingSoon /> */}
-                <UdgamNav active="#event" />
-                <UdgamEvents active="#events" />
+                <div style={{ position: 'fixed', zIndex: '999' }}>
+                  <Navbar />
+                </div>
+                <ComingSoon />
+                {/* <UdgamNav active="#event" />
+                <UdgamEvents active="#events" /> */}
               </>
             }
           />
