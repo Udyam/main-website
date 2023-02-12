@@ -143,7 +143,7 @@ const UdgamNav = (props) => {
 
   function showEvents() {
     if (width <= 800) {
-    document.querySelector('.leader').style.display = 'block';
+      document.querySelector('.leader').style.display = 'block';
     }
     setNav(false);
   }
