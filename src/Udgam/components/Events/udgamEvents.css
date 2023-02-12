@@ -197,12 +197,12 @@
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.397);
 }
 
-.main-img{
+.main-img {
   width: 60%;
   margin: auto;
   border-radius: 50%;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.715);
-} 
+}
 
 .event-img-pc img {
   z-index: 0;
@@ -304,22 +304,19 @@
     width: 100vw;
     height: 90vh;
     display: none;
-
   }
 
-  
-
-.open-nav{
-  position: absolute;
-  color: #fff;
-  font-size: 30px;
-  position: fixed;
-  top: 48.8vh;
-  z-index: 9;
-  background: #65626292;
-  padding: 10px 5px 5px 0px;
-  border-radius: 0px 15px 15px 0px;
-}
+  .open-nav {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    top: 48.8vh;
+    z-index: 9;
+    background: #65626292;
+    padding: 10px 5px 5px 0px;
+    border-radius: 0px 15px 15px 0px;
+  }
   .event-body-mob {
     display: flex;
     flex-direction: column;
@@ -362,13 +359,12 @@
     border-radius: 50%;
     box-shadow: 0px 0px 0px 0.3em rgb(32, 82, 140);
   }
-  .circular-btns{
+  .circular-btns {
     display: flex;
     width: 100%;
     position: absolute;
     top: 30%;
     justify-content: space-between;
-    
   }
   .circle-one-mob {
     width: 12%;
@@ -376,7 +372,7 @@
     margin-left: 1%;
     box-shadow: 0px 0px 5px 2.5px rgb(18, 32, 65);
   }
-  .circle-two-mob{
+  .circle-two-mob {
     width: 12%;
     margin-right: 1%;
     border-radius: 50%;
