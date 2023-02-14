@@ -5,6 +5,7 @@ import { teamName, teamScore } from './LB_data';
 import { useState, useEffect } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { MdArrowForwardIos } from 'react-icons/md';
+import LeaderBoardBox from './LeaderBoardBox';
 const LeaderBoard = (props) => {
   // const [slideEvent, setEvent] = useState('false');
   // const [slideLeader, setLeader] = useState(true);
@@ -157,11 +158,10 @@ const LeaderBoard = (props) => {
       <div className="getback" onClick={sliding}>
         <MdArrowForwardIos />
       </div>
-      <div className="lb-coming-soon">COMING SOON</div>
       <div className="leaderboards-main-container">
         <h1>LEADERBOARDS</h1>
         <div className="lb-container">
-          <div className="podium-main-container">
+          {/* <div className="podium-main-container">
             <div className="mobile-first-position">
               <div className="img-and-score">
                 <img src="/assets/medals/gold.png" alt="" />
@@ -169,7 +169,6 @@ const LeaderBoard = (props) => {
                   {teamScore[contentIndex].first}
                 </div>
               </div>
-              {/* <div className="middle-glow"></div> */}
               <div className="team-name">{teamName[contentIndex].first}</div>
             </div>
             <div className="second-position">
@@ -179,7 +178,7 @@ const LeaderBoard = (props) => {
                   {teamScore[contentIndex].second}
                 </div>
               </div>
-              {/* <div className="middle-glow"></div> */}
+              
               <div className="team-name">{teamName[contentIndex].second}</div>
             </div>
             <div className="first-position">
@@ -189,7 +188,7 @@ const LeaderBoard = (props) => {
                   {teamScore[contentIndex].first}
                 </div>
               </div>
-              {/* <div className="middle-glow"></div> */}
+              
               <div className="team-name">{teamName[contentIndex].first}</div>
             </div>
             <div className="third-position">
@@ -199,11 +198,13 @@ const LeaderBoard = (props) => {
                   {teamScore[contentIndex].third}
                 </div>
               </div>
-              {/* <div className="middle-glow"></div> */}
+              
               <div className="team-name">{teamName[contentIndex].third}</div>
             </div>
-          </div>
+          </div> */}
           <div className="remaining-leaderboard">
+            <LeaderBoardBox />
+
             <div className="leaderboard-box">
               <div className="leaderboard-position" style={{ width: '15%' }}>
                 4th
@@ -211,7 +212,7 @@ const LeaderBoard = (props) => {
               <div className="team-name-non-podium" style={{ width: '65%' }}>
                 {teamName[contentIndex].fourth}
               </div>
-              <div className="team-score-non-podium" style={{ width: '20%' }}>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
                 {teamScore[contentIndex].fourth}
               </div>
             </div>
@@ -222,7 +223,95 @@ const LeaderBoard = (props) => {
               <div className="team-name-non-podium" style={{ width: '65%' }}>
                 {teamName[contentIndex].fifth}
               </div>
-              <div className="team-score-non-podium" style={{ width: '20%' }}>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
+                {teamScore[contentIndex].fifth}
+              </div>
+            </div>
+            <div className="leaderboard-box">
+              <div className="leaderboard-position" style={{ width: '15%' }}>
+                4th
+              </div>
+              <div className="team-name-non-podium" style={{ width: '65%' }}>
+                {teamName[contentIndex].fifth}
+              </div>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
+                {teamScore[contentIndex].fifth}
+              </div>
+            </div>
+            <div className="leaderboard-box">
+              <div className="leaderboard-position" style={{ width: '15%' }}>
+                4th
+              </div>
+              <div className="team-name-non-podium" style={{ width: '65%' }}>
+                {teamName[contentIndex].fifth}
+              </div>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
+                {teamScore[contentIndex].fifth}
+              </div>
+            </div>
+            <div className="leaderboard-box">
+              <div className="leaderboard-position" style={{ width: '15%' }}>
+                4th
+              </div>
+              <div className="team-name-non-podium" style={{ width: '65%' }}>
+                {teamName[contentIndex].fifth}
+              </div>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
+                {teamScore[contentIndex].fifth}
+              </div>
+            </div>
+            <div className="leaderboard-box">
+              <div className="leaderboard-position" style={{ width: '15%' }}>
+                4th
+              </div>
+              <div className="team-name-non-podium" style={{ width: '65%' }}>
+                {teamName[contentIndex].fifth}
+              </div>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
+                {teamScore[contentIndex].fifth}
+              </div>
+            </div>
+            <div className="leaderboard-box">
+              <div className="leaderboard-position" style={{ width: '15%' }}>
+                4th
+              </div>
+              <div className="team-name-non-podium" style={{ width: '65%' }}>
+                {teamName[contentIndex].fifth}
+              </div>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
+                {teamScore[contentIndex].fifth}
+              </div>
+            </div>
+            <div className="leaderboard-box">
+              <div className="leaderboard-position" style={{ width: '15%' }}>
+                4th
+              </div>
+              <div className="team-name-non-podium" style={{ width: '65%' }}>
+                {teamName[contentIndex].fifth}
+              </div>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
+                {teamScore[contentIndex].fifth}
+              </div>
+            </div>
+            <div className="leaderboard-box">
+              <div className="leaderboard-position" style={{ width: '15%' }}>
+                4th
+              </div>
+              <div className="team-name-non-podium" style={{ width: '65%' }}>
+                {teamName[contentIndex].fifth}
+              </div>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
+                {teamScore[contentIndex].fifth}
+              </div>
+            </div>
+            <div className="leaderboard-box">
+              <div className="leaderboard-position" style={{ width: '15%' }}>
+                4th
+              </div>
+              <div className="team-name-non-podium" style={{ width: '65%' }}>
+                {teamName[contentIndex].fifth}
+              </div>
+              <div className="team-score-non-podium" style={{ width: '15%' }}>
                 {teamScore[contentIndex].fifth}
               </div>
             </div>
