@@ -1,16 +1,17 @@
 import './LeaderBoard.css';
 import './LB_MobileView.css';
 import React from 'react';
-import { teamName, teamScore } from './LB_data';
+// import { teamName, teamScore } from './LB_data';
 import { useState, useEffect } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { MdArrowForwardIos } from 'react-icons/md';
-import LeaderBoardBox from './LeaderBoardBox';
-const LeaderBoard = (props) => {
+// import LeaderBoardBox from './LeaderBoardBox';
+const LeaderBoard = () => {
   // const [slideEvent, setEvent] = useState('false');
   // const [slideLeader, setLeader] = useState(true);
   // const [slideNav, setNav] = useState('false');
   const [width, setWidth] = useState(window.innerWidth);
+  const [users, setUsers] = useState([]);
   // const [activeNav, setActiveNav] = useState('#');
   // const [udyamName, setUdyamName] = useState(true);
   // const [udyevents,setudyevents]=useState('Digism');
@@ -52,8 +53,17 @@ const LeaderBoard = (props) => {
   const updateWidth = () => {
     setWidth(window.innerWidth);
   };
+
+  const fetchUsers = async () => {
+    const response = await fetch('https://udyam.pythonanywhere.com/auth/leaderboard');
+    const newUser = await response.json();
+    console.log(newUser);
+    setUsers(newUser.array);
+  };
+
   useEffect(() => {
     window.addEventListener('resize', updateWidth);
+    fetchUsers();
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
   // function slideIn(e) {
@@ -107,7 +117,7 @@ const LeaderBoard = (props) => {
   // }
 
   // const [contentIndex, setContentIndex] = useState(0);
-  const contentIndex = props.contentIndex;
+  // const contentIndex = props.contentIndex;
   return (
     <>
       {/* <div className="background">
@@ -203,118 +213,22 @@ const LeaderBoard = (props) => {
             </div>
           </div> */}
           <div className="remaining-leaderboard">
-            <LeaderBoardBox />
-
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fourth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fourth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
-            <div className="leaderboard-box">
-              <div className="leaderboard-position" style={{ width: '15%' }}>
-                4th
-              </div>
-              <div className="team-name-non-podium" style={{ width: '65%' }}>
-                {teamName[contentIndex].fifth}
-              </div>
-              <div className="team-score-non-podium" style={{ width: '15%' }}>
-                {teamScore[contentIndex].fifth}
-              </div>
-            </div>
+            {/* <LeaderBoardBox /> */}
+            {users.map((user, index) => {
+              return (
+                <div className="leaderboard-box" key={index}>
+                  <div className="leaderboard-position" style={{ width: '15%' }}>
+                    {index + 1}
+                  </div>
+                  <div className="team-name-non-podium" style={{ width: '65%' }}>
+                    {user.name}
+                  </div>
+                  <div className="team-score-non-podium" style={{ width: '15%' }}>
+                    {user.radianite_points}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
