@@ -137,7 +137,7 @@
 .udyam-event-buttons {
   display: flex;
   justify-content: space-evenly;
-  width: 70%;
+  width: 65%;
   height: 45px;
   margin-top: 10px;
 }
@@ -147,7 +147,8 @@
 }
 
 .ps-link,
-.udyam-event-submit {
+.udyam-event-submit,
+.udyam-register-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,12 +216,14 @@
   #right {
     margin-left: 35vw;
   }
+
   .udyam-event-buttons {
     display: block;
   }
+
   .udyam-event-buttons div {
     width: 100%;
     margin-bottom: 10px;
-    padding: 7px;
+    padding: 7px 0px;
   }
 }

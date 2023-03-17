@@ -197,6 +197,7 @@ function Events() {
           <div className="udyam-event-desc">{eventData.description}</div>
           <div className="udyam-event-buttons">
             <div className="ps-link">PROBLEM STATEMENT</div>
+            <div className="udyam-register-link">REGISTER</div>
             <div className="udyam-event-submit">SUBMIT</div>
           </div>
           <div className="udyam-event-arrows">
