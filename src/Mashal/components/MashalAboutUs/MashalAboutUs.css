@@ -6,10 +6,15 @@ h3,
 h4,
 h5,
 h6 {
+  font-size: 2.5rem;
   margin: 0;
   color: #f34b4b;
+  font-family: 'Inconsolata';
 }
-.mashal-bg {
+.mashal-aboutUs-main-container p {
+  font-size: 1.5rem;
+}
+/* .mashal-aboutus-bg {
   overflow: hidden;
   position: absolute;
   height: 76vh;
@@ -17,13 +22,13 @@ h6 {
   padding: 2vh 3vw;
   top: 10vh;
   left: 10vw;
-  background: url('../image/Mashal-Home2.png') no-repeat;
-  background-size: cover;
-  color: #373636;
-}
+  
+ 
+} */
 .mashal-aboutUs-main-container {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   background: url('../image/Mashal-Home.png') no-repeat;
   background-size: cover;
 }
@@ -35,17 +40,30 @@ h6 {
   height: 76vh;
   width: 74vw;
   padding: 2vh 3vw;
-  top: 10vh;
+  /* top: 10vh; */
   left: 10vw;
+  background: url('../image/Mashal-Home2.png') no-repeat;
+  background-size: cover;
   /* background-color: #3E3E3E; */
 }
-.heading-about-us {
-  position: absolute;
+.mashal-aboutUs-heading-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
   padding: 1vw;
-  font-size: 3rem;
-  left: 43vw;
+  /* font-size: 2rem; */
+  /* left: 43vw; */
   letter-spacing: 1vh;
   font-family: 'Inconsolata';
+}
+.mashal-aboutUs-heading-container-mobile {
+  display: none;
+}
+.mashal-about-us-image-container {
+  display: flex;
+  justify-content: center;
 }
 .aboutUs-image {
   margin: 3vh 2vw;
@@ -55,22 +73,28 @@ h6 {
 }
 .aboutUS-paragraph {
   margin: 8vh 2vw;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: white;
   font-family: 'Outfit';
+  overflow: scroll;
 }
 .social-icons {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   height: 60vh;
-  width: 4vw;
+  width: 3vw;
   /* background-color: black; */
   top: 5vh;
   right: 0;
+  margin: 1vh;
+  padding: 0.5vw;
+  align-items: center;
   color: white;
 }
 .social-icons img {
-  margin: 1vh;
-  padding: 0.5vw;
+  margin: 1vh 0;
+  padding: 0.5vw 0;
 }
 .social-icons p {
   /* display: inline; */
@@ -79,9 +103,45 @@ h6 {
   padding: 1vh;
   position: relative;
   top: 8vh;
-  left: -6vh;
+  /* left: -6vh; */
   letter-spacing: 0.5vh;
-  width: 18vh;
+  width: 25vh;
+  align-items: center;
   transform: rotate(-90deg);
   font-family: 'Inconsolata';
+}
+@media (max-width: 480px) {
+  .mashal-aboutUs-main-container p {
+    font-size: 1rem;
+  }
+  .mashal-aboutUs-main-container {
+    background: url('../image/BG\ LAYER-Mobile\(1\).jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .mashal-aboutUS-inner-container {
+    position: relative;
+    top: 6vh;
+    height: 90vh;
+    width: 90vw;
+    padding: 5vh 5vw;
+    left: 0;
+    /* top: 10vh; */
+    flex-direction: column;
+    background: none;
+  }
+  .social-icons {
+    display: none;
+  }
+  .mashal-aboutUs-heading-container {
+    display: none;
+  }
+  .mashal-aboutUs-heading-container-mobile {
+    position: relative;
+    display: flex;
+    /* top: 5vh; */
+    letter-spacing: 1vh;
+    display: flex;
+    justify-content: center;
+  }
 }

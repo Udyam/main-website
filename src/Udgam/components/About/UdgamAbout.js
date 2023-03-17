@@ -6,9 +6,8 @@ const UdgamAbout = () => {
       <h1 className="about-title">ABOUT UDGAM</h1>
       <div className="about-content">
         <p>
-          UDYAM is the Annual Technical Festival of the Department of Electronics Engineering, IIT (BHU) Varanasi. UDYAM offers an opportunity for students to treat themselves to a technical extravaganza. It gives you a chance to be more actively involved in the learning experience at the heart of effective technology integration. It is a means for students to showcase their practical talent in
-          their learning and not just limit themselves to theoretical knowledge. With this idea of an application-oriented approach, UDYAM started in 2010 with a vision of providing a platform for the community of Indian students to develop and showcase their technical prowess. It is not just these head to head competitions that you can get at Udyam. It is the events that make you proficient with
-          the industry standards. The limelight is on you.
+          Udgam is the Annual Cultural Festival of the department of Electronics Engineering, IIT (BHU) Varanasi. It brings you multifarious events that kindle your creative side and awaken your artistic self. EES introduced Udgam at the start of 2022 to provide a platform for participants to showcase their talents in non-technical fields like fine arts, dance, music, photography, and literature.
+          Udgam is back again, bigger and brighter, and awaiting to witness the vigour its participants would bring to the stage. Get ready to manifest your artistry and let your creative self sparkle!
         </p>
       </div>
       <div className="about-image-shadow"></div>
